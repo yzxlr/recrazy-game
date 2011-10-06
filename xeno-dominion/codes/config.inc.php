@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (!defined('FRAME_PATH')) exit();
 return array(
 	'DB_TYPE'		=>	'mysql',			//数据库类型
@@ -17,7 +17,7 @@ return array(
 	'UPLOAD_URL'    =>	UPLOAD_URL,
 	//'COOKIE_DOMAIN'	=>	'.bestcms.com',	//cookie域,请替换成你自己的域名 以.开头
 	'TOKEN_ON'		=>	true,
-	'TOKEN_NAME'	=>	'bestcms_html_token',
+	'TOKEN_NAME'	=>	'recrazy_token',
 	'TOKEN_TYPE'	=>	'md5',
 	'OTHER_TOKEN'	=>	'js',
 );
