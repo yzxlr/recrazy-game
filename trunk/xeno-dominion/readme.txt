@@ -13,6 +13,6 @@
 
 3
 	<VirtualHost *:80>
-    		DocumentRoot "C:\wamp\www\recrazy\recrazy-game\xeno-dominion\html"
+    		DocumentRoot "C:\wamp\www\recrazy\recrazy-game\xeno-dominion\codes"
     		ServerName xeno.recrazy.net
 	</VirtualHost>
