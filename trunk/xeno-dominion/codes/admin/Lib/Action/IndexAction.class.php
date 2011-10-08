@@ -9,20 +9,22 @@ class IndexAction extends CommonAction
     */
     public function index()
     {
-        $this->display(THINK_PATH.'/Tpl/Autoindex/hello.html');
+        //0. Initialization
+		//0.1 Global variables
+		$user = $_SESSION["user"];
+		//0.2 Define Tables
+		$tb_users = M("users");
+		//0.8 Error: error pool
+		$error_pool = array();
+		//0.9 massenger
+		$msg = array(); 
+		//1. Table users
+		
+		
+		//10. Display
+        $this->display();
     }
 
-    /**
-    +----------------------------------------------------------
-    * 探针模式
-    +----------------------------------------------------------
-    */
-    public function checkEnv()
-    {
-        load('pointer',THINK_PATH.'/Tpl/Autoindex');//载入探针函数
-        $env_table = check_env();//根据当前函数获取当前环境
-        echo $env_table;
-    }
 
 }
 ?>
