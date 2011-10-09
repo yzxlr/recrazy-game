@@ -82,3 +82,137 @@
 [ 2011-10-10T03:18:50+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
 [ 2011-10-10T03:21:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003996s ]
 [ 2011-10-10T03:21:01+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:31:17+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003822s ]
+[ 2011-10-10T03:31:17+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:31:27+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003685s ]
+[ 2011-10-10T03:31:27+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:31:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003806s ]
+[ 2011-10-10T03:31:32+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:31:35+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003709s ]
+[ 2011-10-10T03:31:35+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:31:36+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003741s ]
+[ 2011-10-10T03:31:36+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:31:37+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003692s ]
+[ 2011-10-10T03:31:37+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:31:40+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003879s ]
+[ 2011-10-10T03:31:40+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:32:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004015s ]
+[ 2011-10-10T03:32:38+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:32:44+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003723s ]
+[ 2011-10-10T03:32:44+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:38:27+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003761s ]
+[ 2011-10-10T03:38:27+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:38:29+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003779s ]
+[ 2011-10-10T03:38:29+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000367s ]
+[ 2011-10-10T03:38:29+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000288s ]
+[ 2011-10-10T03:38:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004163s ]
+[ 2011-10-10T03:38:32+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:38:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004107s ]
+[ 2011-10-10T03:38:38+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:40:35+08:00 ] ERR: (ThinkException) 非法操作public
+[ 2011-10-10T03:40:47+08:00 ] ERR: (ThinkException) 非法操作public
+[ 2011-10-10T03:40:58+08:00 ] ERR: (ThinkException) 非法操作public
+[ 2011-10-10T03:41:06+08:00 ] ERR: (ThinkException) 非法操作public
+[ 2011-10-10T03:41:25+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004521s ]
+[ 2011-10-10T03:41:25+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:41:37+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003783s ]
+[ 2011-10-10T03:41:37+08:00 ] NOTIC: [8] Undefined variable: user a07fe2cf594cb6cde914991aba535d51.php 第 52 行.
+[ 2011-10-10T03:41:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003723s ]
+[ 2011-10-10T03:41:49+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000296s ]
+[ 2011-10-10T03:41:49+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000202s ]
+[ 2011-10-10T03:42:03+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003617s ]
+[ 2011-10-10T03:42:03+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000299s ]
+[ 2011-10-10T03:42:03+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000233s ]
+[ 2011-10-10T03:42:25+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003816s ]
+[ 2011-10-10T03:42:25+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000288s ]
+[ 2011-10-10T03:42:25+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000202s ]
+[ 2011-10-10T03:42:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003889s ]
+[ 2011-10-10T03:42:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:44:40+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004746s ]
+[ 2011-10-10T03:44:40+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:45:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004602s ]
+[ 2011-10-10T03:45:25+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003781s ]
+[ 2011-10-10T03:45:25+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000337s ]
+[ 2011-10-10T03:45:25+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000209s ]
+[ 2011-10-10T03:45:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003663s ]
+[ 2011-10-10T03:45:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:48:34+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004180s ]
+[ 2011-10-10T03:48:34+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:49:46+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003706s ]
+[ 2011-10-10T03:49:46+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T03:51:00+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004351s ]
+[ 2011-10-10T03:51:00+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:05:45+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003980s ]
+[ 2011-10-10T04:05:45+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:05:45+08:00 ] NOTIC: [8] Undefined variable: SITE_URL 3b07957a53ccb31105e96f96aaa794c8.php 第 52 行.
+[ 2011-10-10T04:05:47+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003689s ]
+[ 2011-10-10T04:05:47+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:05:47+08:00 ] NOTIC: [8] Undefined variable: SITE_URL 3b07957a53ccb31105e96f96aaa794c8.php 第 52 行.
+[ 2011-10-10T04:06:27+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003828s ]
+[ 2011-10-10T04:06:28+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:06:41+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003784s ]
+[ 2011-10-10T04:06:41+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:07:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003997s ]
+[ 2011-10-10T04:07:38+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:08:30+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003696s ]
+[ 2011-10-10T04:08:30+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:09:23+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003734s ]
+[ 2011-10-10T04:09:23+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:10:47+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003785s ]
+[ 2011-10-10T04:10:47+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:10:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004014s ]
+[ 2011-10-10T04:10:58+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:11:03+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003707s ]
+[ 2011-10-10T04:11:03+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:11:19+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003919s ]
+[ 2011-10-10T04:11:19+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:22:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004958s ]
+[ 2011-10-10T04:22:38+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:22:52+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004320s ]
+[ 2011-10-10T04:22:52+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:23:59+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004016s ]
+[ 2011-10-10T04:23:59+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:24:27+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003723s ]
+[ 2011-10-10T04:24:27+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:26:02+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004192s ]
+[ 2011-10-10T04:26:02+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T04:30:26+08:00 ] ERR: (ThinkException) 无法加载模块User
+[ 2011-10-10T04:33:05+08:00 ] ERR: (ThinkException) 无法加载模块User
+[ 2011-10-10T04:34:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003921s ]
+[ 2011-10-10T04:34:58+08:00 ] NOTIC: [8] Undefined variable: msg 1282e97849dec9495baef5755c79259c.php 第 45 行.
+[ 2011-10-10T04:35:03+08:00 ] NOTIC: [8] Undefined variable: msg 1fea51df8b48f071cd7a958f26b94a2b.php 第 45 行.
+[ 2011-10-10T05:13:44+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004784s ]
+[ 2011-10-10T05:13:44+08:00 ] NOTIC: [8] Undefined variable: msg 1fea51df8b48f071cd7a958f26b94a2b.php 第 45 行.
+[ 2011-10-10T05:14:07+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003809s ]
+[ 2011-10-10T05:33:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004812s ]
+[ 2011-10-10T05:33:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004995s ]
+[ 2011-10-10T05:34:33+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004068s ]
+[ 2011-10-10T05:34:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004229s ]
+[ 2011-10-10T05:34:53+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004157s ]
+[ 2011-10-10T05:35:05+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004020s ]
+[ 2011-10-10T05:35:05+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003927s ]
+[ 2011-10-10T05:35:07+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004238s ]
+[ 2011-10-10T06:08:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003931s ]
+[ 2011-10-10T06:08:28+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003878s ]
+[ 2011-10-10T06:08:28+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'user' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000393s ]
+[ 2011-10-10T06:08:28+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'user' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000334s ]
+[ 2011-10-10T06:08:40+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003655s ]
+[ 2011-10-10T06:08:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'master' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000288s ]
+[ 2011-10-10T06:08:40+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'master' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000212s ]
+[ 2011-10-10T06:08:53+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003931s ]
+[ 2011-10-10T06:08:53+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000302s ]
+[ 2011-10-10T06:08:53+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000219s ]
+[ 2011-10-10T06:08:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003882s ]
+[ 2011-10-10T06:08:54+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T06:09:44+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003695s ]
+[ 2011-10-10T06:09:44+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-10T06:47:35+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004598s ]
+[ 2011-10-10T06:47:57+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003770s ]
+[ 2011-10-10T06:47:57+08:00 ] NOTIC: [8] Undefined index: user_role UserAction.class.php 第 41 行.
+[ 2011-10-10T06:47:57+08:00 ] SQL: INSERT INTO `ry_users` (`role`,`user_name`,`user_email`,`user_password`) VALUES ('','admin2','admin2@gmail.com','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.011800s ]
+[ 2011-10-10T06:49:42+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003971s ]
+[ 2011-10-10T06:49:52+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004139s ]
+[ 2011-10-10T06:49:52+08:00 ] NOTIC: [8] Undefined index: user_role UserAction.class.php 第 41 行.
+[ 2011-10-10T06:49:52+08:00 ] SQL: INSERT INTO `ry_users` (`role`,`user_name`,`user_email`,`user_password`) VALUES ('','aaa','dsaf@dfs','47bce5c74f589f4867dbd57e9ca9f808') [ RunTime:0.000412s ]
+[ 2011-10-10T06:49:53+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004207s ]
+[ 2011-10-10T06:49:53+08:00 ] NOTIC: [8] Undefined variable: msg 1282e97849dec9495baef5755c79259c.php 第 45 行.

@@ -56,9 +56,11 @@ class PublicAction extends Action
 			$user_count = $tb_users -> where($condition_check) -> count();
 			if($user_count>0){
 				$user = $tb_users -> where($condition_check) -> find();
-				if($user["role"]<=0){
+				if($user["role"]==0){
 					$_SESSION["user"] = $user;
-					 $this->redirect('Index/index', array(), 3, 'You login successfully!');
+					$this->assign("jumpUrl","/admin.php?s=Index/index");
+					$this->success('You login successfully!');
+					//$this->redirect('Index/index', array(), 3, 'You login successfully!');
 				}else{
 					$this->error("You are not a admin user!");
 				}
@@ -77,30 +79,11 @@ class PublicAction extends Action
 	
 	public function logout(){
 		$_SESSION["user"]=null;
-		$this->redirect('Public/login', array(), 3, 'You logout successfully!');
+		$this->assign("jumpUrl","/admin.php?s=Public/login");
+		$this->success('You logout successfully!');
+		//$this->redirect('Public/login', array(), 3, 'You logout successfully!');
 	}
 	
-	public function add(){
-	}
-	
-	public function edit(){
-	}
-	
-	public function del(){
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 ?>

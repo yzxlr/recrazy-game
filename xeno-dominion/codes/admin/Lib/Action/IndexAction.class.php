@@ -17,7 +17,7 @@ class IndexAction extends CommonAction
 		//0.8 Error: error pool
 		$error_pool = array();
 		//0.9 massenger
-		$msg = array(); 
+		$msg = array("title"=>"xxxx"); 
 		//1. Table users
 		
 		

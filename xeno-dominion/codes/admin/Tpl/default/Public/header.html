@@ -4,18 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- start: include -->
 		<!-- start: include jquery & jquery ui -->
-		<link type="text/css" href="/public/jquery-ui-1.8.16/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="/public/jquery-ui-1.8.16/js/jquery-1.6.2.min.js"></script>
-		<script type="text/javascript" src="/public/jquery-ui-1.8.16/js/jquery-ui-1.8.16.custom.min.js"></script>
+		<link type="text/css" href="{$SITE_URL}/public/jquery-ui-1.8.16/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="{$SITE_URL}/public/jquery-ui-1.8.16/js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="{$SITE_URL}/public/jquery-ui-1.8.16/js/jquery-ui-1.8.16.custom.min.js"></script>
         <!-- end:   include jquery & jquery ui -->
         <!-- start: include super-fish menu jquery plugin -->
-        <link type="text/css" href="/public/superfish-1.4.8/css/superfish.css" rel="stylesheet" />	
-		<script type="text/javascript" src="/public/superfish-1.4.8/js/superfish.js"></script>
+        <link type="text/css" href="{$SITE_URL}/public/superfish-1.4.8/css/superfish.css" rel="stylesheet" />	
+		<script type="text/javascript" src="{$SITE_URL}/public/superfish-1.4.8/js/superfish.js"></script>
         <!-- end: include super-fish menu jquery plugin -->
         
         
         <!-- start: include jack's css & js -->
-        <link type="text/css" href="/public/jack/css/common.css" rel="stylesheet" />
+        <link type="text/css" href="{$SITE_URL}/public/jack/css/common.css" rel="stylesheet" />
         <!-- end:   include jack's css & js -->
 <!-- end: include -->
 
@@ -47,34 +47,48 @@ $(document).ready(function(){
 <body>
 
 <div id="header">
-	<div id="header_left"><img src="/public/jack/images/logo.jpg" /></div>
+	<div id="header_left"><img src="{$SITE_URL}/public/jack/images/logo.jpg" /></div>
     <div id="header_right">
-        <div id="header_right_control">Welcome back, {$user.user_name} / logout link put here later
+        <div id="header_right_control">Welcome back, {$user.user_name} / <a href="{$SITE_URL}/admin.php?s=Public/logout">Logout</a> 
         </div>
         <div id="header_right_menu">
             <ul class="sf-menu">
-            	<li><a href="/admin.php">Dashboard</a></li>
+            	<li><a href="{$SITE_URL}/admin.php">Dashboard</a></li>
                 <li class="current">
-                    <a href="/admin.php?s=Page/index">System</a>
+                    <a href="{$SITE_URL}/admin.php?s=Page/index">System</a>
                     <ul>
                         <li class="current">
-                        	<a href="/admin.php?s=User/index">User</a>
+                        	<a href="{$SITE_URL}/admin.php?s=User/index">User</a>
                         	<ul>
-                            	<li><a href="/admin.php?s=User/index">List Users</a></li>
-                                <li><a href="/admin.php?s=User/add">Add New User</a></li>
+                            	<li><a href="{$SITE_URL}/admin.php?s=User/index">List Users</a></li>
+                                <li><a href="{$SITE_URL}/admin.php?s=User/add">Add New User</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li class="current">
-                    <a href="/admin.php?s=Page/index">Page</a>
+                    <a href="{$SITE_URL}/admin.php?s=Page/index">Page</a>
                     <ul>
-                        <li class="current"><a href="/admin.php?s=Page/index">List Pages</a></li>
-                        <li><a href="#aba">eee</a></li>
-                        <li><a href="#abb">ddd</a></li>
-                        <li><a href="#abb">ccc</a></li>
-                        <li><a href="#abb">bbb</a></li>
-                        <li><a href="#abb">aaa</a></li>
+                        <li class="current"><a href="{$SITE_URL}/admin.php?s=Page/index">List Pages</a></li>
+                        <li><a href="{$SITE_URL}/admin.php?s=Page/add">Add New Page</a></li>
+                    </ul>
+                </li>
+                <li class="current">
+                    <a href="{$SITE_URL}/admin.php?s=Post/index">Post</a>
+                    <ul>
+                    	<li class="current"><a href="{$SITE_URL}/admin.php?s=Postcategory/index">List Category</a></li>
+                        <li><a href="{$SITE_URL}/admin.php?s=Postcategory/add">Add Category</a></li>
+                        <li class="current"><a href="{$SITE_URL}/admin.php?s=Post/index">List Post</a></li>
+                        <li><a href="{$SITE_URL}/admin.php?s=Post/add">Add New Post</a></li>
+                    </ul>
+                </li>
+                <li class="current">
+                    <a href="{$SITE_URL}/admin.php?s=Product/index">Product</a>
+                    <ul>
+                    	<li class="current"><a href="{$SITE_URL}/admin.php?s=Productcategory/index">List Category</a></li>
+                        <li><a href="{$SITE_URL}/admin.php?s=Productcategory/add">Add Category</a></li>
+                        <li class="current"><a href="{$SITE_URL}/admin.php?s=Product/index">List Product</a></li>
+                        <li><a href="{$SITE_URL}/admin.php?s=Product/add">Add New Product</a></li>
                     </ul>
                 </li>
                 <li class="current">
