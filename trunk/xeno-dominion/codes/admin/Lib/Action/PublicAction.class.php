@@ -50,13 +50,35 @@ class PublicAction extends Action
 		//1. Table users
 		//1.1 Update
 		//1.2 Select
-		$user = $tb_users -> where() -> select();
+		if(!empty($_POST["user_name"])){
+			$condition_check["user_name"] = $_POST["user_name"];
+			$condition_check["user_password"] = md5($_POST["user_password"]);
+			$user_count = $tb_users -> where($condition_check) -> count();
+			if($user_count>0){
+				$user = $tb_users -> where($condition_check) -> find();
+				if($user["role"]<=0){
+					$_SESSION["user"] = $user;
+					 $this->redirect('Index/index', array(), 3, 'You login successfully!');
+				}else{
+					$this->error("You are not a admin user!");
+				}
+			}else{
+				$this->error("User name or password incorrect!");
+			}
+			
+		}
+		
 		
 		//10. Display
 		$this->assign("error_pool",$error_pool);
 		$this->assign("msg",$msg);
         $this->display();
     }
+	
+	public function logout(){
+		$_SESSION["user"]=null;
+		$this->redirect('Public/login', array(), 3, 'You logout successfully!');
+	}
 	
 	public function add(){
 	}
