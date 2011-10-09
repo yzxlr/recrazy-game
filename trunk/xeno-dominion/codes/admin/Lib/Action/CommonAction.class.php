@@ -11,19 +11,47 @@ class CommonAction extends Action
     public function _initialize(){
 		//0. Initialization
 		//0.1 Global variables
+		$http = (isset($_SERVER['HTTPS'])&&$_SERVER['HTTPS']!='off')?'https://':'http://';  
+		$port = $_SERVER["SERVER_PORT"]==80?'':':'.$_SERVER["SERVER_PORT"];  
+		$url = $http.$_SERVER['SERVER_NAME'].$port;//.$_SERVER["REQUEST_URI"];
+		$this->assign("SITE_URL",$url);
+		//define("SITE_URL",$url);
 		
-		//1 
+		//1 Validate User (only admin can login at here
 		if(!empty($_SESSION["user"])){
 			$this->user = $_SESSION["user"];
-			$this->assign("user",$this->user);
+			if($this->user["role"]==0){
+				$this->assign("user",$this->user);
+			}else{
+				$this->assign("jumpUrl","/admin.php?s=Public/login");
+				$this->error('You are not administration user!');
+			}
 		}else{
-			$this -> redirect("Public/login", "Manage");
+			$this->assign("jumpUrl","/admin.php?s=Public/login");
+			$this->error('Please login first!');
+			//$this->redirect('Public/login', array(), 3, 'Please login first!');
 		}
 		
 	}
 	
+	
+	/*
+	 *  这里暂时hardcode
+	**/
 	public function rbac($user_id, $user_action){
 		return true;
+	}
+	
+	/*
+	 *  这里暂时hardcode
+	**/
+	public function getUserRoles(){
+		$user_role = array();
+		$user_role[2] = array("id"=>100,"name"=>"user");
+		$user_role[1] = array("id"=>10,"name"=>"master");
+		$user_role[0] = array("id"=>0,"name"=>"admin");
+		
+		return $user_role;
 	}
 
 }

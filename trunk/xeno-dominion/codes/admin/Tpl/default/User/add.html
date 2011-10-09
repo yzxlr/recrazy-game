@@ -1,0 +1,46 @@
+<include file="Public:header" />
+
+<div id="content">
+	<form action="#" method="post">
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2"><h3>Add New User</h3></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>Role:</td>
+                <td>
+                	<select value="user_role">
+                    	<foreach name="msg.user_roles" item="vo">
+                        	<option value="{$vo.id}">{$vo.name}</option>
+                        </foreach>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>User Name:</td>
+                <td><input type="text" name="user_name" value="" /></td>
+            </tr>
+            <tr>
+                <td>User Email:</td>
+                <td><input type="text" name="user_email" value="" /></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="text" name="user_password" value="" /></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td><input type="submit" value="login" /></td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+</div>
+
+<include file="Public:footer" />
