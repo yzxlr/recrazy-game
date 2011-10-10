@@ -13,15 +13,28 @@ class UserAction extends CommonAction
 		//0.1 Global variables
 		//0.2 Define Tables
 		$tb_users = M("users");
+		//0/4 conditon 
+		$condition = array();
 		//0.8 Error: error pool
 		$error_pool = array();
 		//0.9 massenger
-		$msg = array(); 
-		//1. Table users
+		$msg = array("title"=>"Add New User"); 
 		
+		//1. Table Users 
+		//1.1 Add User
+		//1.4 Select User
+		if(!empty($_POST["user_role"])){
+			$condition["role"] = $_POST["user_role"];
+		}
+		$msg["tb_users"] = $tb_users -> where($condition) -> select();
+		
+		//9. RBAC
+		$msg["user_roles"] = $this->getUserRoles();
 		
 		//10. Display
-        $this->display();
+		$this->assign("error_pool",$error_pool);
+		$this->assign("msg",$msg);
+		$this->display();
     }
 
 	public function add(){
@@ -74,9 +87,28 @@ class UserAction extends CommonAction
 		//1.1 Add User
 		//1.2 Del User
 		//1.3 Edit User
-		if($_POST){
-			//kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+		if(isset($_GET["id"])){
+			if($_POST){
+				$data1["uid"] = trim($_GET["id"]);
+				$data1["role"] = trim($_POST["user_role"]);
+				$data1["user_name"] = trim($_POST["user_name"]);
+				$data1["user_email"] = trim($_POST["user_email"]);
+				$user_password = trim($_POST["user_password"]);
+				if(!empty($user_password)){
+					$data1["user_password"] = md5($user_password);
+				}
+				if($tb_users->save($data1)){
+					$this->success("User data Updated!");
+				}else{
+					$this->error("failed to update user!");
+				}
+			}
+		}else{
+			$this->assign("jumpUrl","/admin.php?s=User/index");
+			$this->error('User does not exist Failed');
 		}
+		
+		
 		//1.4 Select user
 		if(isset($_GET["id"])){
 			$user_id = trim($_GET["id"]);
@@ -85,11 +117,11 @@ class UserAction extends CommonAction
 				$msg["tb_users"] = $tb_users -> where(array("uid"=>$user_id)) -> find();
 			}else{
 				$this->assign("jumpUrl","/admin.php?s=User/index");
-				$this->Error('User does not exist Failed');
+				$this->error('User does not exist Failed');
 			}
 		}else{
 			$this->assign("jumpUrl","/admin.php?s=User/index");
-			$this->Error('User does not exist Failed');
+			$this->error('User does not exist Failed');
 		}
 		
 		

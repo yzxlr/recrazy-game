@@ -15,7 +15,7 @@
         
         
         <!-- start: include jack's css & js -->
-        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/css/common.css" rel="stylesheet" />
+        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/foradmin/css/common.css" rel="stylesheet" />
         <!-- end:   include jack's css & js -->
 <!-- end: include -->
 
@@ -47,7 +47,7 @@ $(document).ready(function(){
 <body>
 
 <div id="header">
-	<div id="header_left"><img src="<?php echo ($SITE_URL); ?>/public/jack/images/logo.jpg" /></div>
+	<div id="header_left"><img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/logo.jpg" /></div>
     <div id="header_right">
         <div id="header_right_control">Welcome back, <?php echo ($user["user_name"]); ?> / <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Public/logout">Logout</a> 
         </div>
@@ -55,7 +55,7 @@ $(document).ready(function(){
             <ul class="sf-menu">
             	<li><a href="<?php echo ($SITE_URL); ?>/admin.php">Dashboard</a></li>
                 <li class="current">
-                    <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Page/index">System</a>
+                    <a href="#">System</a>
                     <ul>
                         <li class="current">
                         	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/index">User</a>
@@ -116,7 +116,7 @@ $(document).ready(function(){
     <table>
         <thead>
             <tr>
-                <td colspan="2"><h3>Add New User</h3></td>
+                <td colspan="2"><h3>Edit User</h3></td>
             </tr>
         </thead>
         <tbody>
