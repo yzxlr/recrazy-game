@@ -90,7 +90,8 @@ class UserAction extends CommonAction
 		if(isset($_GET["id"])){
 			if($_POST){
 				$data1["uid"] = trim($_GET["id"]);
-				$data1["role"] = trim($_POST["user_role"]);
+				$data1["role"] = $_POST["user_role"];
+				$data1["user_status"] = $_POST["user_status"];
 				$data1["user_name"] = trim($_POST["user_name"]);
 				$data1["user_email"] = trim($_POST["user_email"]);
 				$user_password = trim($_POST["user_password"]);

@@ -126,8 +126,17 @@ $(document).ready(function(){
             <tr>
                 <td>Role:</td>
                 <td>
-                	<select value="user_role">
+                	<select name="user_role">
                     	<?php if(is_array($msg["user_roles"])): foreach($msg["user_roles"] as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>" <?php if(($vo["id"])  ==  $msg["tb_users"]["role"]): ?>selected="selected"<?php endif; ?>> <?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Status:</td>
+                <td>
+                	<select name="user_status">
+                        <option value="1" <?php if(($msg["tb_users"]["user_status"])  ==  "1"): ?>selected="selected"<?php endif; ?>>Active</option>
+                        <option value="0" <?php if(($msg["tb_users"]["user_status"])  ==  "0"): ?>selected="selected"<?php endif; ?>>Inactive</option>
                     </select>
                 </td>
             </tr>
