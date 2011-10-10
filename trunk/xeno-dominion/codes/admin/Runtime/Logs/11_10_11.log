@@ -288,3 +288,115 @@
 [ 2011-10-11T06:47:34+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003784s ]
 [ 2011-10-11T06:47:34+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `uid` = '3' ) LIMIT 1  [ RunTime:0.000259s ]
 [ 2011-10-11T06:47:34+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `uid` = '3' ) LIMIT 1  [ RunTime:0.000309s ]
+[ 2011-10-11T07:04:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004997s ]
+[ 2011-10-11T07:04:26+08:00 ] SQL: SELECT * FROM `ry_users` [ RunTime:0.000319s ]
+[ 2011-10-11T07:04:26+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:04:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004171s ]
+[ 2011-10-11T07:04:50+08:00 ] SQL: SELECT * FROM `ry_users` [ RunTime:0.000376s ]
+[ 2011-10-11T07:04:50+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:05:55+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003698s ]
+[ 2011-10-11T07:05:55+08:00 ] SQL: SELECT * FROM `ry_users` [ RunTime:0.000310s ]
+[ 2011-10-11T07:05:55+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:05:55+08:00 ] NOTIC: [8] Undefined index: page 1282e97849dec9495baef5755c79259c.php 第 144 行.
+[ 2011-10-11T07:10:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003936s ]
+[ 2011-10-11T07:10:38+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000341s ]
+[ 2011-10-11T07:10:38+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000327s ]
+[ 2011-10-11T07:10:38+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:10:38+08:00 ] NOTIC: [8] Undefined index: page 1282e97849dec9495baef5755c79259c.php 第 144 行.
+[ 2011-10-11T07:10:48+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003729s ]
+[ 2011-10-11T07:10:48+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000211s ]
+[ 2011-10-11T07:10:48+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000287s ]
+[ 2011-10-11T07:10:48+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:10:48+08:00 ] NOTIC: [8] Undefined index: page 1282e97849dec9495baef5755c79259c.php 第 144 行.
+[ 2011-10-11T07:11:22+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004139s ]
+[ 2011-10-11T07:11:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000300s ]
+[ 2011-10-11T07:11:22+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000246s ]
+[ 2011-10-11T07:11:22+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:11:25+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004426s ]
+[ 2011-10-11T07:11:25+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000316s ]
+[ 2011-10-11T07:11:25+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000449s ]
+[ 2011-10-11T07:11:25+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:11:27+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003756s ]
+[ 2011-10-11T07:11:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000274s ]
+[ 2011-10-11T07:11:27+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000299s ]
+[ 2011-10-11T07:11:27+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:11:34+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003978s ]
+[ 2011-10-11T07:11:34+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000289s ]
+[ 2011-10-11T07:11:34+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000248s ]
+[ 2011-10-11T07:11:34+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:11:37+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004082s ]
+[ 2011-10-11T07:11:37+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000225s ]
+[ 2011-10-11T07:11:37+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000346s ]
+[ 2011-10-11T07:11:37+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:11:42+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004085s ]
+[ 2011-10-11T07:11:42+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000277s ]
+[ 2011-10-11T07:11:42+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000346s ]
+[ 2011-10-11T07:11:42+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:11:48+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004264s ]
+[ 2011-10-11T07:11:48+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000256s ]
+[ 2011-10-11T07:11:48+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000238s ]
+[ 2011-10-11T07:11:48+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:12:06+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004048s ]
+[ 2011-10-11T07:12:06+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000359s ]
+[ 2011-10-11T07:12:06+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000302s ]
+[ 2011-10-11T07:12:06+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:12:09+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004086s ]
+[ 2011-10-11T07:12:09+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000306s ]
+[ 2011-10-11T07:12:09+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000366s ]
+[ 2011-10-11T07:12:09+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:12:13+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003787s ]
+[ 2011-10-11T07:12:13+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000281s ]
+[ 2011-10-11T07:12:13+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000264s ]
+[ 2011-10-11T07:12:13+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:13:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004053s ]
+[ 2011-10-11T07:13:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000743s ]
+[ 2011-10-11T07:13:01+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000457s ]
+[ 2011-10-11T07:13:01+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:13:22+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004047s ]
+[ 2011-10-11T07:13:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000292s ]
+[ 2011-10-11T07:13:22+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000293s ]
+[ 2011-10-11T07:13:22+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:15:40+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003812s ]
+[ 2011-10-11T07:15:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000291s ]
+[ 2011-10-11T07:15:40+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000575s ]
+[ 2011-10-11T07:15:40+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:16:02+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004434s ]
+[ 2011-10-11T07:16:02+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000319s ]
+[ 2011-10-11T07:16:02+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000246s ]
+[ 2011-10-11T07:16:02+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:16:29+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004115s ]
+[ 2011-10-11T07:16:29+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000258s ]
+[ 2011-10-11T07:16:29+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000239s ]
+[ 2011-10-11T07:16:29+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:16:31+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004133s ]
+[ 2011-10-11T07:16:31+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000311s ]
+[ 2011-10-11T07:16:31+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000401s ]
+[ 2011-10-11T07:16:31+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:16:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003821s ]
+[ 2011-10-11T07:16:32+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000248s ]
+[ 2011-10-11T07:16:32+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000252s ]
+[ 2011-10-11T07:16:33+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:16:36+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003779s ]
+[ 2011-10-11T07:16:36+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000217s ]
+[ 2011-10-11T07:16:36+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000356s ]
+[ 2011-10-11T07:16:36+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:16:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003930s ]
+[ 2011-10-11T07:16:38+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000227s ]
+[ 2011-10-11T07:16:38+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,2  [ RunTime:0.000369s ]
+[ 2011-10-11T07:16:38+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:38:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004976s ]
+[ 2011-10-11T07:38:32+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000314s ]
+[ 2011-10-11T07:38:32+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 2,2  [ RunTime:0.000401s ]
+[ 2011-10-11T07:38:32+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:38:45+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003808s ]
+[ 2011-10-11T07:38:45+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000243s ]
+[ 2011-10-11T07:38:45+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000259s ]
+[ 2011-10-11T07:38:45+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:41:03+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004002s ]
+[ 2011-10-11T07:41:03+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000352s ]
+[ 2011-10-11T07:41:03+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000349s ]
+[ 2011-10-11T07:41:03+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-11T07:42:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003978s ]
+[ 2011-10-11T07:42:21+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000300s ]
+[ 2011-10-11T07:42:21+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000569s ]
+[ 2011-10-11T07:42:21+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.

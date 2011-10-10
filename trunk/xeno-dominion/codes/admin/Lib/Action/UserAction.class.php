@@ -13,7 +13,9 @@ class UserAction extends CommonAction
 		//0.1 Global variables
 		//0.2 Define Tables
 		$tb_users = M("users");
-		//0/4 conditon 
+		//0.3 Page
+		import("ORG.Util.Page");
+		//0.4 conditon
 		$condition = array();
 		//0.8 Error: error pool
 		$error_pool = array();
@@ -23,10 +25,16 @@ class UserAction extends CommonAction
 		//1. Table Users 
 		//1.1 Add User
 		//1.4 Select User
-		if(!empty($_POST["user_role"])){
-			$condition["role"] = $_POST["user_role"];
-		}
-		$msg["tb_users"] = $tb_users -> where($condition) -> select();
+		//1.4.1 Post
+		//1.4.2 Pagging 
+		$count = $tb_users->where($condition)->count();
+		$Page = new Page($count,25);
+		$show = $Page->show();
+		$msg["page"]=$show;
+		//1.4.3 
+		$msg["tb_users"] = $tb_users -> where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
+		
+		
 		
 		//9. RBAC
 		$msg["user_roles"] = $this->getUserRoles();
@@ -42,10 +50,11 @@ class UserAction extends CommonAction
 		//0.1 Global variables
 		//0.2 Define Tables
 		$tb_users = M("users");
+		
 		//0.8 Error: error pool
 		$error_pool = array();
 		//0.9 massenger
-		$msg = array("title"=>"Add New User"); 
+		$msg = array("title"=>"List Users"); 
 		
 		//1. Table Users 
 		//1.1 Add User

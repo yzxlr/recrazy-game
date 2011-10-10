@@ -4,13 +4,7 @@
 	<div><h3>List Users</h3><a href="{$SITE_URL}/admin.php?s=User/add">[Add New User]</a></div>
 	<form action="#" method="post">
     <input type="hidden" name="uid" value="{$msg.tb_users.uid}" />
-    <select value="user_role">
-    	<option value="-1">ALL</option>
-        <foreach name="msg.user_roles" item="vo">
-            <option value="{$vo.id}" > {$vo.name}</option>
-        </foreach>
-    </select>
-    <input type="submit" value="Refresh" />
+    </form>
     <table>
         <thead>
             <tr>
@@ -35,7 +29,7 @@
             </volist>
         </tbody>
     </table>
-    </form>
+    <div>{$msg.page}</div>
 </div>
 
 
