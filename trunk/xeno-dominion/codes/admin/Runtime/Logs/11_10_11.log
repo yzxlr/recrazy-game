@@ -1,0 +1,5 @@
+[ 2011-10-11T01:18:29+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004126s ]
+[ 2011-10-11T01:18:29+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-11T01:18:41+08:00 ] ERR: (ThinkException) Access denied for user 'recrazy'@'localhost' (using password: YES)
+[ 2011-10-11T01:18:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003953s ]
+[ 2011-10-11T01:18:50+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
