@@ -4,6 +4,14 @@
 
 //jack调试用 （另外的调试设置在 admin/conf/config.php中的末尾）
 define('NO_CACHE_RUNTIME',True);//不生成runtime文件
+//firePHP
+require_once('./public/FirePHPCore/FirePHP.class.php');
+$firephp = FirePHP::getInstance(true);
+$var = array('i'=>10, 'j'=>20);
+//$firephp->log($var, 'Iterators');
+require_once('./public/FirePHPCore/fb.php');
+//FB::send("These two messages came from /admin.php");
+//firePHP ends
 
 
 // 定丿ThinkPHP框架路徂
