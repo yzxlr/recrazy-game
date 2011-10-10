@@ -2,6 +2,7 @@
 
 <div id="content">
 	<form action="#" method="post">
+    <input type="hidden" name="uid" value="{$msg.tb_users.uid}" />
     <table>
         <thead>
             <tr>
@@ -17,18 +18,18 @@
                 <td>
                 	<select value="user_role">
                     	<foreach name="msg.user_roles" item="vo">
-                        	<option value="{$vo.id}">{$vo.name}</option>
+                        	<option value="{$vo.id}" <eq name="vo.id" value="$msg.tb_users.role">selected="selected"</eq>> {$vo.name}</option>
                         </foreach>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td>User Name:</td>
-                <td><input type="text" name="user_name" value="" /></td>
+                <td><input type="text" name="user_name" value="{$msg.tb_users.user_name}" /></td>
             </tr>
             <tr>
                 <td>User Email:</td>
-                <td><input type="text" name="user_email" value="" /></td>
+                <td><input type="text" name="user_email" value="{$msg.tb_users.user_email}" /></td>
             </tr>
             <tr>
                 <td>Password : </td>
@@ -36,7 +37,7 @@
             </tr>
              <tr>
                 <td></td>
-                <td><input type="submit" value="Add" /></td>
+                <td><input type="submit" value="Update" /></td>
             </tr>
         </tbody>
     </table>
