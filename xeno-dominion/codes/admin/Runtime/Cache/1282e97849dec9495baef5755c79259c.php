@@ -111,14 +111,10 @@ $(document).ready(function(){
 <div id="wrapper">
 
 <div id="content">
-	<h3>List Users</h3>
+	<div><h3>List Users</h3><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">[Add New User]</a></div>
 	<form action="#" method="post">
     <input type="hidden" name="uid" value="<?php echo ($msg["tb_users"]["uid"]); ?>" />
-    <select value="user_role">
-    	<option value="-1">ALL</option>
-        <?php if(is_array($msg["user_roles"])): foreach($msg["user_roles"] as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>" > <?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
-    </select>
-    <input type="submit" value="Refresh" />
+    </form>
     <table>
         <thead>
             <tr>
@@ -126,6 +122,7 @@ $(document).ready(function(){
                 <td>Role</td>
                 <td>User Name</td>
                 <td>User Email</td>
+                <td>Status</td>
                 <td>Options</td>
             </tr>
         </thead>
@@ -135,11 +132,12 @@ $(document).ready(function(){
                 <td><?php echo ($vo["role"]); ?></td>
                 <td><?php echo ($vo["user_name"]); ?></td>
                 <td><?php echo ($vo["user_email"]); ?></td>
+                <td><?php echo ($vo["user_status"]); ?></td>
                 <td><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/edit/id/<?php echo ($vo["uid"]); ?>">Edit</a></td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
-    </form>
+    <div><?php echo ($msg["page"]); ?></div>
 </div>
 
 
