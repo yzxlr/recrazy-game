@@ -1,1 +1,22 @@
-[ 2011-10-16T05:12:00+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004824s ]
+[ 2011-10-16T03:12:10+08:00 ] ERR: (ThinkException) Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+[ 2011-10-16T04:23:13+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005290s ]
+[ 2011-10-16T04:23:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.010453s ]
+[ 2011-10-16T04:23:24+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.034029s ]
+[ 2011-10-16T04:23:24+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000882s ]
+[ 2011-10-16T04:23:28+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004237s ]
+[ 2011-10-16T04:23:28+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-16T04:23:48+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003414s ]
+[ 2011-10-16T04:23:48+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000595s ]
+[ 2011-10-16T04:23:48+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000652s ]
+[ 2011-10-16T04:23:48+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-16T04:24:25+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003141s ]
+[ 2011-10-16T04:24:25+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `uid` = '1' ) LIMIT 1  [ RunTime:0.009885s ]
+[ 2011-10-16T04:24:25+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `uid` = '1' ) LIMIT 1  [ RunTime:0.000914s ]
+[ 2011-10-16T04:31:07+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009017s ]
+[ 2011-10-16T04:31:07+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-16T04:32:28+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.006536s ]
+[ 2011-10-16T04:32:28+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-16T04:32:42+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003911s ]
+[ 2011-10-16T04:32:42+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.042744s ]
+[ 2011-10-16T04:32:42+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000842s ]
+[ 2011-10-16T04:32:42+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
