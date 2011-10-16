@@ -1,2 +1,20 @@
 [ 2011-10-16T05:29:23+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003740s ]
 [ 2011-10-16T05:29:23+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-16T13:21:31+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005747s ]
+[ 2011-10-16T13:21:37+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003831s ]
+[ 2011-10-16T13:21:37+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000454s ]
+[ 2011-10-16T13:21:37+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000358s ]
+[ 2011-10-16T13:21:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003823s ]
+[ 2011-10-16T13:21:38+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-16T13:22:31+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003668s ]
+[ 2011-10-16T13:22:31+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000250s ]
+[ 2011-10-16T13:22:31+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000247s ]
+[ 2011-10-16T13:22:31+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-16T13:22:33+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003696s ]
+[ 2011-10-16T13:22:36+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003894s ]
+[ 2011-10-16T13:22:36+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000244s ]
+[ 2011-10-16T13:22:36+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000247s ]
+[ 2011-10-16T13:22:36+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-16T13:22:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003750s ]
+[ 2011-10-16T13:22:38+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `uid` = '1' ) LIMIT 1  [ RunTime:0.000290s ]
+[ 2011-10-16T13:22:38+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `uid` = '1' ) LIMIT 1  [ RunTime:0.000206s ]
