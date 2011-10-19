@@ -1,7 +1,7 @@
 开发配置：
 
 1
-	C:\wamp\www\recrazy\ 目录下checkout https://recrazy-game.googlecode.com/svn/trunk/
+	C:\wamp\www\recrazy\recrazy-game 目录下checkout https://recrazy-game.googlecode.com/svn/trunk/
 
 
 
