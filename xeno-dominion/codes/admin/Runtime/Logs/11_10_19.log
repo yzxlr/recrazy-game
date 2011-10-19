@@ -1,0 +1,10 @@
+[ 2011-10-19T09:51:34+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005928s ]
+[ 2011-10-19T09:51:41+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.008014s ]
+[ 2011-10-19T09:51:41+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.001196s ]
+[ 2011-10-19T09:51:41+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000968s ]
+[ 2011-10-19T09:51:43+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.007895s ]
+[ 2011-10-19T09:51:43+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-19T09:51:46+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.008383s ]
+[ 2011-10-19T09:51:46+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000906s ]
+[ 2011-10-19T09:51:46+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000982s ]
+[ 2011-10-19T09:51:46+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
