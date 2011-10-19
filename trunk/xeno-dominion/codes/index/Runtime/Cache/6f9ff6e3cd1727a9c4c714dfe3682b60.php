@@ -15,7 +15,7 @@
         
         
         <!-- start: include jack's css & js -->
-        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/foradmin/css/common.css" rel="stylesheet" />
+        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/forindex/css/common.css" rel="stylesheet" />
         <!-- end:   include jack's css & js -->
 <!-- end: include -->
 
