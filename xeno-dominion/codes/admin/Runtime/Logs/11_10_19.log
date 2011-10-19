@@ -8,3 +8,6 @@
 [ 2011-10-19T09:51:46+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000906s ]
 [ 2011-10-19T09:51:46+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000982s ]
 [ 2011-10-19T09:51:46+08:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 116 行.
+[ 2011-10-19T10:19:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009550s ]
+[ 2011-10-19T10:19:01+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-19T10:20:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009195s ]
