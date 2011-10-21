@@ -17,10 +17,10 @@ class CommonAction extends Action
 		$this->assign("SITE_URL",$url);
 		//define("SITE_URL",$url);
 		
-		//1 Validate User (only admin can login at here
+		//1 Validate User (only biz can login at here
 		if(!empty($_SESSION["user"])){
 			$this->user = $_SESSION["user"];
-			if($this->user["role"]==10){
+			if($this->user["role"]<=10){
 				$this->assign("user",$this->user);
 			}else{
 				$this->assign("jumpUrl","/biz.php?s=Public/login");
