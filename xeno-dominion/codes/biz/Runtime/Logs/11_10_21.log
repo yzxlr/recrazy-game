@@ -18,3 +18,8 @@
 [ 2011-10-21T09:07:28+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.077137s ]
 [ 2011-10-21T09:07:28+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.001010s ]
 [ 2011-10-21T09:07:29+08:00 ] NOTIC: [8] Undefined variable: msg a69977ed82c089ba2e40f5f2f3f96fe3.php 第 23 行.
+[ 2011-10-21T09:35:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005200s ]
+[ 2011-10-21T09:35:53+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009192s ]
+[ 2011-10-21T09:35:53+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000990s ]
+[ 2011-10-21T09:35:53+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.001023s ]
+[ 2011-10-21T09:35:55+08:00 ] NOTIC: [8] Undefined variable: msg a69977ed82c089ba2e40f5f2f3f96fe3.php 第 23 行.
