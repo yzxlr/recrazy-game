@@ -224,3 +224,20 @@
 [ 2011-10-23T04:21:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003930s ]
 [ 2011-10-23T04:21:32+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000325s ]
 [ 2011-10-23T04:21:32+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-10-23T05:03:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.052994s ]
+[ 2011-10-23T05:03:04+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003623s ]
+[ 2011-10-23T05:03:04+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.016984s ]
+[ 2011-10-23T05:03:04+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000406s ]
+[ 2011-10-23T05:03:05+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003665s ]
+[ 2011-10-23T05:03:05+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-23T05:03:09+08:00 ] ERR: (ThinkException) 模板不存在[./admin/Tpl/default/Productscategory/index.html]
+[ 2011-10-23T05:07:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004111s ]
+[ 2011-10-23T05:07:21+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000377s ]
+[ 2011-10-23T05:07:21+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000228s ]
+[ 2011-10-23T05:07:21+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=1 LIMIT 1  [ RunTime:0.000459s ]
+[ 2011-10-23T05:07:21+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=3 LIMIT 1  [ RunTime:0.000268s ]
+[ 2011-10-23T05:07:21+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-10-23T05:07:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003947s ]
+[ 2011-10-23T05:07:24+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000344s ]
+[ 2011-10-23T05:07:24+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '1' ) LIMIT 1  [ RunTime:0.000372s ]
+[ 2011-10-23T05:07:24+08:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 45 行.
