@@ -13,6 +13,8 @@ require_once('./public/FirePHPCore/fb.php');
 //FB::send("These two messages came from /admin.php");
 //firePHP ends
 
+define("CMS_PATH", $_SERVER['DOCUMENT_ROOT'].''); 
+
 
 // 定丿ThinkPHP框架路徂
 define('THINK_PATH', './ThinkPHP/');
