@@ -172,5 +172,9 @@ class ProductscategoryAction extends CommonAction{
 			$this->error($_LANG['error']['fail_control']);
 		}
 	}
+	
+	public function lang_index(){
+		
+	}
 }
 ?>

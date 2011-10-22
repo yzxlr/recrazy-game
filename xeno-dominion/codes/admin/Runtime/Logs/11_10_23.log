@@ -241,3 +241,48 @@
 [ 2011-10-23T05:07:24+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000344s ]
 [ 2011-10-23T05:07:24+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '1' ) LIMIT 1  [ RunTime:0.000372s ]
 [ 2011-10-23T05:07:24+08:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 45 行.
+[ 2011-10-23T05:08:34+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004005s ]
+[ 2011-10-23T05:08:34+08:00 ] SQL: UPDATE `ry_products_cat` SET `cat_name`='化妆品x',`parent_id`='0',`sort_order`=0,`is_show`=1 WHERE cat_id=1 [ RunTime:0.000546s ]
+[ 2011-10-23T05:08:35+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003965s ]
+[ 2011-10-23T05:08:35+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000391s ]
+[ 2011-10-23T05:08:35+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '1' ) LIMIT 1  [ RunTime:0.000203s ]
+[ 2011-10-23T05:08:35+08:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 45 行.
+[ 2011-10-23T05:08:39+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004145s ]
+[ 2011-10-23T05:08:39+08:00 ] SQL: UPDATE `ry_products_cat` SET `cat_name`='化妆品',`parent_id`='0',`sort_order`=0,`is_show`=1 WHERE cat_id=1 [ RunTime:0.000565s ]
+[ 2011-10-23T05:08:40+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003966s ]
+[ 2011-10-23T05:08:40+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000420s ]
+[ 2011-10-23T05:08:40+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '1' ) LIMIT 1  [ RunTime:0.000270s ]
+[ 2011-10-23T05:08:40+08:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 45 行.
+[ 2011-10-23T05:08:42+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004400s ]
+[ 2011-10-23T05:08:42+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000438s ]
+[ 2011-10-23T05:08:42+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-10-23T05:08:51+08:00 ] ERR: (ThinkException) 无法加载模块Category
+[ 2011-10-23T05:11:18+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003733s ]
+[ 2011-10-23T05:11:18+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000327s ]
+[ 2011-10-23T05:11:18+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-10-23T05:11:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003623s ]
+[ 2011-10-23T05:11:21+08:00 ] SQL: INSERT INTO `ry_products_cat` (`cat_name`,`parent_id`,`sort_order`,`is_show`) VALUES ('test3','1',0,1) [ RunTime:0.000312s ]
+[ 2011-10-23T05:11:22+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003616s ]
+[ 2011-10-23T05:11:22+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000339s ]
+[ 2011-10-23T05:11:22+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-10-23T05:20:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003655s ]
+[ 2011-10-23T05:20:32+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000304s ]
+[ 2011-10-23T05:20:32+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000193s ]
+[ 2011-10-23T05:20:32+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=1 LIMIT 1  [ RunTime:0.000176s ]
+[ 2011-10-23T05:20:32+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=3 LIMIT 1  [ RunTime:0.000165s ]
+[ 2011-10-23T05:20:32+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=4 LIMIT 1  [ RunTime:0.000165s ]
+[ 2011-10-23T05:20:32+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-10-23T05:47:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004891s ]
+[ 2011-10-23T05:47:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000359s ]
+[ 2011-10-23T05:47:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000205s ]
+[ 2011-10-23T05:47:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=1 LIMIT 1  [ RunTime:0.000181s ]
+[ 2011-10-23T05:47:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=3 LIMIT 1  [ RunTime:0.000169s ]
+[ 2011-10-23T05:47:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=4 LIMIT 1  [ RunTime:0.000168s ]
+[ 2011-10-23T05:47:50+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-10-23T05:49:48+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003783s ]
+[ 2011-10-23T05:49:48+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000373s ]
+[ 2011-10-23T05:49:48+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000190s ]
+[ 2011-10-23T05:49:48+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=1 LIMIT 1  [ RunTime:0.000172s ]
+[ 2011-10-23T05:49:48+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=3 LIMIT 1  [ RunTime:0.000170s ]
+[ 2011-10-23T05:49:48+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=4 LIMIT 1  [ RunTime:0.000166s ]
+[ 2011-10-23T05:49:48+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
