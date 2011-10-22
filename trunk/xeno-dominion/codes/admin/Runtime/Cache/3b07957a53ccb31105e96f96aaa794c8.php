@@ -85,8 +85,8 @@ $(document).ready(function(){
                 <li class="current">
                     <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">Product</a>
                     <ul>
-                    	<li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productcategory/index">List Category</a></li>
-                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productcategory/add">Add Category</a></li>
+                    	<li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/index">List Category</a></li>
+                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/add">Add Category</a></li>
                         <li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">List Product</a></li>
                         <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/add">Add New Product</a></li>
                     </ul>
