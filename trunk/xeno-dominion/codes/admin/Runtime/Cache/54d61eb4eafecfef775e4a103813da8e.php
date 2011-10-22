@@ -219,9 +219,10 @@ function do_change_sort(cat_id)
 	<th width="5%">选择</th>
 	<th width="42%">分类名</th>
 	<th width="14%">父类ID</th>
-	<th width="13%">排序</th>
-	<th width="8%">显示</th>
-	<th width="10%">操作</th>
+	<th width="10%">排序</th>
+	<th width="6%">显示</th>
+	<th width="7%">操作</th>
+    <th width="">语言</th>
 </tr>
 
 <?php if(is_array($categoty)): foreach($categoty as $key=>$data): ?><?php if($data["cat_id"] != '' ): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
@@ -232,6 +233,7 @@ function do_change_sort(cat_id)
 	<td><span id="sort_<?php echo ($data["cat_id"]); ?>"><a><?php echo ($data["sort_order"]); ?></a></span></td>
 	<td id="is_show_<?php echo ($data["cat_id"]); ?>"><?php if($data["is_show"] == 1): ?><a>是</a><?php else: ?> <a>否</a><?php endif; ?></td>
 	<td><a href="__URL__/edit/cat_id/<?php echo ($data["cat_id"]); ?>">编辑</a> | <a href="__URL__/act_add/act/del_category/id/<?php echo ($data["cat_id"]); ?>">删除</a></td>
+    <td><a href="__URL__/lang_index/cat_id/<?php echo ($data["cat_id"]); ?>">列表</a></td>
 </tr><?php endif; ?><?php endforeach; endif; ?>
 <tr bgcolor="#FAFAF1">
 <td height="28" colspan="10">

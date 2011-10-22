@@ -1,0 +1,44 @@
+<include file="Public:header" />
+
+<div id="content">
+<!--  内容列表   -->
+<form name="form2" style="margin-bottom:0px;">
+<table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
+<tr bgcolor="#E7E7E7">
+	<td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">语言列表</span><span style="float:right;"></span></td>
+</tr>
+<tr align="center" bgcolor="#FAFAF1" height="22">
+	<th width="8%">ID</th>
+	<th width="5%">选择</th>
+	<th width="42%">分类名</th>
+	<th width="14%">父类ID</th>
+	<th width="13%">排序</th>
+	<th width="8%">显示</th>
+	<th width="10%">操作</th>
+</tr>
+
+<foreach name="categoty" item="data" >
+<if condition="$data.cat_id neq '' ">
+<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+	<td>{$data.cat_id}</td>
+	<td><input name="id" type="checkbox" id="id" value="{$data.cat_id}" class="np"></td>
+	<td align="left"><a href='__URL__/edit/cat_id/{$data.cat_id}'><u>{$data.cat_name}</u></a></td>
+	<td>{$data.parent_id}</td>
+	<td><span id="sort_{$data.cat_id}"><a>{$data.sort_order}</a></span></td>
+	<td id="is_show_{$data.cat_id}"><if condition="$data.is_show eq 1"><a>是</a><else /> <a>否</a></if></td>
+	<td><a href="__URL__/edit/cat_id/{$data.cat_id}">编辑</a> | <a href="__URL__/act_add/act/del_category/id/{$data.cat_id}">删除</a></td>
+</tr>
+</if>
+</foreach>
+<tr bgcolor="#FAFAF1">
+<td height="28" colspan="10">
+	&nbsp;
+	<a href="javascript:selAll()" class="coolbg">全选</a>
+	<a href="javascript:noSelAll()" class="coolbg">取消</a>
+	<a href="javascript:delArc(0)" class="coolbg">&nbsp;删除&nbsp;</a>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<include file="Public:footer" />
