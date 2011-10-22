@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文档管理</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/base.css">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/jq.css" type="text/css" media="print, projection, screen" />
+<link rel="stylesheet" href="__PUBLIC__/admin/css/blue/style.css" type="text/css" media="print, projection, screen" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.tablesorter.js"></script>
+<script language="javascript">
+function delArc(aid){
+	var id=getCheckboxItem();
+	if(id)
+	{
+	  if(confirm("是否将分类删除?")){ 
+	    location="__URL__/act_add/act/del_category/id/"+id;
+      }
+	}else{
+	    alert('请选择删除的分类');
+	}
+}
+
+//获得选中文件的文件名
+function getCheckboxItem()
+{
+	var allSel="";
+	if(document.form2.id.value) return document.form2.id.value;
+	for(i=0;i<document.form2.id.length;i++)
+	{
+		if(document.form2.id[i].checked)
+		{
+			if(allSel=="")
+				allSel=document.form2.id[i].value;
+			else
+				allSel=allSel+","+document.form2.id[i].value;
+		}
+	}
+	return allSel;
+}
+
+function selAll()
+{
+	for(i=0;i<document.form2.id.length;i++)
+	{
+		if(!document.form2.id[i].checked)
+		{
+			document.form2.id[i].checked=true;
+		}
+	}
+}
+function noSelAll()
+{
+	for(i=0;i<document.form2.id.length;i++)
+	{
+		if(document.form2.id[i].checked)
+		{
+			document.form2.id[i].checked=false;
+		}
+	}
+}
+
+function change_status(cat_id,value)
+{
+  var show_id = 'is_show_' + cat_id;
+  document.getElementById(show_id).innerHTML = "<input type='text' name='is_show' size='8' value='"+value+"'>";
+}
+$(document).ready(function() {
+	$("table").tablesorter();
+}); 		
+</script>
+</head>
+<body leftmargin="8" topmargin="8" background='__PUBLIC__/admin/images/allbg.gif'>
+
+<!--  快速转换位置按钮  -->
+<!--<table width="98%" border="0" cellpadding="0" cellspacing="1" bgcolor="#D1DDAA" align="center">
+<tr>
+ <td height="26" background="__PUBLIC__/admin/images/newlinebg3.gif">
+  <table width="98%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+  <td align="center">
+    <div align="right">
+      <input type='button' class="coolbg np" onClick="location='__APP__/category/add';" value='添加分类' />
+       </div></td>
+ </tr>
+</table>
+</td>
+</tr>
+</table> -->
+  
+<!--  内容列表   -->
+<form name="form2" style="margin-bottom:0px;">
+<table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;" class="tablesorter">
+<div style="width:100%; margin-left:auto; margin-right:auto; background-color: #E7E7E7; padding-left:5px; padding-top:5px; height:23px;">
+ <div style="float:left;"> 新闻分类列表</div>
+ <div style="float:right; margin-right:5px;"><a href="__APP__/category/add" style="color:#FF0000;font-size:12px; font-weight:bold">添加分类</a></div>
+ </div>
+<thead>
+<tr align="center" bgcolor="#FAFAF1" height="22">
+	<th width="8%">ID</th>
+	<th width="5%">选择</th>
+	<th width="42%">分类名</th>
+	<th width="14%">父类ID</th>
+	<th width="13%">排序</th>
+	<th width="8%">显示</th>
+	<th width="10%">操作</th>
+</tr>
+</thead>
+<tbody>
+<foreach name="categoty" item="data" >
+<if condition="$data.cat_id neq '' ">
+<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+	<td>{$data.cat_id}</td>
+	<td><input name="id" type="checkbox" id="id" value="{$data.cat_id}" class="np"></td>
+	<td align="left"><a href=''><u>{$data.cat_name}</u></a></td>
+	<td>{$data.parent_id}</td>
+	<td>{$data.sort_order}</td>
+	<td id="is_show_{$data.cat_id}"><if condition="$data.is_show eq 1"><a href="javascript:;" onClick="change_status('{$data.cat_id}','是')">是</a><else /> <a href="javascript:;" onClick="change_status('{$data.cat_id}','否')">否</a></if></td>
+	<td><a href="__URL__/edit/cat_id/{$data.cat_id}">编辑</a> | <a href="__URL__/act_add/act/del_category/id/{$data.cat_id}">删除</a></td>
+</tr>
+</if>
+</foreach>
+</tbody>
+</table>
+</form>
+<div style="width:100%; margin-left:auto; margin-right:auto; background-color:#E7E7E7; padding-left:5px; padding-top:5px; height:30px;">
+<a href="javascript:selAll()" class="coolbg">全选</a>
+<a href="javascript:noSelAll()" class="coolbg">取消</a>
+<a href="javascript:delArc()" class="coolbg">&nbsp;删除&nbsp;</a>
+</div>
+</body>
+</html>
