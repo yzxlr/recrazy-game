@@ -174,7 +174,70 @@ class ProductscategoryAction extends CommonAction{
 	}
 	
 	public function lang_index(){
+		//0. Initialization
+		$tb_productsCat = M("productsCat");
+		$tb_productsCatLang = M("productsCatLang");
+		import("ORG.Util.Page");
+		$condition = array();
+		$msg = array("title"=>"List Language"); 
+		$data = array();
 		
+		//1 Table products_cat
+		if(!empty($_GET['cat_id'])){
+			$data["tb_productsCat"]=$tb_productsCat -> where(array("cat_id"=>$_GET["cat_id"])) -> find();
+		}
+		
+		//2. Table products_cat_lang
+		if(!empty($_GET['cat_id'])){
+			$condition = array("cat_id"=>$_GET['cat_id']);
+			$data["productsCatLang"]=$tb_productsCatLang->where($condition)->select();
+		}
+		
+		//10. Display
+		$this->assign("msg",$msg);
+		$this->assign("data",$data);
+		$this->display();
+	}
+	
+	public function lang_add(){
+		//0. Initialization
+		$tb_productsCat = M("productsCat");
+		$tb_productsCatLang = M("productsCatLang");
+		$tb_langs = M("langs");
+		$condition = array();
+		$msg = array("title"=>"List Language"); 
+		$data = array();
+		
+		//1 Table products_cat
+		if(!empty($_GET['cat_id'])){
+			$data["tb_productsCat"]=$tb_productsCat -> where(array("cat_id"=>$_GET["cat_id"])) -> find();
+		}
+		
+		//2 Table langs
+		$data["tb_langs"]= $tb_langs -> select();
+		
+		//3 Table products_cat_lang
+		if(!empty($_POST['cat_id'])){
+			$data3["cat_id"] = $_POST["cat_id"];
+			$data3["lang_code"] = $_POST["lang_code"];
+			$data3["cat_name"]= $_POST["cat_name"];
+			$the_lang = $tb_langs->where(array("lang_code"=>$data3["lang_code"]))->find();
+			$data3["lang_name"]= $the_lang["language"];
+			if($tb_productsCatLang->add($data3)){
+				echo "YES";
+			}else{
+				echo "NO";
+			}
+		}
+		
+		//10. Display
+		$this->assign("msg",$msg);
+		$this->assign("data",$data);
+		$this->display();
+	}
+	
+	public function lang_edit(){
+		$this->display();
 	}
 }
 ?>
