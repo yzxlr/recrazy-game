@@ -224,9 +224,9 @@ class ProductscategoryAction extends CommonAction{
 			$the_lang = $tb_langs->where(array("lang_code"=>$data3["lang_code"]))->find();
 			$data3["lang_name"]= $the_lang["language"];
 			if($tb_productsCatLang->add($data3)){
-				echo "YES";
+				$msg["info"]=array("class"=>"success","text"=>"New language added.");
 			}else{
-				echo "NO";
+				$msg["info"]=array("class"=>"error","text"=>"Add language failed. The desire category is already exist.");
 			}
 		}
 		
@@ -237,6 +237,45 @@ class ProductscategoryAction extends CommonAction{
 	}
 	
 	public function lang_edit(){
+		//0. Initialization
+		$tb_productsCat = M("productsCat");
+		$tb_productsCatLang = M("productsCatLang");
+		$tb_langs = M("langs");
+		$condition = array();
+		$msg = array("title"=>"List Language"); 
+		$data = array();
+		
+		//1 Table products_cat
+		if(!empty($_GET['cat_id'])){
+			$data["tb_productsCat"]=$tb_productsCat -> where(array("cat_id"=>$_GET["cat_id"])) -> find();
+		}
+		
+		//2 Table langs
+		$data["tb_langs"]= $tb_langs -> select();
+		
+		//3 Table products_cat
+		//3.3 update
+		if(!empty($_POST['cat_id'])){
+			//$data3["cat_id"] = $_POST["cat_id"];
+			$data3["lang_code"] = $_POST["lang_code"];
+			$data3["cat_name"]= $_POST["cat_name"];
+			$the_lang = $tb_langs->where(array("lang_code"=>$data3["lang_code"]))->find();
+			$data3["lang_name"]= $the_lang["language"];
+			var_dump($data3);
+			if($tb_productsCatLang->where(array("catlang_id"=>$_GET["catlang_id"]))->save($data3)){
+				$msg["info"]=array("class"=>"success","text"=>"Category language updated.");
+			}else{
+				$msg["info"]=array("class"=>"error","text"=>"Category language update failed.");
+			}
+		}
+		//3.4 select
+		if(!empty($_GET['catlang_id'])){
+			$data["tb_productsCatLang"]=$tb_productsCatLang -> where(array("catlang_id"=>$_GET["catlang_id"])) -> find();
+		}
+		
+		//10. Display
+		$this->assign("msg",$msg);
+		$this->assign("data",$data);
 		$this->display();
 	}
 }

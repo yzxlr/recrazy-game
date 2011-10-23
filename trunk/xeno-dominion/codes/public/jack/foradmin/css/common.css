@@ -31,3 +31,11 @@
 	height:100px;
 	background-color:#6CF; 
 } 
+
+.error {
+	background-color:#F9F;
+}
+
+.success{
+	background-color:#6CF;
+}
