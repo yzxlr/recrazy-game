@@ -107,7 +107,7 @@ $(document).ready(function(){
     </div>
     
 </div>
-
+<div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
 <div id="content">
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -121,38 +121,29 @@ $(document).ready(function(){
     <td height="1" style='padding:0px'></td>
   </tr>
 </table>
-<form id="add_cat" name="add_cat" method="post" action="__APP__/Productscategory/act_add">
+<form id="add_cat" name="add_cat" method="post" action="__APP__/Productscategory/lang_edit/cat_id/<?php echo ($_GET['cat_id']); ?>/catlang_id/<?php echo ($_GET['catlang_id']); ?>">
+<input type="hidden" name="cat_id" value="<?php echo ($_GET['cat_id']); ?>" />
 <table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
   <tr>
-    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>修改分类</span></td>
+    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>为 <?php echo ($data["tb_productsCat"]["cat_name"]); ?> 分类修改语言和内容</span></td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">分类名称&nbsp; </div></td>
-    <td width="82%"><input name="category_name" type="text" size="30" value="<?php echo ($cat_data["cat_name"]); ?>"/>&nbsp; <font color="#FF0000">*</font></td>
+    <td width="82%"><input name="cat_name" value="<?php echo ($data["tb_productsCatLang"]["cat_name"]); ?>" type="text" size="30"/>&nbsp; <font color="#FF0000">*</font></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">上级分类&nbsp; </div></td>
+    <td width="18%"><div align="right">语言&nbsp; </div></td>
     <td width="82%">
-	<select name="parent_category" id="parent_category">
-	  <?php if(is_array($categoty)): $i = 0; $__LIST__ = $categoty;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): ++$i;$mod = ($i % 2 )?><option value="<?php echo ($key); ?>" <?php if($key == $cat_data["parent_id"] ): ?>selected="selected"<?php endif; ?>><?php echo ($data); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-	</select>	</td>
-  </tr>
-   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">排序&nbsp; </div></td>
-    <td width="82%"><input name="category_sort" type="text" size="30" value="<?php echo ($cat_data["sort_order"]); ?>"/></td>
-  </tr>
-  <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">是否显示&nbsp; </div></td>
-    <td width="82%"><input name="is_show" type="radio" id="is_show"  style="border:0px;" value="1" <?php if($cat_data["is_show"] == 1): ?>checked<?php endif; ?> />
-    是  <input type="radio" style="border:0px;" name="is_show" id="is_show" value="0" <?php if($cat_data["is_show"] == 0): ?>checked<?php endif; ?> />否 </td>
+    	<select name="lang_code">
+    	<?php if(is_array($data["tb_langs"])): foreach($data["tb_langs"] as $key=>$vo): ?><option value="<?php echo ($vo["lang_code"]); ?>" <?php if(($vo["lang_code"])  ==  $data["tb_productsCatLang"]["lang_code"]): ?>selected="selected"<?php endif; ?> ><?php echo ($vo["language"]); ?></option><?php endforeach; endif; ?>
+        </select>
+    </td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td colspan="2">
-	<div align="center"><input type="submit" name="Submit" value="确定"> 
-	<input type="hidden" name="act" value="update_category"/>
-	<input type="hidden" name="cat_id" value="<?php echo ($cat_data["cat_id"]); ?>"/>
-&nbsp;	
-<input type="reset" name="chongzhi" value="重置">
+	<div align="center">
+    	<input type="submit" name="Submit" value="确定"> 
+		<input type="reset" name="chongzhi" value="重置">
 	</div>
 	</td>
   </tr>

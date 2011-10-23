@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -109,38 +109,53 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-
 <div id="content">
-<!--  内容列表   -->
-<form name="form2" style="margin-bottom:0px;">
-<table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
-<tr bgcolor="#E7E7E7">
-	<td height="30" colspan="10">
-    	<span style="float:left; padding-top:3px; padding-left:5px;"><?php echo ($data["tb_productsCat"]["cat_name"]); ?> 分类下的语言列表</span>
-        <span style="float:right;"><a href="__URL__/lang_add/cat_id/<?php echo ($_GET['cat_id']); ?>">添加语言</a></span>
-    </td>
-</tr>
-<tr align="center" bgcolor="#FAFAF1" height="22">
-	<th width="8%">ID</th>
-	<th width="13%">类名</th>
-	<th width="14%">语言</th>
-	<th width="10%">操作</th>
-</tr>
-
-<?php if(is_array($data["productsCatLang"])): foreach($data["productsCatLang"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-	<td><?php echo ($vo["catlang_id"]); ?></td>
-	<td><?php echo ($vo["cat_name"]); ?></td>
-	<td><?php echo ($vo["lang_name"]); ?></td>
-	<td>
-    	<a href="__URL__/lang_edit/cat_id/<?php echo ($_GET['cat_id']); ?>/catlang_id/<?php echo ($vo["catlang_id"]); ?>">编辑</a> | 
-    	<a href="__URL__/lang_del/cat_id/<?php echo ($_GET['cat_id']); ?>/catlang_id/<?php echo ($vo["catlang_id"]); ?>">删除</a>
-    </td>
-</tr><?php endforeach; endif; ?>
-<tr bgcolor="#FAFAF1">
-<td height="28" colspan="10">
-	--
-</td>
-</tr>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      <div style='float:right;padding-right:8px;'>
+        <!--  //保留接口  -->
+      </div></td>
+  </tr>
+  <tr>
+    <td height="1" style='padding:0px'></td>
+  </tr>
+</table>
+<form id="add_cat" name="add_cat" method="post" action="__APP__/Productscategory/act_add">
+<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
+  <tr>
+    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>修改分类</span></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">分类名称&nbsp; </div></td>
+    <td width="82%"><input name="category_name" type="text" size="30" value="<?php echo ($cat_data["cat_name"]); ?>"/>&nbsp; <font color="#FF0000">*</font></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">上级分类&nbsp; </div></td>
+    <td width="82%">
+	<select name="parent_category" id="parent_category">
+	  <?php if(is_array($categoty)): $i = 0; $__LIST__ = $categoty;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): ++$i;$mod = ($i % 2 )?><option value="<?php echo ($key); ?>" <?php if($key == $cat_data["parent_id"] ): ?>selected="selected"<?php endif; ?>><?php echo ($data); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	</select>	</td>
+  </tr>
+   <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">排序&nbsp; </div></td>
+    <td width="82%"><input name="category_sort" type="text" size="30" value="<?php echo ($cat_data["sort_order"]); ?>"/></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">是否显示&nbsp; </div></td>
+    <td width="82%"><input name="is_show" type="radio" id="is_show"  style="border:0px;" value="1" <?php if($cat_data["is_show"] == 1): ?>checked<?php endif; ?> />
+    是  <input type="radio" style="border:0px;" name="is_show" id="is_show" value="0" <?php if($cat_data["is_show"] == 0): ?>checked<?php endif; ?> />否 </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td colspan="2">
+	<div align="center"><input type="submit" name="Submit" value="确定"> 
+	<input type="hidden" name="act" value="update_category"/>
+	<input type="hidden" name="cat_id" value="<?php echo ($cat_data["cat_id"]); ?>"/>
+&nbsp;	
+<input type="reset" name="chongzhi" value="重置">
+	</div>
+	</td>
+  </tr>
 </table>
 </form>
 </div>

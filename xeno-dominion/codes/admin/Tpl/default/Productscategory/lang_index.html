@@ -22,7 +22,10 @@
 	<td>{$vo.catlang_id}</td>
 	<td>{$vo.cat_name}</td>
 	<td>{$vo.lang_name}</td>
-	<td><a href="__URL__/lang_edit/catlang_id/{$vo.catlang_id}">编辑</a> | <a href="__URL__/lang_del/catlang_id/{$vo.catlang_id}">删除</a></td>
+	<td>
+    	<a href="__URL__/lang_edit/cat_id/{$Think.get.cat_id}/catlang_id/{$vo.catlang_id}">编辑</a> | 
+    	<a href="__URL__/lang_del/cat_id/{$Think.get.cat_id}/catlang_id/{$vo.catlang_id}">删除</a>
+    </td>
 </tr>
 </foreach>
 <tr bgcolor="#FAFAF1">
