@@ -261,7 +261,7 @@ class ProductscategoryAction extends CommonAction{
 			$data3["cat_name"]= $_POST["cat_name"];
 			$the_lang = $tb_langs->where(array("lang_code"=>$data3["lang_code"]))->find();
 			$data3["lang_name"]= $the_lang["language"];
-			var_dump($data3);
+			/////var_dump($data3);
 			if($tb_productsCatLang->where(array("catlang_id"=>$_GET["catlang_id"]))->save($data3)){
 				$msg["info"]=array("class"=>"success","text"=>"Category language updated.");
 			}else{
@@ -277,6 +277,17 @@ class ProductscategoryAction extends CommonAction{
 		$this->assign("msg",$msg);
 		$this->assign("data",$data);
 		$this->display();
+	}
+	
+	public function lang_del(){
+		$tb_productsCatLang = M("productsCatLang");
+		if(!empty($_GET['catlang_id'])){
+			if($tb_productsCatLang->where(array("catlang_id"=>$_GET['catlang_id']))->delete()){
+				$this->success("The category language deleted!");
+			}else{
+				$this->error("Error when delete category lanugage information!");
+			}
+		}
 	}
 }
 ?>
