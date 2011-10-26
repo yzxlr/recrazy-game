@@ -1,0 +1,20 @@
+[ 2011-10-26T08:25:57+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.059581s ]
+[ 2011-10-26T08:25:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004344s ]
+[ 2011-10-26T08:25:59+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.007280s ]
+[ 2011-10-26T08:26:00+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.049681s ]
+[ 2011-10-26T08:26:00+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000946s ]
+[ 2011-10-26T08:26:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009387s ]
+[ 2011-10-26T08:26:01+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-26T08:26:01+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-10-26T08:26:01+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-10-26T08:26:07+08:00 ] ERR: (ThinkException) 无法加载模块Postcategory
+[ 2011-10-26T08:26:13+08:00 ] ERR: (ThinkException) 无法加载模块Postcategory
+[ 2011-10-26T08:27:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.037882s ]
+[ 2011-10-26T08:27:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000763s ]
+[ 2011-10-26T08:27:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000543s ]
+[ 2011-10-26T08:27:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=1 LIMIT 1  [ RunTime:0.000875s ]
+[ 2011-10-26T08:27:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=3 LIMIT 1  [ RunTime:0.000629s ]
+[ 2011-10-26T08:27:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=4 LIMIT 1  [ RunTime:0.000591s ]
+[ 2011-10-26T08:27:11+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-10-26T08:27:11+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-10-26T08:27:11+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.

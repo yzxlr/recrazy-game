@@ -746,3 +746,22 @@
 [ 2011-10-23T11:10:16+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000207s ]
 [ 2011-10-23T11:10:16+08:00 ] SQL: UPDATE `ry_products_cat_lang` SET `lang_code`='zh-cn',`cat_name`='中文 -> 分类3',`lang_name`='简体中文' WHERE ( `catlang_id` = '6' ) [ RunTime:0.000367s ]
 [ 2011-10-23T11:10:16+08:00 ] SQL: SELECT * FROM `ry_products_cat_lang` WHERE ( `catlang_id` = '6' ) LIMIT 1  [ RunTime:0.000336s ]
+[ 2011-10-23T11:25:47+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009405s ]
+[ 2011-10-23T11:25:47+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-10-23T11:25:47+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-10-23T11:25:47+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-10-23T11:25:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004608s ]
+[ 2011-10-23T11:25:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.067894s ]
+[ 2011-10-23T11:25:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.006234s ]
+[ 2011-10-23T11:25:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=1 LIMIT 1  [ RunTime:0.000921s ]
+[ 2011-10-23T11:25:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=3 LIMIT 1  [ RunTime:0.000928s ]
+[ 2011-10-23T11:25:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=4 LIMIT 1  [ RunTime:0.000900s ]
+[ 2011-10-23T11:25:50+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-10-23T11:25:50+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-10-23T11:25:50+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-10-23T11:25:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004278s ]
+[ 2011-10-23T11:25:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat_lang` [ RunTime:0.004099s ]
+[ 2011-10-23T11:25:58+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '1' ) LIMIT 1  [ RunTime:0.026040s ]
+[ 2011-10-23T11:25:58+08:00 ] SQL: SELECT * FROM `ry_products_cat_lang` WHERE ( `cat_id` = '1' ) [ RunTime:0.020266s ]
+[ 2011-10-23T11:25:58+08:00 ] NOTIC: [8] Undefined index: info 04a0fd06e53e0cda368358ac495db46f.php 第 110 行.
+[ 2011-10-23T11:25:58+08:00 ] NOTIC: [8] Undefined index: info 04a0fd06e53e0cda368358ac495db46f.php 第 110 行.

@@ -107,7 +107,7 @@ $(document).ready(function(){
     </div>
     
 </div>
-
+<div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
 
 Dashboard
