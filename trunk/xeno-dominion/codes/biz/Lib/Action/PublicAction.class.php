@@ -84,6 +84,9 @@ class PublicAction extends Action
 		//$this->redirect('Public/login', array(), 3, 'You logout successfully!');
 	}
 	
-
+	Public function verify(){
+		import("ORG.Util.Image");
+		Image::buildImageVerify();
+	}
 }
 ?>
