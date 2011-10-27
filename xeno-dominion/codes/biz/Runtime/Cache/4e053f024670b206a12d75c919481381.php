@@ -32,15 +32,26 @@
     <a href="#">Company</a>
     <a href="#">Account</a>
     <a href="#">Service Package</a>
-    <a href="<?php echo ($SITE_URL); ?>/biz.php?Index/fraud">Fraud Report</a>
+    <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/fraud">Fraud Report</a>
     <a href="#">Schedule</a>
 </div>
 
 <div id="wrapper">
 
-First login page
-
-
+<div id="content">
+<form action="#" method="post">
+    	Name:    <input type="text" name="name" /> <br />
+Email:   <input type="text" name="email" /> <br />
+    	Title:   <input type="text" name="title" /> <br />
+        Content: 
+        <textarea name="content"></textarea> 
+        <br />
+        Varify:  <img src="<?php echo ($SITE_URL); ?>/biz.php?s=Public/verify" /><img src="/Index/verify/" />
+        		<input type="text" name="verify" />
+        <br />
+        <input type="submit" name="submit" value="Submit" />
+	</form>
+</div>
 
 </div> <!-- wrapper -->
 
