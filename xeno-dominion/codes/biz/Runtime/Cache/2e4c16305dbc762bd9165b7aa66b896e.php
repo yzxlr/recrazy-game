@@ -38,22 +38,49 @@
 </div>
 
 <div id="wrapper">
-
+<script>
+	$(document).ready(function(){
+		$('#task_time').datetimepicker({
+			showSecond: true, //显示秒
+			dateFormat: "yy-mm-dd",
+			timeFormat: 'hh:mm:ss',//格式化时间
+			stepHour: 2,//设置步长
+			stepMinute: 10,
+			stepSecond: 10
+		});
+	});
+</script>
 <div id="content">
-<form action="#" method="post">
-    	Name:    <input type="text" name="name" /> <br />
-Email:   <input type="text" name="email" /> <br />
-    	Title:   <input type="text" name="title" /> <br />
-        Content: 
-        <textarea name="content"></textarea> 
-        <br />
-        Varify:  <img src="<?php echo ($SITE_URL); ?>/biz.php?s=Public/verify" /><img src="/Index/verify/" />
-        		<input type="text" name="verify" />
-        <br />
-        <input type="submit" name="submit" value="Submit" />
-	</form>
+	<form name="task" method="post" action="#">
+    <table>
+    	<thead>
+    	</thead>
+    	<tbody>
+        <tr>
+        	<td></td>
+    		<td><input type="hidden" name="user_id" value="<?php echo ($user["uid"]); ?>" /></td>
+        </tr>
+        <tr>
+        	<td>Time</td>
+        	<td><input id="task_time" type="text" name="time" value="" /></td>
+        <tr>
+        <tr>
+       		<td>Title</td>
+        	<td><input type="text" name="title" value="" /></td>
+        </tr>
+        <tr>
+        	<td>Content</td>
+        	<td><textarea name="content"></textarea></td>
+        </tr>
+        <tr>
+        	<td></td>
+        	<td><input type="submit" value="Add Task" /></td>
+        </tr>
+        
+        </tbody>
+    </table>
+    </form>
 </div>
-
 </div> <!-- wrapper -->
 
 <div id="footer"> 

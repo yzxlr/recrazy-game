@@ -38,22 +38,57 @@
 </div>
 
 <div id="wrapper">
-
-<div id="content">
-<form action="#" method="post">
-    	Name:    <input type="text" name="name" /> <br />
-Email:   <input type="text" name="email" /> <br />
-    	Title:   <input type="text" name="title" /> <br />
-        Content: 
-        <textarea name="content"></textarea> 
-        <br />
-        Varify:  <img src="<?php echo ($SITE_URL); ?>/biz.php?s=Public/verify" /><img src="/Index/verify/" />
-        		<input type="text" name="verify" />
-        <br />
-        <input type="submit" name="submit" value="Submit" />
-	</form>
+<script>
+	$(document).ready(function(){
+		$('#task_time').datetimepicker({
+			showSecond: true, //显示秒
+			dateFormat: "yy-mm-dd",
+			timeFormat: 'hh:mm:ss',//格式化时间
+			stepHour: 2,//设置步长
+			stepMinute: 10,
+			stepSecond: 10
+		});
+	});
+</script>
+<div id="content">	
+	<form name="task" method="post" action="#">
+    <table>
+    	<thead>
+    	</thead>
+    	<tbody>
+        <tr>
+        	<td><input type="hidden" name="task_id" value="<?php echo ($_GET['task_id']); ?>" /></td>
+    		<td><input type="hidden" name="user_id" value="<?php echo ($user["uid"]); ?>" /></td>
+        </tr>
+        <tr>
+        	<td>Time</td>
+        	<td><input id="task_time" type="text" name="time" value="<?php echo ($data["tb_task"]["time"]); ?>" /></td>
+        <tr>
+        <tr>
+       		<td>Title</td>
+        	<td><input type="text" name="title" value="<?php echo ($data["tb_task"]["title"]); ?>" /></td>
+        </tr>
+        
+        <tr>
+        	<td>Content</td>
+        	<td><textarea name="content"><?php echo ($data["tb_task"]["content"]); ?></textarea></td>
+        </tr>
+        <tr>
+       		<td>Status</td>
+        	<td>
+            	<input type="radio" name="status" value="1" <?php if(($data["tb_task"]["status"])  ==  "1"): ?>checked="checked"<?php endif; ?> /> Enable &nbsp;&nbsp;&nbsp;
+            	<input type="radio" name="status" value="0" <?php if(($data["tb_task"]["status"])  ==  "0"): ?>checked="checked"<?php endif; ?> /> Dissmiss
+            </td>
+        </tr>
+        <tr>
+        	<td></td>
+        	<td><input type="submit" value="Update Task" /></td>
+        </tr>
+        
+        </tbody>
+    </table>
+    </form>
 </div>
-
 </div> <!-- wrapper -->
 
 <div id="footer"> 

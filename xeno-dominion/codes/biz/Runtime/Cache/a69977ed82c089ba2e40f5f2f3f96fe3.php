@@ -7,6 +7,7 @@
 		<link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jquery-ui-1.8.16/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
 		<script type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jquery-ui-1.8.16/js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jquery-ui-1.8.16/js/jquery-ui-1.8.16.custom.min.js"></script>
+        <script type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jquery-ui-1.8.16/js/jquery-ui-timepicker-addon.js"></script>
         <!-- end:   include jquery & jquery ui -->
         <!-- start: include super-fish menu jquery plugin -->
         <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/superfish-1.4.8/css/superfish.css" rel="stylesheet" />	
@@ -15,7 +16,7 @@
         
         
         <!-- start: include jack's css & js -->
-        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/forindex/css/common.css" rel="stylesheet" />
+        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/forbiz/css/common.css" rel="stylesheet" />
         <!-- end:   include jack's css & js -->
 <!-- end: include -->
 
@@ -32,13 +33,16 @@
     <a href="#">Company</a>
     <a href="#">Account</a>
     <a href="#">Service Package</a>
-    <a href="<?php echo ($SITE_URL); ?>/biz.php?Index/fraud">Fraud Report</a>
-    <a href="#">Schedule</a>
+    <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/fraud">Fraud Report</a>
+    
 </div>
 
 <div id="wrapper">
 
-First login page
+<div id="content">
+	<div id="content_left">aa</div>
+    <div id="content_right"><span>Schedule</span> <a style="float:right;" href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add">Add</a></div>
+</div>
 
 
 
