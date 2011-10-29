@@ -34,6 +34,28 @@ class CommonAction extends Action
 		
 	}
 	
+	/*
+	 * sendEmail
+	**/
+	protected function sendEmail($from, $to, $subject, $message) {
+		if ($from == '')
+            $from = 'no-reply@gmail.com';
+
+        $headers = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text; charset=UTF-8' . "\r\n";
+        $headers .= 'To: ' . $to . "\r\n";
+        $headers .= 'From: ' . $from . "\r\n";
+
+        $subject = trim($subject);
+        $message = trim($message);
+
+        $send = mail($to, $subject, $message, $headers);
+
+        if (!$send)
+            return false;
+
+        return true;
+	}
 	
 	/*
 	 *  这里暂时hardcode
