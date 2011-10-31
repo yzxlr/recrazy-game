@@ -2,7 +2,56 @@
 
 <div id="content">
 	<div id="content_left">aa</div>
-    <div id="content_right"><span>Schedule</span> <a style="float:right;" href="{$SITE_URL}/biz.php?s=Schedule/task_add">Add</a></div>
+    <div id="content_right">
+    	<div><span>Schedule</span><a style="float:right;" href="{$SITE_URL}/biz.php?s=Schedule/task_add">Add</a></div>
+        <div>
+            <table>
+            	<thead>
+                	<tr>
+                    	<th colspan="2">Today</th>
+                    </tr>
+                </thead>
+            	<tbody>
+                <foreach name="data.tb_task_today" item="vo">
+                	<tr>
+                        <td>{$vo.time}</td>
+                        <td><a href="{$SITE_URL}/biz.php?s=Schedule/task_update/task_id/{$vo.task_id}">{$vo.title}</a></td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            <table>
+            	<thead>
+                	<tr>
+                    	<th colspan="2">Tomorrow</th>
+                    </tr>
+                </thead>
+            	<tbody>
+                <foreach name="data.tb_task_tomorrow" item="vo">
+                	<tr>
+                        <td>{$vo.time}</td>
+                        <td><a href="{$SITE_URL}/biz.php?s=Schedule/task_update/task_id/{$vo.task_id}">{$vo.title}</a></td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+            <table>
+            	<thead>
+                	<tr>
+                    	<th colspan="2">Next Week</th>
+                    </tr>
+                </thead>
+            	<tbody>
+                <foreach name="data.tb_task_nextweek" item="vo">
+                	<tr>
+                        <td>{$vo.time}</td>
+                        <td><a href="{$SITE_URL}/biz.php?s=Schedule/task_update/task_id/{$vo.task_id}">{$vo.title}</a></td>
+                    </tr>
+                </foreach>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 
