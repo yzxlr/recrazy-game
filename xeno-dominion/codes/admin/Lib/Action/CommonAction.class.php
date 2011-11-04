@@ -11,11 +11,18 @@ class CommonAction extends Action
     public function _initialize(){
 		//0. Initialization
 		//0.1 Global variables
+		//0.1.1 SITE_URL
 		$http = (isset($_SERVER['HTTPS'])&&$_SERVER['HTTPS']!='off')?'https://':'http://';  
 		$port = $_SERVER["SERVER_PORT"]==80?'':':'.$_SERVER["SERVER_PORT"];  
 		$url = $http.$_SERVER['SERVER_NAME'].$port;//.$_SERVER["REQUEST_URI"];
 		$this->assign("SITE_URL",$url);
-		//define("SITE_URL",$url);
+		define("SITE_URL",$url);
+		//0.1.2 DATETIME
+
+		$now = date("Y-m-d H:i:s");
+		$this->assign("DATETIME_NOW", $now);
+		define("DATETIME_NOW", $now);
+		
 		
 		//1 Validate User (only admin can login at here
 		if(!empty($_SESSION["user"])){
@@ -23,14 +30,15 @@ class CommonAction extends Action
 			if($this->user["role"]==0){
 				$this->assign("user",$this->user);
 			}else{
-				$this->assign("jumpUrl","/admin.php?s=Public/login");
+				$this->assign("jumpUrl",SITE_URL."/admin.php?s=Public/login");
 				$this->error('You are not administration user!');
 			}
 		}else{
-			$this->assign("jumpUrl","/admin.php?s=Public/login");
+			$this->assign("jumpUrl",SITE_URL."/admin.php?s=Public/login");
 			$this->error('Please login first!');
 			//$this->redirect('Public/login', array(), 3, 'Please login first!');
 		}
+		
 		
 	}
 	
@@ -52,6 +60,15 @@ class CommonAction extends Action
 		$user_role[0] = array("id"=>0,"name"=>"admin");
 		
 		return $user_role;
+	}
+	
+	public function getUserRole($role_num){
+		$user_role = array();
+		$user_role[100] = "User";
+		$user_role[10] = "Master";
+		$user_role[0] = "Administrator";
+		
+		return $user_role[$role_num];
 	}
 
 }

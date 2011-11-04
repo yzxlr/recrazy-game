@@ -109,35 +109,55 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-
+<script>
+function del(id){
+	if(id)
+	{
+	  if(confirm("Delete?")){ 
+	    location="__URL__/del/uid/"+id;
+      }
+	}
+}
+</script>
 <div id="content">
-	<div><h3>List Users</h3><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">[Add New User]</a></div>
 	<form action="#" method="post">
     <input type="hidden" name="uid" value="<?php echo ($msg["tb_users"]["uid"]); ?>" />
     </form>
-    <table>
-        <thead>
-            <tr>
-            	<td>UID</td>
-                <td>Role</td>
-                <td>User Name</td>
-                <td>User Email</td>
-                <td>Status</td>
-                <td>Options</td>
-            </tr>
-        </thead>
+    <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
+    	<tr bgcolor="#E7E7E7">
+            <td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">User List</span><span style="float:right;"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">[Add New User]</a></span></td>
+        </tr>
+        <tr align="center" bgcolor="#FAFAF1" height="22">
+            <th width="8%">UID</th>
+            <th width="5%">Role</th>
+            <th width="32%">User Name</th>
+            <th width="14%">Nickname</th>
+            <th width="10%">User Email</th>
+            <th width="6%">Status</th>
+            <th width="7%">Options</th>
+            <th width="">--</th>
+        </tr>
         <tbody>
-        	<?php if(is_array($msg["tb_users"])): $i = 0; $__LIST__ = $msg["tb_users"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): ++$i;$mod = ($i % 2 )?><tr>
+        	<?php if(is_array($msg["tb_users"])): $i = 0; $__LIST__ = $msg["tb_users"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): ++$i;$mod = ($i % 2 )?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22">
                 <td><?php echo ($vo["uid"]); ?></td>
-                <td><?php echo ($vo["role"]); ?></td>
+                <td><?php echo ($vo["role_text"]); ?></td>
                 <td><?php echo ($vo["user_name"]); ?></td>
+                <td><?php echo ($vo["user_nickname"]); ?></td>
                 <td><?php echo ($vo["user_email"]); ?></td>
                 <td><?php echo ($vo["user_status"]); ?></td>
-                <td><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/edit/id/<?php echo ($vo["uid"]); ?>">Edit</a></td>
+                <td>
+                	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/edit/id/<?php echo ($vo["uid"]); ?>">Edit</a> | 
+                    <a href="javascript:del(<?php echo ($vo["uid"]); ?>);">Delete</a>
+                </td>
+                <td>--</td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+            <tr bgcolor="#FAFAF1">
+                <td height="28" colspan="10">
+                    <?php echo ($msg["page"]); ?>
+                </td>
+            </tr>
         </tbody>
     </table>
-    <div><?php echo ($msg["page"]); ?></div>
 </div>
 
 
