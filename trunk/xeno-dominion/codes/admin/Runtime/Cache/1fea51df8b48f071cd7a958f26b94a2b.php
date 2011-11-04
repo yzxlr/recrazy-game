@@ -125,14 +125,18 @@ $(document).ready(function(){
             <tr>
                 <td>Role:</td>
                 <td>
-                	<select value="user_role">
-                    	<?php if(is_array($msg["user_roles"])): foreach($msg["user_roles"] as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+                	<select name="user_role">
+                    	<?php if(is_array($msg["user_roles"])): foreach($msg["user_roles"] as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>" <?php if(($vo["id"])  ==  "100"): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td>User Name:</td>
                 <td><input type="text" name="user_name" value="" /></td>
+            </tr>
+            <tr>
+                <td>Nickname:</td>
+                <td><input type="text" name="user_nickname" value="" /></td>
             </tr>
             <tr>
                 <td>User Email:</td>
