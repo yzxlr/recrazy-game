@@ -141,20 +141,20 @@ class PageAction extends CommonAction
 		//0.4 conditon
 		$condition = array();
 		//0.9 massenger
-		$msg = array("title"=>"Page Language List"); 
+		$msg = array("title"=>"Page Language Add"); 
 		
 		//1 Table langs
 		//1.4 select
 		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
 		
 		//2 Table lang
-		//2.4
+		//2.1
 		if($_POST){
 			$lang = $tb_langs->where(array("lang_code"=>$_POST["lang_code"]))->find();
 			$_POST["lang_name"] = $lang["language"];
 			if($tb_page_lang->add($_POST)){
 				$this->assign("jumpUrl", SITE_URL."/admin.php?s=/Page/lang_index/page_id/".$_POST["page_id"]);
-				$this->success("New page added!");
+				$this->success("New page language added!");
 			}else{
 				$this->error("Error when try to add!");
 			}
@@ -166,11 +166,48 @@ class PageAction extends CommonAction
         $this->display();
 	}
 	
+	public function lang_update(){
+		//0. Initialization
+		//0.1 Global variables
+		$user = $_SESSION["user"];
+		//0.2 Define Tables
+		$tb_langs = M("langs");
+		$tb_page_lang = M("pageLang");
+		//0.3 Page
+		import("ORG.Util.Page");
+		//0.4 conditon
+		$condition = array();
+		//0.9 massenger
+		$msg = array("title"=>"Page Language Add"); 
+		
+		//1 Table langs
+		//1.4 select
+		//$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
+		
+		//2 Table page_lang
+		//2.3 update
+		if($_POST){
+			if($tb_page_lang->save($_POST)){
+				$this->assign("jumpUrl", SITE_URL."/admin.php?s=/Page/lang_index/page_id/".$_POST["page_id"]);
+				$this->success("Updated!");
+			}else{
+				$this->error("Error when Update!");
+			}
+		}
+		//2.4 select
+		$data["tb_page_lang"]=$tb_page_lang->where(array("page_lang_id"=>$_GET["page_lang_id"]))->find();
+		
+		//10. Display
+		$this->assign("data",$data);
+		$this->assign("msg",$msg);
+        $this->display();
+	}
+	
 	public function lang_del(){
 		$tb_page_lang = M("pageLang");
 		if(!empty($_GET["page_lang_id"])){
 			if($tb_page_lang->where(array("page_lang_id"=>$_GET["page_lang_id"]))->delete()){
-				$this->assign("jumpUrl", SITE_URL."/admin.php?s=/Page/lang_index/page_id/".$_GET["page_id"]);
+				$this->assign("jumpUrl", SITE_URL."/admin.php?s=/Page/lang_index/page_id/".$_POST["page_id"]);
 				$this->success("Page Language deleted!");
 			}else{
 				$this->error("Error when try to Delete!");

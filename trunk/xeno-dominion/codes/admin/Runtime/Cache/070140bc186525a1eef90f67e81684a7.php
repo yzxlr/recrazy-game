@@ -109,42 +109,56 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-
-
+<script charset="utf-8" src="/editor/kindeditor.js"></script>
+<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+			editor = K.create('#page_content',{
+					langType : 'en'
+				});
+	});
+		
+	function form_check(){
+		if($("#page_title").val()==""){
+			alert("Title can not empty!");
+			return false;
+		}
+		return true;
+	}
+</script>
 <div id="content">
-	<!--  内容列表   -->
-        <form name="form2" style="margin-bottom:0px;">
-        <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
-            <tr bgcolor="#E7E7E7">
-                <td height="30" colspan="10">
-                    <span style="float:left; padding-top:3px; padding-left:5px;">Product List</span>
-                    <span style="float:right;"><a href="__URL__/lang_add/cat_id/<?php echo ($_GET['cat_id']); ?>">添加语言</a></span>
-                </td>
+	<form action="#" method="post" onsubmit="return form_check();">
+    	<input type="hidden" name="page_lang_id" value="<?php echo ($_GET['page_lang_id']); ?>" />
+    	<input type="hidden" name="page_id" value="<?php echo ($_GET['page_id']); ?>" />
+    	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
+			
+            <tr>
+				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Update Page Language</span></td>
+			</tr>
+            <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Title &nbsp; </div></td>
+                <td width="82%"><input type="text" name="page_title" id="page_title" size="113" value="<?php echo ($data["tb_page_lang"]["page_title"]); ?>" /> &nbsp; <font color="#FF0000">*</font></td>
             </tr>
-            <tr align="center" bgcolor="#FAFAF1" height="22">
-                <th width="8%">ID</th>
-                <th width="13%">类名</th>
-                <th width="14%">Option</th>
-                <th width="10%">Language List</th>
+            <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Summary &nbsp; </div></td>
+                <td width="82%"><textarea name="page_summary" id="page_summary" style="width:695px;height:100px;"><?php echo ($data["tb_page_lang"]["page_summary"]); ?></textarea></td>
             </tr>
-            
-            <?php if(is_array($data["productsCatLang"])): foreach($data["productsCatLang"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td><?php echo ($vo["catlang_id"]); ?></td>
-                <td><?php echo ($vo["cat_name"]); ?></td>
-                <td><?php echo ($vo["lang_name"]); ?></td>
-                <td>
-                    <a href="__URL__/lang_edit/cat_id/<?php echo ($_GET['cat_id']); ?>/catlang_id/<?php echo ($vo["catlang_id"]); ?>">编辑</a> | 
-                    <a href="javascript:del(<?php echo ($vo["catlang_id"]); ?>)">删除</a>
-                </td>
-            </tr><?php endforeach; endif; ?>
-            <tr bgcolor="#FAFAF1">
-            <td height="28" colspan="10">
-                --
-            </td>
+            <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Content &nbsp; </div></td>
+                <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;"><?php echo ($data["tb_page_lang"]["page_content"]); ?></textarea></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+            	<td colspan="2">
+                    <div align="center"><input type="submit" name="Submit" value="Add Page"> 
+                        <input type="reset" name="reset" value="Reset">
+                    </div>
+            	</td>
             </tr>
         </table>
     </form>
 </div>
+
 </div> <!-- wrapper -->
 
 <div id="footer"> 
