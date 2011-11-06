@@ -1368,3 +1368,209 @@
 [ 2011-11-06T10:00:35+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
 [ 2011-11-06T10:00:35+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
 [ 2011-11-06T10:00:35+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T10:16:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.008142s ]
+[ 2011-11-06T10:16:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000651s ]
+[ 2011-11-06T10:16:01+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000847s ]
+[ 2011-11-06T10:16:01+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T10:16:01+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T10:16:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T10:16:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-06T10:16:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T10:16:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T10:16:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:00:08+08:00 ] SQL: SHOW COLUMNS FROM `ry_product` [ RunTime:0.008221s ]
+[ 2011-11-06T11:00:08+08:00 ] SQL: SELECT * FROM `ry_product` [ RunTime:0.000789s ]
+[ 2011-11-06T11:00:08+08:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-06T11:00:08+08:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-06T11:00:08+08:00 ] NOTIC: [8] Undefined index: cat_id f3fff2b5c97ac42f78439ba97dbcdcda.php 第 121 行.
+[ 2011-11-06T11:00:08+08:00 ] NOTIC: [8] Undefined index: productsCatLang f3fff2b5c97ac42f78439ba97dbcdcda.php 第 131 行.
+[ 2011-11-06T11:00:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.010365s ]
+[ 2011-11-06T11:00:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.013543s ]
+[ 2011-11-06T11:00:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000664s ]
+[ 2011-11-06T11:00:11+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000713s ]
+[ 2011-11-06T11:00:11+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-06T11:00:11+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-06T11:00:11+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-06T11:00:42+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.006036s ]
+[ 2011-11-06T11:00:42+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.012856s ]
+[ 2011-11-06T11:00:42+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-11-06T11:00:42+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-11-06T11:00:42+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-11-06T11:00:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004542s ]
+[ 2011-11-06T11:00:50+08:00 ] SQL: INSERT INTO `ry_products_cat` (`cat_name`,`parent_id`,`sort_order`,`is_show`) VALUES ('啊啊','6',0,1) [ RunTime:0.000883s ]
+[ 2011-11-06T11:00:51+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005092s ]
+[ 2011-11-06T11:00:51+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000849s ]
+[ 2011-11-06T11:00:51+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-11-06T11:00:51+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-11-06T11:00:51+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-11-06T11:00:55+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004238s ]
+[ 2011-11-06T11:00:55+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000526s ]
+[ 2011-11-06T11:00:55+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000622s ]
+[ 2011-11-06T11:00:55+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.001048s ]
+[ 2011-11-06T11:00:55+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=7 LIMIT 1  [ RunTime:0.001080s ]
+[ 2011-11-06T11:00:55+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-06T11:00:55+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-06T11:00:55+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-06T11:03:12+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.010644s ]
+[ 2011-11-06T11:03:12+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000810s ]
+[ 2011-11-06T11:03:12+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000998s ]
+[ 2011-11-06T11:03:12+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T11:03:12+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T11:03:12+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:03:12+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-06T11:03:12+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:03:12+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:03:12+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:03:13+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.007186s ]
+[ 2011-11-06T11:03:13+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-06T11:03:13+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-06T11:03:13+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-06T11:03:15+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.006456s ]
+[ 2011-11-06T11:03:15+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000560s ]
+[ 2011-11-06T11:03:15+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000797s ]
+[ 2011-11-06T11:03:15+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T11:03:15+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T11:03:15+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:03:15+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-06T11:03:15+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:03:15+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:03:15+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:12:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006877s ]
+[ 2011-11-06T11:12:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.007756s ]
+[ 2011-11-06T11:12:49+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000952s ]
+[ 2011-11-06T11:12:49+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.000937s ]
+[ 2011-11-06T11:12:49+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:12:49+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:12:49+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T11:12:52+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.008208s ]
+[ 2011-11-06T11:12:52+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.009311s ]
+[ 2011-11-06T11:12:52+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001068s ]
+[ 2011-11-06T11:12:52+08:00 ] NOTIC: [8] Undefined index: info 7f911d4179d231fc19bbc29c67586ab8.php 第 110 行.
+[ 2011-11-06T11:12:52+08:00 ] NOTIC: [8] Undefined index: info 7f911d4179d231fc19bbc29c67586ab8.php 第 110 行.
+[ 2011-11-06T11:13:04+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005751s ]
+[ 2011-11-06T11:13:04+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005339s ]
+[ 2011-11-06T11:13:04+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000938s ]
+[ 2011-11-06T11:13:04+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000553s ]
+[ 2011-11-06T11:13:04+08:00 ] SQL: INSERT INTO `ry_page_lang` (`page_id`,`lang_code`,`page_title`,`page_summary`,`page_content`,`lang_name`) VALUES ('1','zh-cn','啊啊','啊啊啊','啊啊啊啊','简体中文') [ RunTime:0.000631s ]
+[ 2011-11-06T11:13:05+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004203s ]
+[ 2011-11-06T11:13:05+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.009382s ]
+[ 2011-11-06T11:13:05+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001274s ]
+[ 2011-11-06T11:13:05+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.000711s ]
+[ 2011-11-06T11:13:05+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:13:05+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:13:05+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T11:13:09+08:00 ] NOTIC: [8] Undefined variable: msg 070140bc186525a1eef90f67e81684a7.php 第 45 行.
+[ 2011-11-06T11:13:09+08:00 ] NOTIC: [8] Undefined variable: msg 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:13:09+08:00 ] NOTIC: [8] Undefined variable: msg 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:13:09+08:00 ] NOTIC: [8] Undefined variable: data 070140bc186525a1eef90f67e81684a7.php 第 142 行.
+[ 2011-11-06T11:14:21+08:00 ] NOTIC: [8] Undefined variable: msg 070140bc186525a1eef90f67e81684a7.php 第 45 行.
+[ 2011-11-06T11:14:21+08:00 ] NOTIC: [8] Undefined variable: msg 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:14:21+08:00 ] NOTIC: [8] Undefined variable: msg 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:16:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006091s ]
+[ 2011-11-06T11:16:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005308s ]
+[ 2011-11-06T11:16:49+08:00 ] NOTIC: [8] Undefined variable: data PageAction.class.php 第 201 行.
+[ 2011-11-06T11:16:49+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:16:49+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:19:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005447s ]
+[ 2011-11-06T11:19:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.004545s ]
+[ 2011-11-06T11:19:58+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_lang_id` = '14' ) LIMIT 1  [ RunTime:0.000739s ]
+[ 2011-11-06T11:19:58+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:19:58+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:20:33+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005312s ]
+[ 2011-11-06T11:20:33+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005184s ]
+[ 2011-11-06T11:20:33+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_lang_id` = '14' ) LIMIT 1  [ RunTime:0.000796s ]
+[ 2011-11-06T11:20:33+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:20:33+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:21:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005450s ]
+[ 2011-11-06T11:21:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.004861s ]
+[ 2011-11-06T11:21:11+08:00 ] SQL: UPDATE `ry_page_lang` SET `page_id`='1',`page_title`='啊啊',`page_summary`='啊啊啊',`page_content`='啊啊啊啊' WHERE ( `page_lang_id` = '14' ) [ RunTime:0.000484s ]
+[ 2011-11-06T11:21:19+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006079s ]
+[ 2011-11-06T11:21:19+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.006799s ]
+[ 2011-11-06T11:21:19+08:00 ] SQL: UPDATE `ry_page_lang` SET `page_id`='1',`page_title`='啊啊',`page_summary`='啊啊啊',`page_content`='啊啊啊啊啊' WHERE ( `page_lang_id` = '14' ) [ RunTime:0.000744s ]
+[ 2011-11-06T11:21:20+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004935s ]
+[ 2011-11-06T11:21:20+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.006217s ]
+[ 2011-11-06T11:21:20+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000615s ]
+[ 2011-11-06T11:21:20+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.000573s ]
+[ 2011-11-06T11:21:20+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:21:20+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:21:20+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T11:21:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.008786s ]
+[ 2011-11-06T11:21:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005997s ]
+[ 2011-11-06T11:21:24+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_lang_id` = '14' ) LIMIT 1  [ RunTime:0.000583s ]
+[ 2011-11-06T11:21:24+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:21:24+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:21:31+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005531s ]
+[ 2011-11-06T11:21:31+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.004761s ]
+[ 2011-11-06T11:21:31+08:00 ] SQL: UPDATE `ry_page_lang` SET `page_title`='啊啊不',`page_summary`='啊啊啊便',`page_content`='啊啊啊啊啊不' WHERE ( `page_lang_id` = '14' ) [ RunTime:0.000516s ]
+[ 2011-11-06T11:21:31+08:00 ] NOTIC: [8] Undefined index: page_id PageAction.class.php 第 191 行.
+[ 2011-11-06T11:21:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004282s ]
+[ 2011-11-06T11:21:32+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.004314s ]
+[ 2011-11-06T11:21:32+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000606s ]
+[ 2011-11-06T11:21:32+08:00 ] NOTIC: [8] Undefined index: page_id PageAction.class.php 第 122 行.
+[ 2011-11-06T11:21:32+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = null ) [ RunTime:0.000570s ]
+[ 2011-11-06T11:21:32+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:21:32+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:21:32+08:00 ] NOTIC: [8] Undefined index: page_id a560bbf73a30d4a718884003be1cf406.php 第 118 行.
+[ 2011-11-06T11:21:32+08:00 ] NOTIC: [8] Undefined index: page_id a560bbf73a30d4a718884003be1cf406.php 第 130 行.
+[ 2011-11-06T11:21:32+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T11:23:04+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005174s ]
+[ 2011-11-06T11:23:04+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005194s ]
+[ 2011-11-06T11:23:04+08:00 ] SQL: UPDATE `ry_page_lang` SET `page_title`='啊啊不',`page_summary`='啊啊啊便',`page_content`='啊啊啊啊啊不啊' WHERE ( `page_lang_id` = '14' ) [ RunTime:0.000535s ]
+[ 2011-11-06T11:23:04+08:00 ] NOTIC: [8] Undefined index: page_id PageAction.class.php 第 191 行.
+[ 2011-11-06T11:23:06+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005075s ]
+[ 2011-11-06T11:23:06+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005277s ]
+[ 2011-11-06T11:23:06+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000844s ]
+[ 2011-11-06T11:23:06+08:00 ] NOTIC: [8] Undefined index: page_id PageAction.class.php 第 122 行.
+[ 2011-11-06T11:23:06+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = null ) [ RunTime:0.000695s ]
+[ 2011-11-06T11:23:06+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:23:06+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:23:06+08:00 ] NOTIC: [8] Undefined index: page_id a560bbf73a30d4a718884003be1cf406.php 第 118 行.
+[ 2011-11-06T11:23:06+08:00 ] NOTIC: [8] Undefined index: page_id a560bbf73a30d4a718884003be1cf406.php 第 130 行.
+[ 2011-11-06T11:23:06+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T11:23:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005116s ]
+[ 2011-11-06T11:23:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005527s ]
+[ 2011-11-06T11:23:11+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000591s ]
+[ 2011-11-06T11:23:11+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.000622s ]
+[ 2011-11-06T11:23:11+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:23:11+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:23:11+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T11:23:33+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005347s ]
+[ 2011-11-06T11:23:33+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005724s ]
+[ 2011-11-06T11:23:33+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_lang_id` = '14' ) LIMIT 1  [ RunTime:0.000861s ]
+[ 2011-11-06T11:23:33+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:23:33+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:23:36+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004237s ]
+[ 2011-11-06T11:23:36+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.004129s ]
+[ 2011-11-06T11:23:36+08:00 ] SQL: UPDATE `ry_page_lang` SET `page_id`='1',`page_title`='啊啊不啊',`page_summary`='啊啊啊便',`page_content`='啊啊啊啊啊不啊' WHERE ( `page_lang_id` = '14' ) [ RunTime:0.000783s ]
+[ 2011-11-06T11:23:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005628s ]
+[ 2011-11-06T11:23:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005923s ]
+[ 2011-11-06T11:23:38+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000601s ]
+[ 2011-11-06T11:23:38+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.000544s ]
+[ 2011-11-06T11:23:38+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:23:38+08:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-11-06T11:23:38+08:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-11-06T11:25:37+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.005265s ]
+[ 2011-11-06T11:25:37+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.010420s ]
+[ 2011-11-06T11:25:37+08:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_lang_id` = '14' ) LIMIT 1  [ RunTime:0.000768s ]
+[ 2011-11-06T11:25:37+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:25:37+08:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-11-06T11:25:45+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.008132s ]
+[ 2011-11-06T11:25:45+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005481s ]
+[ 2011-11-06T11:25:45+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000804s ]
+[ 2011-11-06T11:25:45+08:00 ] NOTIC: [8] Undefined index: info 7f911d4179d231fc19bbc29c67586ab8.php 第 110 行.
+[ 2011-11-06T11:25:45+08:00 ] NOTIC: [8] Undefined index: info 7f911d4179d231fc19bbc29c67586ab8.php 第 110 行.
+[ 2011-11-06T11:25:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004421s ]
+[ 2011-11-06T11:25:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005331s ]
+[ 2011-11-06T11:25:54+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000555s ]
+[ 2011-11-06T11:25:54+08:00 ] SQL: SELECT * FROM `ry_langs` WHERE ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000535s ]
+[ 2011-11-06T11:25:54+08:00 ] SQL: INSERT INTO `ry_page_lang` (`page_id`,`lang_code`,`page_title`,`page_summary`,`page_content`,`lang_name`) VALUES ('1','zh-cn','不','便','不','简体中文') [ RunTime:0.000512s ]
+[ 2011-11-06T11:26:07+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.006861s ]
+[ 2011-11-06T11:26:07+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000901s ]
+[ 2011-11-06T11:26:07+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000970s ]
+[ 2011-11-06T11:26:07+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T11:26:07+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-06T11:26:07+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:26:07+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-06T11:26:07+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:26:07+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-06T11:26:07+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
