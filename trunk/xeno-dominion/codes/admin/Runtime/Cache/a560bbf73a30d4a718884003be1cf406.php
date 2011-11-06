@@ -109,62 +109,53 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-<script charset="utf-8" src="/editor/kindeditor.js"></script>
-<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+
 <script>
-	var editor;
-	KindEditor.ready(function(K) {
-			editor = K.create('#page_content',{
-					langType : 'en'
-				});
-	});
-		
-	function form_check(){
-		if($("#page_title").val()==""){
-			alert("Title can not empty!");
-			return false;
-		}
-		return true;
+function del(id){
+	if(id)
+	{
+	  if(confirm("Delete?")){ 
+	    location="__URL__/lang_del/page_id/<?php echo ($_GET['page_id']); ?>/page_lang_id/"+id;
+      }
 	}
+}
 </script>
 <div id="content">
-	<form action="#" method="post" onsubmit="return form_check();">
-    	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
-			<tr>
-				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Add New Page</span></td>
-			</tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Title &nbsp; </div></td>
-                <td width="82%"><input type="text" name="page_title" id="page_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Summary &nbsp; </div></td>
-                <td width="82%"><textarea name="page_summary" id="page_summary" style="width:695px;height:100px;"></textarea></td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Content &nbsp; </div></td>
-                <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Content &nbsp; </div></td>
-                <td width="82%">
-                	<select id="page_status" name="page_status">
-                    	<option value="publish">Publish</option>
-                        <option value="draft">Draft</option>
-                    </select>
+	<!--  内容列表   -->
+        <form name="form2" style="margin-bottom:0px;">
+        <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
+            <tr bgcolor="#E7E7E7">
+                <td height="30" colspan="10">
+                    <span style="float:left; padding-top:3px; padding-left:5px;">Page Additional Language List</span>
+                    <span style="float:right;"><a href="__URL__/lang_add/page_id/<?php echo ($_GET['page_id']); ?>">Add New Page Language</a></span>
                 </td>
             </tr>
-            <tr bgcolor="#FFFFFF">
-            	<td colspan="2">
-                    <div align="center"><input type="submit" name="Submit" value="Add Page"> 
-                        <input type="reset" name="reset" value="Reset">
-                    </div>
-            	</td>
+            <tr align="center" bgcolor="#FAFAF1" height="22">
+            	<th>ID</th>
+                <th>Page ID</th>
+                <th>Title</th>
+                <th>Language</th>
+                <th>Option</th>
+            </tr>
+            
+            <?php if(is_array($data["tb_page_lang"])): foreach($data["tb_page_lang"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+            	<td><?php echo ($vo["page_lang_id"]); ?></td>
+                <td><?php echo ($vo["page_id"]); ?></td>
+                <td><?php echo ($vo["page_title"]); ?></td>
+                <td><?php echo ($vo["lang_name"]); ?> (<?php echo ($vo["lang_code"]); ?>)</td>
+                <td>
+                    <a href="__URL__/lang_update/page_lang_id/<?php echo ($vo["page_lang_id"]); ?>/page_id/<?php echo ($_GET['page_id']); ?>">Update</a> | 
+                    <a href="javascript:del(<?php echo ($vo["page_lang_id"]); ?>)">Delete</a>
+                </td>
+            </tr><?php endforeach; endif; ?>
+            <tr bgcolor="#FAFAF1">
+            <td height="28" colspan="10">
+                <?php echo ($msg["page"]); ?>
+            </td>
             </tr>
         </table>
     </form>
 </div>
-
 </div> <!-- wrapper -->
 
 <div id="footer"> 

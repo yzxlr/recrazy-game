@@ -129,10 +129,20 @@ $(document).ready(function(){
 </script>
 <div id="content">
 	<form action="#" method="post" onsubmit="return form_check();">
+    	<input type="hidden" name="page_id" value="<?php echo ($_GET['page_id']); ?>" />
     	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
-			<tr>
+			
+            <tr>
 				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Add New Page</span></td>
 			</tr>
+            <tr>
+            	<td width="18%"><div align="right">Language &nbsp; </div></td>
+                <td width="82%">
+                	<select name="lang_code">
+                    	<?php if(is_array($data["tb_langs"])): foreach($data["tb_langs"] as $key=>$vo): ?><option value="<?php echo ($vo["lang_code"]); ?>"><?php echo ($vo["language"]); ?></option><?php endforeach; endif; ?>
+                    </select>
+                </td>
+            </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Title &nbsp; </div></td>
                 <td width="82%"><input type="text" name="page_title" id="page_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
@@ -144,15 +154,6 @@ $(document).ready(function(){
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Content &nbsp; </div></td>
                 <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Content &nbsp; </div></td>
-                <td width="82%">
-                	<select id="page_status" name="page_status">
-                    	<option value="publish">Publish</option>
-                        <option value="draft">Draft</option>
-                    </select>
-                </td>
             </tr>
             <tr bgcolor="#FFFFFF">
             	<td colspan="2">

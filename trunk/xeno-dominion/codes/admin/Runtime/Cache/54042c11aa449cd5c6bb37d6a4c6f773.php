@@ -131,24 +131,28 @@ function del(id){
                 </td>
             </tr>
             <tr align="center" bgcolor="#FAFAF1" height="22">
-                <th width="8%">Page ID</th>
-                <th width="13%">Page Name</th>
-                <th width="13%">Add Time</th>
-                <th width="13%">Edit Time</th>
-                <th width="14%">Option</th>
-                <th width="10%">Language List</th>
+                <th>Page ID</th>
+                <th>Title</th>
+                <th>Language</th>
+                <th>Status</th>
+                <th>Create Date</th>
+                <th>Last Modify Date</th>
+                <th>Option</th>
+                <th>Language List</th>
             </tr>
             
             <?php if(is_array($data["tb_page"])): foreach($data["tb_page"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
                 <td><?php echo ($vo["page_id"]); ?></td>
-                <td><?php echo ($vo["page_name"]); ?></td>
-                <td><?php if(!empty($vo["add_time"]))echo date("Y-m-d H:i:s", $vo["add_time"]); else echo "--";  ?></td>
-                <td><?php if(!empty($vo["edit_time"]))echo date("Y-m-d H:i:s", $vo["edit_time"]); else echo "--"; ?></td>
+                <td><?php echo ($vo["page_title"]); ?></td>
+                <td><?php echo ($vo["page_lang"]); ?></td>
+                <td><?php echo ($vo["page_status"]); ?></td>
+                <td><?php if(!empty($vo["page_create"]))echo date("Y-m-d H:i:s", $vo["page_create"]); else echo "--";  ?></td>
+                <td><?php if(!empty($vo["page_modify"]))echo date("Y-m-d H:i:s", $vo["page_modify"]); else echo "--"; ?></td>
                 <td>
                     <a href="__URL__/update/page_id/<?php echo ($vo["page_id"]); ?>">Update</a> | 
                     <a href="javascript:del(<?php echo ($vo["page_id"]); ?>)">Delete</a>
                 </td>
-                <td><a href="__APP__/?s=Page/lang_index/page_id/<?php echo ($vo["page_id"]); ?>">List Languages</a></td>
+                <td><a target="_blank" href="__APP__/?s=Page/lang_index/page_id/<?php echo ($vo["page_id"]); ?>">List Languages</a></td>
             </tr><?php endforeach; endif; ?>
             <tr bgcolor="#FAFAF1">
             <td height="28" colspan="10">
