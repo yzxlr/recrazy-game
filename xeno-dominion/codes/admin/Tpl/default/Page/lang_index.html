@@ -5,7 +5,7 @@ function del(id){
 	if(id)
 	{
 	  if(confirm("Delete?")){ 
-	    location="__URL__/del/page_id/"+id;
+	    location="__URL__/lang_del/page_id/{$Think.get.page_id}/page_lang_id/"+id;
       }
 	}
 }
@@ -16,34 +16,28 @@ function del(id){
         <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
             <tr bgcolor="#E7E7E7">
                 <td height="30" colspan="10">
-                    <span style="float:left; padding-top:3px; padding-left:5px;">Page List</span>
-                    <span style="float:right;"><a href="__URL__/add">Add New Page</a></span>
+                    <span style="float:left; padding-top:3px; padding-left:5px;">Page Additional Language List</span>
+                    <span style="float:right;"><a href="__URL__/lang_add/page_id/{$Think.get.page_id}">Add New Page Language</a></span>
                 </td>
             </tr>
             <tr align="center" bgcolor="#FAFAF1" height="22">
+            	<th>ID</th>
                 <th>Page ID</th>
                 <th>Title</th>
                 <th>Language</th>
-                <th>Status</th>
-                <th>Create Date</th>
-                <th>Last Modify Date</th>
                 <th>Option</th>
-                <th>Language List</th>
             </tr>
             
-            <foreach name="data.tb_page" item="vo" >
+            <foreach name="data.tb_page_lang" item="vo" >
             <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+            	<td>{$vo.page_lang_id}</td>
                 <td>{$vo.page_id}</td>
                 <td>{$vo.page_title}</td>
-                <td>{$vo.page_lang}</td>
-                <td>{$vo.page_status}</td>
-                <td><?php if(!empty($vo["page_create"]))echo date("Y-m-d H:i:s", $vo["page_create"]); else echo "--";  ?></td>
-                <td><?php if(!empty($vo["page_modify"]))echo date("Y-m-d H:i:s", $vo["page_modify"]); else echo "--"; ?></td>
+                <td>{$vo.lang_name} ({$vo.lang_code})</td>
                 <td>
-                    <a href="__URL__/update/page_id/{$vo.page_id}">Update</a> | 
-                    <a href="javascript:del({$vo.page_id})">Delete</a>
+                    <a href="__URL__/lang_update/page_lang_id/{$vo.page_lang_id}/page_id/{$Think.get.page_id}">Update</a> | 
+                    <a href="javascript:del({$vo.page_lang_id})">Delete</a>
                 </td>
-                <td><a target="_blank" href="__APP__/?s=Page/lang_index/page_id/{$vo.page_id}">List Languages</a></td>
             </tr>
             </foreach>
             <tr bgcolor="#FAFAF1">
