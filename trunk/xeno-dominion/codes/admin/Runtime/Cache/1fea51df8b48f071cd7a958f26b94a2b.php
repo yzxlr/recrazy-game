@@ -15,7 +15,7 @@
         
         
         <!-- start: include jack's css & js -->
-        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/foradmin/css/common.css" rel="stylesheet" />
+        <link type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/css/common.css" rel="stylesheet" />
         <!-- end:   include jack's css & js -->
 <!-- end: include -->
 
@@ -47,7 +47,7 @@ $(document).ready(function(){
 <body>
 
 <div id="header">
-	<div id="header_left"><img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/logo.jpg" /></div>
+	<div id="header_left"><img src="<?php echo ($SITE_URL); ?>/public/jack/images/logo.jpg" /></div>
     <div id="header_right">
         <div id="header_right_control">Welcome back, <?php echo ($user["user_name"]); ?> / <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Public/logout">Logout</a> 
         </div>
@@ -55,7 +55,7 @@ $(document).ready(function(){
             <ul class="sf-menu">
             	<li><a href="<?php echo ($SITE_URL); ?>/admin.php">Dashboard</a></li>
                 <li class="current">
-                    <a href="#">System</a>
+                    <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Page/index">System</a>
                     <ul>
                         <li class="current">
                         	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/index">User</a>
@@ -85,8 +85,8 @@ $(document).ready(function(){
                 <li class="current">
                     <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">Product</a>
                     <ul>
-                    	<li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/index">List Category</a></li>
-                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/add">Add Category</a></li>
+                    	<li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productcategory/index">List Category</a></li>
+                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productcategory/add">Add Category</a></li>
                         <li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">List Product</a></li>
                         <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/add">Add New Product</a></li>
                     </ul>
@@ -107,7 +107,7 @@ $(document).ready(function(){
     </div>
     
 </div>
-<div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
+
 <div id="wrapper">
 
 <div id="content">
@@ -125,18 +125,14 @@ $(document).ready(function(){
             <tr>
                 <td>Role:</td>
                 <td>
-                	<select name="user_role">
-                    	<?php if(is_array($msg["user_roles"])): foreach($msg["user_roles"] as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>" <?php if(($vo["id"])  ==  "100"): ?>selected="selected"<?php endif; ?>><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
+                	<select value="user_role">
+                    	<?php if(is_array($msg["user_roles"])): foreach($msg["user_roles"] as $key=>$vo): ?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; ?>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td>User Name:</td>
                 <td><input type="text" name="user_name" value="" /></td>
-            </tr>
-            <tr>
-                <td>Nickname:</td>
-                <td><input type="text" name="user_nickname" value="" /></td>
             </tr>
             <tr>
                 <td>User Email:</td>
