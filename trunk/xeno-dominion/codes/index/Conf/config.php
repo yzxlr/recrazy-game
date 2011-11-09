@@ -9,6 +9,10 @@ return array(
 	'DB_PORT'=>'3306', // 数据库端口
 	'DB_PREFIX'=>'ry_', // 数据表前缀
 	
+	'LANG_SWITCH_ON'=>true,
+	'DEFAULT_LANGUAGE'=>'en-us',
+	'LANG_AUTO_DETECT'    => true,
+	
 	//jack调试用
 	'APP_DEBUG' => true, // 开启调试模式
 	'TMPL_CACHE_ON'=>false,//不生缓存模版
