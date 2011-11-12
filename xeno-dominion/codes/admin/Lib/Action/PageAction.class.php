@@ -31,6 +31,7 @@ class PageAction extends CommonAction
 		$data["tb_page"] = $tb_page ->where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		
 		//10. Display
+		var_dump($data["tb_page"]);
 		$this->assign("data",$data);
 		$this->assign("msg",$msg);
         $this->display();
@@ -65,7 +66,6 @@ class PageAction extends CommonAction
 		//0.9 massenger
 		$msg = array("title"=>"Update Pages"); 
 		$data = array();
-		
 		//1 Table page
 		//1.1 add
 		if($_POST){

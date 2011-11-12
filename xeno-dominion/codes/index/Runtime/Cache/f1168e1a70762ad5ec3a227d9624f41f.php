@@ -34,7 +34,7 @@
 
 <div><?php echo ($data["tb_page"]["page_content"]); ?></div>
 
-<?php echo (L("language")); ?>
+<?php echo (); ?>
 </div> <!-- wrapper -->
 
 <div id="footer"> 
