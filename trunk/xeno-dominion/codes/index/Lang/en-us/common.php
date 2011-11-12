@@ -1,8 +1,6 @@
 <?php
-	return array(
-		'lang' => 'en-us',
-		'language' => 'English',
-	
-	
-	);
+return array(
+    'welcome'=>'Welcome to ThinkPHP!',
+    'message'=>'This is a test message!',
+);
 ?>
