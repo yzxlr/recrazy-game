@@ -37,8 +37,8 @@ function del(id){
                 <td>{$vo.page_title}</td>
                 <td>{$vo.page_lang}</td>
                 <td>{$vo.page_status}</td>
-                <td><?php if(!empty($vo["page_create"]))echo date("Y-m-d H:i:s", $vo["page_create"]); else echo "--";  ?></td>
-                <td><?php if(!empty($vo["page_modify"]))echo date("Y-m-d H:i:s", $vo["page_modify"]); else echo "--"; ?></td>
+                <td><?php if(!empty($vo["page_create"]))echo $vo["page_create"]; else echo "--";  ?></td>
+                <td><?php if(!empty($vo["page_modify"]))echo $vo["page_modify"]; else echo "--"; ?></td>
                 <td>
                     <a href="__URL__/update/page_id/{$vo.page_id}">Update</a> | 
                     <a href="javascript:del({$vo.page_id})">Delete</a>

@@ -146,8 +146,8 @@ function del(id){
                 <td><?php echo ($vo["page_title"]); ?></td>
                 <td><?php echo ($vo["page_lang"]); ?></td>
                 <td><?php echo ($vo["page_status"]); ?></td>
-                <td><?php if(!empty($vo["page_create"]))echo date("Y-m-d H:i:s", $vo["page_create"]); else echo "--";  ?></td>
-                <td><?php if(!empty($vo["page_modify"]))echo date("Y-m-d H:i:s", $vo["page_modify"]); else echo "--"; ?></td>
+                <td><?php if(!empty($vo["page_create"]))echo $vo["page_create"]; else echo "--";  ?></td>
+                <td><?php if(!empty($vo["page_modify"]))echo $vo["page_modify"]; else echo "--"; ?></td>
                 <td>
                     <a href="__URL__/update/page_id/<?php echo ($vo["page_id"]); ?>">Update</a> | 
                     <a href="javascript:del(<?php echo ($vo["page_id"]); ?>)">Delete</a>
