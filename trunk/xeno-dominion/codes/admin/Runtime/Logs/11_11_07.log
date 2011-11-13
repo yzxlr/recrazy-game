@@ -1,39 +1,556 @@
-[ 2011-11-07T12:23:20+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.027607s ]
-[ 2011-11-07T12:23:20+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
-[ 2011-11-07T12:23:20+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
-[ 2011-11-07T12:23:20+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
-[ 2011-11-07T12:23:33+08:00 ] ERR: (ThinkException) 无法加载模块Postcategory
-[ 2011-11-07T12:23:38+08:00 ] ERR: (ThinkException) 无法加载模块Postcategory
-[ 2011-11-07T12:23:47+08:00 ] ERR: (ThinkException) 无法加载模块Postcategory
-[ 2011-11-07T12:23:51+08:00 ] ERR: (ThinkException) 无法加载模块Post
-[ 2011-11-07T12:23:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.011396s ]
-[ 2011-11-07T12:23:54+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000618s ]
-[ 2011-11-07T12:23:54+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000802s ]
-[ 2011-11-07T12:23:54+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
-[ 2011-11-07T12:23:54+08:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
-[ 2011-11-07T12:23:54+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
-[ 2011-11-07T12:23:54+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
-[ 2011-11-07T12:23:54+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
-[ 2011-11-07T12:23:54+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
-[ 2011-11-07T12:23:54+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
-[ 2011-11-07T12:23:57+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.044050s ]
-[ 2011-11-07T12:23:57+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001263s ]
-[ 2011-11-07T12:23:57+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.001103s ]
-[ 2011-11-07T12:23:57+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000952s ]
-[ 2011-11-07T12:23:57+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=7 LIMIT 1  [ RunTime:0.000853s ]
-[ 2011-11-07T12:23:57+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
-[ 2011-11-07T12:23:57+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
-[ 2011-11-07T12:23:57+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
-[ 2011-11-07T12:24:00+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004478s ]
-[ 2011-11-07T12:24:00+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000839s ]
-[ 2011-11-07T12:24:00+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
-[ 2011-11-07T12:24:00+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
-[ 2011-11-07T12:24:00+08:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
-[ 2011-11-07T12:24:02+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005604s ]
-[ 2011-11-07T12:24:02+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000793s ]
-[ 2011-11-07T12:24:02+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000680s ]
-[ 2011-11-07T12:24:02+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000761s ]
-[ 2011-11-07T12:24:02+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=7 LIMIT 1  [ RunTime:0.000579s ]
-[ 2011-11-07T12:24:02+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
-[ 2011-11-07T12:24:02+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
-[ 2011-11-07T12:24:02+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:41:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.007506s ]
+[ 2011-11-07T10:42:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001617s ]
+[ 2011-11-07T10:42:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'recrazy' ) AND ( `user_password` = 'b483e4a1317c43dad06eaae0a388db50' ) LIMIT 1  [ RunTime:0.003312s ]
+[ 2011-11-07T10:42:19+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001597s ]
+[ 2011-11-07T10:42:19+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000982s ]
+[ 2011-11-07T10:42:19+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000098s ]
+[ 2011-11-07T10:42:20+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001628s ]
+[ 2011-11-07T10:42:20+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T10:42:20+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:42:20+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:42:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001644s ]
+[ 2011-11-07T10:42:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T10:42:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:42:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:42:30+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001649s ]
+[ 2011-11-07T10:42:30+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000124s ]
+[ 2011-11-07T10:42:30+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000102s ]
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  user_nickname 1282e97849dec9495baef5755c79259c.php 第 145 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  user_status 1282e97849dec9495baef5755c79259c.php 第 147 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  user_nickname 1282e97849dec9495baef5755c79259c.php 第 145 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  user_status 1282e97849dec9495baef5755c79259c.php 第 147 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  user_nickname 1282e97849dec9495baef5755c79259c.php 第 145 行.
+[ 2011-11-07T10:42:30+08:00 ] NOTIC: [8] Undefined index:  user_status 1282e97849dec9495baef5755c79259c.php 第 147 行.
+[ 2011-11-07T10:42:34+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001630s ]
+[ 2011-11-07T10:42:34+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000190s ]
+[ 2011-11-07T10:42:34+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000166s ]
+[ 2011-11-07T10:42:34+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T10:42:34+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T10:42:35+08:00 ] ERR: (ThinkException) 无法加载模块Post
+[ 2011-11-07T10:42:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001581s ]
+[ 2011-11-07T10:42:38+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000614s ]
+[ 2011-11-07T10:42:38+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductscategoryAction.class.php 第 14 行.
+[ 2011-11-07T10:42:38+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000177s ]
+[ 2011-11-07T10:42:38+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T10:42:38+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:42:38+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:48:43+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001641s ]
+[ 2011-11-07T10:48:43+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001031s ]
+[ 2011-11-07T10:48:43+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000095s ]
+[ 2011-11-07T10:48:43+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000089s ]
+[ 2011-11-07T10:48:43+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T10:48:43+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:48:43+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:48:44+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001632s ]
+[ 2011-11-07T10:48:44+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001094s ]
+[ 2011-11-07T10:48:44+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000099s ]
+[ 2011-11-07T10:48:44+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000089s ]
+[ 2011-11-07T10:48:44+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T10:48:44+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:48:44+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:48:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001665s ]
+[ 2011-11-07T10:48:49+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T10:48:49+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:48:49+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:48:51+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001656s ]
+[ 2011-11-07T10:48:51+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000447s ]
+[ 2011-11-07T10:48:51+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000101s ]
+[ 2011-11-07T10:48:51+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T10:48:51+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T10:48:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:48:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T10:48:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:48:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:48:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:48:52+08:00 ] ERR: (ThinkException) 无法加载模块Post
+[ 2011-11-07T10:49:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001678s ]
+[ 2011-11-07T10:49:55+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001695s ]
+[ 2011-11-07T10:49:55+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'master' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.001026s ]
+[ 2011-11-07T10:49:55+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'master' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000112s ]
+[ 2011-11-07T10:51:51+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.002014s ]
+[ 2011-11-07T10:51:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001637s ]
+[ 2011-11-07T10:51:54+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000972s ]
+[ 2011-11-07T10:51:54+08:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000102s ]
+[ 2011-11-07T10:51:55+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001701s ]
+[ 2011-11-07T10:51:55+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T10:51:55+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:51:55+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:51:57+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001683s ]
+[ 2011-11-07T10:51:57+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T10:51:57+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:51:57+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T10:52:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001829s ]
+[ 2011-11-07T10:52:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000099s ]
+[ 2011-11-07T10:52:01+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000110s ]
+[ 2011-11-07T10:52:01+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T10:52:01+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T10:52:01+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T10:52:20+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001885s ]
+[ 2011-11-07T10:52:20+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000556s ]
+[ 2011-11-07T10:52:20+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000096s ]
+[ 2011-11-07T10:52:20+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T10:52:20+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T10:52:20+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:52:20+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T10:52:20+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:52:20+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:52:20+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T10:52:25+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001960s ]
+[ 2011-11-07T10:52:25+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001124s ]
+[ 2011-11-07T10:52:25+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000098s ]
+[ 2011-11-07T10:52:25+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000090s ]
+[ 2011-11-07T10:52:25+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T10:52:25+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:52:25+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:56:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001633s ]
+[ 2011-11-07T10:56:38+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001055s ]
+[ 2011-11-07T10:56:38+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000093s ]
+[ 2011-11-07T10:56:38+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000098s ]
+[ 2011-11-07T10:56:38+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T10:56:38+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T10:56:38+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:00:27+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001620s ]
+[ 2011-11-07T11:00:27+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001035s ]
+[ 2011-11-07T11:00:27+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000090s ]
+[ 2011-11-07T11:00:27+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000087s ]
+[ 2011-11-07T11:00:27+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:00:27+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:00:27+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:00:29+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001766s ]
+[ 2011-11-07T11:00:29+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001146s ]
+[ 2011-11-07T11:00:29+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000096s ]
+[ 2011-11-07T11:00:29+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000090s ]
+[ 2011-11-07T11:00:29+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:00:29+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:00:29+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:00:29+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001600s ]
+[ 2011-11-07T11:00:29+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001066s ]
+[ 2011-11-07T11:00:29+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000091s ]
+[ 2011-11-07T11:00:29+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000087s ]
+[ 2011-11-07T11:00:29+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:00:29+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:00:29+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:01:17+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001668s ]
+[ 2011-11-07T11:01:17+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001064s ]
+[ 2011-11-07T11:01:17+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000101s ]
+[ 2011-11-07T11:01:17+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000103s ]
+[ 2011-11-07T11:01:17+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:01:17+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:01:17+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:01:39+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001650s ]
+[ 2011-11-07T11:01:39+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001071s ]
+[ 2011-11-07T11:01:39+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000096s ]
+[ 2011-11-07T11:01:39+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000094s ]
+[ 2011-11-07T11:01:39+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:01:39+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:01:39+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:02:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001596s ]
+[ 2011-11-07T11:02:49+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001043s ]
+[ 2011-11-07T11:02:49+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000091s ]
+[ 2011-11-07T11:02:49+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000086s ]
+[ 2011-11-07T11:02:49+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:02:49+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:02:49+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:03:07+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001611s ]
+[ 2011-11-07T11:03:07+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001055s ]
+[ 2011-11-07T11:03:07+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000100s ]
+[ 2011-11-07T11:03:07+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000092s ]
+[ 2011-11-07T11:03:07+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:03:07+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:03:07+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:06:02+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001654s ]
+[ 2011-11-07T11:06:02+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001029s ]
+[ 2011-11-07T11:06:02+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000093s ]
+[ 2011-11-07T11:06:02+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000088s ]
+[ 2011-11-07T11:06:02+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:06:02+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:06:02+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:10:50+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001702s ]
+[ 2011-11-07T11:10:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001029s ]
+[ 2011-11-07T11:10:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000098s ]
+[ 2011-11-07T11:10:50+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000090s ]
+[ 2011-11-07T11:10:50+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:10:50+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:10:50+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:11:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001730s ]
+[ 2011-11-07T11:11:21+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001281s ]
+[ 2011-11-07T11:11:21+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000140s ]
+[ 2011-11-07T11:11:21+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000103s ]
+[ 2011-11-07T11:11:21+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:11:21+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:11:21+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:11:22+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.001643s ]
+[ 2011-11-07T11:11:22+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001059s ]
+[ 2011-11-07T11:11:22+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000090s ]
+[ 2011-11-07T11:11:22+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000088s ]
+[ 2011-11-07T11:11:22+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:11:22+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:11:22+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:12:31+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001639s ]
+[ 2011-11-07T11:12:31+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000116s ]
+[ 2011-11-07T11:12:31+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000097s ]
+[ 2011-11-07T11:12:31+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:12:31+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:12:31+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:12:31+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:12:31+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:12:31+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:12:31+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:13:46+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001663s ]
+[ 2011-11-07T11:13:46+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000139s ]
+[ 2011-11-07T11:13:46+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000103s ]
+[ 2011-11-07T11:13:46+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:13:46+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:13:46+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:13:46+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:13:46+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:13:46+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:13:46+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:14:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001649s ]
+[ 2011-11-07T11:14:24+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000168s ]
+[ 2011-11-07T11:14:24+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000123s ]
+[ 2011-11-07T11:14:24+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:14:24+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:14:24+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:14:24+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:14:24+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:14:24+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:14:24+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:05+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001603s ]
+[ 2011-11-07T11:16:05+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000119s ]
+[ 2011-11-07T11:16:05+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000103s ]
+[ 2011-11-07T11:16:05+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:05+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:05+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:05+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:16:05+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:05+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:05+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001678s ]
+[ 2011-11-07T11:16:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000540s ]
+[ 2011-11-07T11:16:26+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000095s ]
+[ 2011-11-07T11:16:26+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:26+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:26+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:26+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:16:26+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:26+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:26+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:36+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001644s ]
+[ 2011-11-07T11:16:36+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000560s ]
+[ 2011-11-07T11:16:36+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000099s ]
+[ 2011-11-07T11:16:36+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:36+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:36+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:36+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:16:36+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:36+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:36+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:58+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001675s ]
+[ 2011-11-07T11:16:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000112s ]
+[ 2011-11-07T11:16:58+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000101s ]
+[ 2011-11-07T11:16:58+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:58+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:16:58+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:58+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:16:58+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:58+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:16:58+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:17:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001735s ]
+[ 2011-11-07T11:17:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:17:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:17:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:17:49+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001651s ]
+[ 2011-11-07T11:17:49+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000627s ]
+[ 2011-11-07T11:17:49+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000116s ]
+[ 2011-11-07T11:17:49+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:17:49+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:17:49+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:17:49+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:17:49+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:17:49+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:17:49+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:17:56+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001717s ]
+[ 2011-11-07T11:17:56+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:17:56+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:17:56+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:18:03+08:00 ] ERR: (ThinkException) 无法加载模块Post
+[ 2011-11-07T11:21:23+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001928s ]
+[ 2011-11-07T11:21:23+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:21:23+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:21:23+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:21:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001672s ]
+[ 2011-11-07T11:21:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:21:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:21:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:22:07+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001638s ]
+[ 2011-11-07T11:22:07+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:22:07+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:22:07+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:23:13+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001716s ]
+[ 2011-11-07T11:23:13+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:23:13+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:23:13+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:25:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001663s ]
+[ 2011-11-07T11:25:24+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:25:24+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:25:24+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:26:41+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001765s ]
+[ 2011-11-07T11:26:41+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:26:41+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:26:41+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:26:44+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001745s ]
+[ 2011-11-07T11:26:44+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:26:44+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:26:44+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:28:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001692s ]
+[ 2011-11-07T11:28:24+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:28:24+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:28:24+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:28:26+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001645s ]
+[ 2011-11-07T11:28:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:28:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:28:26+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:29:13+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001691s ]
+[ 2011-11-07T11:29:13+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:29:13+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:29:13+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:29:25+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001674s ]
+[ 2011-11-07T11:29:25+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:29:25+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:29:25+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:29:52+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001813s ]
+[ 2011-11-07T11:29:52+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-07T11:29:52+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:29:52+08:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-07T11:29:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001784s ]
+[ 2011-11-07T11:29:54+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000104s ]
+[ 2011-11-07T11:29:54+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000115s ]
+[ 2011-11-07T11:29:54+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:29:54+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:29:54+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:29:57+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001970s ]
+[ 2011-11-07T11:29:57+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:29:57+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:29:57+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:30:02+08:00 ] ERR: (ThinkException) 无法加载模块Post
+[ 2011-11-07T11:30:05+08:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.002283s ]
+[ 2011-11-07T11:30:05+08:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001037s ]
+[ 2011-11-07T11:30:05+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000100s ]
+[ 2011-11-07T11:30:05+08:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000089s ]
+[ 2011-11-07T11:30:05+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-07T11:30:05+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:30:05+08:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-07T11:30:23+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001691s ]
+[ 2011-11-07T11:30:23+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:30:23+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:30:23+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:30:36+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001918s ]
+[ 2011-11-07T11:30:36+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:30:36+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:30:36+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:31:37+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001640s ]
+[ 2011-11-07T11:31:37+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:31:37+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:31:37+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:32:46+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001643s ]
+[ 2011-11-07T11:32:46+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:32:46+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:32:46+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:33:10+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001697s ]
+[ 2011-11-07T11:33:10+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:33:10+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:33:10+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:41:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001699s ]
+[ 2011-11-07T11:41:11+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:41:11+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:41:11+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:41:14+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001665s ]
+[ 2011-11-07T11:41:14+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:41:14+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:41:14+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:41:17+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001684s ]
+[ 2011-11-07T11:41:17+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 45 行.
+[ 2011-11-07T11:41:17+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:41:17+08:00 ] NOTIC: [8] Undefined variable: msg 4dff38877d9825defdae33b4f3f0abc2.php 第 110 行.
+[ 2011-11-07T11:41:27+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001739s ]
+[ 2011-11-07T11:41:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000118s ]
+[ 2011-11-07T11:41:27+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000127s ]
+[ 2011-11-07T11:41:27+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:41:27+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:41:27+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:42:51+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001728s ]
+[ 2011-11-07T11:42:51+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000575s ]
+[ 2011-11-07T11:42:51+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000119s ]
+[ 2011-11-07T11:42:51+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:42:51+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:42:51+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:43:10+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001687s ]
+[ 2011-11-07T11:43:10+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000107s ]
+[ 2011-11-07T11:43:10+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000116s ]
+[ 2011-11-07T11:43:10+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:43:10+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:43:10+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:43:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001654s ]
+[ 2011-11-07T11:43:24+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000120s ]
+[ 2011-11-07T11:43:24+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000113s ]
+[ 2011-11-07T11:43:24+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:43:24+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:43:24+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:44:54+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001696s ]
+[ 2011-11-07T11:44:54+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000567s ]
+[ 2011-11-07T11:44:54+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000115s ]
+[ 2011-11-07T11:44:54+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:44:54+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:44:54+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:45:42+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001684s ]
+[ 2011-11-07T11:45:42+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000138s ]
+[ 2011-11-07T11:45:42+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000113s ]
+[ 2011-11-07T11:45:42+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:45:42+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:45:42+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:46:03+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001638s ]
+[ 2011-11-07T11:46:03+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000235s ]
+[ 2011-11-07T11:46:03+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000112s ]
+[ 2011-11-07T11:46:03+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:46:03+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:46:03+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:46:04+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001703s ]
+[ 2011-11-07T11:46:04+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000569s ]
+[ 2011-11-07T11:46:04+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000129s ]
+[ 2011-11-07T11:46:04+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:46:04+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:46:04+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:46:31+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001686s ]
+[ 2011-11-07T11:46:31+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000127s ]
+[ 2011-11-07T11:46:31+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000109s ]
+[ 2011-11-07T11:46:31+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:46:31+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:46:31+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:47:06+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001687s ]
+[ 2011-11-07T11:47:06+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000550s ]
+[ 2011-11-07T11:47:06+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000117s ]
+[ 2011-11-07T11:47:06+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:47:06+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:47:06+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:47:21+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001694s ]
+[ 2011-11-07T11:47:21+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000144s ]
+[ 2011-11-07T11:47:21+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000127s ]
+[ 2011-11-07T11:47:21+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:47:21+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:47:21+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:47:52+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001861s ]
+[ 2011-11-07T11:47:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000622s ]
+[ 2011-11-07T11:47:52+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000115s ]
+[ 2011-11-07T11:47:52+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:47:52+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:47:52+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:48:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001696s ]
+[ 2011-11-07T11:48:11+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000821s ]
+[ 2011-11-07T11:48:11+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000112s ]
+[ 2011-11-07T11:48:11+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:48:11+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:48:11+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:48:24+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001690s ]
+[ 2011-11-07T11:48:24+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000795s ]
+[ 2011-11-07T11:48:24+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000111s ]
+[ 2011-11-07T11:48:24+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:48:24+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:48:24+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:48:38+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.001685s ]
+[ 2011-11-07T11:48:38+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000102s ]
+[ 2011-11-07T11:48:38+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000111s ]
+[ 2011-11-07T11:48:38+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:48:38+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T11:48:38+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T11:49:01+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001687s ]
+[ 2011-11-07T11:49:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000779s ]
+[ 2011-11-07T11:49:01+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000105s ]
+[ 2011-11-07T11:49:01+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:49:01+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:49:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:49:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:49:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:49:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:49:01+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:49:02+08:00 ] ERR: (ThinkException) 无法加载模块Post
+[ 2011-11-07T11:49:23+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001661s ]
+[ 2011-11-07T11:49:23+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000147s ]
+[ 2011-11-07T11:49:23+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000103s ]
+[ 2011-11-07T11:49:23+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:49:23+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T11:49:23+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:49:23+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T11:49:23+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:49:23+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T11:49:23+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:08+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001995s ]
+[ 2011-11-07T12:02:08+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000107s ]
+[ 2011-11-07T12:02:08+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000095s ]
+[ 2011-11-07T12:02:08+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:02:08+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:02:08+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:08+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T12:02:08+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:08+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:08+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:40+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001658s ]
+[ 2011-11-07T12:02:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000543s ]
+[ 2011-11-07T12:02:40+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000097s ]
+[ 2011-11-07T12:02:40+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:02:40+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:02:40+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:40+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T12:02:40+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:40+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:40+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:51+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001575s ]
+[ 2011-11-07T12:02:51+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000103s ]
+[ 2011-11-07T12:02:51+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000094s ]
+[ 2011-11-07T12:02:51+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:02:51+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:02:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T12:02:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:02:51+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:03:04+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001669s ]
+[ 2011-11-07T12:03:04+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000629s ]
+[ 2011-11-07T12:03:04+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000099s ]
+[ 2011-11-07T12:03:04+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:03:04+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:03:04+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:03:04+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T12:03:04+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:03:04+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:03:04+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:08+08:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.002660s ]
+[ 2011-11-07T12:04:08+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000579s ]
+[ 2011-11-07T12:04:08+08:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000120s ]
+[ 2011-11-07T12:04:08+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T12:04:08+08:00 ] NOTIC: [8] Undefined index:  info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-07T12:04:08+08:00 ] NOTIC: [8] Undefined index:  uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-11-07T12:04:10+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001648s ]
+[ 2011-11-07T12:04:10+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000124s ]
+[ 2011-11-07T12:04:10+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000101s ]
+[ 2011-11-07T12:04:10+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:04:10+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:04:10+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:10+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T12:04:10+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:10+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:10+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:11+08:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.001630s ]
+[ 2011-11-07T12:04:11+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000565s ]
+[ 2011-11-07T12:04:11+08:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000104s ]
+[ 2011-11-07T12:04:11+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:04:11+08:00 ] NOTIC: [8] Undefined index:  info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-11-07T12:04:11+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:11+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 150 行.
+[ 2011-11-07T12:04:11+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:11+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:11+08:00 ] NOTIC: [8] A non well formed numeric value encountered 54042c11aa449cd5c6bb37d6a4c6f773.php 第 149 行.
+[ 2011-11-07T12:04:12+08:00 ] ERR: (ThinkException) 无法加载模块Post
