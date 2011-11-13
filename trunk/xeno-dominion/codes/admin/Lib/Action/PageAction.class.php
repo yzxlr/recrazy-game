@@ -31,7 +31,7 @@ class PageAction extends CommonAction
 		$data["tb_page"] = $tb_page ->where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		
 		//10. Display
-		var_dump($data["tb_page"]);
+		/////var_dump($data["tb_page"]);
 		$this->assign("data",$data);
 		$this->assign("msg",$msg);
         $this->display();
