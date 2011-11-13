@@ -24,6 +24,19 @@
 	height:500px;
 	background-color:#9EF;
 }
+#content_left {
+	float:left;
+	width:79%;
+	height:495px;
+	background-color:#9CA; 
+} 
+
+#content_right {
+	float:right;
+	width:20%;
+	height:495px;
+	background-color:#8CA; 
+} 
 
 #footer {
 	float:left;
@@ -31,3 +44,5 @@
 	height:100px;
 	background-color:#6CF; 
 } 
+
+
