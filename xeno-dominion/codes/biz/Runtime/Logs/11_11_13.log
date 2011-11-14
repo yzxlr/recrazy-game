@@ -1,0 +1,9 @@
+[ 2011-11-13T10:09:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.033772s ]
+[ 2011-11-13T10:09:38-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2011-11-13T10:09:38-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2011-11-21 00:00:00') AND (`time` >= '2011-11-13 00:00:00')  ) ORDER BY time ASC [ RunTime:0.114284s ]
+[ 2011-11-13T10:09:38-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2011-11-13T10:09:38-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2011-11-14 00:00:00') AND (`time` >= '2011-11-13 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001023s ]
+[ 2011-11-13T10:09:38-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2011-11-13T10:09:38-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2011-11-15 00:00:00') AND (`time` >= '2011-11-14 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001060s ]
+[ 2011-11-13T10:09:38-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2011-11-13T10:09:38-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2011-11-21 00:00:00') AND (`time` >= '2011-11-15 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001340s ]
