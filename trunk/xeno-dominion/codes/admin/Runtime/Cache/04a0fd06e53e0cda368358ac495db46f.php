@@ -109,41 +109,49 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-
-
+<script>
+function del(id){
+	if(id)
+	{
+	  if(confirm("Delete?")){ 
+	    location="__URL__/lang_del/cat_id/<?php echo ($_GET['cat_id']); ?>/catlang_id/"+id;
+      }
+	}
+}
+</script>
 <div id="content">
-	<!--  内容列表   -->
-        <form name="form2" style="margin-bottom:0px;">
-        <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
-            <tr bgcolor="#E7E7E7">
-                <td height="30" colspan="10">
-                    <span style="float:left; padding-top:3px; padding-left:5px;">Product List</span>
-                    <span style="float:right;"><a href="__URL__/lang_add/cat_id/<?php echo ($_GET['cat_id']); ?>">添加语言</a></span>
-                </td>
-            </tr>
-            <tr align="center" bgcolor="#FAFAF1" height="22">
-                <th width="8%">ID</th>
-                <th width="13%">类名</th>
-                <th width="14%">Option</th>
-                <th width="10%">Language List</th>
-            </tr>
-            
-            <?php if(is_array($data["productsCatLang"])): foreach($data["productsCatLang"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td><?php echo ($vo["catlang_id"]); ?></td>
-                <td><?php echo ($vo["cat_name"]); ?></td>
-                <td><?php echo ($vo["lang_name"]); ?></td>
-                <td>
-                    <a href="__URL__/lang_edit/cat_id/<?php echo ($_GET['cat_id']); ?>/catlang_id/<?php echo ($vo["catlang_id"]); ?>">编辑</a> | 
-                    <a href="javascript:del(<?php echo ($vo["catlang_id"]); ?>)">删除</a>
-                </td>
-            </tr><?php endforeach; endif; ?>
-            <tr bgcolor="#FAFAF1">
-            <td height="28" colspan="10">
-                --
-            </td>
-            </tr>
-        </table>
-    </form>
+<!--  内容列表   -->
+<form name="form2" style="margin-bottom:0px;">
+<table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
+<tr bgcolor="#E7E7E7">
+	<td height="30" colspan="10">
+    	<span style="float:left; padding-top:3px; padding-left:5px;"><?php echo ($data["tb_productsCat"]["cat_name"]); ?> 分类下的语言列表</span>
+        <span style="float:right;"><a href="__URL__/lang_add/cat_id/<?php echo ($_GET['cat_id']); ?>">添加语言</a></span>
+    </td>
+</tr>
+<tr align="center" bgcolor="#FAFAF1" height="22">
+	<th width="8%">ID</th>
+	<th width="13%">类名</th>
+	<th width="14%">语言</th>
+	<th width="10%">操作</th>
+</tr>
+
+<?php if(is_array($data["productsCatLang"])): foreach($data["productsCatLang"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+	<td><?php echo ($vo["catlang_id"]); ?></td>
+	<td><?php echo ($vo["cat_name"]); ?></td>
+	<td><?php echo ($vo["lang_name"]); ?></td>
+	<td>
+    	<a href="__URL__/lang_edit/cat_id/<?php echo ($_GET['cat_id']); ?>/catlang_id/<?php echo ($vo["catlang_id"]); ?>">编辑</a> | 
+    	<a href="javascript:del(<?php echo ($vo["catlang_id"]); ?>)">删除</a>
+    </td>
+</tr><?php endforeach; endif; ?>
+<tr bgcolor="#FAFAF1">
+<td height="28" colspan="10">
+	--
+</td>
+</tr>
+</table>
+</form>
 </div>
 </div> <!-- wrapper -->
 
