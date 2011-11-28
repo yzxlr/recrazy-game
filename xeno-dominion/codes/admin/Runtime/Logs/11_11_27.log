@@ -1,0 +1,61 @@
+[ 2011-11-27T11:37:49-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009505s ]
+[ 2011-11-27T11:37:51-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004476s ]
+[ 2011-11-27T11:37:51-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.020279s ]
+[ 2011-11-27T11:37:51-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000799s ]
+[ 2011-11-27T11:37:52-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004870s ]
+[ 2011-11-27T11:37:52-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-11-27T11:37:52-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-27T11:37:52-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-11-27T11:38:03-05:00 ] SQL: SHOW COLUMNS FROM `ry_product` [ RunTime:0.004003s ]
+[ 2011-11-27T11:38:03-05:00 ] SQL: SELECT * FROM `ry_product` [ RunTime:0.000692s ]
+[ 2011-11-27T11:38:03-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T11:38:03-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T11:38:03-05:00 ] NOTIC: [8] Undefined index: cat_id f3fff2b5c97ac42f78439ba97dbcdcda.php 第 121 行.
+[ 2011-11-27T11:38:03-05:00 ] NOTIC: [8] Undefined index: productsCatLang f3fff2b5c97ac42f78439ba97dbcdcda.php 第 131 行.
+[ 2011-11-27T13:26:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_product` [ RunTime:0.004899s ]
+[ 2011-11-27T13:26:29-05:00 ] SQL: SELECT * FROM `ry_product` [ RunTime:0.001013s ]
+[ 2011-11-27T13:26:29-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T13:26:29-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T13:26:29-05:00 ] NOTIC: [8] Undefined index: cat_id f3fff2b5c97ac42f78439ba97dbcdcda.php 第 121 行.
+[ 2011-11-27T13:26:29-05:00 ] NOTIC: [8] Undefined index: productsCatLang f3fff2b5c97ac42f78439ba97dbcdcda.php 第 131 行.
+[ 2011-11-27T13:26:35-05:00 ] ERR: (ThinkException) _ERROR_ACTION_add
+[ 2011-11-27T13:27:18-05:00 ] SQL: SHOW COLUMNS FROM `ry_product` [ RunTime:0.009188s ]
+[ 2011-11-27T13:27:18-05:00 ] SQL: SELECT * FROM `ry_product` [ RunTime:0.000738s ]
+[ 2011-11-27T13:27:18-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T13:27:18-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T13:27:18-05:00 ] NOTIC: [8] Undefined index: cat_id f3fff2b5c97ac42f78439ba97dbcdcda.php 第 121 行.
+[ 2011-11-27T13:27:18-05:00 ] NOTIC: [8] Undefined index: productsCatLang f3fff2b5c97ac42f78439ba97dbcdcda.php 第 131 行.
+[ 2011-11-27T13:29:09-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007273s ]
+[ 2011-11-27T13:29:09-05:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000822s ]
+[ 2011-11-27T13:29:09-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000807s ]
+[ 2011-11-27T13:29:09-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.001100s ]
+[ 2011-11-27T13:29:09-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=7 LIMIT 1  [ RunTime:0.001025s ]
+[ 2011-11-27T13:29:09-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-27T13:29:09-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-27T13:29:09-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-27T13:29:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004557s ]
+[ 2011-11-27T13:29:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.018778s ]
+[ 2011-11-27T13:29:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '6' ) LIMIT 1  [ RunTime:0.000855s ]
+[ 2011-11-27T13:29:15-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 45 行.
+[ 2011-11-27T13:29:15-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 110 行.
+[ 2011-11-27T13:29:15-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 110 行.
+[ 2011-11-27T13:29:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.011292s ]
+[ 2011-11-27T13:29:44-05:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000797s ]
+[ 2011-11-27T13:29:44-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000663s ]
+[ 2011-11-27T13:29:44-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000698s ]
+[ 2011-11-27T13:29:44-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=7 LIMIT 1  [ RunTime:0.001180s ]
+[ 2011-11-27T13:29:44-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-11-27T13:29:44-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-27T13:29:44-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-11-27T13:29:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_product` [ RunTime:0.009628s ]
+[ 2011-11-27T13:29:46-05:00 ] SQL: SELECT * FROM `ry_product` [ RunTime:0.001152s ]
+[ 2011-11-27T13:29:46-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T13:29:46-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 110 行.
+[ 2011-11-27T13:29:46-05:00 ] NOTIC: [8] Undefined index: cat_id f3fff2b5c97ac42f78439ba97dbcdcda.php 第 121 行.
+[ 2011-11-27T13:29:46-05:00 ] NOTIC: [8] Undefined index: productsCatLang f3fff2b5c97ac42f78439ba97dbcdcda.php 第 131 行.
+[ 2011-11-27T13:32:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009495s ]
+[ 2011-11-27T13:32:06-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000729s ]
+[ 2011-11-27T13:32:06-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.001416s ]
+[ 2011-11-27T13:32:06-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-27T13:32:06-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-11-27T13:32:06-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.

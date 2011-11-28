@@ -25,7 +25,7 @@ function del(id){
             <th width="10%">User Email</th>
             <th width="6%">Status</th>
             <th width="7%">Options</th>
-            <th width="">Additional</th>
+            <th width="">--</th>
         </tr>
         <tbody>
         	<volist name="msg.tb_users" id="vo"> 
@@ -40,9 +40,7 @@ function del(id){
                 	<a href="{$SITE_URL}/admin.php?s=User/edit/id/{$vo.uid}">Edit</a> | 
                     <a href="javascript:del({$vo.uid});">Delete</a>
                 </td>
-                <td>
-                	<a href="{$SITE_URL}/admin.php?s=User/profile/id/{$vo.uid}">Profile</a>
-                </td>
+                <td>--</td>
             </tr>
             </volist>
             <tr bgcolor="#FAFAF1">

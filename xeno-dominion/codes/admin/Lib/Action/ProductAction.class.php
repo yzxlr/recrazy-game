@@ -25,7 +25,7 @@ class ProductAction extends CommonAction
 		$this->assign("msg",$msg);
         $this->display();
     }
-
-
+	
+	
 }
 ?>
