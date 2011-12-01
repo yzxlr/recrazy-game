@@ -176,7 +176,23 @@ class UserAction extends CommonAction
 	}
 	
 	public function profile(){
-		
+		$tb_users_profile = M("usersProfile");
+		$data["tb_users_profile"]=$tb_users_profile->where(array("user_id"=>$_GET['uid']))->select();
+		$this->assign("data",$data); 
+		$this->display();
+	}
+	
+	public function profile_del(){
+		$tb_users_profile = M("usersProfile");
+		if(isset($_GET["id"])){
+			if($tb_users_profile->where(array("profile_id"=>$_GET["id"]))->delete()){
+				$this->success("Deleted");
+			}else{
+				$this->error("Error: invalid profile ID!");
+			}
+		}else{
+			$this->error("Empty profile ID.");
+		}
 	}
 	
 }
