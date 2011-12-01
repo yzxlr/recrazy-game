@@ -114,7 +114,7 @@ function del(id){
 	if(id)
 	{
 	  if(confirm("Delete?")){ 
-	    location="__URL__/del/uid/"+id;
+	    location="__URL__/profile_del/id/"+id;
       }
 	}
 }
@@ -125,33 +125,30 @@ function del(id){
     </form>
     <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
     	<tr bgcolor="#E7E7E7">
-            <td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">User List</span><span style="float:right;"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">[Add New User]</a></span></td>
+            <td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">User Profile List</span><span style="float:right;"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">[Add New User]</a></span></td>
         </tr>
         <tr align="center" bgcolor="#FAFAF1" height="22">
             <th width="8%">UID</th>
-            <th width="5%">Role</th>
-            <th width="32%">User Name</th>
-            <th width="14%">Nickname</th>
-            <th width="10%">User Email</th>
-            <th width="6%">Status</th>
+            <th width="5%">Language</th>
+            <th width="14%">Homephone Number</th>
+            <th width="32%">Company Name</th>
+            
+            <th width="10%">Phone Number</th>
             <th width="7%">Options</th>
-            <th width="">Additional</th>
+            <th width="">--</th>
         </tr>
         <tbody>
-        	<?php if(is_array($msg["tb_users"])): $i = 0; $__LIST__ = $msg["tb_users"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): ++$i;$mod = ($i % 2 )?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22">
-                <td><?php echo ($vo["uid"]); ?></td>
-                <td><?php echo ($vo["role_text"]); ?></td>
-                <td><?php echo ($vo["user_name"]); ?></td>
-                <td><?php echo ($vo["user_nickname"]); ?></td>
-                <td><?php echo ($vo["user_email"]); ?></td>
-                <td><?php echo ($vo["user_status"]); ?></td>
+        	<?php if(is_array($data["tb_users_profile"])): $i = 0; $__LIST__ = $data["tb_users_profile"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): ++$i;$mod = ($i % 2 )?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22">
+                <td><?php echo ($vo["profile_id"]); ?></td>
+                <td><?php echo ($vo["profile_lang"]); ?></td>
+                <td><?php echo ($vo["profile_phone_home"]); ?></td>
+                <td><?php echo ($vo["profile_company_name"]); ?></td>
+                <td><?php echo ($vo["profile_phone_work"]); ?></td>
                 <td>
-                	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/edit/id/<?php echo ($vo["uid"]); ?>">Edit</a> | 
-                    <a href="javascript:del(<?php echo ($vo["uid"]); ?>);">Delete</a>
+                	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/profile_edit/uid/<?php echo ($vo["user_id"]); ?>">Edit</a> | 
+                    <a href="javascript:del(<?php echo ($vo["profile_id"]); ?>);">Delete</a>
                 </td>
-                <td>
-                	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/profile/uid/<?php echo ($vo["uid"]); ?>">Profile</a>
-                </td>
+                <td>--</td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
             <tr bgcolor="#FAFAF1">
                 <td height="28" colspan="10">
