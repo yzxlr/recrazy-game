@@ -195,5 +195,9 @@ class UserAction extends CommonAction
 		}
 	}
 	
+	public function profile_add(){
+		
+	}
+	
 }
 ?>
