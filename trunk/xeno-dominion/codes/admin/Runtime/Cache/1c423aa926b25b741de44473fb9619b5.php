@@ -145,7 +145,7 @@ function del(id){
                 <td><?php echo ($vo["profile_company_name"]); ?></td>
                 <td><?php echo ($vo["profile_phone_work"]); ?></td>
                 <td>
-                	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/profile_edit/uid/<?php echo ($vo["user_id"]); ?>">Edit</a> | 
+                	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/profile_edit/id/<?php echo ($vo["profile_id"]); ?>">Edit</a> | 
                     <a href="javascript:del(<?php echo ($vo["profile_id"]); ?>);">Delete</a>
                 </td>
                 <td>--</td>
