@@ -2,6 +2,7 @@
 
 <div id="content">
 	<form action="#" method="post">
+    <input type="hidden" name="user_id" value="{$Think.get.uid}" />
     <table>
         <thead>
             <tr>
@@ -13,32 +14,24 @@
                 <td colspan="2"></td>
             </tr>
             <tr>
-                <td>Role:</td>
+            	<td>Language:</td>
                 <td>
-                	<select name="user_role">
-                    	<foreach name="msg.user_roles" item="vo">
-                        	<option value="{$vo.id}" <eq name="vo.id" value="100">selected="selected"</eq>>{$vo.name}</option>
+                	<select name="profile_lang">
+                    	<foreach name="data.tb_langs" item="vo">
+                        	<option value="{$vo.lang_code}">{$vo.language}</option>
                         </foreach>
                     </select>
                 </td>
             </tr>
-            <tr>
-                <td>User Name:</td>
-                <td><input type="text" name="user_name" value="" /></td>
+      <tr>
+                <td>Company Name:</td>
+                <td><input type="text" name="profile_company_name" /></td>
             </tr>
             <tr>
-                <td>Nickname:</td>
-                <td><input type="text" name="user_nickname" value="" /></td>
+                <td>Company Description:</td>
+                <td><textarea name="profile_company_desc"></textarea></td>
             </tr>
             <tr>
-                <td>User Email:</td>
-                <td><input type="text" name="user_email" value="" /></td>
-            </tr>
-            <tr>
-                <td>Password : </td>
-                <td><input type="text" name="user_password" value="" /></td>
-            </tr>
-             <tr>
                 <td></td>
                 <td><input type="submit" value="Add" /></td>
             </tr>

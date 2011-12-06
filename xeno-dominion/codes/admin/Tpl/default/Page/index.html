@@ -43,7 +43,7 @@ function del(id){
                     <a href="__URL__/update/page_id/{$vo.page_id}">Update</a> | 
                     <a href="javascript:del({$vo.page_id})">Delete</a>
                 </td>
-                <td><a target="_blank" href="__APP__/?s=Page/lang_index/page_id/{$vo.page_id}">List Languages</a></td>
+                <td><a target="_blank" href="{$SITE_URL}/admin.php?s=Page/lang_index/page_id/{$vo.page_id}">List Languages</a></td>
             </tr>
             </foreach>
             <tr bgcolor="#FAFAF1">

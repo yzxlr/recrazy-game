@@ -125,7 +125,7 @@ function del(id){
     </form>
     <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
     	<tr bgcolor="#E7E7E7">
-            <td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">User Profile List</span><span style="float:right;"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">[Add New User]</a></span></td>
+            <td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">User Profile List</span><span style="float:right;"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/profile_add/uid/<?php echo ($_GET['uid']); ?>">[Add New Profile]</a></span></td>
         </tr>
         <tr align="center" bgcolor="#FAFAF1" height="22">
             <th width="8%">UID</th>
