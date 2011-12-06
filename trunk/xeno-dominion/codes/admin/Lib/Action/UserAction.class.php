@@ -196,7 +196,28 @@ class UserAction extends CommonAction
 	}
 	
 	public function profile_add(){
+		$msg = array("title"=>"Add User Profile"); 
 		
+		//1 Table langs
+		$tb_langs = M("langs");
+		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
+		
+		//2 Table users_profile
+		if($_POST){
+			$tb_users_profile = M("usersProfile");
+			if($tb_users_profile->create()){
+				if($lastInsId = $tb_users_profile->add()){
+					$this->success("Success! ID is $lastInsId");
+				}else {
+					$this->error("Error. You may already have the language record. please try to update!");
+				}
+			}else{
+				$this->error("Error on create!");
+			}
+
+		}
+		$this->assign("data",$data);
+		$this->display();
 	}
 	
 }

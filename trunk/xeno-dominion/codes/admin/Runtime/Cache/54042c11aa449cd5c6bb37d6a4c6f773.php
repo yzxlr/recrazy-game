@@ -152,7 +152,7 @@ function del(id){
                     <a href="__URL__/update/page_id/<?php echo ($vo["page_id"]); ?>">Update</a> | 
                     <a href="javascript:del(<?php echo ($vo["page_id"]); ?>)">Delete</a>
                 </td>
-                <td><a target="_blank" href="__APP__/?s=Page/lang_index/page_id/<?php echo ($vo["page_id"]); ?>">List Languages</a></td>
+                <td><a target="_blank" href="<?php echo ($SITE_URL); ?>/admin.php?s=Page/lang_index/page_id/<?php echo ($vo["page_id"]); ?>">List Languages</a></td>
             </tr><?php endforeach; endif; ?>
             <tr bgcolor="#FAFAF1">
             <td height="28" colspan="10">

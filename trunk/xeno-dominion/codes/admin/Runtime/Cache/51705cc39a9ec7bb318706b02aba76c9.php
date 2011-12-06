@@ -109,60 +109,42 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-<script charset="utf-8" src="/editor/kindeditor.js"></script>
-<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
-<script>
-	var editor;
-	KindEditor.ready(function(K) {
-			editor = K.create('#page_content',{
-					langType : 'en'
-				});
-	});
-		
-	function form_check(){
-		if($("#page_title").val()==""){
-			alert("Title can not empty!");
-			return false;
-		}
-		return true;
-	}
-</script>
+
 <div id="content">
-	<form action="#" method="post" onsubmit="return form_check();">
-    	<input type="hidden" name="page_id" value="<?php echo ($_GET['page_id']); ?>" />
-    	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
-			
+	<form action="#" method="post">
+    <input type="hidden" name="user_id" value="<?php echo ($_GET['uid']); ?>" />
+    <table>
+        <thead>
             <tr>
-				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Add New Page Language</span></td>
-			</tr>
+                <td colspan="2"><h3>Add New User</h3></td>
+            </tr>
+        </thead>
+        <tbody>
             <tr>
-            	<td width="18%"><div align="right">Language &nbsp; </div></td>
-                <td width="82%">
-                	<select name="lang_code">
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+            	<td>Language:</td>
+                <td>
+                	<select name="profile_lang">
                     	<?php if(is_array($data["tb_langs"])): foreach($data["tb_langs"] as $key=>$vo): ?><option value="<?php echo ($vo["lang_code"]); ?>"><?php echo ($vo["language"]); ?></option><?php endforeach; endif; ?>
                     </select>
                 </td>
             </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Title &nbsp; </div></td>
-                <td width="82%"><input type="text" name="page_title" id="page_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
+      <tr>
+                <td>Company Name:</td>
+                <td><input type="text" name="profile_company_name" /></td>
             </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Summary &nbsp; </div></td>
-                <td width="82%"><textarea name="page_summary" id="page_summary" style="width:695px;height:100px;"></textarea></td>
+            <tr>
+                <td>Company Description:</td>
+                <td><textarea name="profile_company_desc"></textarea></td>
             </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Content &nbsp; </div></td>
-                <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Add" /></td>
             </tr>
-            <tr bgcolor="#FFFFFF">
-            	<td colspan="2">
-                    <div align="center"><input type="submit" name="Submit" value="Add Page"> 
-                        <input type="reset" name="reset" value="Reset">
-                    </div>
-            	</td>
-            </tr>
-        </table>
+        </tbody>
+    </table>
     </form>
 </div>
 

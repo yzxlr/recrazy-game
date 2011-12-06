@@ -1,0 +1,262 @@
+[ 2011-12-05T21:35:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.007626s ]
+[ 2011-12-05T21:35:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.006461s ]
+[ 2011-12-05T21:35:30-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.038863s ]
+[ 2011-12-05T21:35:30-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.001194s ]
+[ 2011-12-05T21:35:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005014s ]
+[ 2011-12-05T21:35:31-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 45 行.
+[ 2011-12-05T21:35:31-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-12-05T21:35:31-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 110 行.
+[ 2011-12-05T21:35:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.006717s ]
+[ 2011-12-05T21:35:35-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000908s ]
+[ 2011-12-05T21:35:35-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.001013s ]
+[ 2011-12-05T21:35:35-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T21:35:35-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T21:35:35-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-12-05T21:36:01-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.005765s ]
+[ 2011-12-05T21:36:01-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000803s ]
+[ 2011-12-05T21:36:01-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-05T21:36:01-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T21:36:01-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T21:36:01-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-05T21:36:01-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-05T21:41:04-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T21:41:04-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T21:41:04-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T21:41:04-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 129 行.
+[ 2011-12-05T22:02:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007648s ]
+[ 2011-12-05T22:02:33-05:00 ] NOTIC: [8] Undefined variable: user UserAction.class.php 第 202 行.
+[ 2011-12-05T22:02:33-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:02:33-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:02:33-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:02:33-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 129 行.
+[ 2011-12-05T22:08:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.006889s ]
+[ 2011-12-05T22:08:35-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:08:35-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:08:35-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:11:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004124s ]
+[ 2011-12-05T22:11:42-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.001170s ]
+[ 2011-12-05T22:11:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-05T22:11:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:11:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:11:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-05T22:11:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 128 行.
+[ 2011-12-05T22:11:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-05T22:11:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.003493s ]
+[ 2011-12-05T22:11:44-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:11:44-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:11:44-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:12:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007431s ]
+[ 2011-12-05T22:12:21-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000683s ]
+[ 2011-12-05T22:12:21-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-05T22:12:21-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:12:21-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:12:21-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-05T22:12:21-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-05T22:12:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004414s ]
+[ 2011-12-05T22:12:27-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000442s ]
+[ 2011-12-05T22:12:27-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000642s ]
+[ 2011-12-05T22:12:27-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T22:12:27-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T22:12:27-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-12-05T22:12:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007844s ]
+[ 2011-12-05T22:12:29-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000867s ]
+[ 2011-12-05T22:12:29-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-05T22:12:29-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:12:29-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:12:29-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-05T22:12:29-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-05T22:12:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007297s ]
+[ 2011-12-05T22:12:34-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:12:34-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:12:34-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:21:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.008049s ]
+[ 2011-12-05T22:21:14-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.029303s ]
+[ 2011-12-05T22:21:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.006885s ]
+[ 2011-12-05T22:21:14-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:21:14-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:21:14-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:21:14-05:00 ] NOTIC: [8] Undefined variable: data 51705cc39a9ec7bb318706b02aba76c9.php 第 129 行.
+[ 2011-12-05T22:22:00-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006105s ]
+[ 2011-12-05T22:22:00-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000762s ]
+[ 2011-12-05T22:22:00-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007006s ]
+[ 2011-12-05T22:22:00-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:22:00-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:22:00-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:22:00-05:00 ] NOTIC: [8] Undefined variable: data 51705cc39a9ec7bb318706b02aba76c9.php 第 129 行.
+[ 2011-12-05T22:23:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006264s ]
+[ 2011-12-05T22:23:15-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000949s ]
+[ 2011-12-05T22:23:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.006656s ]
+[ 2011-12-05T22:23:15-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:23:15-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:23:15-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:23:15-05:00 ] NOTIC: [8] Undefined variable: data 51705cc39a9ec7bb318706b02aba76c9.php 第 129 行.
+[ 2011-12-05T22:24:10-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.008169s ]
+[ 2011-12-05T22:24:10-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000555s ]
+[ 2011-12-05T22:24:10-05:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000908s ]
+[ 2011-12-05T22:24:10-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-12-05T22:24:10-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-12-05T22:24:13-05:00 ] ERR: (ThinkException) _MODULE_NOT_EXIST_
+[ 2011-12-05T22:24:17-05:00 ] ERR: (ThinkException) _MODULE_NOT_EXIST_
+[ 2011-12-05T22:24:44-05:00 ] ERR: (ThinkException) _MODULE_NOT_EXIST_
+[ 2011-12-05T22:25:02-05:00 ] ERR: (ThinkException) _MODULE_NOT_EXIST_
+[ 2011-12-05T22:25:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.006610s ]
+[ 2011-12-05T22:25:14-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000548s ]
+[ 2011-12-05T22:25:14-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000791s ]
+[ 2011-12-05T22:25:14-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T22:25:14-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T22:25:14-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-12-05T22:25:19-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.006553s ]
+[ 2011-12-05T22:25:19-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000623s ]
+[ 2011-12-05T22:25:19-05:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000982s ]
+[ 2011-12-05T22:25:19-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-12-05T22:25:19-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-12-05T22:25:21-05:00 ] ERR: (ThinkException) _MODULE_NOT_EXIST_
+[ 2011-12-05T22:28:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.006999s ]
+[ 2011-12-05T22:28:29-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000662s ]
+[ 2011-12-05T22:28:29-05:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000941s ]
+[ 2011-12-05T22:28:29-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-12-05T22:28:29-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 110 行.
+[ 2011-12-05T22:28:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003395s ]
+[ 2011-12-05T22:28:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.008152s ]
+[ 2011-12-05T22:28:32-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001252s ]
+[ 2011-12-05T22:28:32-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.001074s ]
+[ 2011-12-05T22:28:32-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-12-05T22:28:32-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-12-05T22:28:32-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-12-05T22:28:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006796s ]
+[ 2011-12-05T22:28:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.006405s ]
+[ 2011-12-05T22:28:37-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001136s ]
+[ 2011-12-05T22:28:37-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.000778s ]
+[ 2011-12-05T22:28:37-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-12-05T22:28:37-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 110 行.
+[ 2011-12-05T22:28:37-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 153 行.
+[ 2011-12-05T22:28:51-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004993s ]
+[ 2011-12-05T22:28:51-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.003002s ]
+[ 2011-12-05T22:28:51-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_lang_id` = '14' ) LIMIT 1  [ RunTime:0.000592s ]
+[ 2011-12-05T22:28:51-05:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-12-05T22:28:51-05:00 ] NOTIC: [8] Undefined index: info 070140bc186525a1eef90f67e81684a7.php 第 110 行.
+[ 2011-12-05T22:28:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004979s ]
+[ 2011-12-05T22:28:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.006960s ]
+[ 2011-12-05T22:28:58-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000794s ]
+[ 2011-12-05T22:28:58-05:00 ] NOTIC: [8] Undefined index: info 7f911d4179d231fc19bbc29c67586ab8.php 第 110 行.
+[ 2011-12-05T22:28:58-05:00 ] NOTIC: [8] Undefined index: info 7f911d4179d231fc19bbc29c67586ab8.php 第 110 行.
+[ 2011-12-05T22:29:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004928s ]
+[ 2011-12-05T22:29:15-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000854s ]
+[ 2011-12-05T22:29:15-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.001023s ]
+[ 2011-12-05T22:29:15-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T22:29:15-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-05T22:29:15-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-12-05T22:29:19-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007969s ]
+[ 2011-12-05T22:29:19-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000925s ]
+[ 2011-12-05T22:29:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-05T22:29:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:29:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:29:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-05T22:29:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-05T22:29:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004221s ]
+[ 2011-12-05T22:29:28-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000750s ]
+[ 2011-12-05T22:29:28-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-05T22:29:28-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:29:28-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:29:28-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-05T22:29:28-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-05T22:30:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.005220s ]
+[ 2011-12-05T22:30:22-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000864s ]
+[ 2011-12-05T22:30:22-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-05T22:30:22-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:30:22-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-05T22:30:22-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-05T22:30:22-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-05T22:30:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003235s ]
+[ 2011-12-05T22:30:24-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000857s ]
+[ 2011-12-05T22:30:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007503s ]
+[ 2011-12-05T22:30:24-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:30:24-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:30:24-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:30:24-05:00 ] NOTIC: [8] Undefined variable: data 51705cc39a9ec7bb318706b02aba76c9.php 第 129 行.
+[ 2011-12-05T22:30:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006928s ]
+[ 2011-12-05T22:30:58-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000822s ]
+[ 2011-12-05T22:30:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.006725s ]
+[ 2011-12-05T22:30:58-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:30:58-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:30:58-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:30:58-05:00 ] NOTIC: [8] Undefined variable: data 51705cc39a9ec7bb318706b02aba76c9.php 第 127 行.
+[ 2011-12-05T22:30:58-05:00 ] NOTIC: [8] Undefined variable: data 51705cc39a9ec7bb318706b02aba76c9.php 第 129 行.
+[ 2011-12-05T22:31:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003038s ]
+[ 2011-12-05T22:31:37-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000613s ]
+[ 2011-12-05T22:31:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.003391s ]
+[ 2011-12-05T22:31:37-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:31:37-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:31:37-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:34:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004784s ]
+[ 2011-12-05T22:34:47-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000670s ]
+[ 2011-12-05T22:34:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004194s ]
+[ 2011-12-05T22:34:47-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:34:47-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:34:47-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:35:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.002998s ]
+[ 2011-12-05T22:35:22-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000559s ]
+[ 2011-12-05T22:35:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.003343s ]
+[ 2011-12-05T22:35:22-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:35:22-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:35:22-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:42:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007030s ]
+[ 2011-12-05T22:42:38-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001182s ]
+[ 2011-12-05T22:42:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008081s ]
+[ 2011-12-05T22:42:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004570s ]
+[ 2011-12-05T22:42:42-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000809s ]
+[ 2011-12-05T22:42:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004067s ]
+[ 2011-12-05T22:43:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004688s ]
+[ 2011-12-05T22:43:12-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000807s ]
+[ 2011-12-05T22:43:12-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:43:12-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:43:12-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:43:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004523s ]
+[ 2011-12-05T22:43:22-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000698s ]
+[ 2011-12-05T22:43:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004912s ]
+[ 2011-12-05T22:43:22-05:00 ] SQL: INSERT INTO `ry_users_profile` (`user_id`,`profile_lang`,`profile_company_name`) VALUES ('1','en-us','aaa') [ RunTime:0.001148s ]
+[ 2011-12-05T22:43:23-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006712s ]
+[ 2011-12-05T22:43:23-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000916s ]
+[ 2011-12-05T22:43:23-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:43:23-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:43:23-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:44:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003686s ]
+[ 2011-12-05T22:44:13-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000836s ]
+[ 2011-12-05T22:44:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.006031s ]
+[ 2011-12-05T22:44:13-05:00 ] SQL: INSERT INTO `ry_users_profile` (`user_id`,`profile_lang`,`profile_company_name`) VALUES ('1','en-us','aaa') [ RunTime:0.000547s ]
+[ 2011-12-05T22:45:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004589s ]
+[ 2011-12-05T22:45:16-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000622s ]
+[ 2011-12-05T22:45:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007074s ]
+[ 2011-12-05T22:45:16-05:00 ] SQL: INSERT INTO `ry_users_profile` (`user_id`,`profile_lang`,`profile_company_name`) VALUES ('1','en-us','aaa') [ RunTime:0.000814s ]
+[ 2011-12-05T22:45:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003679s ]
+[ 2011-12-05T22:45:35-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000632s ]
+[ 2011-12-05T22:45:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004018s ]
+[ 2011-12-05T22:45:35-05:00 ] SQL: INSERT INTO `ry_users_profile` (`user_id`,`profile_lang`,`profile_company_name`) VALUES ('1','zh-cn','中文') [ RunTime:0.000992s ]
+[ 2011-12-05T22:45:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006809s ]
+[ 2011-12-05T22:45:37-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000966s ]
+[ 2011-12-05T22:45:37-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:45:37-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:45:37-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:46:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006269s ]
+[ 2011-12-05T22:46:44-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000892s ]
+[ 2011-12-05T22:46:44-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:46:44-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:46:44-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:46:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003699s ]
+[ 2011-12-05T22:46:50-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001019s ]
+[ 2011-12-05T22:46:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007761s ]
+[ 2011-12-05T22:46:50-05:00 ] SQL: INSERT INTO `ry_users_profile` (`user_id`,`profile_lang`,`profile_company_name`,`profile_company_desc`) VALUES ('1','en-us','aaaaaa','aaa') [ RunTime:0.000590s ]
+[ 2011-12-05T22:46:51-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006112s ]
+[ 2011-12-05T22:46:51-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001187s ]
+[ 2011-12-05T22:46:51-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:46:51-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:46:51-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:47:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003322s ]
+[ 2011-12-05T22:47:20-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000591s ]
+[ 2011-12-05T22:47:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007490s ]
+[ 2011-12-05T22:47:20-05:00 ] SQL: INSERT INTO `ry_users_profile` (`user_id`,`profile_lang`,`profile_company_name`,`profile_company_desc`) VALUES ('1','zh-cn','中文','中文描述哦') [ RunTime:0.000847s ]
+[ 2011-12-05T22:47:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004444s ]
+[ 2011-12-05T22:47:21-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000788s ]
+[ 2011-12-05T22:47:21-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 45 行.
+[ 2011-12-05T22:47:21-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
+[ 2011-12-05T22:47:21-05:00 ] NOTIC: [8] Undefined variable: msg 51705cc39a9ec7bb318706b02aba76c9.php 第 110 行.
