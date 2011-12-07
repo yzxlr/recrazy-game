@@ -21,7 +21,7 @@ class ProductscategoryAction extends CommonAction{
 		{
 			$cat_value[$key]['cat_id'] = $id;
 			$c_data = $category->where('cat_id='.$id)->find();
-			$cat_value[$key]['cat_name'] = $Tree->getLayer($id, '|-').$Tree->getValue($id);
+			$cat_value[$key]['cat_name'] = $Tree->getLayer($id, '--').$Tree->getValue($id);
 			$cat_value[$key]['parent_id'] = $c_data['parent_id'];
 			$cat_value[$key]['sort_order'] = $c_data['sort_order'];
 			$cat_value[$key]['is_show'] = $c_data['is_show'];
@@ -50,7 +50,7 @@ class ProductscategoryAction extends CommonAction{
 		$new_cat = array();
 		foreach ($category as $key=>$id)
 		{
-			$new_cat[$id] = $Tree->getLayer($id, '|-').$Tree->getValue($id);
+			$new_cat[$id] = $Tree->getLayer($id, '--').$Tree->getValue($id);
 		}
 
 		$this->assign("categoty",$new_cat);
@@ -81,7 +81,7 @@ class ProductscategoryAction extends CommonAction{
 		$new_cat = array();
 		foreach ($categorys as $key=>$id)
 		{
-			$new_cat[$id] = $Tree->getLayer($id, '|-').$Tree->getValue($id);
+			$new_cat[$id] = $Tree->getLayer($id, '--').$Tree->getValue($id);
 		}
 		
         $this->assign("cat_data", $cat_data);

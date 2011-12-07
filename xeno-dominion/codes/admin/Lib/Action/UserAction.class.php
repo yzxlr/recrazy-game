@@ -214,8 +214,19 @@ class UserAction extends CommonAction
 			}else{
 				$this->error("Error on create!");
 			}
-
 		}
+		
+		$this->assign("data",$data);
+		$this->display();
+	}
+	
+	public function profile_edit(){
+		$msg = array("title"=>"Edit User Profile"); 
+		
+		//1 Table langs
+		$tb_langs = M("langs");
+		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
+		
 		$this->assign("data",$data);
 		$this->display();
 	}
