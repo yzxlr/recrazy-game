@@ -157,3 +157,495 @@
 [ 2011-12-06T22:31:10-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
 [ 2011-12-06T22:31:10-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
 [ 2011-12-06T22:31:10-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T22:33:40-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007493s ]
+[ 2011-12-06T22:33:40-05:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000621s ]
+[ 2011-12-06T22:33:40-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000470s ]
+[ 2011-12-06T22:33:40-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=6 LIMIT 1  [ RunTime:0.000514s ]
+[ 2011-12-06T22:33:40-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=7 LIMIT 1  [ RunTime:0.000526s ]
+[ 2011-12-06T22:33:41-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-12-06T22:33:41-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T22:33:41-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T22:34:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.006835s ]
+[ 2011-12-06T22:34:16-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000461s ]
+[ 2011-12-06T22:34:16-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000647s ]
+[ 2011-12-06T22:34:16-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T22:34:16-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T22:34:16-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-12-06T22:34:19-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008049s ]
+[ 2011-12-06T22:34:19-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000744s ]
+[ 2011-12-06T22:34:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T22:34:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T22:34:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T22:34:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T22:34:19-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T22:34:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.036534s ]
+[ 2011-12-06T22:34:21-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001092s ]
+[ 2011-12-06T22:34:21-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T22:34:21-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T22:34:21-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T22:34:21-05:00 ] NOTIC: [8] Undefined index: uid a47de7e8993bc294c781304c9e90ce04.php 第 115 行.
+[ 2011-12-06T22:44:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007372s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001339s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000678s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=48 LIMIT 1  [ RunTime:0.000617s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=36 LIMIT 1  [ RunTime:0.000920s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=35 LIMIT 1  [ RunTime:0.000909s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=34 LIMIT 1  [ RunTime:0.000692s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=33 LIMIT 1  [ RunTime:0.000557s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=32 LIMIT 1  [ RunTime:0.000533s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=31 LIMIT 1  [ RunTime:0.000763s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=30 LIMIT 1  [ RunTime:0.000736s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=29 LIMIT 1  [ RunTime:0.000748s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=37 LIMIT 1  [ RunTime:0.000855s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=38 LIMIT 1  [ RunTime:0.000528s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=39 LIMIT 1  [ RunTime:0.000522s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=47 LIMIT 1  [ RunTime:0.000517s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=46 LIMIT 1  [ RunTime:0.000508s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=45 LIMIT 1  [ RunTime:0.000518s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=44 LIMIT 1  [ RunTime:0.000787s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=43 LIMIT 1  [ RunTime:0.000619s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=42 LIMIT 1  [ RunTime:0.000747s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=41 LIMIT 1  [ RunTime:0.000613s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=40 LIMIT 1  [ RunTime:0.000571s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=28 LIMIT 1  [ RunTime:0.000628s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=27 LIMIT 1  [ RunTime:0.000563s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=14 LIMIT 1  [ RunTime:0.000524s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=13 LIMIT 1  [ RunTime:0.000621s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=12 LIMIT 1  [ RunTime:0.000735s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=11 LIMIT 1  [ RunTime:0.000820s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=10 LIMIT 1  [ RunTime:0.000604s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=62 LIMIT 1  [ RunTime:0.000541s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=63 LIMIT 1  [ RunTime:0.000513s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=64 LIMIT 1  [ RunTime:0.000586s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=65 LIMIT 1  [ RunTime:0.000596s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=66 LIMIT 1  [ RunTime:0.000524s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=9 LIMIT 1  [ RunTime:0.000735s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=61 LIMIT 1  [ RunTime:0.000539s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=60 LIMIT 1  [ RunTime:0.000562s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=59 LIMIT 1  [ RunTime:0.000758s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=58 LIMIT 1  [ RunTime:0.000862s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=57 LIMIT 1  [ RunTime:0.000739s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=56 LIMIT 1  [ RunTime:0.000801s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=55 LIMIT 1  [ RunTime:0.000819s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=54 LIMIT 1  [ RunTime:0.000519s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=8 LIMIT 1  [ RunTime:0.000513s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=53 LIMIT 1  [ RunTime:0.000582s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=52 LIMIT 1  [ RunTime:0.000514s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=51 LIMIT 1  [ RunTime:0.000828s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=50 LIMIT 1  [ RunTime:0.000743s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=49 LIMIT 1  [ RunTime:0.000806s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=17 LIMIT 1  [ RunTime:0.000669s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=15 LIMIT 1  [ RunTime:0.000647s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=16 LIMIT 1  [ RunTime:0.000624s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=26 LIMIT 1  [ RunTime:0.000516s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=25 LIMIT 1  [ RunTime:0.000533s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=24 LIMIT 1  [ RunTime:0.000630s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=23 LIMIT 1  [ RunTime:0.000853s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=22 LIMIT 1  [ RunTime:0.000586s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=21 LIMIT 1  [ RunTime:0.000617s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=20 LIMIT 1  [ RunTime:0.000691s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=19 LIMIT 1  [ RunTime:0.000774s ]
+[ 2011-12-06T22:44:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=18 LIMIT 1  [ RunTime:0.000767s ]
+[ 2011-12-06T22:44:30-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-12-06T22:44:30-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T22:44:30-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T22:47:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007534s ]
+[ 2011-12-06T22:47:27-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000854s ]
+[ 2011-12-06T22:47:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008291s ]
+[ 2011-12-06T22:47:27-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `id` = '4' ) LIMIT 1  [ RunTime:0.000399s ]
+[ 2011-12-06T22:47:27-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T22:47:27-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T22:47:27-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T22:47:27-05:00 ] NOTIC: [8] Undefined index: uid a47de7e8993bc294c781304c9e90ce04.php 第 115 行.
+[ 2011-12-06T23:02:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007461s ]
+[ 2011-12-06T23:02:33-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000721s ]
+[ 2011-12-06T23:02:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008322s ]
+[ 2011-12-06T23:02:33-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `id` = '4' ) LIMIT 1  [ RunTime:0.000485s ]
+[ 2011-12-06T23:02:34-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:02:34-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:02:34-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:02:34-05:00 ] NOTIC: [8] Undefined index: uid a47de7e8993bc294c781304c9e90ce04.php 第 115 行.
+[ 2011-12-06T23:03:03-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.009843s ]
+[ 2011-12-06T23:03:03-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000989s ]
+[ 2011-12-06T23:03:03-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T23:03:03-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:03:03-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:03:03-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T23:03:03-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T23:03:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.008082s ]
+[ 2011-12-06T23:03:05-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000715s ]
+[ 2011-12-06T23:03:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008216s ]
+[ 2011-12-06T23:03:05-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `id` = '4' ) LIMIT 1  [ RunTime:0.000733s ]
+[ 2011-12-06T23:03:05-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:03:05-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:03:05-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:03:05-05:00 ] NOTIC: [8] Undefined index: uid a47de7e8993bc294c781304c9e90ce04.php 第 115 行.
+[ 2011-12-06T23:04:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007169s ]
+[ 2011-12-06T23:04:17-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000645s ]
+[ 2011-12-06T23:04:17-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T23:04:17-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:04:17-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:04:17-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T23:04:17-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T23:04:19-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.011393s ]
+[ 2011-12-06T23:04:19-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.001108s ]
+[ 2011-12-06T23:04:19-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.015480s ]
+[ 2011-12-06T23:04:19-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '4' ) LIMIT 1  [ RunTime:0.000836s ]
+[ 2011-12-06T23:04:19-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:04:19-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:04:19-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:04:19-05:00 ] NOTIC: [8] Undefined index: uid a47de7e8993bc294c781304c9e90ce04.php 第 115 行.
+[ 2011-12-06T23:04:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007217s ]
+[ 2011-12-06T23:04:41-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000640s ]
+[ 2011-12-06T23:04:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007853s ]
+[ 2011-12-06T23:09:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006732s ]
+[ 2011-12-06T23:09:58-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000630s ]
+[ 2011-12-06T23:09:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007368s ]
+[ 2011-12-06T23:10:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007355s ]
+[ 2011-12-06T23:10:29-05:00 ] NOTIC: [8] Undefined index: uid UserAction.class.php 第 180 行.
+[ 2011-12-06T23:10:29-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = null ) [ RunTime:0.000538s ]
+[ 2011-12-06T23:10:30-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T23:10:30-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:10:30-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:10:30-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T23:10:30-05:00 ] NOTIC: [8] Undefined index: uid 1c423aa926b25b741de44473fb9619b5.php 第 128 行.
+[ 2011-12-06T23:10:30-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T23:10:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.008378s ]
+[ 2011-12-06T23:10:34-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000483s ]
+[ 2011-12-06T23:10:34-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000634s ]
+[ 2011-12-06T23:10:34-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T23:10:34-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T23:10:34-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-12-06T23:10:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007628s ]
+[ 2011-12-06T23:10:35-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000677s ]
+[ 2011-12-06T23:10:36-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T23:10:36-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:10:36-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:10:36-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T23:10:36-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 148 行.
+[ 2011-12-06T23:10:36-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 148 行.
+[ 2011-12-06T23:10:36-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T23:11:04-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008282s ]
+[ 2011-12-06T23:11:04-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000909s ]
+[ 2011-12-06T23:11:04-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T23:11:04-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:11:04-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:11:04-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T23:11:04-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T23:11:10-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.008296s ]
+[ 2011-12-06T23:11:10-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000613s ]
+[ 2011-12-06T23:11:10-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007854s ]
+[ 2011-12-06T23:11:10-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '4' ) LIMIT 1  [ RunTime:0.000645s ]
+[ 2011-12-06T23:11:10-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:11:10-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:11:10-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:11:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007446s ]
+[ 2011-12-06T23:11:15-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000681s ]
+[ 2011-12-06T23:11:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008310s ]
+[ 2011-12-06T23:11:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007608s ]
+[ 2011-12-06T23:11:26-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000651s ]
+[ 2011-12-06T23:11:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007650s ]
+[ 2011-12-06T23:11:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.009567s ]
+[ 2011-12-06T23:11:31-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000846s ]
+[ 2011-12-06T23:11:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.014252s ]
+[ 2011-12-06T23:11:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.008719s ]
+[ 2011-12-06T23:11:41-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000993s ]
+[ 2011-12-06T23:11:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007677s ]
+[ 2011-12-06T23:12:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007639s ]
+[ 2011-12-06T23:12:12-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000793s ]
+[ 2011-12-06T23:12:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008881s ]
+[ 2011-12-06T23:12:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.009273s ]
+[ 2011-12-06T23:12:47-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000586s ]
+[ 2011-12-06T23:12:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008648s ]
+[ 2011-12-06T23:12:47-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '4' ) LIMIT 1  [ RunTime:0.000622s ]
+[ 2011-12-06T23:12:47-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:12:47-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:12:47-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:12:56-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007590s ]
+[ 2011-12-06T23:12:56-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000737s ]
+[ 2011-12-06T23:12:56-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008487s ]
+[ 2011-12-06T23:12:56-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '4' ) LIMIT 1  [ RunTime:0.000722s ]
+[ 2011-12-06T23:12:57-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:12:57-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:12:57-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:14:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007460s ]
+[ 2011-12-06T23:14:44-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000583s ]
+[ 2011-12-06T23:14:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.008082s ]
+[ 2011-12-06T23:14:44-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '4' ) LIMIT 1  [ RunTime:0.000589s ]
+[ 2011-12-06T23:14:45-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:14:45-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:14:45-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:14:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007268s ]
+[ 2011-12-06T23:14:50-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000557s ]
+[ 2011-12-06T23:14:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.006925s ]
+[ 2011-12-06T23:14:50-05:00 ] SQL: UPDATE `ry_users_profile` SET `user_id`='1',`profile_lang`='en-us',`profile_company_name`='xxxxxx',`profile_company_desc`='xxx' WHERE ( `profile_id` = '4' ) [ RunTime:0.000892s ]
+[ 2011-12-06T23:14:50-05:00 ] NOTIC: [8] Undefined variable: lastInsId UserAction.class.php 第 237 行.
+[ 2011-12-06T23:14:52-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007246s ]
+[ 2011-12-06T23:14:52-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000592s ]
+[ 2011-12-06T23:14:52-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007058s ]
+[ 2011-12-06T23:14:52-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '4' ) LIMIT 1  [ RunTime:0.000596s ]
+[ 2011-12-06T23:14:52-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:14:52-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:14:52-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:16:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007012s ]
+[ 2011-12-06T23:16:42-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000881s ]
+[ 2011-12-06T23:16:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T23:16:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:16:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:16:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T23:16:42-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T23:16:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007150s ]
+[ 2011-12-06T23:16:48-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000784s ]
+[ 2011-12-06T23:16:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007840s ]
+[ 2011-12-06T23:16:48-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '5' ) LIMIT 1  [ RunTime:0.000597s ]
+[ 2011-12-06T23:16:48-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:16:48-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:16:48-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:22:07-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.007661s ]
+[ 2011-12-06T23:22:07-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000733s ]
+[ 2011-12-06T23:22:07-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007696s ]
+[ 2011-12-06T23:22:07-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `profile_id` = '5' ) LIMIT 1  [ RunTime:0.000608s ]
+[ 2011-12-06T23:22:07-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 45 行.
+[ 2011-12-06T23:22:07-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:22:07-05:00 ] NOTIC: [8] Undefined variable: msg a47de7e8993bc294c781304c9e90ce04.php 第 110 行.
+[ 2011-12-06T23:22:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.007300s ]
+[ 2011-12-06T23:22:35-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) [ RunTime:0.000652s ]
+[ 2011-12-06T23:22:35-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 45 行.
+[ 2011-12-06T23:22:35-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:22:35-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 110 行.
+[ 2011-12-06T23:22:35-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 124 行.
+[ 2011-12-06T23:22:35-05:00 ] NOTIC: [8] Undefined variable: msg 1c423aa926b25b741de44473fb9619b5.php 第 155 行.
+[ 2011-12-06T23:23:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.009255s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000796s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000516s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=48 LIMIT 1  [ RunTime:0.000512s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=36 LIMIT 1  [ RunTime:0.000511s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=35 LIMIT 1  [ RunTime:0.000519s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=34 LIMIT 1  [ RunTime:0.000504s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=33 LIMIT 1  [ RunTime:0.000579s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=32 LIMIT 1  [ RunTime:0.000519s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=31 LIMIT 1  [ RunTime:0.000511s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=30 LIMIT 1  [ RunTime:0.000512s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=29 LIMIT 1  [ RunTime:0.000514s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=37 LIMIT 1  [ RunTime:0.000512s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=38 LIMIT 1  [ RunTime:0.000510s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=39 LIMIT 1  [ RunTime:0.000510s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=47 LIMIT 1  [ RunTime:0.000588s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=46 LIMIT 1  [ RunTime:0.000688s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=45 LIMIT 1  [ RunTime:0.000601s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=44 LIMIT 1  [ RunTime:0.000518s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=43 LIMIT 1  [ RunTime:0.000681s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=42 LIMIT 1  [ RunTime:0.000759s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=41 LIMIT 1  [ RunTime:0.000715s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=40 LIMIT 1  [ RunTime:0.001036s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=28 LIMIT 1  [ RunTime:0.000859s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=27 LIMIT 1  [ RunTime:0.000740s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=14 LIMIT 1  [ RunTime:0.000517s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=13 LIMIT 1  [ RunTime:0.000517s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=12 LIMIT 1  [ RunTime:0.000506s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=11 LIMIT 1  [ RunTime:0.000511s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=10 LIMIT 1  [ RunTime:0.000512s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=62 LIMIT 1  [ RunTime:0.000507s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=63 LIMIT 1  [ RunTime:0.000509s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=64 LIMIT 1  [ RunTime:0.000510s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=65 LIMIT 1  [ RunTime:0.000768s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=66 LIMIT 1  [ RunTime:0.000533s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=9 LIMIT 1  [ RunTime:0.000541s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=61 LIMIT 1  [ RunTime:0.000668s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=60 LIMIT 1  [ RunTime:0.000650s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=59 LIMIT 1  [ RunTime:0.000642s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=58 LIMIT 1  [ RunTime:0.000596s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=57 LIMIT 1  [ RunTime:0.000615s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=56 LIMIT 1  [ RunTime:0.000666s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=55 LIMIT 1  [ RunTime:0.000713s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=54 LIMIT 1  [ RunTime:0.000792s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=8 LIMIT 1  [ RunTime:0.000580s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=53 LIMIT 1  [ RunTime:0.000655s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=52 LIMIT 1  [ RunTime:0.000755s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=51 LIMIT 1  [ RunTime:0.000863s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=50 LIMIT 1  [ RunTime:0.000587s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=49 LIMIT 1  [ RunTime:0.000512s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=17 LIMIT 1  [ RunTime:0.000596s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=15 LIMIT 1  [ RunTime:0.000739s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=16 LIMIT 1  [ RunTime:0.000939s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=26 LIMIT 1  [ RunTime:0.000509s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=25 LIMIT 1  [ RunTime:0.000514s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=24 LIMIT 1  [ RunTime:0.000511s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=23 LIMIT 1  [ RunTime:0.000510s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=22 LIMIT 1  [ RunTime:0.000556s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=21 LIMIT 1  [ RunTime:0.000575s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=20 LIMIT 1  [ RunTime:0.000783s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=19 LIMIT 1  [ RunTime:0.000731s ]
+[ 2011-12-06T23:23:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=18 LIMIT 1  [ RunTime:0.000516s ]
+[ 2011-12-06T23:23:15-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-12-06T23:23:15-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T23:23:15-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T23:27:01-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007190s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.000830s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000519s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=48 LIMIT 1  [ RunTime:0.000564s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=36 LIMIT 1  [ RunTime:0.000548s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=35 LIMIT 1  [ RunTime:0.000564s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=34 LIMIT 1  [ RunTime:0.000561s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=33 LIMIT 1  [ RunTime:0.000552s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=32 LIMIT 1  [ RunTime:0.000554s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=31 LIMIT 1  [ RunTime:0.000568s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=30 LIMIT 1  [ RunTime:0.000542s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=29 LIMIT 1  [ RunTime:0.000555s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=37 LIMIT 1  [ RunTime:0.000600s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=38 LIMIT 1  [ RunTime:0.000544s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=39 LIMIT 1  [ RunTime:0.000540s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=47 LIMIT 1  [ RunTime:0.000552s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=46 LIMIT 1  [ RunTime:0.000549s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=45 LIMIT 1  [ RunTime:0.000520s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=44 LIMIT 1  [ RunTime:0.000528s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=43 LIMIT 1  [ RunTime:0.000518s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=42 LIMIT 1  [ RunTime:0.000593s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=41 LIMIT 1  [ RunTime:0.000714s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=40 LIMIT 1  [ RunTime:0.000772s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=28 LIMIT 1  [ RunTime:0.000719s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=27 LIMIT 1  [ RunTime:0.000730s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=14 LIMIT 1  [ RunTime:0.000854s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=13 LIMIT 1  [ RunTime:0.000615s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=12 LIMIT 1  [ RunTime:0.000496s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=11 LIMIT 1  [ RunTime:0.000544s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=10 LIMIT 1  [ RunTime:0.000509s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=62 LIMIT 1  [ RunTime:0.000502s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=63 LIMIT 1  [ RunTime:0.000521s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=64 LIMIT 1  [ RunTime:0.000524s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=65 LIMIT 1  [ RunTime:0.000521s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=66 LIMIT 1  [ RunTime:0.000522s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=9 LIMIT 1  [ RunTime:0.000531s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=61 LIMIT 1  [ RunTime:0.000542s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=60 LIMIT 1  [ RunTime:0.000664s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=59 LIMIT 1  [ RunTime:0.000643s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=58 LIMIT 1  [ RunTime:0.000644s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=57 LIMIT 1  [ RunTime:0.000539s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=56 LIMIT 1  [ RunTime:0.000582s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=55 LIMIT 1  [ RunTime:0.000593s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=54 LIMIT 1  [ RunTime:0.000569s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=8 LIMIT 1  [ RunTime:0.000667s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=53 LIMIT 1  [ RunTime:0.000801s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=52 LIMIT 1  [ RunTime:0.000673s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=51 LIMIT 1  [ RunTime:0.000646s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=50 LIMIT 1  [ RunTime:0.000500s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=49 LIMIT 1  [ RunTime:0.000503s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=17 LIMIT 1  [ RunTime:0.000514s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=15 LIMIT 1  [ RunTime:0.000602s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=16 LIMIT 1  [ RunTime:0.000868s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=26 LIMIT 1  [ RunTime:0.000516s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=25 LIMIT 1  [ RunTime:0.000504s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=24 LIMIT 1  [ RunTime:0.000500s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=23 LIMIT 1  [ RunTime:0.000500s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=22 LIMIT 1  [ RunTime:0.000502s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=21 LIMIT 1  [ RunTime:0.000500s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=20 LIMIT 1  [ RunTime:0.000519s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=19 LIMIT 1  [ RunTime:0.000505s ]
+[ 2011-12-06T23:27:01-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=18 LIMIT 1  [ RunTime:0.000500s ]
+[ 2011-12-06T23:27:01-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-12-06T23:27:01-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T23:27:01-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T23:27:09-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007951s ]
+[ 2011-12-06T23:27:09-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000891s ]
+[ 2011-12-06T23:27:09-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '48' ) LIMIT 1  [ RunTime:0.000888s ]
+[ 2011-12-06T23:27:09-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 45 行.
+[ 2011-12-06T23:27:09-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 110 行.
+[ 2011-12-06T23:27:09-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 110 行.
+[ 2011-12-06T23:30:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007424s ]
+[ 2011-12-06T23:30:45-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000989s ]
+[ 2011-12-06T23:30:45-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '48' ) LIMIT 1  [ RunTime:0.000528s ]
+[ 2011-12-06T23:30:45-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 45 行.
+[ 2011-12-06T23:30:45-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 110 行.
+[ 2011-12-06T23:30:45-05:00 ] NOTIC: [8] Undefined variable: msg 5b1d4ccd6d731aad92baf79ff4862f1e.php 第 110 行.
+[ 2011-12-06T23:31:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.008327s ]
+[ 2011-12-06T23:31:05-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000924s ]
+[ 2011-12-06T23:31:05-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-12-06T23:31:05-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-12-06T23:31:05-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-12-06T23:32:36-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007906s ]
+[ 2011-12-06T23:32:36-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000807s ]
+[ 2011-12-06T23:32:36-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-12-06T23:32:36-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-12-06T23:32:36-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-12-06T23:33:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.007127s ]
+[ 2011-12-06T23:33:48-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.001186s ]
+[ 2011-12-06T23:33:48-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 45 行.
+[ 2011-12-06T23:33:48-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-12-06T23:33:48-05:00 ] NOTIC: [8] Undefined variable: msg ff91dda4b0f6654c1813def01bb61a7d.php 第 110 行.
+[ 2011-12-06T23:34:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.011800s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` ORDER BY parent_id asc [ RunTime:0.001214s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=0 LIMIT 1  [ RunTime:0.000770s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=48 LIMIT 1  [ RunTime:0.000731s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=36 LIMIT 1  [ RunTime:0.000711s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=35 LIMIT 1  [ RunTime:0.000710s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=34 LIMIT 1  [ RunTime:0.000714s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=33 LIMIT 1  [ RunTime:0.000709s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=32 LIMIT 1  [ RunTime:0.000716s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=31 LIMIT 1  [ RunTime:0.000738s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=30 LIMIT 1  [ RunTime:0.000676s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=29 LIMIT 1  [ RunTime:0.000585s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=37 LIMIT 1  [ RunTime:0.000547s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=38 LIMIT 1  [ RunTime:0.000753s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=39 LIMIT 1  [ RunTime:0.000712s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=47 LIMIT 1  [ RunTime:0.000713s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=46 LIMIT 1  [ RunTime:0.000752s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=45 LIMIT 1  [ RunTime:0.000719s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=44 LIMIT 1  [ RunTime:0.000773s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=43 LIMIT 1  [ RunTime:0.000730s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=42 LIMIT 1  [ RunTime:0.000720s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=41 LIMIT 1  [ RunTime:0.000731s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=40 LIMIT 1  [ RunTime:0.000679s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=28 LIMIT 1  [ RunTime:0.000914s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=27 LIMIT 1  [ RunTime:0.000927s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=14 LIMIT 1  [ RunTime:0.001005s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=13 LIMIT 1  [ RunTime:0.000845s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=12 LIMIT 1  [ RunTime:0.000548s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=11 LIMIT 1  [ RunTime:0.000767s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=10 LIMIT 1  [ RunTime:0.000767s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=62 LIMIT 1  [ RunTime:0.001030s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=63 LIMIT 1  [ RunTime:0.000703s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=64 LIMIT 1  [ RunTime:0.000707s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=65 LIMIT 1  [ RunTime:0.000717s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=66 LIMIT 1  [ RunTime:0.000525s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=9 LIMIT 1  [ RunTime:0.000615s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=61 LIMIT 1  [ RunTime:0.000591s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=60 LIMIT 1  [ RunTime:0.000591s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=59 LIMIT 1  [ RunTime:0.000588s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=58 LIMIT 1  [ RunTime:0.000588s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=57 LIMIT 1  [ RunTime:0.000591s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=56 LIMIT 1  [ RunTime:0.000595s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=55 LIMIT 1  [ RunTime:0.000592s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=54 LIMIT 1  [ RunTime:0.000734s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=8 LIMIT 1  [ RunTime:0.000631s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=53 LIMIT 1  [ RunTime:0.000608s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=52 LIMIT 1  [ RunTime:0.000794s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=51 LIMIT 1  [ RunTime:0.000712s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=50 LIMIT 1  [ RunTime:0.000684s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=49 LIMIT 1  [ RunTime:0.000645s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=17 LIMIT 1  [ RunTime:0.000681s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=15 LIMIT 1  [ RunTime:0.000719s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=16 LIMIT 1  [ RunTime:0.000671s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=26 LIMIT 1  [ RunTime:0.000618s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=25 LIMIT 1  [ RunTime:0.000703s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=24 LIMIT 1  [ RunTime:0.000935s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=23 LIMIT 1  [ RunTime:0.000591s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=22 LIMIT 1  [ RunTime:0.000592s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=21 LIMIT 1  [ RunTime:0.000590s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=20 LIMIT 1  [ RunTime:0.000631s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=19 LIMIT 1  [ RunTime:0.000699s ]
+[ 2011-12-06T23:34:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE cat_id=18 LIMIT 1  [ RunTime:0.000823s ]
+[ 2011-12-06T23:34:16-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 45 行.
+[ 2011-12-06T23:34:16-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T23:34:16-05:00 ] NOTIC: [8] Undefined variable: msg 54d61eb4eafecfef775e4a103813da8e.php 第 110 行.
+[ 2011-12-06T23:34:25-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.009917s ]
+[ 2011-12-06T23:34:25-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000423s ]
+[ 2011-12-06T23:34:25-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000610s ]
+[ 2011-12-06T23:34:25-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T23:34:25-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T23:34:25-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.
+[ 2011-12-06T23:34:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.006891s ]
+[ 2011-12-06T23:34:32-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` LIMIT 1  [ RunTime:0.000483s ]
+[ 2011-12-06T23:34:32-05:00 ] SQL: SELECT * FROM `ry_users` LIMIT 0,25  [ RunTime:0.000639s ]
+[ 2011-12-06T23:34:32-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T23:34:32-05:00 ] NOTIC: [8] Undefined index: info 1282e97849dec9495baef5755c79259c.php 第 110 行.
+[ 2011-12-06T23:34:32-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 124 行.

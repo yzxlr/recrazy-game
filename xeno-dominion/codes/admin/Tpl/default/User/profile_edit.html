@@ -2,6 +2,7 @@
 
 <div id="content">
 	<form action="#" method="post">
+    <input type="hidden" name="profile_id" value="{$Think.get.id}" />
     <input type="hidden" name="user_id" value="{$Think.get.uid}" />
     <table>
         <thead>
@@ -25,11 +26,11 @@
             </tr>
       <tr>
                 <td>Company Name:</td>
-                <td><input type="text" name="profile_company_name" /></td>
+                <td><input type="text" name="profile_company_name" value="{$data.tb_users_profile.profile_company_name}" /></td>
             </tr>
             <tr>
                 <td>Company Description:</td>
-                <td><textarea name="profile_company_desc"></textarea></td>
+                <td><textarea name="profile_company_desc">{$data.tb_users_profile.profile_company_desc}</textarea></td>
             </tr>
             <tr>
                 <td></td>
