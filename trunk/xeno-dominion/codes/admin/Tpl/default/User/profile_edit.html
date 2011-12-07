@@ -1,0 +1,43 @@
+<include file="Public:header" />
+
+<div id="content">
+	<form action="#" method="post">
+    <input type="hidden" name="user_id" value="{$Think.get.uid}" />
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2"><h3>Add New User</h3></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+            	<td>Language:</td>
+                <td>
+                	<select name="profile_lang">
+                    	<foreach name="data.tb_langs" item="vo">
+                        	<option value="{$vo.lang_code}">{$vo.language}</option>
+                        </foreach>
+                    </select>
+                </td>
+            </tr>
+      <tr>
+                <td>Company Name:</td>
+                <td><input type="text" name="profile_company_name" /></td>
+            </tr>
+            <tr>
+                <td>Company Description:</td>
+                <td><textarea name="profile_company_desc"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Add" /></td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+</div>
+
+<include file="Public:footer" />
