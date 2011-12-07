@@ -227,6 +227,24 @@ class UserAction extends CommonAction
 		$tb_langs = M("langs");
 		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
 		
+		//2 Table users_profile
+		//2.3
+		$tb_users_profile = M("usersProfile");
+		if($_POST){
+			//var_dump($_POST); exit;
+			if($tb_users_profile->create()){
+				if($tb_users_profile->save()){
+					$this->success("Success! ID is $lastInsId");
+				}else {
+					$this->error("Error!");
+				}
+			}else{
+				$this->error("Error on create!");
+			}
+		}
+		//2.4
+		$data["tb_users_profile"] = $tb_users_profile -> where(array("profile_id"=>$_GET["id"])) -> find();
+		
 		$this->assign("data",$data);
 		$this->display();
 	}

@@ -34,7 +34,7 @@ class ProductscategoryAction extends CommonAction{
 	{
 		require(CMS_PATH."/admin/Common/class.php");
 		
-		$Tree = new Tree('顶级分类');
+		$Tree = new Tree('Root Category');
 		
 		$category = M('productsCat');
 		$condition['is_show'] = '1';
@@ -61,7 +61,7 @@ class ProductscategoryAction extends CommonAction{
 		require(CMS_PATH."/admin/Common/class.php");
 		
 		$cat_id = trim($_REQUEST['cat_id']);
-		$Tree = new Tree('顶级分类');
+		$Tree = new Tree('Root Category');
 		
 		$category = M('productsCat');
 		$condition['is_show'] = '1';

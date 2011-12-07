@@ -112,6 +112,7 @@ $(document).ready(function(){
 
 <div id="content">
 	<form action="#" method="post">
+    <input type="hidden" name="profile_id" value="<?php echo ($_GET['id']); ?>" />
     <input type="hidden" name="user_id" value="<?php echo ($_GET['uid']); ?>" />
     <table>
         <thead>
@@ -133,11 +134,11 @@ $(document).ready(function(){
             </tr>
       <tr>
                 <td>Company Name:</td>
-                <td><input type="text" name="profile_company_name" /></td>
+                <td><input type="text" name="profile_company_name" value="<?php echo ($data["tb_users_profile"]["profile_company_name"]); ?>" /></td>
             </tr>
             <tr>
                 <td>Company Description:</td>
-                <td><textarea name="profile_company_desc"></textarea></td>
+                <td><textarea name="profile_company_desc"><?php echo ($data["tb_users_profile"]["profile_company_desc"]); ?></textarea></td>
             </tr>
             <tr>
                 <td></td>

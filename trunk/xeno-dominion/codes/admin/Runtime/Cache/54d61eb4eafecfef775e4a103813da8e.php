@@ -125,11 +125,11 @@ function delArc(aid){
 	var id=getCheckboxItem();
 	if(id)
 	{
-	  if(confirm("是否将分类删除?")){ 
+	  if(confirm("Delete Category?")){ 
 	    location="__URL__/act_add/act/del_category/id/"+id;
       }
 	}else{
-	    alert('请选择删除的分类');
+	    alert('Plese choose a category to delete.');
 	}
 }
 
@@ -181,10 +181,10 @@ function change_status(cat_id,is_show)
                 $(show_id).innerHTML=t.responseText
     },
     on404: function(t) {
-                $(show_id).innerHTML='错误：找不到提交页!';
+                $(show_id).innerHTML='Error: Cannot find submit page!';
     },
     onFailure: function(t) {
-                $(show_id).innerHTML='错误：' + t.status + ' -- ' + t.statusText;
+                $(show_id).innerHTML='Error:' + t.status + ' -- ' + t.statusText;
     },
         asynchronous:true        
    }
@@ -206,10 +206,10 @@ function do_change_sort(cat_id)
                 $(sort_id).innerHTML=t.responseText
     },
     on404: function(t) {
-                $(sort_id).innerHTML='错误：找不到提交页!';
+                $(sort_id).innerHTML='Error: Cannot find submit page!';
     },
     onFailure: function(t) {
-                $(sort_id).innerHTML='错误：' + t.status + ' -- ' + t.statusText;
+                $(sort_id).innerHTML='Error' + t.status + ' -- ' + t.statusText;
     },
         asynchronous:true        
    }
@@ -222,19 +222,19 @@ function do_change_sort(cat_id)
 <form name="form2" style="margin-bottom:0px;">
 <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
 <tr bgcolor="#E7E7E7">
-	<td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">产品分类列表</span><span style="float:right;"><input type='button' class="coolbg np" onClick="location='__APP__/Productscategory/add';" value='添加分类' /></span></td>
+	<td height="30" colspan="10"><span style="float:left; padding-top:3px; padding-left:5px;">Product Category List</span><span style="float:right;"><input type='button' class="coolbg np" onClick="location='__APP__/Productscategory/add';" value='Add New Category' /></span></td>
 </tr>
 <tr align="center" bgcolor="#FAFAF1" height="22">
 	<th width="8%">ID</th>
     <!--
 	<th width="5%">选择</th>
     -->
-	<th width="32%">分类名</th>
-	<th width="14%">父类ID</th>
-	<th width="10%">排序</th>
-	<th width="6%">显示</th>
-	<th width="7%">操作</th>
-    <th width="">语言</th>
+	<th width="32%">Category name</th>
+	<th width="14%">Parent ID</th>
+	<th width="10%">Order</th>
+	<th width="6%">Display</th>
+	<th width="7%">Operation</th>
+    <th width="">Language List</th>
 </tr>
 
 <?php if(is_array($categoty)): foreach($categoty as $key=>$data): ?><?php if($data["cat_id"] != '' ): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
@@ -245,9 +245,9 @@ function do_change_sort(cat_id)
 	<td align="left"><a href='__URL__/edit/cat_id/<?php echo ($data["cat_id"]); ?>'><u><?php echo ($data["cat_name"]); ?></u></a></td>
 	<td><?php echo ($data["parent_id"]); ?></td>
 	<td><span id="sort_<?php echo ($data["cat_id"]); ?>"><a><?php echo ($data["sort_order"]); ?></a></span></td>
-	<td id="is_show_<?php echo ($data["cat_id"]); ?>"><?php if($data["is_show"] == 1): ?><a>是</a><?php else: ?> <a>否</a><?php endif; ?></td>
-	<td><a href="__URL__/edit/cat_id/<?php echo ($data["cat_id"]); ?>">编辑</a> | <a href="javascript:del(<?php echo ($data["cat_id"]); ?>)">删除</a></td>
-    <td><a href="__URL__/lang_index/cat_id/<?php echo ($data["cat_id"]); ?>">列表</a></td>
+	<td id="is_show_<?php echo ($data["cat_id"]); ?>"><?php if($data["is_show"] == 1): ?><a>Yes</a><?php else: ?> <a>No</a><?php endif; ?></td>
+	<td><a href="__URL__/edit/cat_id/<?php echo ($data["cat_id"]); ?>">Edit</a> | <a href="javascript:del(<?php echo ($data["cat_id"]); ?>)">Delete</a></td>
+    <td><a href="__URL__/lang_index/cat_id/<?php echo ($data["cat_id"]); ?>">List</a></td>
 </tr><?php endif; ?><?php endforeach; endif; ?>
 <tr bgcolor="#FAFAF1">
 <td height="28" colspan="10">
