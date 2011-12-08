@@ -402,3 +402,9 @@
 [ 2011-12-07T20:52:16-05:00 ] NOTIC: [8] Undefined variable: msg 85b9432bdf2835f77a9d15c310356022.php 第 110 行.
 [ 2011-12-07T20:52:16-05:00 ] NOTIC: [8] Undefined variable: msg 85b9432bdf2835f77a9d15c310356022.php 第 110 行.
 [ 2011-12-07T20:52:18-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./admin/Tpl/default/Post/index.html]
+[ 2011-12-07T20:54:03-05:00 ] SQL: SHOW COLUMNS FROM `ry_post` [ RunTime:0.007500s ]
+[ 2011-12-07T20:54:03-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_post` LIMIT 1  [ RunTime:0.000996s ]
+[ 2011-12-07T20:54:03-05:00 ] SQL: SELECT * FROM `ry_post` LIMIT 0,25  [ RunTime:0.000944s ]
+[ 2011-12-07T20:54:04-05:00 ] NOTIC: [8] Undefined index: info 46f626855fb1bfaf18777d0009818860.php 第 110 行.
+[ 2011-12-07T20:54:04-05:00 ] NOTIC: [8] Undefined index: info 46f626855fb1bfaf18777d0009818860.php 第 110 行.
+[ 2011-12-07T20:54:04-05:00 ] NOTIC: [8] Undefined index: tb_page 46f626855fb1bfaf18777d0009818860.php 第 144 行.
