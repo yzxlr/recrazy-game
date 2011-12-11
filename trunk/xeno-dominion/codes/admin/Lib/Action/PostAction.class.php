@@ -31,7 +31,7 @@ class PostAction extends CommonAction
 		$data["tb_post"] = $tb_page ->where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		
 		//10. Display
-		/////var_dump($data["tb_page"]);
+		/////var_dump($data["tb_post"]);
 		$this->assign("data",$data);
 		$this->assign("msg",$msg);
         $this->display();
@@ -39,9 +39,9 @@ class PostAction extends CommonAction
 
 	public function add()
     {
-		$tb_page = M("page");
+		$tb_page = M("post");
 		if($_POST){
-			$_POST["page_create"]=DATETIME_NOW;
+			$_POST["post_create"]=DATETIME_NOW;
 			if($tb_page->add($_POST)){
 				$this->assign("jumpUrl",SITE_URL."/admin.php?s=/Page/index");
 				$this->success("New page added!");
