@@ -4,13 +4,13 @@
 <script>
 	var editor;
 	KindEditor.ready(function(K) {
-			editor = K.create('#page_content',{
+			editor = K.create('#post_content',{
 					langType : 'en'
 				});
 	});
 		
 	function form_check(){
-		if($("#page_title").val()==""){
+		if($("#post_title").val()==""){
 			alert("Title can not empty!");
 			return false;
 		}
@@ -25,20 +25,20 @@
 			</tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Title &nbsp; </div></td>
-                <td width="82%"><input type="text" name="page_title" id="page_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
+                <td width="82%"><input type="text" name="post_title" id="post_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Summary &nbsp; </div></td>
-                <td width="82%"><textarea name="page_summary" id="page_summary" style="width:695px;height:100px;"></textarea></td>
+                <td width="82%"><textarea name="post_summary" id="post_summary" style="width:695px;height:100px;"></textarea></td>
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Content &nbsp; </div></td>
-                <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+                <td width="82%"><textarea name="post_content" id="post_content" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Content &nbsp; </div></td>
                 <td width="82%">
-                	<select id="page_status" name="page_status">
+                	<select id="post_status" name="post_status">
                     	<option value="publish">Publish</option>
                         <option value="draft">Draft</option>
                     </select>

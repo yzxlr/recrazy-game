@@ -31,19 +31,19 @@ function del(id){
                 <th>Language List</th>
             </tr>
             
-            <foreach name="data.tb_page" item="vo" >
+            <foreach name="data.tb_post" item="vo" >
             <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td>{$vo.page_id}</td>
-                <td>{$vo.page_title}</td>
-                <td>{$vo.page_lang}</td>
-                <td>{$vo.page_status}</td>
-                <td><?php if(!empty($vo["page_create"]))echo $vo["page_create"]; else echo "--";  ?></td>
-                <td><?php if(!empty($vo["page_modify"]))echo $vo["page_modify"]; else echo "--"; ?></td>
+                <td>{$vo.post_id}</td>
+                <td>{$vo.post_title}</td>
+                <td>{$vo.post_lang}</td>
+                <td>{$vo.post_status}</td>
+                <td><?php if(!empty($vo["post_create"]))echo $vo["post_create"]; else echo "--";  ?></td>
+                <td><?php if(!empty($vo["post_modify"]))echo $vo["post_modify"]; else echo "--"; ?></td>
                 <td>
-                    <a href="__URL__/update/page_id/{$vo.page_id}">Update</a> | 
-                    <a href="javascript:del({$vo.page_id})">Delete</a>
+                    <a href="__URL__/update/post_id/{$vo.post_id}">Update</a> | 
+                    <a href="javascript:del({$vo.post_id})">Delete</a>
                 </td>
-                <td><a target="_blank" href="{$SITE_URL}/admin.php?s=Page/lang_index/page_id/{$vo.page_id}">List Languages</a></td>
+                <td><a target="_blank" href="{$SITE_URL}/admin.php?s=Post/lang_index/post_id/{$vo.post_id}">List Languages</a></td>
             </tr>
             </foreach>
             <tr bgcolor="#FAFAF1">
