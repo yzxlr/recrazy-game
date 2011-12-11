@@ -15,14 +15,14 @@
 <input type="hidden" name="cat_id" value="{$Think.get.cat_id}" />
 <table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
   <tr>
-    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>为 {$data.tb_postCat.cat_name} 分类修改语言和内容</span></td>
+    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Add Language for Category:  {$data.tb_postCat.cat_name} </span></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">分类名称&nbsp; </div></td>
+    <td width="18%"><div align="right">Category Name&nbsp; </div></td>
     <td width="82%"><input name="cat_name" value="{$data.tb_postCatLang.cat_name}" type="text" size="30"/>&nbsp; <font color="#FF0000">*</font></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">语言&nbsp; </div></td>
+    <td width="18%"><div align="right">Language&nbsp; </div></td>
     <td width="82%">
     	<select name="lang_code">
     	<foreach name="data.tb_langs" item="vo">
@@ -34,8 +34,8 @@
   <tr bgcolor="#FFFFFF">
     <td colspan="2">
 	<div align="center">
-    	<input type="submit" name="Submit" value="确定"> 
-		<input type="reset" name="chongzhi" value="重置">
+    	<input type="submit" name="Submit" value="Submit"> 
+		<input type="reset" name="chongzhi" value="Reset">
 	</div>
 	</td>
   </tr>
