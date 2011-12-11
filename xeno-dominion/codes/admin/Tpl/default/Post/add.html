@@ -28,6 +28,16 @@
                 <td width="82%"><input type="text" name="post_title" id="post_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
             </tr>
             <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Category &nbsp; </div></td>
+                <td width="82%">
+                	<select name="parent_category" id="parent_category">
+                      <volist name="categoty" id="data"  >
+                       <option value="{$key}">{$data}</option>
+                      </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Summary &nbsp; </div></td>
                 <td width="82%"><textarea name="post_summary" id="post_summary" style="width:695px;height:100px;"></textarea></td>
             </tr>
@@ -46,7 +56,7 @@
             </tr>
             <tr bgcolor="#FFFFFF">
             	<td colspan="2">
-                    <div align="center"><input type="submit" name="Submit" value="Add Page"> 
+                    <div align="center"><input type="submit" name="Submit" value="Add"> 
                         <input type="reset" name="reset" value="Reset">
                     </div>
             	</td>

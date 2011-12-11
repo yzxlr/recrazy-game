@@ -4,13 +4,13 @@
 <script>
 	var editor;
 	KindEditor.ready(function(K) {
-			editor = K.create('#page_content',{
+			editor = K.create('#post_content',{
 					langType : 'en'
 				});
 	});
 		
 	function form_check(){
-		if($("#page_title").val()==""){
+		if($("#post_title").val()==""){
 			alert("Title can not empty!");
 			return false;
 		}
@@ -19,35 +19,45 @@
 </script>
 <div id="content">
 	<form action="#" method="post" onsubmit="return form_check();">
-    	<input type="hidden" name="page_id" id="page_id" value="{$Think.get.page_id}" />
+    	<input type="hidden" name="post_id" id="post_id" value="{$Think.get.post_id}" />
     	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
 			<tr>
-				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Add New Page</span></td>
+				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Update Post</span></td>
 			</tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Title &nbsp; </div></td>
-                <td width="82%"><input type="text" name="page_title" value="{$data.tb_page.page_title}" id="page_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
+                <td width="82%"><input type="text" name="post_title" value="{$data.tb_post.post_title}" id="post_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Upper Category&nbsp; </div></td>
+                <td width="82%">
+                    <select name="post_cat_id" id="parent_category">
+                      <volist name="categoty" id="datax"  >
+                       <option value="{$key}" <eq name="key" value="$data.tb_post.post_cat_id" >selected="selected"</eq>  >{$datax}</option>
+                      </volist>
+                    </select>
+                </td>
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Summary &nbsp; </div></td>
-                <td width="82%"><textarea name="page_summary" id="page_summary" style="width:695px;height:100px;">{$data.tb_page.page_summary}</textarea></td>
+                <td width="82%"><textarea name="post_summary" id="post_summary" style="width:695px;height:100px;">{$data.tb_post.post_summary}</textarea></td>
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Content &nbsp; </div></td>
-                <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;">{$data.tb_page.page_content}</textarea></td>
+                <td width="82%"><textarea name="post_content" id="post_content" style="width:700px;height:200px;visibility:hidden;">{$data.tb_post.post_content}</textarea></td>
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Content &nbsp; </div></td>
                 <td width="82%">
-                	<select id="page_status" name="page_status">
-                    	<option value="publish" <eq name="data.tb_page.page_status" value="publish">selected="selected"</eq>>Publish</option>
-                        <option value="draft" <eq name="data.tb_page.page_status" value="draft">selected="selected"</eq>>Draft</option>
+                	<select id="post_status" name="post_status">
+                    	<option value="publish" <eq name="data.tb_post.post_status" value="publish">selected="selected"</eq>>Publish</option>
+                        <option value="draft" <eq name="data.tb_post.post_status" value="draft">selected="selected"</eq>>Draft</option>
                     </select>
                 </td>
             </tr>
             <tr bgcolor="#FFFFFF">
             	<td colspan="2">
-                    <div align="center"><input type="submit" name="Submit" value="Add Page"> 
+                    <div align="center"><input type="submit" name="Submit" value="Update"> 
                         <input type="reset" name="reset" value="Reset">
                     </div>
             	</td>
