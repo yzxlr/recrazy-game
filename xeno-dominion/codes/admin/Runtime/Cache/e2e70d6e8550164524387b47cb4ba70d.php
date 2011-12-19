@@ -183,9 +183,14 @@ $(document).ready(function(){
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Image&nbsp; </div></td>
     <td width="82%">
-    	<input name="image" type="file" size="30"/>&nbsp;
+    	<input name="image[]" type="file" size="30"/>&nbsp;
     	<label>Max Width:</label><input type="text" name="thumbMaxWidth" id="thumbMaxWidth" size="10" value="" />&nbsp;
-        <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" />
+        <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" /><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
@@ -202,7 +207,7 @@ $(document).ready(function(){
     </tr>
     <tr bgcolor="#FFFFFF">
         <td width="18%"><div align="right">Expire at: &nbsp; </div></td>
-        <td width="82%"><input name="time_expire" id="time_expire" type="text" size="15"/></td>
+        <td width="82%"><input name="time_expire" id="time_expire" type="text" size="15" value="<?php echo ($DATE_NOW); ?>"/></td>
     </tr>
    
   <tr bgcolor="#FFFFFF">

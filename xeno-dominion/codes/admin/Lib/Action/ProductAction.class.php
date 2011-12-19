@@ -97,7 +97,13 @@ class ProductAction extends CommonAction
 		/////var_dump($_POST); /////var_dump($tb_products);
 			if($tb_products->create()){
 				if(!empty($info[0]["savename"])){
-					$tb_products->image = /*$info[0]["savepath"].*/$info[0]["savename"];
+					/////var_dump($info);
+					$tb_products->image = "";
+					foreach($info as $key => $value){
+						$tb_products->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
+					}
+					$tb_products->image = rtrim($tb_products->image,",");
+					
 				}else{
 					$tb_products->image = "";
 				}
@@ -175,7 +181,11 @@ class ProductAction extends CommonAction
 		/////var_dump($_POST); /////var_dump($tb_products);
 			if($tb_products->create()){
 				if(!empty($info[0]["savename"])){
-					$tb_products->image = /*$info[0]["savepath"].*/$info[0]["savename"];
+					$tb_products->image = "";
+					foreach($info as $key => $value){
+						$tb_products->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
+					}
+					$tb_products->image = rtrim($tb_products->image,",");
 				}else{
 					$tb_products->image = "";
 				}
