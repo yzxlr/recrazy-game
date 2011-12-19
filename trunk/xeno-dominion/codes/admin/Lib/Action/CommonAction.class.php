@@ -17,8 +17,8 @@ class CommonAction extends Action
 		$url = $http.$_SERVER['SERVER_NAME'].$port;//.$_SERVER["REQUEST_URI"];
 		$this->assign("SITE_URL",$url);
 		define("SITE_URL",$url);
+		
 		//0.1.2 DATETIME
-
 		$now = date("Y-m-d H:i:s");
 		$this->assign("DATETIME_NOW", $now);
 		define("DATETIME_NOW", $now);

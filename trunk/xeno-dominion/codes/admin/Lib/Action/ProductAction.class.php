@@ -14,11 +14,19 @@ class ProductAction extends CommonAction
 		$user = $_SESSION["user"];
 		//0.2 Define Tables
 		$tb_products = M("products");
+		//0.3 Page
+		import("ORG.Util.Page");
+		//0.4 conditon
+		$condition = array();
 		//0.9 massenger
 		$msg = array("title"=>"List Products"); 
 		
 		//1. Table product
-		$data["tb_products"] = $tb_products -> select();
+		$count = $tb_products ->where($condition) ->count();
+		$Page = new Page($count,25);
+		$show = $Page->show();
+		$msg["page"]=$show;
+		$data["tb_products"] = $tb_products ->where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		
 		//10. Display
 		/////var_dump($data);
@@ -209,5 +217,31 @@ class ProductAction extends CommonAction
 		$this->display();
 	}
 	
+	
+	public function lang_index(){
+		 //0. Initialization
+		//0.1 Global variables
+		$user = $_SESSION["user"];
+		//0.2 Define Tables
+		$tb_products_lang = M("productsLang");
+		//0.3 Page
+		import("ORG.Util.Page");
+		//0.4 conditon
+		$condition = array();
+		//0.9 massenger
+		$msg = array("title"=>"List Products Lanugage"); 
+		
+		//1 Table products_lang
+		$condition = array("pid"=>$_GET["product_id"]);
+		$count = $tb_products_lang ->where($condition) ->count();
+		$Page = new Page($count,25);
+		$show = $Page->show();
+		$msg["page"]=$show;
+		$data["tb_products_lang"] = $tb_products_lang -> where($condition) ->select();
+		
+		var_dump($data);
+		$this->assign("data",$data);
+		$this->display();
+	}
 }
 ?>
