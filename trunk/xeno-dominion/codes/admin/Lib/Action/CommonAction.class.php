@@ -22,6 +22,9 @@ class CommonAction extends Action
 		$now = date("Y-m-d H:i:s");
 		$this->assign("DATETIME_NOW", $now);
 		define("DATETIME_NOW", $now);
+		$now = date("Y-m-d");
+		$this->assign("DATE_NOW", $now);
+		define("DATE_NOW", $now);
 		
 		
 		//1 Validate User (only admin can login at here
