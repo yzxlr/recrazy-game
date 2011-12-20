@@ -1,0 +1,20 @@
+[ 2011-12-19T21:24:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003979s ]
+[ 2011-12-19T21:24:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003890s ]
+[ 2011-12-19T21:24:13-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.009144s ]
+[ 2011-12-19T21:24:13-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000355s ]
+[ 2011-12-19T21:24:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.003770s ]
+[ 2011-12-19T21:24:15-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
+[ 2011-12-19T21:24:15-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 109 行.
+[ 2011-12-19T21:24:15-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 109 行.
+[ 2011-12-19T21:24:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.003842s ]
+[ 2011-12-19T21:24:28-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LIMIT 1  [ RunTime:0.000257s ]
+[ 2011-12-19T21:24:28-05:00 ] SQL: SELECT * FROM `ry_products` LIMIT 0,25  [ RunTime:0.000359s ]
+[ 2011-12-19T21:24:28-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 109 行.
+[ 2011-12-19T21:24:28-05:00 ] NOTIC: [8] Undefined index: info f3fff2b5c97ac42f78439ba97dbcdcda.php 第 109 行.
+[ 2011-12-19T21:32:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003771s ]
+[ 2011-12-19T21:32:47-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000597s ]
+[ 2011-12-19T21:32:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004426s ]
+[ 2011-12-19T21:32:47-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000390s ]
+[ 2011-12-19T21:32:47-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2011-12-19T21:32:47-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 109 行.
+[ 2011-12-19T21:32:47-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 109 行.
