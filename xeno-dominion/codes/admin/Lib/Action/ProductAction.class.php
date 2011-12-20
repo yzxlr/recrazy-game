@@ -118,6 +118,7 @@ class ProductAction extends CommonAction
 				$tb_products->time_add = time();
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
 				$tb_products->time_expire = $_POST["time_expire"];
+				if(empty($_POST["user_id"])) $tb_products->user_id = $this->user["uid"];
 				if($tb_products->add()){
 					$this->success("Insert Successfully!");
 				}else{
@@ -127,7 +128,6 @@ class ProductAction extends CommonAction
 				$this->error("Error on create!".$tb_products->getError());
 			}
 		}
-		
 		$this->display();
 	}
 	
