@@ -65,15 +65,12 @@ $(document).ready(function(){
             <ul class="sf-menu">
             	<li><a href="<?php echo ($SITE_URL); ?>/admin.php">Dashboard</a></li>
                 <li class="current">
-                    <a href="#">System</a>
+                    <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">Product</a>
                     <ul>
-                        <li class="current">
-                        	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/index">User</a>
-                        	<ul>
-                            	<li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/index">List Users</a></li>
-                                <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">Add New User</a></li>
-                            </ul>
-                        </li>
+                    	<li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/index">List Category</a></li>
+                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/add">Add Category</a></li>
+                        <li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">List Product</a></li>
+                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/add">Add New Product</a></li>
                     </ul>
                 </li>
                 <li class="current">
@@ -93,23 +90,15 @@ $(document).ready(function(){
                     </ul>
                 </li>
                 <li class="current">
-                    <a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">Product</a>
+                    <a href="#">System</a>
                     <ul>
-                    	<li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/index">List Category</a></li>
-                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Productscategory/add">Add Category</a></li>
-                        <li class="current"><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/index">List Product</a></li>
-                        <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=Product/add">Add New Product</a></li>
-                    </ul>
-                </li>
-                <li class="current">
-                    <a href="#ab">sample menu item →</a>
-                    <ul>
-                        <li class="current"><a href="#">menu item</a></li>
-                        <li><a href="#aba">eee</a></li>
-                        <li><a href="#abb">ddd</a></li>
-                        <li><a href="#abb">ccc</a></li>
-                        <li><a href="#abb">bbb</a></li>
-                        <li><a href="#abb">aaa</a></li>
+                        <li class="current">
+                        	<a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/index">User<span class="menu_arrow_right"></span></a>
+                        	<ul>
+                            	<li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/index">List Users</a></li>
+                                <li><a href="<?php echo ($SITE_URL); ?>/admin.php?s=User/add">Add New User</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
