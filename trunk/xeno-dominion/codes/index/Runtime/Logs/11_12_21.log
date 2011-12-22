@@ -1,0 +1,72 @@
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/page_left.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/slideshow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 30 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 31 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 34 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 42 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 44 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 122 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 222 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 236 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 238 行.
+[ 2011-12-21T21:58:54-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 240 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/page_left.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/slideshow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 30 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 31 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 34 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 42 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 44 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 122 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 222 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 236 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 238 行.
+[ 2011-12-21T21:59:02-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 240 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/page_left.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/slideshow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 30 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 31 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 34 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 42 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 44 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 122 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 222 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 236 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 238 行.
+[ 2011-12-21T22:19:00-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 240 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/page_left.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/slideshow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 30 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 31 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 34 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 42 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 44 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 122 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 222 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 236 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 238 行.
+[ 2011-12-21T22:19:03-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 240 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/page_left.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/slideshow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 30 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 31 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 34 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 42 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 44 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 122 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 222 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 236 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 238 行.
+[ 2011-12-21T22:19:12-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 240 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/page_left.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [2] file_get_contents(./index/Tpl/default/Public/slideshow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory ThinkTemplate.class.php 第 770 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 30 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 31 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 34 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 42 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 44 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 122 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 222 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 236 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 238 行.
+[ 2011-12-21T22:19:14-05:00 ] NOTIC: [8] Undefined variable: SITE_URL 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 240 行.
