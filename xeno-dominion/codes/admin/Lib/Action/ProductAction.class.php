@@ -239,7 +239,45 @@ class ProductAction extends CommonAction
 		$msg["page"]=$show;
 		$data["tb_products_lang"] = $tb_products_lang -> where($condition) ->select();
 		
-		var_dump($data);
+		/////var_dump($data);
+		$this->assign("data",$data);
+		$this->display();
+	}
+	
+	public function lang_del(){
+		$tb_products_lang = M("productsLang");
+		
+		//1 Table products_lang
+		if($tb_products_lang ->where(array("plid"=>$_GET["plid"]))-> delete()){
+			$this->success("Deleted.");
+		}else{
+			$this->error("Error!");
+		}
+		
+	}
+	
+	public function lang_add(){
+		$tb_products_lang = M("productsLang");
+		//0.9 massenger
+		$msg = array("title"=>"Add New Products Lanugage"); 
+		
+		//1 Table products_lang
+		
+		
+		/////var_dump($data);
+		$this->assign("data",$data);
+		$this->display();
+	}
+	
+	public function lang_edit(){
+		$tb_products_lang = M("productsLang");
+		//0.9 massenger
+		$msg = array("title"=>"Edit Products Lanugage"); 
+		
+		//1 Table products_lang
+		
+		
+		/////var_dump($data);
 		$this->assign("data",$data);
 		$this->display();
 	}
