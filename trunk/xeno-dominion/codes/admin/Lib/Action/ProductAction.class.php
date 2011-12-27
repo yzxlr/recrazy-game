@@ -257,24 +257,69 @@ class ProductAction extends CommonAction
 	}
 	
 	public function lang_add(){
+		//0. Initialization
+		//0.1 Global variables
+		$user = $_SESSION["user"];
+		//0.2 Define Tables
+		$tb_langs = M("langs");
 		$tb_products_lang = M("productsLang");
 		//0.9 massenger
 		$msg = array("title"=>"Add New Products Lanugage"); 
 		
-		//1 Table products_lang
+		//1 Table langs
+		//1.4 select
+		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
 		
+		//2 Table products_lang
+		//2.1
+		if($_POST){
+			if($tb_products_lang->create()){
+				if($tb_products_lang->add()){
+					$this->success("New record added!");
+				}else{
+					$this->error("Error on add new record!");
+				}
+			}else{
+				$this->error("Error on create!");
+			}
+		}
 		
+		//10. Display
 		/////var_dump($data);
 		$this->assign("data",$data);
-		$this->display();
+		$this->assign("msg",$msg);
+        $this->display();
 	}
 	
-	public function lang_edit(){
+	public function lang_update(){
+		//0. Initialization
+		//0.1 Global variables
+		$user = $_SESSION["user"];
+		//0.2 Define Tables
+		$tb_langs = M("langs");
 		$tb_products_lang = M("productsLang");
 		//0.9 massenger
-		$msg = array("title"=>"Edit Products Lanugage"); 
+		$msg = array("title"=>"Update Products Lanugage"); 
 		
-		//1 Table products_lang
+		//1 Table langs
+		//1.4 select
+		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
+		
+		//2 Table products_lang
+		//2.1
+		if($_POST){
+			if($tb_products_lang->create()){
+				if($tb_products_lang->save()){
+					$this->success("Record updated!");
+				}else{
+					$this->error("Error on update record!");
+				}
+			}else{
+				$this->error("Error on create!");
+			}
+		}
+		//2.4 
+		$data["tb_products_lang"] = $tb_products_lang ->where(array("plid"=>$_GET["plid"])) -> find(); 
 		
 		
 		/////var_dump($data);

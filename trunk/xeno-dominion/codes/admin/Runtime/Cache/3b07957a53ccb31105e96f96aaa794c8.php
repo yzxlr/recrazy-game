@@ -108,58 +108,10 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-<script charset="utf-8" src="/editor/kindeditor.js"></script>
-<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
-<script>
-	var editor;
-	KindEditor.ready(function(K) {
-			editor = K.create('#page_content',{
-					langType : 'en'
-				});
-	});
-		
-	function form_check(){
-		if($("#page_title").val()==""){
-			alert("Title can not empty!");
-			return false;
-		}
-		return true;
-	}
-</script>
-<div id="content">
-	<form action="#" method="post" onsubmit="return form_check();">
-        <input type="hidden" name="pid" value="<?php echo ($_GET['product_id']); ?>" />
-    	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
-			
-            <tr>
-				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Add New Page Language</span></td>
-			</tr>
-            <tr>
-            	<td width="18%"><div align="right">Language &nbsp; </div></td>
-                <td width="82%">
-                	<select name="lang_code">
-                    	<?php if(is_array($data["tb_langs"])): foreach($data["tb_langs"] as $key=>$vo): ?><option value="<?php echo ($vo["lang_code"]); ?>"><?php echo ($vo["language"]); ?></option><?php endforeach; endif; ?>
-                    </select>
-                </td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Product Name: &nbsp; </div></td>
-                <td width="82%"><input type="text" name="name" id="name" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Product Description &nbsp; </div></td>
-                <td width="82%"><textarea name="description" id="description" style="width:695px;height:100px;"></textarea></td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-            	<td colspan="2">
-                    <div align="center"><input type="submit" name="Submit" value="Add"> 
-                        <input type="reset" name="reset" value="Reset">
-                    </div>
-            	</td>
-            </tr>
-        </table>
-    </form>
-</div>
+
+Dashboard
+
+
 
 </div> <!-- wrapper -->
 
