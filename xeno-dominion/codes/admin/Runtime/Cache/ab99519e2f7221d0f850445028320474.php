@@ -128,7 +128,7 @@ $(document).ready(function(){
 </script>
 <div id="content">
 	<form action="#" method="post" onsubmit="return form_check();">
-        <input type="hidden" name="pid" value="<?php echo ($_GET['product_id']); ?>" />
+        <input type="hidden" name="plid" value="<?php echo ($_GET['plid']); ?>" />
     	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
 			
             <tr>
@@ -144,11 +144,11 @@ $(document).ready(function(){
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Product Name: &nbsp; </div></td>
-                <td width="82%"><input type="text" name="name" id="name" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
+                <td width="82%"><input type="text" name="name" id="name" value="<?php echo ($data["tb_products_lang"]["name"]); ?>" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
             </tr>
             <tr bgcolor="#FFFFFF">
                 <td width="18%"><div align="right">Product Description &nbsp; </div></td>
-                <td width="82%"><textarea name="description" id="description" style="width:695px;height:100px;"></textarea></td>
+                <td width="82%"><textarea name="description" id="description" style="width:695px;height:100px;"><?php echo ($data["tb_products_lang"]["description"]); ?></textarea></td>
             </tr>
             <tr bgcolor="#FFFFFF">
             	<td colspan="2">

@@ -19,7 +19,7 @@
 </script>
 <div id="content">
 	<form action="#" method="post" onsubmit="return form_check();">
-    	<input type="hidden" name="page_id" value="{$Think.get.page_id}" />
+        <input type="hidden" name="pid" value="{$Think.get.product_id}" />
     	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
 			
             <tr>
@@ -36,20 +36,16 @@
                 </td>
             </tr>
             <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Title &nbsp; </div></td>
-                <td width="82%"><input type="text" name="page_title" id="page_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
+                <td width="18%"><div align="right">Product Name: &nbsp; </div></td>
+                <td width="82%"><input type="text" name="name" id="name" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
             </tr>
             <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Summary &nbsp; </div></td>
-                <td width="82%"><textarea name="page_summary" id="page_summary" style="width:695px;height:100px;"></textarea></td>
-            </tr>
-            <tr bgcolor="#FFFFFF">
-                <td width="18%"><div align="right">Content &nbsp; </div></td>
-                <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+                <td width="18%"><div align="right">Product Description &nbsp; </div></td>
+                <td width="82%"><textarea name="description" id="description" style="width:695px;height:100px;"></textarea></td>
             </tr>
             <tr bgcolor="#FFFFFF">
             	<td colspan="2">
-                    <div align="center"><input type="submit" name="Submit" value="Add Page"> 
+                    <div align="center"><input type="submit" name="Submit" value="Add"> 
                         <input type="reset" name="reset" value="Reset">
                     </div>
             	</td>

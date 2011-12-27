@@ -143,7 +143,7 @@ function del(id){
                 <td><?php echo ($vo["name"]); ?></td>
                 <td><?php echo ($vo["lang_name"]); ?> (<?php echo ($vo["lang_code"]); ?>)</td>
                 <td>
-                    <a href="__URL__/lang_update/page_lang_id/<?php echo ($vo["page_lang_id"]); ?>/page_id/<?php echo ($_GET['page_id']); ?>">Update</a> | 
+                    <a href="__URL__/lang_update/product_id/<?php echo ($_GET['product_id']); ?>/plid/<?php echo ($vo["plid"]); ?>">Update</a> | 
                     <a href="javascript:del(<?php echo ($vo["plid"]); ?>)">Delete</a>
                 </td>
             </tr><?php endforeach; endif; ?>
