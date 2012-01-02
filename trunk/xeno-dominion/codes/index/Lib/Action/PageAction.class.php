@@ -22,8 +22,6 @@ class PageAction extends Action
 		$msg = array("title"=>"Page");
 		$tb_page = M("page");
 		
-		//1
-		//1.4 
 		$data["tb_page"] = $tb_page  ->table('ry_page')-> join("ry_page_lang on ry_page.page_id = ry_page_lang.page_id ")
 									 -> field("ry_page.*, 
 									 			ry_page_lang.page_lang_id AS tj_id, 
@@ -35,6 +33,7 @@ class PageAction extends Action
 												ry_page_lang.page_content AS tj_content
 											") 
 									 -> where(array("ry_page.page_id"=>$_GET["id"], "lang_code"=>LANG_SET)) ->find();
+		
 		if(empty($data["tb_page"])){
 			$data["tb_page"] = $tb_page -> where(array("page_id"=>$_GET["id"])) ->find();
 		}
