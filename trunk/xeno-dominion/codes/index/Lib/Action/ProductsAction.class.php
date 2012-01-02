@@ -9,6 +9,17 @@ class ProductsAction extends CommonAction
     */
     public function index()
     {
+		
+		//10
+		/////var_dump("dfassafdsa");
+		/////var_dump($data);
+		$this->assign("msg",$msg);
+		$this->assign("data",$data);
+        $this->display();
+    }
+	
+	public function lists()
+    {
 		$msg = array("title"=>"Product List");
 		$tb_products = M("products");
 		
@@ -16,14 +27,17 @@ class ProductsAction extends CommonAction
 		$flag = trim($_GET["flag"]);
 		$cat_id = $_GET["cat_id"];
 		
-		//1 tables
-		if(!empty($flag)&&!empty($cat_id)){
-			$flag= 0;
+		/////var_dump($flag); var_dump($cat_id);exit;
+		//tables
+		if(!empty($flag)&&isset($cat_id)){
+			
 			if($flag=="supply")$flag=1;
-			if($flag=="demand")$flag=2;
+			else if($flag=="demand")$flag=2;
+			else $flag= 0;
 			$condition = array("cat_id"=>$cat_id, 
 							   "type"=>$flag);
 			
+			import("ORG.Util.Page");
 			$count = $tb_products->where($condition)->count();
 			$Page = new Page($count,25);
 			//>>>> page English support start
@@ -37,13 +51,15 @@ class ProductsAction extends CommonAction
 			$Page->setConfig('last','>|');
 			//<<<< page English support ends
 			$show = $Page->show();
-			$tb_products -> where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
+			$data["tb_products"] = $tb_products -> where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		}else{
 			$this->error("Error!");
 		}
 		
 		$msg["page"]=$show;
 		//10
+		/////var_dump("dfassafdsa");
+		/////var_dump($data);
 		$this->assign("msg",$msg);
 		$this->assign("data",$data);
         $this->display();
