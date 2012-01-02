@@ -24,7 +24,17 @@ class PageAction extends Action
 		
 		//1
 		//1.4 
-		$data["tb_page"] = $tb_page -> where(array("page_id"=>$_GET["id"])) ->find();
+		$data["tb_page"] = $tb_page  ->table('ry_page')-> join("ry_page_lang on ry_page.page_id = ry_page_lang.page_id ")
+									 -> field("ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content
+											") 
+									 -> where(array("ry_page.page_id"=>$_GET["id"], "lang_code"=>LANG_SET)) ->find();
 		
 		var_dump($data);
 		$this->assign("data",$data);

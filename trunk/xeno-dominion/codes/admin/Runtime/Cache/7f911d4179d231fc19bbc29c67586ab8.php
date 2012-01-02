@@ -108,62 +108,63 @@ $(document).ready(function(){
 </div>
 <div id="info" class="<?php echo ($msg["info"]["class"]); ?>"><?php echo ($msg["info"]["text"]); ?></div>
 <div id="wrapper">
-
+<script charset="utf-8" src="/editor/kindeditor.js"></script>
+<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
 <script>
-function del(id){
-	if(id)
-	{
-	  if(confirm("Delete?")){ 
-	    location="__URL__/delete/pid/"+id;
-      }
+	var editor;
+	KindEditor.ready(function(K) {
+			editor = K.create('#page_content',{
+					langType : 'en'
+				});
+	});
+		
+	function form_check(){
+		if($("#page_title").val()==""){
+			alert("Title can not empty!");
+			return false;
+		}
+		return true;
 	}
-}
 </script>
-
 <div id="content">
-	<!--  内容列表   -->
-        <form name="form2" style="margin-bottom:0px;">
-        <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
-            <tr bgcolor="#E7E7E7">
-                <td height="30" colspan="10">
-                    <span style="float:left; padding-top:3px; padding-left:5px;">Product List</span>
-                    <span style="float:right;"><a href="__URL__/add">Add Product</a></span>
+	<form action="#" method="post" onsubmit="return form_check();">
+    	<input type="hidden" name="page_id" value="<?php echo ($_GET['page_id']); ?>" />
+    	<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
+			
+            <tr>
+				<td colspan="2" background="__PUBLIC__/admin/images/frame/wbg.gif" bgcolor="#EEF4EA" class='title'><span>Add New Page Language</span></td>
+			</tr>
+            <tr>
+            	<td width="18%"><div align="right">Language &nbsp; </div></td>
+                <td width="82%">
+                	<select name="lang_code">
+                    	<?php if(is_array($data["tb_langs"])): foreach($data["tb_langs"] as $key=>$vo): ?><option value="<?php echo ($vo["lang_code"]); ?>"><?php echo ($vo["language"]); ?></option><?php endforeach; endif; ?>
+                    </select>
                 </td>
             </tr>
-            <tr align="center" bgcolor="#FAFAF1" height="22">
-                <th width="8%">ID</th>
-                <th width="5%">User ID</th>
-                <th width="13%">Product Name</th>
-                <th width="13%">Price</th>
-                <th width="13%">Quantity</th>
-                <th width="14%">Type</th>
-                <th width="10%">Option</th>
-                <th width="10%">Language List</th>
+            <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Title &nbsp; </div></td>
+                <td width="82%"><input type="text" name="page_title" id="page_title" size="113" /> &nbsp; <font color="#FF0000">*</font></td>
             </tr>
-            
-            <?php if(is_array($data["tb_products"])): foreach($data["tb_products"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td><?php echo ($vo["pid"]); ?></td>
-                <td><?php echo ($vo["user_id"]); ?></td>
-                <td><?php echo ($vo["name"]); ?></td>
-                <td><?php echo ($vo["price"]); ?></td>
-                <td><?php echo ($vo["quantity"]); ?></td>
-                <td><?php if($vo["type"] == 1): ?>Supply<?php endif; ?><?php if($vo["type"] == 2): ?>Demand<?php endif; ?></td>
-                <td>
-                    <a href="__URL__/edit/pid/<?php echo ($vo["pid"]); ?>">Update</a> | 
-                    <a href="javascript:del(<?php echo ($vo["pid"]); ?>)">Delete</a>
-                </td>
-                <td>
-                	<a href="__URL__/lang_index/product_id/<?php echo ($vo["pid"]); ?>">List</a>
-                </td>
-            </tr><?php endforeach; endif; ?>
-            <tr bgcolor="#FAFAF1">
-            <td height="28" colspan="10">
-                <?php echo ($msg["page"]); ?>
-            </td>
+            <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Summary &nbsp; </div></td>
+                <td width="82%"><textarea name="page_summary" id="page_summary" style="width:695px;height:100px;"></textarea></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+                <td width="18%"><div align="right">Content &nbsp; </div></td>
+                <td width="82%"><textarea name="page_content" id="page_content" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+            </tr>
+            <tr bgcolor="#FFFFFF">
+            	<td colspan="2">
+                    <div align="center"><input type="submit" name="Submit" value="Add Page"> 
+                        <input type="reset" name="reset" value="Reset">
+                    </div>
+            	</td>
             </tr>
         </table>
     </form>
 </div>
+
 </div> <!-- wrapper -->
 
 <div id="footer"> 

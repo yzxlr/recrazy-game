@@ -20,12 +20,9 @@
         <link type="text/css" href="{$SITE_URL}/public/jack/forindex/css/common.css" rel="stylesheet" />
         <!-- end:   include jack's css & js -->
         
-
-        
-        
 <!-- end: include -->
 
-*/ ?>
+//*/ ?>
 
 <link href="{$SITE_URL}/public/jack/forindex/css/style.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="{$SITE_URL}/public/jack/forindex/js/jquery.js"></script>
@@ -39,7 +36,7 @@
 <div id="header">
 		<div class="w960">
     <div class="login_info">
-    			 <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome maggie, <a href="">Sign out</a> | <a href="">Go to admin area</a> | <a href="contact.php">Contact Us</a>
+    			 <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a> | <a href="">Go to admin area</a> | <a href="contact.php">Contact Us</a>
   		</div>
   <a href="index.php">  <img src="{$SITE_URL}/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
   
