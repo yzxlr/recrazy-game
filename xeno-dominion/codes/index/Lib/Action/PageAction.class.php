@@ -36,7 +36,7 @@ class PageAction extends Action
 											") 
 									 -> where(array("ry_page.page_id"=>$_GET["id"], "lang_code"=>LANG_SET)) ->find();
 		
-		var_dump($data);
+		/////var_dump($data);
 		$this->assign("data",$data);
 		$this->assign("msg",$msg);
         $this->display();
