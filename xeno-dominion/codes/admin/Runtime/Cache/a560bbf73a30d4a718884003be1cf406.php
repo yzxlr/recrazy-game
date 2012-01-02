@@ -114,46 +114,37 @@ function del(id){
 	if(id)
 	{
 	  if(confirm("Delete?")){ 
-	    location="__URL__/delete/pid/"+id;
+	    location="__URL__/lang_del/page_id/<?php echo ($_GET['page_id']); ?>/page_lang_id/"+id;
       }
 	}
 }
 </script>
-
 <div id="content">
 	<!--  内容列表   -->
         <form name="form2" style="margin-bottom:0px;">
         <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
             <tr bgcolor="#E7E7E7">
                 <td height="30" colspan="10">
-                    <span style="float:left; padding-top:3px; padding-left:5px;">Product List</span>
-                    <span style="float:right;"><a href="__URL__/add">Add Product</a></span>
+                    <span style="float:left; padding-top:3px; padding-left:5px;">Page Additional Language List</span>
+                    <span style="float:right;"><a href="__URL__/lang_add/page_id/<?php echo ($_GET['page_id']); ?>">Add New Page Language</a></span>
                 </td>
             </tr>
             <tr align="center" bgcolor="#FAFAF1" height="22">
-                <th width="8%">ID</th>
-                <th width="5%">User ID</th>
-                <th width="13%">Product Name</th>
-                <th width="13%">Price</th>
-                <th width="13%">Quantity</th>
-                <th width="14%">Type</th>
-                <th width="10%">Option</th>
-                <th width="10%">Language List</th>
+            	<th>ID</th>
+                <th>Page ID</th>
+                <th>Title</th>
+                <th>Language</th>
+                <th>Option</th>
             </tr>
             
-            <?php if(is_array($data["tb_products"])): foreach($data["tb_products"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td><?php echo ($vo["pid"]); ?></td>
-                <td><?php echo ($vo["user_id"]); ?></td>
-                <td><?php echo ($vo["name"]); ?></td>
-                <td><?php echo ($vo["price"]); ?></td>
-                <td><?php echo ($vo["quantity"]); ?></td>
-                <td><?php if($vo["type"] == 1): ?>Supply<?php endif; ?><?php if($vo["type"] == 2): ?>Demand<?php endif; ?></td>
+            <?php if(is_array($data["tb_page_lang"])): foreach($data["tb_page_lang"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+            	<td><?php echo ($vo["page_lang_id"]); ?></td>
+                <td><?php echo ($vo["page_id"]); ?></td>
+                <td><?php echo ($vo["page_title"]); ?></td>
+                <td><?php echo ($vo["lang_name"]); ?> (<?php echo ($vo["lang_code"]); ?>)</td>
                 <td>
-                    <a href="__URL__/edit/pid/<?php echo ($vo["pid"]); ?>">Update</a> | 
-                    <a href="javascript:del(<?php echo ($vo["pid"]); ?>)">Delete</a>
-                </td>
-                <td>
-                	<a href="__URL__/lang_index/product_id/<?php echo ($vo["pid"]); ?>">List</a>
+                    <a href="__URL__/lang_update/page_lang_id/<?php echo ($vo["page_lang_id"]); ?>/page_id/<?php echo ($_GET['page_id']); ?>">Update</a> | 
+                    <a href="javascript:del(<?php echo ($vo["page_lang_id"]); ?>)">Delete</a>
                 </td>
             </tr><?php endforeach; endif; ?>
             <tr bgcolor="#FAFAF1">

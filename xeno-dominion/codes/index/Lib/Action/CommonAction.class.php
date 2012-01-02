@@ -20,11 +20,11 @@ class CommonAction extends Action
 		//1 Validate User (only admin can login at here
 		if(!empty($_SESSION["user"])){
 			$this->user = $_SESSION["user"];
-			if($this->user["role"]==0){
+			if($this->user["role"]>=0){
 				$this->assign("user",$this->user);
 			}else{
 				$this->assign("jumpUrl","/index.php?s=Public/login");
-				$this->error('You are not administration user!');
+				$this->error('You are not user!');
 			}
 		}else{
 			$this->assign("jumpUrl","/index.php?s=Public/login");

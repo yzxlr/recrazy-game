@@ -148,11 +148,17 @@ $(document).ready(function(){
 <form id="add_cat" name="add_cat" method="post" action="#" enctype="multipart/form-data"  onsubmit="return form_check();" >
 <table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
   <tr>
-    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Edit Product</span></td>
+    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Update Product</span></td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Product Name&nbsp; </div></td>
     <td width="82%"><input name="name" id="product_name_id" type="text" size="30" value="<?php echo ($data["tb_products"]["name"]); ?>" />&nbsp; <font color="#FF0000">*</font></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">User ID&nbsp; </div></td>
+    <td width="82%">
+		<input name="user_id" value="" />
+    </td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Type&nbsp; </div></td>
@@ -215,7 +221,7 @@ $(document).ready(function(){
   <tr bgcolor="#FFFFFF">
     <td colspan="2">
 	<div align="center">
-    		<input type="submit" name="Submit" value="Edit"> 
+    		<input type="submit" name="Submit" value="Update"> 
 			<input type="reset" name="chongzhi" value="Reset">
 	</div>
 	</td>

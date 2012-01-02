@@ -180,6 +180,7 @@ class App
             elseif(isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])){// 自动侦测浏览器语言
                 preg_match('/^([a-z\-]+)/i', $_SERVER['HTTP_ACCEPT_LANGUAGE'], $matches);
                 $langSet = strtolower($matches[1]);
+				if (false === @file_exists(LANG_PATH.$langSet.'/common.php'))$langSet = C('DEFAULT_LANG'); // jack added
                 cookie('think_language',$langSet);
             }
         }

@@ -1,0 +1,7 @@
+[ 2011-12-28T22:30:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.208970s ]
+[ 2011-12-28T22:30:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.053712s ]
+[ 2011-12-28T22:30:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.129898s ]
+[ 2011-12-28T22:30:15-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '4' ) LIMIT 1  [ RunTime:0.034690s ]
+[ 2011-12-28T22:30:15-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2011-12-28T22:30:15-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 109 行.
+[ 2011-12-28T22:30:15-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 109 行.

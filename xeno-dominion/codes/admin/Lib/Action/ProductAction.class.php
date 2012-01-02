@@ -201,6 +201,7 @@ class ProductAction extends CommonAction
 				$tb_products->time_modify = time();
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
 				$tb_products->time_expire = $_POST["time_expire"];
+				if(empty($_POST["user_id"])) unset($tb_products->user_id);
 				if($tb_products->save()){
 					$this->success("Insert Successfully!");
 				}else{

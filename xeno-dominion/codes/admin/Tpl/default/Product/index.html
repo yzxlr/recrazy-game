@@ -41,7 +41,7 @@ function del(id){
                 <td>{$vo.quantity}</td>
                 <td><if condition="$vo.type eq 1">Supply</if><if condition="$vo.type eq 2">Demand</if></td>
                 <td>
-                    <a href="__URL__/edit/pid/{$vo.pid}">Edit</a> | 
+                    <a href="__URL__/edit/pid/{$vo.pid}">Update</a> | 
                     <a href="javascript:del({$vo.pid})">Delete</a>
                 </td>
                 <td>
