@@ -35,6 +35,9 @@ class PageAction extends Action
 												ry_page_lang.page_content AS tj_content
 											") 
 									 -> where(array("ry_page.page_id"=>$_GET["id"], "lang_code"=>LANG_SET)) ->find();
+		if(empty($data["tb_page"])){
+			$data["tb_page"] = $tb_page -> where(array("page_id"=>$_GET["id"])) ->find();
+		}
 		
 		/////var_dump($data);
 		$this->assign("data",$data);

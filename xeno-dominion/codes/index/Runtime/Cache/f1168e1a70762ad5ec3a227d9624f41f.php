@@ -94,10 +94,10 @@
    <div style="overflow:hidden; background:#f5f5f5; border:#eee solid 1px; padding:10px; ">
      <ul class="ul5">
      	<h5>About Comtoworld.com</h5>
-     		<li><a href="">Company Information</a></li>
-     		<li><a href="">Partner with Us</a></li>
-     		<li><a href="">Site Map</a></li>
-     		<li><a href="">User Guide</a></li>
+     		<li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/1">Company Information</a></li>
+     		<li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/2">Partner with Us</a></li>
+     		<li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/3">Site Map</a></li>
+     		<li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/4">User Guide</a></li>
        </ul>
        
        
