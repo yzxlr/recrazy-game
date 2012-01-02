@@ -86,3 +86,26 @@
 [ 2012-01-02T15:37:02-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 109 行.
 [ 2012-01-02T15:37:02-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 109 行.
 [ 2012-01-02T15:37:02-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 152 行.
+[ 2012-01-02T17:12:49-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004072s ]
+[ 2012-01-02T17:12:49-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000221s ]
+[ 2012-01-02T17:12:49-05:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000304s ]
+[ 2012-01-02T17:12:49-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 109 行.
+[ 2012-01-02T17:12:49-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 109 行.
+[ 2012-01-02T17:12:52-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003941s ]
+[ 2012-01-02T17:12:52-05:00 ] SQL: SELECT * FROM `ry_page` WHERE ( `page_id` = '2' ) LIMIT 1  [ RunTime:0.000336s ]
+[ 2012-01-02T17:12:52-05:00 ] NOTIC: [8] Undefined index: info 35f1c6cff39b620b0908d2fa7c5223e4.php 第 109 行.
+[ 2012-01-02T17:12:52-05:00 ] NOTIC: [8] Undefined index: info 35f1c6cff39b620b0908d2fa7c5223e4.php 第 109 行.
+[ 2012-01-02T17:12:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.006754s ]
+[ 2012-01-02T17:12:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.004120s ]
+[ 2012-01-02T17:12:59-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000563s ]
+[ 2012-01-02T17:12:59-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '2' ) [ RunTime:0.000263s ]
+[ 2012-01-02T17:12:59-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 109 行.
+[ 2012-01-02T17:12:59-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 109 行.
+[ 2012-01-02T17:12:59-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 152 行.
+[ 2012-01-02T17:13:07-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.003891s ]
+[ 2012-01-02T17:13:07-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.005086s ]
+[ 2012-01-02T17:13:07-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000833s ]
+[ 2012-01-02T17:13:07-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '4' ) [ RunTime:0.000316s ]
+[ 2012-01-02T17:13:07-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 109 行.
+[ 2012-01-02T17:13:07-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 109 行.
+[ 2012-01-02T17:13:07-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 152 行.

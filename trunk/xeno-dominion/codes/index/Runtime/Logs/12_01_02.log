@@ -169,3 +169,488 @@
 												ry_page_lang.page_summary AS tj_summary,
 												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000460s ]
 [ 2012-01-02T16:07:46-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T16:08:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004174s ]
+[ 2012-01-02T16:08:26-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000450s ]
+[ 2012-01-02T16:08:26-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T16:10:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003776s ]
+[ 2012-01-02T16:10:46-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000504s ]
+[ 2012-01-02T16:10:46-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T16:33:54-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.005504s ]
+[ 2012-01-02T16:33:54-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.001762s ]
+[ 2012-01-02T16:33:54-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T16:45:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004708s ]
+[ 2012-01-02T16:45:16-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000576s ]
+[ 2012-01-02T16:45:17-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T16:45:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004741s ]
+[ 2012-01-02T16:45:24-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000572s ]
+[ 2012-01-02T16:45:24-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:09:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.005439s ]
+[ 2012-01-02T17:09:16-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.001607s ]
+[ 2012-01-02T17:09:16-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:11:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003998s ]
+[ 2012-01-02T17:11:45-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000473s ]
+[ 2012-01-02T17:11:45-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:11:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003919s ]
+[ 2012-01-02T17:11:48-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000484s ]
+[ 2012-01-02T17:11:48-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:11:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003949s ]
+[ 2012-01-02T17:11:50-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000442s ]
+[ 2012-01-02T17:11:50-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:11:51-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003986s ]
+[ 2012-01-02T17:11:51-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000477s ]
+[ 2012-01-02T17:11:51-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:11:55-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003909s ]
+[ 2012-01-02T17:11:55-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = 'index.php' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000415s ]
+[ 2012-01-02T17:11:55-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:11:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003923s ]
+[ 2012-01-02T17:11:59-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000481s ]
+[ 2012-01-02T17:11:59-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:01-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003893s ]
+[ 2012-01-02T17:12:01-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000508s ]
+[ 2012-01-02T17:12:02-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:03-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003877s ]
+[ 2012-01-02T17:12:03-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = 'index.php' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000384s ]
+[ 2012-01-02T17:12:04-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004273s ]
+[ 2012-01-02T17:12:31-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = 'index.php' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000380s ]
+[ 2012-01-02T17:12:31-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004329s ]
+[ 2012-01-02T17:12:32-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000538s ]
+[ 2012-01-02T17:12:33-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004159s ]
+[ 2012-01-02T17:12:34-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '3' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000423s ]
+[ 2012-01-02T17:12:34-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004044s ]
+[ 2012-01-02T17:12:35-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000427s ]
+[ 2012-01-02T17:12:35-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:36-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004182s ]
+[ 2012-01-02T17:12:36-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000452s ]
+[ 2012-01-02T17:12:36-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:40-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003878s ]
+[ 2012-01-02T17:12:40-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000417s ]
+[ 2012-01-02T17:12:40-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003869s ]
+[ 2012-01-02T17:12:41-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '3' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000415s ]
+[ 2012-01-02T17:12:42-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:12:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004312s ]
+[ 2012-01-02T17:12:42-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000418s ]
+[ 2012-01-02T17:12:42-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:13:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003878s ]
+[ 2012-01-02T17:13:11-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000415s ]
+[ 2012-01-02T17:13:11-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:03-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004302s ]
+[ 2012-01-02T17:15:03-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000559s ]
+[ 2012-01-02T17:15:03-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004291s ]
+[ 2012-01-02T17:15:05-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000533s ]
+[ 2012-01-02T17:15:05-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004060s ]
+[ 2012-01-02T17:15:06-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000507s ]
+[ 2012-01-02T17:15:06-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004245s ]
+[ 2012-01-02T17:15:14-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000456s ]
+[ 2012-01-02T17:15:14-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003957s ]
+[ 2012-01-02T17:15:34-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000435s ]
+[ 2012-01-02T17:15:34-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003948s ]
+[ 2012-01-02T17:15:34-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000428s ]
+[ 2012-01-02T17:15:34-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004229s ]
+[ 2012-01-02T17:15:35-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000490s ]
+[ 2012-01-02T17:15:35-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003858s ]
+[ 2012-01-02T17:15:37-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000439s ]
+[ 2012-01-02T17:15:37-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:39-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004155s ]
+[ 2012-01-02T17:15:39-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000519s ]
+[ 2012-01-02T17:15:39-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:40-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004190s ]
+[ 2012-01-02T17:15:40-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000524s ]
+[ 2012-01-02T17:15:41-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:15:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004300s ]
+[ 2012-01-02T17:15:42-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000502s ]
+[ 2012-01-02T17:15:42-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:16:03-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003946s ]
+[ 2012-01-02T17:16:03-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000407s ]
+[ 2012-01-02T17:16:03-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:16:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004431s ]
+[ 2012-01-02T17:16:05-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000545s ]
+[ 2012-01-02T17:16:05-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:16:07-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003903s ]
+[ 2012-01-02T17:16:07-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000485s ]
+[ 2012-01-02T17:16:07-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:17:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003993s ]
+[ 2012-01-02T17:17:28-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000515s ]
+[ 2012-01-02T17:17:28-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:17:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004112s ]
+[ 2012-01-02T17:17:30-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000534s ]
+[ 2012-01-02T17:17:30-05:00 ] SQL: SELECT * FROM `ry_page` WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000202s ]
+[ 2012-01-02T17:17:30-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:17:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003866s ]
+[ 2012-01-02T17:17:31-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000498s ]
+[ 2012-01-02T17:17:31-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:17:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004365s ]
+[ 2012-01-02T17:17:38-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000479s ]
+[ 2012-01-02T17:17:38-05:00 ] SQL: SELECT * FROM `ry_page` WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000227s ]
+[ 2012-01-02T17:17:38-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:17:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004157s ]
+[ 2012-01-02T17:17:59-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000503s ]
+[ 2012-01-02T17:18:00-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:18:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004099s ]
+[ 2012-01-02T17:18:02-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000399s ]
+[ 2012-01-02T17:18:02-05:00 ] SQL: SELECT * FROM `ry_page` WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000203s ]
+[ 2012-01-02T17:18:02-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:18:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004346s ]
+[ 2012-01-02T17:18:38-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '1' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000461s ]
+[ 2012-01-02T17:18:38-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:18:40-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004272s ]
+[ 2012-01-02T17:18:40-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '2' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000431s ]
+[ 2012-01-02T17:18:40-05:00 ] SQL: SELECT * FROM `ry_page` WHERE ( `page_id` = '2' ) LIMIT 1  [ RunTime:0.000321s ]
+[ 2012-01-02T17:18:40-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:18:40-05:00 ] NOTIC: [8] Undefined index: tj_title f1168e1a70762ad5ec3a227d9624f41f.php 第 82 行.
+[ 2012-01-02T17:18:40-05:00 ] NOTIC: [8] Undefined index: tj_summary f1168e1a70762ad5ec3a227d9624f41f.php 第 83 行.
+[ 2012-01-02T17:18:40-05:00 ] NOTIC: [8] Undefined index: tj_content f1168e1a70762ad5ec3a227d9624f41f.php 第 84 行.
+[ 2012-01-02T17:18:43-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003951s ]
+[ 2012-01-02T17:18:43-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '3' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000411s ]
+[ 2012-01-02T17:18:43-05:00 ] SQL: SELECT * FROM `ry_page` WHERE ( `page_id` = '3' ) LIMIT 1  [ RunTime:0.000222s ]
+[ 2012-01-02T17:18:43-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:18:43-05:00 ] NOTIC: [8] Undefined index: tj_title f1168e1a70762ad5ec3a227d9624f41f.php 第 82 行.
+[ 2012-01-02T17:18:43-05:00 ] NOTIC: [8] Undefined index: tj_summary f1168e1a70762ad5ec3a227d9624f41f.php 第 83 行.
+[ 2012-01-02T17:18:43-05:00 ] NOTIC: [8] Undefined index: tj_content f1168e1a70762ad5ec3a227d9624f41f.php 第 84 行.
+[ 2012-01-02T17:18:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.004017s ]
+[ 2012-01-02T17:18:45-05:00 ] SQL: SELECT ry_page.*, 
+									 			ry_page_lang.page_lang_id AS tj_id, 
+												ry_page_lang.page_id AS tjfk_page_id, 
+												ry_page_lang.lang_code AS tj_lang_name, 
+												ry_page_lang.lang_name AS tj_title,
+												ry_page_lang.page_title AS tj_summary,
+												ry_page_lang.page_summary AS tj_summary,
+												ry_page_lang.page_content AS tj_content FROM `ry_page` LEFT JOIN ry_page_lang on ry_page.page_id = ry_page_lang.page_id  WHERE ( ry_page.page_id = '4' ) AND ( `lang_code` = 'en-us' ) LIMIT 1  [ RunTime:0.000479s ]
+[ 2012-01-02T17:18:45-05:00 ] SQL: SELECT * FROM `ry_page` WHERE ( `page_id` = '4' ) LIMIT 1  [ RunTime:0.000345s ]
+[ 2012-01-02T17:18:45-05:00 ] NOTIC: [8] Undefined index: zh-cn f1168e1a70762ad5ec3a227d9624f41f.php 第 31 行.
+[ 2012-01-02T17:18:45-05:00 ] NOTIC: [8] Undefined index: tj_title f1168e1a70762ad5ec3a227d9624f41f.php 第 82 行.
+[ 2012-01-02T17:18:45-05:00 ] NOTIC: [8] Undefined index: tj_summary f1168e1a70762ad5ec3a227d9624f41f.php 第 83 行.
+[ 2012-01-02T17:18:45-05:00 ] NOTIC: [8] Undefined index: tj_content f1168e1a70762ad5ec3a227d9624f41f.php 第 84 行.
