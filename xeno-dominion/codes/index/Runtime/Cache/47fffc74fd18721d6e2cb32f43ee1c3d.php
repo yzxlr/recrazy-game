@@ -79,15 +79,21 @@
     
     <div id="list_box">
     	<?php if(is_array($data["tb_products"])): foreach($data["tb_products"] as $key=>$vo): ?><div id="list_item">
-                <h4><?php echo ($vo["name"]); ?></h4>
+                <h4>
+                	<?php if(!empty($vo["lang_name"])): ?><?php echo ($vo["lang_name"]); ?><?php endif; ?>
+                    <?php if(empty($vo["lang_name"])): ?><?php echo ($vo["name"]); ?><?php endif; ?>
+                </h4>
                 <div>
                 	<a href="<?php echo ($SITE_URL); ?>/index.php/Products/product">
                 		<img src="<?php echo ($SITE_URL); ?>/public/uploads/images/<?php echo ($vo["image"]); ?>" />
                 	</a>
-                    <?php echo ($vo["description"]); ?>
+                    <?php if(!empty($vo["lang_description"])): ?><?php echo ($vo["lang_description"]); ?><?php endif; ?>
+                    <?php if(empty($vo["lang_description"])): ?><?php echo ($vo["description"]); ?><?php endif; ?>
                 </div>
             </div><?php endforeach; endif; ?>
     </div>
+    
+    <div><?php echo ($msg["page"]); ?></div>
 
   </div><!-- EO w960 -->
 </div> <!-- EO Content -->
