@@ -51,11 +51,14 @@ class ProductsAction extends CommonAction
 			if($flag=="supply")$flag=1;
 			else if($flag=="demand")$flag=2;
 			else $flag= 0;
-			$condition = array("cat_id"=>array("IN",$cat_id), 
-							   "type"=>$flag);
+			$condition = array("ry_products.cat_id"=>array("IN",$cat_id), 
+							   "ry_products.type"=>$flag);
 			
 			import("ORG.Util.Page");
-			$count = $tb_products->where($condition)->count();
+			$count = $tb_products -> table("ry_products")
+									-> join("ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'")
+									-> field("ry_products.*, ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description")
+									-> where($condition)->count();
 			$Page = new Page($count,25);
 			//>>>> page English support start
 			if($count>1)
@@ -68,7 +71,10 @@ class ProductsAction extends CommonAction
 			$Page->setConfig('last','>|');
 			//<<<< page English support ends
 			$show = $Page->show();
-			$data["tb_products"] = $tb_products -> where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
+			$data["tb_products"] = $tb_products -> table("ry_products")
+												-> join("ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'")
+												-> field("ry_products.*, ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description")
+												-> where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		}else{
 			$this->error("Error!");
 		}

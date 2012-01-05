@@ -5,15 +5,21 @@
     <div id="list_box">
     	<foreach name="data.tb_products" item="vo">
             <div id="list_item">
-                <h4>{$vo.name}</h4>
+                <h4>
+                	<notempty name="vo.lang_name">{$vo.lang_name}</notempty>
+                    <empty name="vo.lang_name">{$vo.name}</empty>
+                </h4>
                 <div>
                 	<a href="{$SITE_URL}/index.php/Products/product">
                 		<img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
                 	</a>
-                    {$vo.description}
+                    <notempty name="vo.lang_description">{$vo.lang_description}</notempty>
+                    <empty name="vo.lang_description">{$vo.description}</empty>
                 </div>
             </div>
         </foreach>
     </div>
+    
+    <div>{$msg.page}</div>
 
 <include file="Public:footer" />

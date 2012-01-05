@@ -28,7 +28,7 @@
 <script language="javascript" type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jack/forindex/js/jquery.js"></script>
    
         
-<title><?php echo ($msg["zh-cn"]["title"]); ?></title>
+<title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
 
