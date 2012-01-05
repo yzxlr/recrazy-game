@@ -936,3 +936,284 @@
 [ 2012-01-02T17:40:36-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000479s ]
 [ 2012-01-02T17:40:36-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000406s ]
 [ 2012-01-02T17:40:36-05:00 ] NOTIC: [8] Undefined index: zh-cn 7f2baf93ceeb0210d15cc098ab891623.php 第 31 行.
+[ 2012-01-02T17:43:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004101s ]
+[ 2012-01-02T17:43:22-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000464s ]
+[ 2012-01-02T17:43:22-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000398s ]
+[ 2012-01-02T17:43:22-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T18:30:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005491s ]
+[ 2012-01-02T18:30:37-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000621s ]
+[ 2012-01-02T18:30:37-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000628s ]
+[ 2012-01-02T18:30:37-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T18:30:37-05:00 ] NOTIC: [8] Undefined index:  47fffc74fd18721d6e2cb32f43ee1c3d.php 第 81 行.
+[ 2012-01-02T18:31:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004344s ]
+[ 2012-01-02T18:31:45-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000579s ]
+[ 2012-01-02T18:31:45-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` = '0' ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000554s ]
+[ 2012-01-02T18:31:45-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:03:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005414s ]
+[ 2012-01-02T20:03:02-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` = '1' ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000397s ]
+[ 2012-01-02T20:03:02-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` = '1' ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000260s ]
+[ 2012-01-02T20:03:02-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:03:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004515s ]
+[ 2012-01-02T20:03:06-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` = '68' ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000465s ]
+[ 2012-01-02T20:03:06-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` = '68' ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000303s ]
+[ 2012-01-02T20:03:06-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:03:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004448s ]
+[ 2012-01-02T20:03:45-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` = '67' ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000407s ]
+[ 2012-01-02T20:03:45-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` = '67' ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000319s ]
+[ 2012-01-02T20:03:45-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:04:40-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004147s ]
+[ 2012-01-02T20:04:40-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000468s ]
+[ 2012-01-02T20:04:40-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000659s ]
+[ 2012-01-02T20:04:40-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:04:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004346s ]
+[ 2012-01-02T20:04:42-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000525s ]
+[ 2012-01-02T20:04:42-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000346s ]
+[ 2012-01-02T20:04:42-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:04:54-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004468s ]
+[ 2012-01-02T20:04:54-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.016043s ]
+[ 2012-01-02T20:04:54-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000490s ]
+[ 2012-01-02T20:04:54-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:05:04-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004129s ]
+[ 2012-01-02T20:05:04-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000443s ]
+[ 2012-01-02T20:05:04-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000327s ]
+[ 2012-01-02T20:05:04-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:15:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004066s ]
+[ 2012-01-02T20:15:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004119s ]
+[ 2012-01-02T20:15:21-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `cat_id` = '67' ) [ RunTime:0.000327s ]
+[ 2012-01-02T20:15:21-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000315s ]
+[ 2012-01-02T20:15:21-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000295s ]
+[ 2012-01-02T20:15:21-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:16:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004406s ]
+[ 2012-01-02T20:16:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003826s ]
+[ 2012-01-02T20:16:33-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `parent_id` = '67' ) [ RunTime:0.000320s ]
+[ 2012-01-02T20:16:33-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000320s ]
+[ 2012-01-02T20:16:33-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000298s ]
+[ 2012-01-02T20:16:33-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:16:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004102s ]
+[ 2012-01-02T20:16:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004882s ]
+[ 2012-01-02T20:16:37-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `parent_id` = '0' ) [ RunTime:0.000725s ]
+[ 2012-01-02T20:16:37-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000361s ]
+[ 2012-01-02T20:16:37-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000548s ]
+[ 2012-01-02T20:16:37-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:21:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005378s ]
+[ 2012-01-02T20:21:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003664s ]
+[ 2012-01-02T20:21:42-05:00 ] SQL: SELECT * FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat.parent_id WHERE ( `parent_id` = '0' ) [ RunTime:0.000971s ]
+[ 2012-01-02T20:21:42-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000479s ]
+[ 2012-01-02T20:21:42-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000550s ]
+[ 2012-01-02T20:21:42-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:22:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004024s ]
+[ 2012-01-02T20:22:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003937s ]
+[ 2012-01-02T20:22:12-05:00 ] SQL: SELECT * FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.parent_id WHERE ( `parent_id` = '0' ) [ RunTime:0.000243s ]
+[ 2012-01-02T20:22:12-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000439s ]
+[ 2012-01-02T20:22:12-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000446s ]
+[ 2012-01-02T20:22:12-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:22:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004226s ]
+[ 2012-01-02T20:22:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004375s ]
+[ 2012-01-02T20:22:31-05:00 ] SQL: SELECT ry_products_cat_lang.*, ry_products_cat_lang.parent_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.parent_id WHERE ( `parent_id` = '0' ) [ RunTime:0.000233s ]
+[ 2012-01-02T20:22:31-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000377s ]
+[ 2012-01-02T20:22:31-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000419s ]
+[ 2012-01-02T20:22:31-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:22:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004123s ]
+[ 2012-01-02T20:22:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003895s ]
+[ 2012-01-02T20:22:44-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.parent_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.parent_id WHERE ( `parent_id` = '0' ) [ RunTime:0.000441s ]
+[ 2012-01-02T20:22:44-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000562s ]
+[ 2012-01-02T20:22:44-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000563s ]
+[ 2012-01-02T20:22:44-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:23:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004959s ]
+[ 2012-01-02T20:23:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004124s ]
+[ 2012-01-02T20:23:12-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.parent_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.parent_id WHERE ( `parent_id` = '0' ) [ RunTime:0.000235s ]
+[ 2012-01-02T20:23:12-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000476s ]
+[ 2012-01-02T20:23:12-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000537s ]
+[ 2012-01-02T20:23:12-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:26:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004552s ]
+[ 2012-01-02T20:26:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004162s ]
+[ 2012-01-02T20:26:35-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.parent_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.parent_id WHERE ( `parent_id` = '0' ) [ RunTime:0.000257s ]
+[ 2012-01-02T20:26:35-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000604s ]
+[ 2012-01-02T20:26:35-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000532s ]
+[ 2012-01-02T20:26:35-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:26:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004036s ]
+[ 2012-01-02T20:26:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003917s ]
+[ 2012-01-02T20:26:42-05:00 ] SQL: SELECT * FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.parent_id WHERE ( `parent_id` = '0' ) [ RunTime:0.000234s ]
+[ 2012-01-02T20:26:42-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000611s ]
+[ 2012-01-02T20:26:42-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000464s ]
+[ 2012-01-02T20:26:43-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:27:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005429s ]
+[ 2012-01-02T20:27:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005031s ]
+[ 2012-01-02T20:27:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.parent_id WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.001427s ]
+[ 2012-01-02T20:27:16-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000552s ]
+[ 2012-01-02T20:27:16-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000539s ]
+[ 2012-01-02T20:27:16-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:27:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004279s ]
+[ 2012-01-02T20:27:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004009s ]
+[ 2012-01-02T20:27:50-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.000781s ]
+[ 2012-01-02T20:27:50-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000442s ]
+[ 2012-01-02T20:27:50-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000379s ]
+[ 2012-01-02T20:27:50-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:30:10-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004193s ]
+[ 2012-01-02T20:30:10-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003960s ]
+[ 2012-01-02T20:30:10-05:00 ] SQL: SELECT * FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.000932s ]
+[ 2012-01-02T20:30:10-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000397s ]
+[ 2012-01-02T20:30:10-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000473s ]
+[ 2012-01-02T20:30:10-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:30:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004706s ]
+[ 2012-01-02T20:30:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004109s ]
+[ 2012-01-02T20:30:22-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.parent_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.000213s ]
+[ 2012-01-02T20:30:22-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000397s ]
+[ 2012-01-02T20:30:22-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000418s ]
+[ 2012-01-02T20:30:22-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:31:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004135s ]
+[ 2012-01-02T20:31:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003853s ]
+[ 2012-01-02T20:31:13-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.cat_id AS tjfk_cat_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.000817s ]
+[ 2012-01-02T20:31:13-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000382s ]
+[ 2012-01-02T20:31:13-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000403s ]
+[ 2012-01-02T20:31:13-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:32:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004136s ]
+[ 2012-01-02T20:32:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003739s ]
+[ 2012-01-02T20:32:28-05:00 ] SQL: SELECT ry_products_cat.*, 
+															ry_products_cat_lang.cat_id AS tjfk_cat_id,
+															ry_products_cat_lang.catlang_id AS tj_id, FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.000165s ]
+[ 2012-01-02T20:32:28-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000448s ]
+[ 2012-01-02T20:32:28-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000395s ]
+[ 2012-01-02T20:32:28-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:32:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004499s ]
+[ 2012-01-02T20:32:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003858s ]
+[ 2012-01-02T20:32:45-05:00 ] SQL: SELECT ry_products_cat.*, 
+															ry_products_cat_lang.cat_id AS tjfk_cat_id,
+															ry_products_cat_lang.catlang_id AS tj_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.001008s ]
+[ 2012-01-02T20:32:45-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000512s ]
+[ 2012-01-02T20:32:45-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000478s ]
+[ 2012-01-02T20:32:45-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:33:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004282s ]
+[ 2012-01-02T20:33:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003789s ]
+[ 2012-01-02T20:33:06-05:00 ] SQL: SELECT ry_products_cat.*, 
+															ry_products_cat_lang.catlang_id AS tj_id,
+															ry_products_cat_lang.cat_id AS tjfk_cat_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) [ RunTime:0.000842s ]
+[ 2012-01-02T20:33:06-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000364s ]
+[ 2012-01-02T20:33:06-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000444s ]
+[ 2012-01-02T20:33:06-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:37:39-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004399s ]
+[ 2012-01-02T20:37:39-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004118s ]
+[ 2012-01-02T20:37:39-05:00 ] SQL: SELECT ry_products_cat.*, 
+															ry_products_cat_lang.catlang_id AS tj_cat_id,
+															ry_products_cat_lang.cat_id AS tjfk_cat_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000948s ]
+[ 2012-01-02T20:37:40-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000349s ]
+[ 2012-01-02T20:37:40-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000447s ]
+[ 2012-01-02T20:37:40-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:37:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004279s ]
+[ 2012-01-02T20:37:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003911s ]
+[ 2012-01-02T20:37:58-05:00 ] SQL: SELECT ry_products_cat.* , 
+															ry_products_cat_lang.catlang_id AS tj_cat_id,
+															ry_products_cat_lang.cat_id AS tjfk_cat_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000971s ]
+[ 2012-01-02T20:37:58-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000453s ]
+[ 2012-01-02T20:37:58-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000578s ]
+[ 2012-01-02T20:37:58-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:37:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004418s ]
+[ 2012-01-02T20:37:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004071s ]
+[ 2012-01-02T20:37:59-05:00 ] SQL: SELECT ry_products_cat.* , 
+															ry_products_cat_lang.catlang_id AS tj_cat_id,
+															ry_products_cat_lang.cat_id AS tjfk_cat_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000882s ]
+[ 2012-01-02T20:37:59-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000339s ]
+[ 2012-01-02T20:37:59-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000501s ]
+[ 2012-01-02T20:37:59-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:40:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004204s ]
+[ 2012-01-02T20:40:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003812s ]
+[ 2012-01-02T20:40:38-05:00 ] SQL: SELECT ry_products_cat.* , 
+															ry_products_cat_lang.catlang_id AS tj_cat_id,
+															ry_products_cat_lang.cat_id AS tjfk_cat_id FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat.cat_id = ry_products_cat_lang.cat_id WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000868s ]
+[ 2012-01-02T20:40:38-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000382s ]
+[ 2012-01-02T20:40:38-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000391s ]
+[ 2012-01-02T20:40:38-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:42:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004087s ]
+[ 2012-01-02T20:42:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003721s ]
+[ 2012-01-02T20:42:27-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000875s ]
+[ 2012-01-02T20:42:27-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000522s ]
+[ 2012-01-02T20:42:27-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000418s ]
+[ 2012-01-02T20:42:27-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:44:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004368s ]
+[ 2012-01-02T20:44:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003794s ]
+[ 2012-01-02T20:44:06-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000698s ]
+[ 2012-01-02T20:44:06-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000525s ]
+[ 2012-01-02T20:44:06-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000562s ]
+[ 2012-01-02T20:44:06-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:45:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004435s ]
+[ 2012-01-02T20:45:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003839s ]
+[ 2012-01-02T20:45:58-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000718s ]
+[ 2012-01-02T20:45:58-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000640s ]
+[ 2012-01-02T20:45:58-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000679s ]
+[ 2012-01-02T20:45:58-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:46:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004365s ]
+[ 2012-01-02T20:46:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004098s ]
+[ 2012-01-02T20:46:35-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000787s ]
+[ 2012-01-02T20:46:35-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000538s ]
+[ 2012-01-02T20:46:35-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000678s ]
+[ 2012-01-02T20:46:35-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:47:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004164s ]
+[ 2012-01-02T20:47:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003921s ]
+[ 2012-01-02T20:47:21-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000707s ]
+[ 2012-01-02T20:47:21-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000526s ]
+[ 2012-01-02T20:47:21-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000591s ]
+[ 2012-01-02T20:47:22-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:48:43-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004067s ]
+[ 2012-01-02T20:48:43-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003737s ]
+[ 2012-01-02T20:48:43-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000706s ]
+[ 2012-01-02T20:48:43-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000655s ]
+[ 2012-01-02T20:48:43-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000597s ]
+[ 2012-01-02T20:48:43-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:50:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004951s ]
+[ 2012-01-02T20:50:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003981s ]
+[ 2012-01-02T20:50:02-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000704s ]
+[ 2012-01-02T20:50:02-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000610s ]
+[ 2012-01-02T20:50:02-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000639s ]
+[ 2012-01-02T20:50:02-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:50:08-05:00 ] ERR: (ThinkException) 非法操作product
+[ 2012-01-02T20:50:56-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004141s ]
+[ 2012-01-02T20:50:56-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003911s ]
+[ 2012-01-02T20:50:56-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000692s ]
+[ 2012-01-02T20:50:56-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000576s ]
+[ 2012-01-02T20:50:56-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000564s ]
+[ 2012-01-02T20:50:56-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:51:04-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004294s ]
+[ 2012-01-02T20:51:04-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003987s ]
+[ 2012-01-02T20:51:04-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000801s ]
+[ 2012-01-02T20:51:04-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000624s ]
+[ 2012-01-02T20:51:04-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000661s ]
+[ 2012-01-02T20:51:04-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:51:23-05:00 ] NOTIC: [8] Undefined variable: msg ProductsAction.class.php 第 81 行.
+[ 2012-01-02T20:51:23-05:00 ] NOTIC: [8] Undefined variable: data ProductsAction.class.php 第 82 行.
+[ 2012-01-02T20:54:00-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004272s ]
+[ 2012-01-02T20:54:00-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003993s ]
+[ 2012-01-02T20:54:00-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000768s ]
+[ 2012-01-02T20:54:00-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000567s ]
+[ 2012-01-02T20:54:00-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000584s ]
+[ 2012-01-02T20:54:00-05:00 ] NOTIC: [8] Undefined index: zh-cn 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 31 行.
+[ 2012-01-02T20:54:02-05:00 ] NOTIC: [8] Undefined variable: msg ProductsAction.class.php 第 83 行.
+[ 2012-01-02T20:54:02-05:00 ] NOTIC: [8] Undefined variable: data ProductsAction.class.php 第 84 行.
+[ 2012-01-02T20:54:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004117s ]
+[ 2012-01-02T20:54:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003931s ]
+[ 2012-01-02T20:54:26-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000753s ]
+[ 2012-01-02T20:54:26-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000626s ]
+[ 2012-01-02T20:54:26-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000749s ]
+[ 2012-01-02T20:55:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004319s ]
+[ 2012-01-02T20:55:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003857s ]
+[ 2012-01-02T20:55:16-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000701s ]
+[ 2012-01-02T20:55:16-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000579s ]
+[ 2012-01-02T20:55:16-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000603s ]
+[ 2012-01-02T20:55:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004290s ]
+[ 2012-01-02T20:55:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003818s ]
+[ 2012-01-02T20:55:24-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000806s ]
+[ 2012-01-02T20:55:24-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000523s ]
+[ 2012-01-02T20:55:24-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000553s ]
+[ 2012-01-02T20:55:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004182s ]
+[ 2012-01-02T20:55:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004126s ]
+[ 2012-01-02T20:55:41-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000740s ]
+[ 2012-01-02T20:55:41-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000539s ]
+[ 2012-01-02T20:55:41-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000672s ]
+[ 2012-01-02T20:56:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004086s ]
+[ 2012-01-02T20:56:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003914s ]
+[ 2012-01-02T20:56:45-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000772s ]
+[ 2012-01-02T20:56:45-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 1  [ RunTime:0.000536s ]
+[ 2012-01-02T20:56:45-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `cat_id` IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( `type` = 1 ) LIMIT 0,25  [ RunTime:0.000564s ]
+[ 2012-01-02T20:56:48-05:00 ] NOTIC: [8] Undefined variable: data ProductsAction.class.php 第 92 行.
+[ 2012-01-02T20:57:01-05:00 ] NOTIC: [8] Undefined variable: data ProductsAction.class.php 第 92 行.
+[ 2012-01-02T20:57:12-05:00 ] NOTIC: [8] Undefined variable: data ProductsAction.class.php 第 92 行.
+[ 2012-01-02T20:57:17-05:00 ] NOTIC: [8] Undefined variable: data ProductsAction.class.php 第 92 行.
