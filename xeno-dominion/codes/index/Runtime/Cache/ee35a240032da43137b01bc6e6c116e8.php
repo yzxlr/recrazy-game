@@ -74,19 +74,31 @@
 
 <div id="content">
 <div class="w960">
-
-    <h3>List</h3>
     
-    <div id="list_box">
-    	<?php if(is_array($data["tb_products"])): foreach($data["tb_products"] as $key=>$vo): ?><div id="list_item">
-                <h4><?php echo ($vo["name"]); ?></h4>
-                <div>
-                	<a href="<?php echo ($SITE_URL); ?>/index.php/Products/product">
-                		<img src="<?php echo ($SITE_URL); ?>/public/uploads/images/<?php echo ($vo["image"]); ?>" />
-                	</a>
-                    <?php echo ($vo["description"]); ?>
-                </div>
-            </div><?php endforeach; endif; ?>
+    <div id="product_box">
+    	<h3>
+        	<?php if(!empty($data["tb_products"]["lang_name"])): ?><?php echo ($data["tb_products"]["lang_name"]); ?><?php endif; ?>
+            <?php if(empty($data["tb_products"]["lang_name"])): ?><?php echo ($data["tb_products"]["name"]); ?><?php endif; ?>
+        </h3>
+        <div class="region_div">
+            <span><?php echo ($data["tb_products"]["region_country"]); ?></span>
+            <span><?php echo ($data["tb_products"]["region_province"]); ?></span>
+        </div>
+        <div class="description_div">
+        	<?php 
+                $images = explode(",",$data["tb_products"]["image"]);
+            ?>
+            <div class="title_image"><img src="<?php echo ($SITE_URL); ?>/public/uploads/images/<?php echo ($images["0"]); ?>" /></div>
+            <ul class="image_showcase">
+                <?php if(is_array($images)): foreach($images as $key=>$image): ?><li>
+                    	<a href="#">
+                        	<img src="<?php echo ($SITE_URL); ?>/public/uploads/images/<?php echo ($image); ?>" />
+                        </a>
+                    </li><?php endforeach; endif; ?>
+            </ul>
+            <?php if(!empty($data["tb_products"]["lang_description"])): ?><?php echo ($data["tb_products"]["lang_description"]); ?><?php endif; ?>
+            <?php if(empty($data["tb_products"]["lang_description"])): ?><?php echo ($data["tb_products"]["description"]); ?><?php endif; ?>
+        </div>
     </div>
 
   </div><!-- EO w960 -->

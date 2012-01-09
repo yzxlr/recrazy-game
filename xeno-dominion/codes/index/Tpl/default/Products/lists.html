@@ -6,11 +6,21 @@
     	<foreach name="data.tb_products" item="vo">
             <div id="list_item">
                 <h4>
-                	<notempty name="vo.lang_name">{$vo.lang_name}</notempty>
-                    <empty name="vo.lang_name">{$vo.name}</empty>
+                	<a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+                        <notempty name="vo.lang_name">{$vo.lang_name}</notempty>
+                        <empty name="vo.lang_name">{$vo.name}</empty>
+                    </a>
                 </h4>
-                <div>
-                	<a href="{$SITE_URL}/index.php/Products/product">
+                <div class="region_div">
+                	<span>{$vo.region_country}</span>
+                    <span>{$vo.region_province}</span>
+                </div>
+                <div class="description_div">
+                	<a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+                    	<?php 
+                        	$title_image = explode(",",$vo["image"]);
+                            $vo["image"] = $title_image[0];
+                        ?>
                 		<img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
                 	</a>
                     <notempty name="vo.lang_description">{$vo.lang_description}</notempty>

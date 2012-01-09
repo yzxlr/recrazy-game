@@ -80,11 +80,21 @@
     <div id="list_box">
     	<?php if(is_array($data["tb_products"])): foreach($data["tb_products"] as $key=>$vo): ?><div id="list_item">
                 <h4>
-                	<?php if(!empty($vo["lang_name"])): ?><?php echo ($vo["lang_name"]); ?><?php endif; ?>
-                    <?php if(empty($vo["lang_name"])): ?><?php echo ($vo["name"]); ?><?php endif; ?>
+                	<a href="<?php echo ($SITE_URL); ?>/index.php/Products/product/id/<?php echo ($vo["pid"]); ?>">
+                        <?php if(!empty($vo["lang_name"])): ?><?php echo ($vo["lang_name"]); ?><?php endif; ?>
+                        <?php if(empty($vo["lang_name"])): ?><?php echo ($vo["name"]); ?><?php endif; ?>
+                    </a>
                 </h4>
-                <div>
-                	<a href="<?php echo ($SITE_URL); ?>/index.php/Products/product">
+                <div class="region_div">
+                	<span><?php echo ($vo["region_country"]); ?></span>
+                    <span><?php echo ($vo["region_province"]); ?></span>
+                </div>
+                <div class="description_div">
+                	<a href="<?php echo ($SITE_URL); ?>/index.php/Products/product/id/<?php echo ($vo["pid"]); ?>">
+                    	<?php 
+                        	$title_image = explode(",",$vo["image"]);
+                            $vo["image"] = $title_image[0];
+                        ?>
                 		<img src="<?php echo ($SITE_URL); ?>/public/uploads/images/<?php echo ($vo["image"]); ?>" />
                 	</a>
                     <?php if(!empty($vo["lang_description"])): ?><?php echo ($vo["lang_description"]); ?><?php endif; ?>

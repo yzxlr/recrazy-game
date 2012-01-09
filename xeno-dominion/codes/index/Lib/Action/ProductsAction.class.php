@@ -72,8 +72,17 @@ class ProductsAction extends CommonAction
 			//<<<< page English support ends
 			$show = $Page->show();
 			$data["tb_products"] = $tb_products -> table("ry_products")
-												-> join("ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'")
-												-> field("ry_products.*, ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description")
+												-> join(
+														array(
+																"ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'" ,
+																"ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='".LANG_SET."'"
+															)
+														)
+												-> field("
+														ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.*
+														")
 												-> where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		}else{
 			$this->error("Error!");
@@ -94,6 +103,28 @@ class ProductsAction extends CommonAction
 									"zh-cn" => "产品")
 					);
 		
+		// 1 Table products
+		$tb_products = M("products");
+		
+		$condition = array("ry_products.pid"=>$_GET["id"]);
+		
+		$data["tb_products"] = $tb_products -> table("ry_products")
+												-> join(
+														array(
+																"ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'" ,
+																"ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='".LANG_SET."'"
+															)
+														)
+												-> field("
+														ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.*
+														")
+												//*/
+												-> where($condition) -> find();
+		
+		
+		var_dump($data);
 		$this->assign("msg",$msg);
 		$this->assign("data",$data);
         $this->display();
