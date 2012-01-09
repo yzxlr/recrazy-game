@@ -80,11 +80,8 @@
         	<?php if(!empty($data["tb_products"]["lang_name"])): ?><?php echo ($data["tb_products"]["lang_name"]); ?><?php endif; ?>
             <?php if(empty($data["tb_products"]["lang_name"])): ?><?php echo ($data["tb_products"]["name"]); ?><?php endif; ?>
         </h3>
-        <div class="region_div">
-            <span><?php echo ($data["tb_products"]["region_country"]); ?></span>
-            <span><?php echo ($data["tb_products"]["region_province"]); ?></span>
-        </div>
-        <div class="description_div">
+        
+        <div class="image_div">
         	<?php 
                 $images = explode(",",$data["tb_products"]["image"]);
             ?>
@@ -96,9 +93,53 @@
                         </a>
                     </li><?php endforeach; endif; ?>
             </ul>
-            <?php if(!empty($data["tb_products"]["lang_description"])): ?><?php echo ($data["tb_products"]["lang_description"]); ?><?php endif; ?>
+        </div>
+        
+        <div class="basic_information">
+        	<table>
+            	<tbody>
+                	<tr>
+                    	<td><?php echo (L("product_name")); ?>:</td>
+                        <td>
+                        	<?php if(!empty($data["tb_products"]["lang_name"])): ?><?php echo ($data["tb_products"]["lang_name"]); ?><?php endif; ?>
+          					<?php if(empty($data["tb_products"]["lang_name"])): ?><?php echo ($data["tb_products"]["name"]); ?><?php endif; ?>
+                        </td>
+                    </tr>
+                	<tr>
+                    	<td><?php echo (L("product_price")); ?>:</td>
+                        <td>$<?php echo ($data["tb_products"]["price"]); ?></td>
+                    </tr>
+                    <tr>
+                    	<td><?php echo (L("product_quantity")); ?></td>
+                        <td><?php echo ($data["tb_products"]["quantity"]); ?></td>
+                    </tr>
+                    <tr>
+                    	<td><?php echo (L("product_location")); ?></td>
+                        <td>
+                        	<span><?php echo ($data["tb_products"]["region_country"]); ?></span>
+            				<span><?php echo ($data["tb_products"]["region_province"]); ?></span>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td><?php echo (L("product_type")); ?></td>
+                        <td>
+                
+                        	<?php if($data["tb_products"]["type"]==1){ ?>
+                            	<?php echo (L("product_supply")); ?>
+                            <?php }else if($data["tb_products"]["type"]==2){ ?>
+                            	<?php echo (L("product_demand")); ?>
+                            <?php } ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="description_div">
+        	<?php if(!empty($data["tb_products"]["lang_description"])): ?><?php echo ($data["tb_products"]["lang_description"]); ?><?php endif; ?>
             <?php if(empty($data["tb_products"]["lang_description"])): ?><?php echo ($data["tb_products"]["description"]); ?><?php endif; ?>
         </div>
+        
     </div>
 
   </div><!-- EO w960 -->

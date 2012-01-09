@@ -95,6 +95,7 @@ class ProductsAction extends CommonAction
 		$this->assign("msg",$msg);
 		$this->assign("data",$data);
         $this->display();
+		//http://xeno.recrazy.net/index.php?s=Products/lists/flag/supply/cat_id/0?l=en-us
     }
 
 	public function product()
@@ -124,7 +125,7 @@ class ProductsAction extends CommonAction
 												-> where($condition) -> find();
 		
 		
-		var_dump($data);
+		/////var_dump($data);
 		$this->assign("msg",$msg);
 		$this->assign("data",$data);
         $this->display();
