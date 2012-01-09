@@ -1,19 +1,31 @@
 <include file="Public:header" />
-
-    <h3>List</h3>
     
-    <div id="list_box">
-    	<foreach name="data.tb_products" item="vo">
-            <div id="list_item">
-                <h4>{$vo.name}</h4>
-                <div>
-                	<a href="{$SITE_URL}/index.php/Products/product">
-                		<img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
-                	</a>
-                    {$vo.description}
-                </div>
-            </div>
-        </foreach>
+    <div id="product_box">
+    	<h3>
+        	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
+            <empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
+        </h3>
+        <div class="region_div">
+            <span>{$data.tb_products.region_country}</span>
+            <span>{$data.tb_products.region_province}</span>
+        </div>
+        <div class="description_div">
+        	<?php 
+                $images = explode(",",$data["tb_products"]["image"]);
+            ?>
+            <div class="title_image"><img src="{$SITE_URL}/public/uploads/images/{$images.0}" /></div>
+            <ul class="image_showcase">
+                <foreach name="images" item="image">
+                	<li>
+                    	<a href="#">
+                        	<img src="{$SITE_URL}/public/uploads/images/{$image}" />
+                        </a>
+                    </li>
+                </foreach>
+            </ul>
+            <notempty name="data.tb_products.lang_description">{$data.tb_products.lang_description}</notempty>
+            <empty name="data.tb_products.lang_description">{$data.tb_products.description}</empty>
+        </div>
     </div>
 
 <include file="Public:footer" />
