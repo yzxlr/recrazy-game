@@ -5,11 +5,8 @@
         	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
             <empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
         </h3>
-        <div class="region_div">
-            <span>{$data.tb_products.region_country}</span>
-            <span>{$data.tb_products.region_province}</span>
-        </div>
-        <div class="description_div">
+        
+        <div class="image_div">
         	<?php 
                 $images = explode(",",$data["tb_products"]["image"]);
             ?>
@@ -23,9 +20,53 @@
                     </li>
                 </foreach>
             </ul>
-            <notempty name="data.tb_products.lang_description">{$data.tb_products.lang_description}</notempty>
+        </div>
+        
+        <div class="basic_information">
+        	<table>
+            	<tbody>
+                	<tr>
+                    	<td>{$Think.lang.product_name}:</td>
+                        <td>
+                        	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
+          					<empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
+                        </td>
+                    </tr>
+                	<tr>
+                    	<td>{$Think.lang.product_price}:</td>
+                        <td>${$data.tb_products.price}</td>
+                    </tr>
+                    <tr>
+                    	<td>{$Think.lang.product_quantity}</td>
+                        <td>{$data.tb_products.quantity}</td>
+                    </tr>
+                    <tr>
+                    	<td>{$Think.lang.product_location}</td>
+                        <td>
+                        	<span>{$data.tb_products.region_country}</span>
+            				<span>{$data.tb_products.region_province}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>{$Think.lang.product_type}</td>
+                        <td>
+                
+                        	<?php if($data["tb_products"]["type"]==1){ ?>
+                            	{$Think.lang.product_supply}
+                            <?php }else if($data["tb_products"]["type"]==2){ ?>
+                            	{$Think.lang.product_demand}
+                            <?php } ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="description_div">
+        	<notempty name="data.tb_products.lang_description">{$data.tb_products.lang_description}</notempty>
             <empty name="data.tb_products.lang_description">{$data.tb_products.description}</empty>
         </div>
+        
     </div>
 
 <include file="Public:footer" />
