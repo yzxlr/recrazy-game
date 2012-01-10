@@ -1,35 +1,116 @@
 <include file="Public:header" />
 
+	<include file="Public:page_left" />	
+
+<div id="main_content">
+		
+  
+   <div class="row">
+      
+          <div class="signup_sidebar" style="height:110px;">
+               <p>Member: Maggie <a href="">Log Out</a> <br />
+               Join Premium Account?<a href="" class="signin_btn">Upgrade Now</a>
+               </p>
+            
+          <p class="s"> <a href="">Learn more ..</a> </p>
+          <!--
+          <p>      
+          <img src="images/diamond_member_trans.gif" width="110" height="80" />
+          </p>
+          -->
+       
+          </div>
+        
+      
+           <div class="banner570">
+           
+           <img src="{$SITE_URL}/public/jack/forindex/images/128801480001111112140006.gif" />
+           
+           </div>
+     </div>
+  
+
+
+	<div class="row">
+
+<!--
     <h3>List</h3>
-    
-    <div id="list_box">
-    	<foreach name="data.tb_products" item="vo">
-            <div id="list_item">
-                <h4>
-                	<a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
-                        <notempty name="vo.lang_name">{$vo.lang_name}</notempty>
-                        <empty name="vo.lang_name">{$vo.name}</empty>
-                    </a>
-                </h4>
-                <div class="region_div">
-                	<span>{$vo.region_country}</span>
-                    <span>{$vo.region_province}</span>
-                </div>
-                <div class="description_div">
-                	<a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
-                    	<?php 
-                        	$title_image = explode(",",$vo["image"]);
-                            $vo["image"] = $title_image[0];
-                        ?>
-                		<img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
-                	</a>
-                    <notempty name="vo.lang_description">{$vo.lang_description}</notempty>
-                    <empty name="vo.lang_description">{$vo.description}</empty>
-                </div>
-            </div>
-        </foreach>
-    </div>
+		-->
+				
+
+    					<ul class="product_list">	
+              <foreach name="data.tb_products" item="vo">
+																				<li>              		
+                  					<input type="checkbox" />
+                     		
+                       <div class="thumnbnail_img">
+                       			 
+                       	    <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+                              <?php 
+                                  $title_image = explode(",",$vo["image"]);
+                                     $vo["image"] = $title_image[0];
+                                 ?>
+                           <img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
+                       
+                        	 </a>
+                       </div>
+                       
+                       <div class="desc">
+                       					  <h2><notempty name="vo.lang_name">{$vo.lang_name}</notempty>
+                                 <empty name="vo.lang_name">{$vo.name}</empty>
+                       		  		</h2>
+                       						
+                       				<p>
+                       				  <notempty name="vo.lang_description">{$vo.lang_description}</notempty>
+                             <empty name="vo.lang_description">{$vo.description}</empty>
+                             </p>
+                             
+                             <p class="min_order">
+                             				Min. Order: 10 Pieces <span class="price"><b>Price: </b> US 16/ each</span>
+                              </p>   
+                       </div>
+                       
+                       <div class="company_info">
+                       				<p><b>Supplier:</b> Company Name</p>
+                           <p>
+                       			     <span>{$vo.region_country}</span>
+                             <span>{$vo.region_province}</span>
+                       				</p>
+                           <p>
+                           	<img width="16" height="16" src="{$SITE_URL}/public/jack/forindex/images/icon_p.png"  />
+                           		<a href="">Online Support</a>
+                           </p>
+                           <p>
+                           	 <a class="contact_btn" href="">Contact Supplier</a>
+                           </p>
+                       
+                       </div>
+                      	
+                     <!--
+                         <h4>
+                          <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+                                 <notempty name="vo.lang_name">{$vo.lang_name}</notempty>
+                                 <empty name="vo.lang_name">{$vo.name}</empty>
+                             </a>
+                         </h4>
+                       
+                         <div class="region_div">
+                          <span>{$vo.region_country}</span>
+                             <span>{$vo.region_province}</span>
+                         </div>
+                     -->
+                   
+                     
+                    </li> 
+                 </foreach>
+             </ul>    
+                 
+   
     
     <div>{$msg.page}</div>
+    	
+		</div> <!-- EO row -->
+</div> <!-- EO main_content -->
+
 
 <include file="Public:footer" />
