@@ -127,18 +127,40 @@ p.s { font-size:10px; font-weight:bold; margin:0; padding:0; }
 	
 
 .product_list { padding:10px 0; }
-.product_list li { overflow:hidden; padding-bottom:20px; border-bottom:#ccc dashed 1px; margin-bottom:20px;}
+.product_list li { overflow:hidden; padding-bottom:10px; border-bottom:#ccc dashed 1px; margin-bottom:20px;}
 .product_list li input[type=checkbox] { float:left; margin-right:10px; }
 .product_list  .thumnbnail_img { float:left; width:110px; margin-right:10px;}
-.product_list  .thumnbnail_img  img { width:100px; border:#ccc solid 1px; padding:2px; }
+.product_list  .thumnbnail_img  img { width:100px; height:100px;  border:#ccc solid 1px; padding:2px; }
 
-.product_list  .desc { float:left; width:340px; margin-right:30px;}
-.product_list  .desc  h2 { padding:0 0 10px 0;  margin:0;}
-.product_list  .desc p { padding:0; }
-.product_list .min_order { color:#666}
+.product_list  .desc { float:left; width:340px; margin-right:30px; width:420px;}
+.product_list  .desc  h2 { padding:0 0 10px 0;  margin:0; height:20px; overflow:hidden; }
+.product_list  .desc h2 a { font-size:16px;; color:#09c; font-weight:normal;  }
+.product_list  .desc h2 a:hover { color:#069;  }
+.product_list  .desc p { padding:0;   }
+.product_list  .desc p.summary { height:60px; overflow:hidden;}
+.product_list  .min_order { color:#666}
 .product_list  .price { float:right; }
-.product_list  .company_info { float:left; width:250px;}
+.product_list  .company_info { float:left; width:250px; width:170px;}
 .product_list  .company_info p { padding:0; }
+
+
+#product_box { padding:10px 0; }
+
+
+.image_div { float:left; width:370px; }
+
+
+.title_image img { padding:2px; border:#ccc solid 1px; width:325px; height:325px;  }
+
+.image_showcase { padding:10px 0; overflow:hidden;  }
+.image_showcase li { float:left; margin-right:5px; padding:2px; border:#ccc solid 1px;}
+.image_showcase li a img { width:45px; height:45px; }
+
+
+ul.product_info_tag li { float:left; margin-right:10px;  }
+ul.product_info_tag li a { display:inline-block; padding:5px 40px; text-transform:uppercase; border:#ddd solid 1px; border-bottom:none; text-decoration:none; color:#333; background:#eee;   }
+.description_div { clear:both; padding:20px; border:#eee solid 1px;  }
+
 
 
 .contact_btn {display:inline-block; padding:3px 25px; background:#09c; color:#fff; font-weight:bold; text-decoration:none; border:#09c solid 1px;
