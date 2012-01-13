@@ -1,15 +1,15 @@
 <include file="Public:header" />
-    
-    <include file="Public:page_left" />
-    
-    <div id="product_box">
-    
-    
    
-    	<h3>
-        	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
-            <empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
-        </h3>
+
+
+   <div id="main_content">   
+
+    
+       <div id="product_box">
+    
+   			
+   
+ 
         
         <div class="image_div">
         	<?php 
@@ -28,6 +28,10 @@
         </div>
         
         <div class="basic_information">
+           	<h3>
+        	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
+            <empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
+        </h3>
         	<table>
             	<tbody>
                 	<tr>
@@ -67,11 +71,19 @@
             </table>
         </div>
         
+        <div style="clear:both"></div>
+        
+        <ul class="product_info_tag">
+        		<li class="desciption_tag"><a href="">description</a></li>
+        
+        </ul>
         <div class="description_div">
         	<notempty name="data.tb_products.lang_description">{$data.tb_products.lang_description}</notempty>
             <empty name="data.tb_products.lang_description">{$data.tb_products.description}</empty>
         </div>
         
-    </div>
+     </div>
+ 
+ </div>
 
 <include file="Public:footer" />
