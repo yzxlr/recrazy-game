@@ -24,7 +24,10 @@
       
            <div class="banner570">
            
+          
+           
            <img src="{$SITE_URL}/public/jack/forindex/images/128801480001111112140006.gif" />
+           
            
            </div>
      </div>
@@ -40,9 +43,10 @@
 
     					<ul class="product_list">	
               <foreach name="data.tb_products" item="vo">
-																				<li>              		
+																				<li>   
+                            		
                   					<input type="checkbox" />
-                     		
+                     
                        <div class="thumnbnail_img">
                        			 
                        	    <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
@@ -50,17 +54,27 @@
                                   $title_image = explode(",",$vo["image"]);
                                      $vo["image"] = $title_image[0];
                                  ?>
+                                 
+                            <notempty name="vo.image">      
                            <img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
-                       
+                           </notempty>
+                           
+                             <empty name="vo.image">      
+                           <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+                           </empty>
+                
                         	 </a>
                        </div>
                        
                        <div class="desc">
-                       					  <h2><notempty name="vo.lang_name">{$vo.lang_name}</notempty>
+                       					  <h2>
+                               <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+                              <notempty name="vo.lang_name">{$vo.lang_name}</notempty>
                                  <empty name="vo.lang_name">{$vo.name}</empty>
+                                 </a>
                        		  		</h2>
                        						
-                       				<p>
+                       				<p class="summary">
                        				  <notempty name="vo.lang_description">{$vo.lang_description}</notempty>
                              <empty name="vo.lang_description">{$vo.description}</empty>
                              </p>
