@@ -1,11 +1,11 @@
 <include file="Public:header" />
 
-    <empty name="data.tb_page.tj_id">
+    <notempty name="data.tb_page.tj_id">
         <h3>{$data.tb_page.page_title}</h3>
         <div id="page_content">{$data.tb_page.page_content}</div>
-    </empty>
+    </notempty>
     
-    <notempty name="data.tb_page.tj_id">
+    <empty name="data.tb_page.tj_id">
     	<h3>{$data.tb_page.tj_title}</h3>
         <div id="page_summary">{$data.tb_page.tj_summary}</div>
         <div id="page_content">{$data.tb_page.tj_content}</div>
