@@ -42,26 +42,26 @@
     <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Update Product</span></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Product Name&nbsp; </div></td>
-    <td width="82%"><input name="name" id="product_name_id" type="text" size="30" value="{$data.tb_products.name}" />&nbsp; <font color="#FF0000">*</font></td>
+    <td width="150"><div align="right">Product Name&nbsp; </div></td>
+    <td width=""><input name="name" id="product_name_id" type="text" size="30" value="{$data.tb_products.name}" />&nbsp; <font color="#FF0000">*</font></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">User ID&nbsp; </div></td>
-    <td width="82%">
+    <td width="150"><div align="right">User ID&nbsp; </div></td>
+    <td width="">
 		<input name="user_id" value="" />
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Type&nbsp; </div></td>
-    <td width="82%">
+    <td width="150"><div align="right">Type&nbsp; </div></td>
+    <td width="">
 	<select name="type" id="type">
 	   <option value="1" <eq name="data.tb_products.type" value="1" >selected="selected"</eq> >Supply</option>
        <option value="2" <eq name="data.tb_products.type" value="2" >selected="selected"</eq> >Demand</option>
 	</select>	</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Category&nbsp; </div></td>
-    <td width="82%">
+    <td width="150"><div align="right">Category&nbsp; </div></td>
+    <td width="">
      <?php
       //var_dump($data["tb_products"]["cat_id"]);
      ?>
@@ -80,33 +80,112 @@
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Image&nbsp; </div></td>
-    <td width="82%">
-    	<input name="image[]" type="file" size="30"/>&nbsp;
+    <td width="150"><div align="right">Image&nbsp; </div></td>
+    <td width="">
+
+<style>
+.product_photo { padding:0; margin:0; }
+.product_photo li { list-style:none; margin-right:10px; border-bottom:#eee solid 1px; padding:10px; overflow:hidden; }
+.product_photo li img  {  width:50px; height:50px; float:left; margin-right:10px; padding:2px; border:#ccc solid 1px;  }
+.product_photo li input {  }
+</style>    
+    
+    
+     	<?php 
+                $images = explode(",",$data["tb_products"]["image"]);
+            ?>
+            
+     <ul class="product_photo">
+     		<li>       
+        <notempty name="images.0">      
+        		  <img src="{$SITE_URL}/public/uploads/images/{$images.0}"  />
+          </notempty>
+           <empty name="images.0">      
+              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+          </empty>
+     
+ <br />
+
+    	<input name="image[]" type="file" size="30"/>&nbsp;<br />
+<!--
     	<label>Max Width:</label><input type="text" name="thumbMaxWidth" id="thumbMaxWidth" size="10" value="" />&nbsp;
         <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" /><br />
+        -->
+        </li>
+        
+        <li>
+          <notempty name="images.1">      
+        		  <img src="{$SITE_URL}/public/uploads/images/{$images.1}"  />
+          </notempty>
+          <empty name="images.1">      
+              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+          </empty>
+                
+          <br />
+
+        <input name="image[]" type="file" size="30" /><br />   
+        </li>
+        
+        <li>
+         <notempty name="images.2">      
+        		  <img src="{$SITE_URL}/public/uploads/images/{$images.2}"  />
+          </notempty>
+           <empty name="images.2">      
+              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+          </empty>
+          <br />
         <input name="image[]" type="file" size="30"/><br />
+        </li>
+        
+        <li>
+         <notempty name="images.3">      
+        		  <img src="{$SITE_URL}/public/uploads/images/{$images.3}"  />
+          </notempty>
+           <empty name="images.3">      
+              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+          </empty>
+          <br />
         <input name="image[]" type="file" size="30"/><br />
+        </li>
+        
+        <li>
+         <notempty name="images.4">      
+        		  <img src="{$SITE_URL}/public/uploads/images/{$images.4}"  />
+          </notempty>
+           <empty name="images.4">      
+              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+          </empty>
+          <br />
         <input name="image[]" type="file" size="30"/><br />
+        </li>
+        
+        <li>
+         <notempty name="images.5">      
+        		  <img src="{$SITE_URL}/public/uploads/images/{$images.5}"  />
+          </notempty>
+           <empty name="images.5">      
+              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+          </empty>
+          <br />
         <input name="image[]" type="file" size="30"/><br />
-        <input name="image[]" type="file" size="30"/><br />
+        </li>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Price&nbsp; </div></td>
-    <td width="82%"><input name="price" type="text" size="15" value="{$data.tb_products.price}" />&nbsp;</td>
+    <td width="150"><div align="right">Price&nbsp; </div></td>
+    <td width=""><input name="price" type="text" size="15" value="{$data.tb_products.price}" />&nbsp;</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Quantity&nbsp; </div></td>
-    <td width="82%"><input name="quantity" type="text" size="15" value="{$data.tb_products.quantity}" />&nbsp;</td>
+    <td width="150"><div align="right">Quantity&nbsp; </div></td>
+    <td width=""><input name="quantity" type="text" size="15" value="{$data.tb_products.quantity}" />&nbsp;</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-        <td width="18%"><div align="right">Description &nbsp; </div></td>
-        <td width="82%"><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;">{$data.tb_products.description}</textarea></td>
+        <td width="150"><div align="right">Description &nbsp; </div></td>
+        <td width=""><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;">{$data.tb_products.description}</textarea></td>
     </tr>
     <tr bgcolor="#FFFFFF">
-        <td width="18%"><div align="right">Expire at: &nbsp; </div></td>
-        <td width="82%"><input name="time_expire" id="time_expire" type="text" size="15" value="<?php echo date('Y-m-d', $data['tb_products']['time_expire'] ); ?>" /></td>
+        <td width="150"><div align="right">Expire at: &nbsp; </div></td>
+        <td width=""><input name="time_expire" id="time_expire" type="text" size="15" value="<?php echo date('Y-m-d', $data['tb_products']['time_expire'] ); ?>" /></td>
     </tr>
    
   <tr bgcolor="#FFFFFF">
