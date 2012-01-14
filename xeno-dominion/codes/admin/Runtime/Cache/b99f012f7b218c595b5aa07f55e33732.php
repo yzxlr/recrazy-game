@@ -139,7 +139,7 @@ $(document).ready(function(){
 	});
 	//time_expire
 	
-	function del_img(img_name){
+	function del_img(img_name,filename){
 		if(confirm("Remove?")){
 			//location="<?php echo ($SITE_URL); ?>/admin.php?s=/Product/del_img/pid/<?php echo ($_GET['pid']); ?>/img_name/<?php echo urlencode($vo['imagename']); ?>";
 			$.ajax({ 
@@ -148,8 +148,9 @@ $(document).ready(function(){
 					dataType: "json", 
 					success: function (data) { 
 							rv = data.data;
-							if(rv.status == true){
-								alert(rv.status);
+							if(rv.status == 1){
+								
+								$("#img_li_"+filename).hide();
 							}else{
 							}
 							//alert(data.data); 
@@ -160,6 +161,10 @@ $(document).ready(function(){
 			});
 		}
 	}
+	
+	$(document).ready(function(e) {
+        //$("#img_li_"+"4f0fb590233d5").hide();
+    });
 </script>
 <div id="content">
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -245,7 +250,7 @@ $(document).ready(function(){
         <ul class="product_photo">
         	<?php if(is_array($filenames)): foreach($filenames as $key=>$vo): ?><li id="img_li_<?php echo ($vo['filename']); ?>">       
                 <?php if(!empty($vo)): ?><img src="<?php echo ($SITE_URL); ?>/public/uploads/images/<?php echo ($vo["imagename"]); ?>"  />
-                    <a href="javascript:del_img('<?php echo urlencode($vo['imagename']); ?>');">Remove Image</a><?php endif; ?>
+                    <a href="javascript:del_img('<?php echo urlencode($vo['imagename']); ?>', '<?php echo ($vo['filename']); ?>' );">Remove Image</a><?php endif; ?>
                 <?php if(empty($vo)): ?><img src="<?php echo ($SITE_URL); ?>/public/uploads/images/no-image.jpg" /><?php endif; ?>
                 </li><?php endforeach; endif; ?>
         </ul>

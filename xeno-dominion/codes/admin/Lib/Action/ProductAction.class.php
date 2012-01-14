@@ -259,12 +259,12 @@ class ProductAction extends CommonAction
 			$data1["pid"] = $_GET["pid"];
 			$data1["image"] = implode($images,",");
 			if($tb_products->save($data1)){
-				$rv["status"] = true;
+				$rv["status"] = 1;
 			}else{
-				$rv["status"] = false;
+				$rv["status"] = 0;
 			}
 		}
-		$this->ajaxReturn($image_path);
+		$this->ajaxReturn($rv);
 	}
 	
 	
