@@ -36,17 +36,17 @@
 <div id="header">
 		<div class="w960">
     <div class="login_info">
-    			 <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a> | <a href="">Go to admin area</a> | <a href="contact.php">Contact Us</a>
+    			 <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a> | <a href="{$SITE_URL}/admin.php">Go to admin area</a> | <a href="contact.php">Contact Us</a>
   		</div>
   <a href="index.php">  <img src="{$SITE_URL}/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
   
 <div class="menu">
     <ul>
       <li class="selected"><a href="">Products</a></li>
-      <li><a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
-      <li><a href="http://xeno.recrazy.net/index.php/Products/product/id/6?l=zh-cn">Buyers</a></li>
-      <li><a href="">Business cooperation</a></li>
-      <li><a href="">Exhibition</a></li>
+      <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
+      <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a></li>
+      <li><a href="{$SITE_URL}/index.php/Products/product/id/6?l=zh-cn">Business cooperation</a></li>
+      <li><a href="{$SITE_URL}/admin.php">Exhibition</a></li>
       <li><a href="">Business Service</a></li>
       <li><a href="">Forums</a></li>
    </ul>
