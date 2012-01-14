@@ -23,6 +23,28 @@
 		});
 	});
 	//time_expire
+	
+	function del_img(img_name){
+		if(confirm("Remove?")){
+			//location="{$SITE_URL}/admin.php?s=/Product/del_img/pid/{$Think.get.pid}/img_name/<?php echo urlencode($vo['imagename']); ?>";
+			$.ajax({ 
+					type: "post", 
+					url: "{$SITE_URL}/admin.php?s=/Product/del_img/pid/{$Think.get.pid}/img_name/"+img_name, 
+					dataType: "json", 
+					success: function (data) { 
+							rv = data.data;
+							if(rv.status == true){
+								alert(rv.status);
+							}else{
+							}
+							//alert(data.data); 
+					}, 
+					error: function (XMLHttpRequest, textStatus, errorThrown) { 
+							//alert(errorThrown); 
+					} 
+			});
+		}
+	}
 </script>
 <div id="content">
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -71,10 +93,10 @@
      ?>
      	<option value="<?php echo $key; ?>" <?php if($key == $data["tb_products"]["cat_id"]){ ?>selected="selected" <?php } ?> > <?php echo $value; ?></option>
      <?php
-     	//var_dump($data["tb_products"]["cat_id"]);
-        //var_dump($key); exit;
-       }
-      ?>
+    //var_dump($data["tb_products"]["cat_id"]);
+    //var_dump($key); exit;
+    }
+    ?>
       </select>
     
     </td>
@@ -91,84 +113,44 @@
 </style>    
     
     
-     	<?php 
-                $images = explode(",",$data["tb_products"]["image"]);
-            ?>
+    <?php 
+        $images = explode(",",$data["tb_products"]["image"]);
+        
+        //image name without extension
+        foreach($images as $key => $value){
+       		$filenames[$key]["imagename"] = $value;
+        	$filetype = strrchr($value, ".");
+        	$value = str_replace($filetype,"",$value);
+        	$filenames[$key]["filename"] = $value;
+            $filenames[$key]["filetype"] = $filetype;
+        }
+        /////var_dump($filenames);
+    ?>
             
-     <ul class="product_photo">
-     		<li>       
-        <notempty name="images.0">      
-        		  <img src="{$SITE_URL}/public/uploads/images/{$images.0}"  />
-          </notempty>
-           <empty name="images.0">      
-              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-          </empty>
-     
- <br />
-
-    	<input name="image[]" type="file" size="30"/>&nbsp;<br />
-<!--
+        <ul class="product_photo">
+        	<foreach name="filenames" item="vo">
+                <li id="img_li_{$vo['filename']}">       
+                <notempty name="vo">      
+                    <img src="{$SITE_URL}/public/uploads/images/{$vo.imagename}"  />
+                    <a href="javascript:del_img('<?php echo urlencode($vo['imagename']); ?>');">Remove Image</a>
+                </notempty>
+                <empty name="vo">      
+                    <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+                </empty>
+                </li>
+            </foreach>
+        </ul>
+        
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <!--
     	<label>Max Width:</label><input type="text" name="thumbMaxWidth" id="thumbMaxWidth" size="10" value="" />&nbsp;
         <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" /><br />
         -->
-        </li>
-        
-        <li>
-          <notempty name="images.1">      
-        		  <img src="{$SITE_URL}/public/uploads/images/{$images.1}"  />
-          </notempty>
-          <empty name="images.1">      
-              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-          </empty>
-                
-          <br />
-
-        <input name="image[]" type="file" size="30" /><br />   
-        </li>
-        
-        <li>
-         <notempty name="images.2">      
-        		  <img src="{$SITE_URL}/public/uploads/images/{$images.2}"  />
-          </notempty>
-           <empty name="images.2">      
-              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-          </empty>
-          <br />
-        <input name="image[]" type="file" size="30"/><br />
-        </li>
-        
-        <li>
-         <notempty name="images.3">      
-        		  <img src="{$SITE_URL}/public/uploads/images/{$images.3}"  />
-          </notempty>
-           <empty name="images.3">      
-              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-          </empty>
-          <br />
-        <input name="image[]" type="file" size="30"/><br />
-        </li>
-        
-        <li>
-         <notempty name="images.4">      
-        		  <img src="{$SITE_URL}/public/uploads/images/{$images.4}"  />
-          </notempty>
-           <empty name="images.4">      
-              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-          </empty>
-          <br />
-        <input name="image[]" type="file" size="30"/><br />
-        </li>
-        
-        <li>
-         <notempty name="images.5">      
-        		  <img src="{$SITE_URL}/public/uploads/images/{$images.5}"  />
-          </notempty>
-           <empty name="images.5">      
-              <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-          </empty>
-          <br />
-        <input name="image[]" type="file" size="30"/><br />
-        </li>
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
