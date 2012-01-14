@@ -185,11 +185,20 @@ class ProductAction extends CommonAction
 		//Table products
 		//3 table products
 		$tb_products = M("products");
+		
+		//debug start here
+		$current_product = $tb_products->where(array("pid"=>$_GET["pid"]))->find(); 
+		$data["images"] = explode(",",$current_product["image"]); 
+		//var_dump($data["images"]);
+		//exit;
 		if($_POST){ 
 		/////var_dump($_POST); /////var_dump($tb_products);
 			if($tb_products->create()){
 				if(!empty($info[0]["savename"])){
-					$tb_products->image = "";
+					if(empty($current_product["image"]))
+						$tb_products->image = "";
+					else 
+						$tb_products->image = $current_product["image"].",";
 					foreach($info as $key => $value){
 						$tb_products->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
 					}
@@ -216,6 +225,46 @@ class ProductAction extends CommonAction
 		/////var_dump($new_cat);
 		$this->assign("data",$data);
 		$this->display();
+	}
+	
+	public function del_img(){
+		$tb_products = M("products");
+		$image_path = CMS_PATH.'/public/uploads/images/';
+
+		 
+		$rv = array();
+		if(!empty($_GET["pid"])){
+			$_GET["img_name"] = trim(urldecode($_GET["img_name"]));
+			$current_product = $tb_products->where(array("pid"=>$_GET["pid"]))->find();
+			$images = explode(",",$current_product["image"]);
+			foreach($images as $key => $value){
+				if($value == $_GET["img_name"]){
+					//delete file on file system
+					$image_path = $image_path.$_GET["img_name"];
+					if(file_exists($image_path)){
+						
+						if (@unlink($image_path) === true) {
+							unset($images[$key]);
+						} else {
+							
+						}
+					}else{
+						unset($images[$key]);
+					}
+					//delete in db
+					
+				}
+			}
+			//save new file data back to db
+			$data1["pid"] = $_GET["pid"];
+			$data1["image"] = implode($images,",");
+			if($tb_products->save($data1)){
+				$rv["status"] = true;
+			}else{
+				$rv["status"] = false;
+			}
+		}
+		$this->ajaxReturn($image_path);
 	}
 	
 	

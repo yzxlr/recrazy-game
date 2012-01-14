@@ -101,6 +101,12 @@ $(document).ready(function(){
                         </li>
                     </ul>
                 </li>
+                <li>
+                			<a href="<?php echo ($SITE_URL); ?>/biz.php">Go To biz account(for test only)</a>
+                </li>
+                 <li>
+                			<a href="<?php echo ($SITE_URL); ?>">Go To Index(for test only)</a>
+                </li>
             </ul>
         </div>
     </div>

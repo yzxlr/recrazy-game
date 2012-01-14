@@ -101,6 +101,12 @@ $(document).ready(function(){
                         </li>
                     </ul>
                 </li>
+                <li>
+                			<a href="<?php echo ($SITE_URL); ?>/biz.php">Go To biz account(for test only)</a>
+                </li>
+                 <li>
+                			<a href="<?php echo ($SITE_URL); ?>">Go To Index(for test only)</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -132,6 +138,28 @@ $(document).ready(function(){
 		});
 	});
 	//time_expire
+	
+	function del_img(img_name){
+		if(confirm("Remove?")){
+			//location="<?php echo ($SITE_URL); ?>/admin.php?s=/Product/del_img/pid/<?php echo ($_GET['pid']); ?>/img_name/<?php echo urlencode($vo['imagename']); ?>";
+			$.ajax({ 
+					type: "post", 
+					url: "<?php echo ($SITE_URL); ?>/admin.php?s=/Product/del_img/pid/<?php echo ($_GET['pid']); ?>/img_name/"+img_name, 
+					dataType: "json", 
+					success: function (data) { 
+							rv = data.data;
+							if(rv.status == true){
+								alert(rv.status);
+							}else{
+							}
+							//alert(data.data); 
+					}, 
+					error: function (XMLHttpRequest, textStatus, errorThrown) { 
+							//alert(errorThrown); 
+					} 
+			});
+		}
+	}
 </script>
 <div id="content">
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -151,26 +179,26 @@ $(document).ready(function(){
     <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Update Product</span></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Product Name&nbsp; </div></td>
-    <td width="82%"><input name="name" id="product_name_id" type="text" size="30" value="<?php echo ($data["tb_products"]["name"]); ?>" />&nbsp; <font color="#FF0000">*</font></td>
+    <td width="150"><div align="right">Product Name&nbsp; </div></td>
+    <td width=""><input name="name" id="product_name_id" type="text" size="30" value="<?php echo ($data["tb_products"]["name"]); ?>" />&nbsp; <font color="#FF0000">*</font></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">User ID&nbsp; </div></td>
-    <td width="82%">
+    <td width="150"><div align="right">User ID&nbsp; </div></td>
+    <td width="">
 		<input name="user_id" value="" />
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Type&nbsp; </div></td>
-    <td width="82%">
+    <td width="150"><div align="right">Type&nbsp; </div></td>
+    <td width="">
 	<select name="type" id="type">
 	   <option value="1" <?php if(($data["tb_products"]["type"])  ==  "1"): ?>selected="selected"<?php endif; ?> >Supply</option>
        <option value="2" <?php if(($data["tb_products"]["type"])  ==  "2"): ?>selected="selected"<?php endif; ?> >Demand</option>
 	</select>	</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Category&nbsp; </div></td>
-    <td width="82%">
+    <td width="150"><div align="right">Category&nbsp; </div></td>
+    <td width="">
      <?php
       //var_dump($data["tb_products"]["cat_id"]);
      ?>
@@ -180,42 +208,75 @@ $(document).ready(function(){
      ?>
      	<option value="<?php echo $key; ?>" <?php if($key == $data["tb_products"]["cat_id"]){ ?>selected="selected" <?php } ?> > <?php echo $value; ?></option>
      <?php
-     	//var_dump($data["tb_products"]["cat_id"]);
-        //var_dump($key); exit;
-       }
-      ?>
+    //var_dump($data["tb_products"]["cat_id"]);
+    //var_dump($key); exit;
+    }
+    ?>
       </select>
     
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Image&nbsp; </div></td>
-    <td width="82%">
-    	<input name="image[]" type="file" size="30"/>&nbsp;
+    <td width="150"><div align="right">Image&nbsp; </div></td>
+    <td width="">
+
+<style>
+.product_photo { padding:0; margin:0; }
+.product_photo li { list-style:none; margin-right:10px; border-bottom:#eee solid 1px; padding:10px; overflow:hidden; }
+.product_photo li img  {  width:50px; height:50px; float:left; margin-right:10px; padding:2px; border:#ccc solid 1px;  }
+.product_photo li input {  }
+</style>    
+    
+    
+    <?php 
+        $images = explode(",",$data["tb_products"]["image"]);
+        
+        //image name without extension
+        foreach($images as $key => $value){
+       		$filenames[$key]["imagename"] = $value;
+        	$filetype = strrchr($value, ".");
+        	$value = str_replace($filetype,"",$value);
+        	$filenames[$key]["filename"] = $value;
+            $filenames[$key]["filetype"] = $filetype;
+        }
+        /////var_dump($filenames);
+    ?>
+            
+        <ul class="product_photo">
+        	<?php if(is_array($filenames)): foreach($filenames as $key=>$vo): ?><li id="img_li_<?php echo ($vo['filename']); ?>">       
+                <?php if(!empty($vo)): ?><img src="<?php echo ($SITE_URL); ?>/public/uploads/images/<?php echo ($vo["imagename"]); ?>"  />
+                    <a href="javascript:del_img('<?php echo urlencode($vo['imagename']); ?>');">Remove Image</a><?php endif; ?>
+                <?php if(empty($vo)): ?><img src="<?php echo ($SITE_URL); ?>/public/uploads/images/no-image.jpg" /><?php endif; ?>
+                </li><?php endforeach; endif; ?>
+        </ul>
+        
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <input name="image[]" type="file" size="30" /><br />
+        <!--
     	<label>Max Width:</label><input type="text" name="thumbMaxWidth" id="thumbMaxWidth" size="10" value="" />&nbsp;
         <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" /><br />
-        <input name="image[]" type="file" size="30"/><br />
-        <input name="image[]" type="file" size="30"/><br />
-        <input name="image[]" type="file" size="30"/><br />
-        <input name="image[]" type="file" size="30"/><br />
-        <input name="image[]" type="file" size="30"/><br />
+        -->
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Price&nbsp; </div></td>
-    <td width="82%"><input name="price" type="text" size="15" value="<?php echo ($data["tb_products"]["price"]); ?>" />&nbsp;</td>
+    <td width="150"><div align="right">Price&nbsp; </div></td>
+    <td width=""><input name="price" type="text" size="15" value="<?php echo ($data["tb_products"]["price"]); ?>" />&nbsp;</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Quantity&nbsp; </div></td>
-    <td width="82%"><input name="quantity" type="text" size="15" value="<?php echo ($data["tb_products"]["quantity"]); ?>" />&nbsp;</td>
+    <td width="150"><div align="right">Quantity&nbsp; </div></td>
+    <td width=""><input name="quantity" type="text" size="15" value="<?php echo ($data["tb_products"]["quantity"]); ?>" />&nbsp;</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-        <td width="18%"><div align="right">Description &nbsp; </div></td>
-        <td width="82%"><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;"><?php echo ($data["tb_products"]["description"]); ?></textarea></td>
+        <td width="150"><div align="right">Description &nbsp; </div></td>
+        <td width=""><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;"><?php echo ($data["tb_products"]["description"]); ?></textarea></td>
     </tr>
     <tr bgcolor="#FFFFFF">
-        <td width="18%"><div align="right">Expire at: &nbsp; </div></td>
-        <td width="82%"><input name="time_expire" id="time_expire" type="text" size="15" value="<?php echo date('Y-m-d', $data['tb_products']['time_expire'] ); ?>" /></td>
+        <td width="150"><div align="right">Expire at: &nbsp; </div></td>
+        <td width=""><input name="time_expire" id="time_expire" type="text" size="15" value="<?php echo date('Y-m-d', $data['tb_products']['time_expire'] ); ?>" /></td>
     </tr>
    
   <tr bgcolor="#FFFFFF">
