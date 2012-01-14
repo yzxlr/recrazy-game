@@ -24,7 +24,7 @@
 	});
 	//time_expire
 	
-	function del_img(img_name){
+	function del_img(img_name,filename){
 		if(confirm("Remove?")){
 			//location="{$SITE_URL}/admin.php?s=/Product/del_img/pid/{$Think.get.pid}/img_name/<?php echo urlencode($vo['imagename']); ?>";
 			$.ajax({ 
@@ -33,8 +33,9 @@
 					dataType: "json", 
 					success: function (data) { 
 							rv = data.data;
-							if(rv.status == true){
-								alert(rv.status);
+							if(rv.status == 1){
+								
+								$("#img_li_"+filename).hide();
 							}else{
 							}
 							//alert(data.data); 
@@ -45,6 +46,10 @@
 			});
 		}
 	}
+	
+	$(document).ready(function(e) {
+        //$("#img_li_"+"4f0fb590233d5").hide();
+    });
 </script>
 <div id="content">
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -132,7 +137,7 @@
                 <li id="img_li_{$vo['filename']}">       
                 <notempty name="vo">      
                     <img src="{$SITE_URL}/public/uploads/images/{$vo.imagename}"  />
-                    <a href="javascript:del_img('<?php echo urlencode($vo['imagename']); ?>');">Remove Image</a>
+                    <a href="javascript:del_img('<?php echo urlencode($vo['imagename']); ?>', '{$vo['filename']}' );">Remove Image</a>
                 </notempty>
                 <empty name="vo">      
                     <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />

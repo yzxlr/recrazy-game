@@ -763,3 +763,221 @@
 [ 2012-01-14T17:56:58-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
 [ 2012-01-14T17:56:58-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
 [ 2012-01-14T17:56:58-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T17:59:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003787s ]
+[ 2012-01-14T17:59:35-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000728s ]
+[ 2012-01-14T17:59:35-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004094s ]
+[ 2012-01-14T17:59:35-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000353s ]
+[ 2012-01-14T17:59:35-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000355s ]
+[ 2012-01-14T17:59:35-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T17:59:35-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T17:59:35-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T17:59:35-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:02:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003994s ]
+[ 2012-01-14T18:02:46-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000599s ]
+[ 2012-01-14T18:02:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004064s ]
+[ 2012-01-14T18:02:46-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000376s ]
+[ 2012-01-14T18:02:46-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000236s ]
+[ 2012-01-14T18:02:46-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:02:46-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:02:46-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:02:46-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:03:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003881s ]
+[ 2012-01-14T18:03:42-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000583s ]
+[ 2012-01-14T18:03:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004454s ]
+[ 2012-01-14T18:03:42-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000390s ]
+[ 2012-01-14T18:03:42-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000227s ]
+[ 2012-01-14T18:03:42-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:03:42-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:03:42-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:03:42-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:03:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004096s ]
+[ 2012-01-14T18:03:45-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000399s ]
+[ 2012-01-14T18:03:45-05:00 ] SQL: UPDATE `ry_products` SET `image`='' WHERE ( `pid` = '1' ) [ RunTime:0.000314s ]
+[ 2012-01-14T18:03:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003686s ]
+[ 2012-01-14T18:03:48-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000697s ]
+[ 2012-01-14T18:03:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004411s ]
+[ 2012-01-14T18:03:48-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000518s ]
+[ 2012-01-14T18:03:48-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000232s ]
+[ 2012-01-14T18:03:49-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:03:49-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:03:49-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:03:49-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:06:10-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004014s ]
+[ 2012-01-14T18:06:10-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000639s ]
+[ 2012-01-14T18:06:10-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004420s ]
+[ 2012-01-14T18:06:10-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000421s ]
+[ 2012-01-14T18:06:10-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000231s ]
+[ 2012-01-14T18:06:10-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:06:10-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:06:10-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:06:10-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:06:23-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004887s ]
+[ 2012-01-14T18:06:23-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000470s ]
+[ 2012-01-14T18:06:23-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f0fb59020a6a.jpg,4f0fb590212cc.jpg,4f0fb590223ac.jpg,4f0fb59022bf0.jpg,4f0fb590233d5.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000403s ]
+[ 2012-01-14T18:06:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004149s ]
+[ 2012-01-14T18:06:26-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000682s ]
+[ 2012-01-14T18:06:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004501s ]
+[ 2012-01-14T18:06:26-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000390s ]
+[ 2012-01-14T18:06:26-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000253s ]
+[ 2012-01-14T18:06:26-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:06:26-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:06:26-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:06:26-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:08:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004359s ]
+[ 2012-01-14T18:08:11-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000566s ]
+[ 2012-01-14T18:08:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004406s ]
+[ 2012-01-14T18:08:11-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000401s ]
+[ 2012-01-14T18:08:11-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000351s ]
+[ 2012-01-14T18:08:11-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:08:11-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:08:11-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:08:11-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:08:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004196s ]
+[ 2012-01-14T18:08:45-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000657s ]
+[ 2012-01-14T18:08:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004596s ]
+[ 2012-01-14T18:08:45-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000389s ]
+[ 2012-01-14T18:08:45-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000295s ]
+[ 2012-01-14T18:08:45-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:08:45-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:08:45-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:08:45-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:08:55-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004468s ]
+[ 2012-01-14T18:08:55-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000448s ]
+[ 2012-01-14T18:08:55-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f0fb59020a6a.jpg,4f0fb590212cc.jpg,4f0fb590223ac.jpg,4f0fb59022bf0.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000275s ]
+[ 2012-01-14T18:08:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004192s ]
+[ 2012-01-14T18:08:58-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000658s ]
+[ 2012-01-14T18:08:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004310s ]
+[ 2012-01-14T18:08:58-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000374s ]
+[ 2012-01-14T18:08:58-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000347s ]
+[ 2012-01-14T18:08:58-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:08:58-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:08:58-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:08:58-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:09:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003875s ]
+[ 2012-01-14T18:09:15-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000621s ]
+[ 2012-01-14T18:09:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004274s ]
+[ 2012-01-14T18:09:15-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000365s ]
+[ 2012-01-14T18:09:15-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000230s ]
+[ 2012-01-14T18:09:15-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:09:15-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:09:15-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:09:15-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:09:19-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004499s ]
+[ 2012-01-14T18:09:19-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000429s ]
+[ 2012-01-14T18:09:19-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f0fb59020a6a.jpg,4f0fb590212cc.jpg,4f0fb590223ac.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000285s ]
+[ 2012-01-14T18:09:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004103s ]
+[ 2012-01-14T18:09:20-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000709s ]
+[ 2012-01-14T18:09:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004549s ]
+[ 2012-01-14T18:09:20-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000415s ]
+[ 2012-01-14T18:09:20-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000343s ]
+[ 2012-01-14T18:09:20-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:09:20-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:09:20-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:09:20-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:09:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004462s ]
+[ 2012-01-14T18:09:27-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000397s ]
+[ 2012-01-14T18:09:27-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f0fb59020a6a.jpg,4f0fb590212cc.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000391s ]
+[ 2012-01-14T18:09:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003919s ]
+[ 2012-01-14T18:09:48-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000564s ]
+[ 2012-01-14T18:09:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005027s ]
+[ 2012-01-14T18:09:48-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000465s ]
+[ 2012-01-14T18:09:48-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000533s ]
+[ 2012-01-14T18:09:48-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:09:48-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:09:48-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:09:48-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:09:51-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004270s ]
+[ 2012-01-14T18:09:51-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000424s ]
+[ 2012-01-14T18:09:51-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f0fb59020a6a.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000268s ]
+[ 2012-01-14T18:10:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004280s ]
+[ 2012-01-14T18:10:11-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000604s ]
+[ 2012-01-14T18:10:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004137s ]
+[ 2012-01-14T18:10:11-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000349s ]
+[ 2012-01-14T18:10:11-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000410s ]
+[ 2012-01-14T18:10:11-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:10:11-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:10:11-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:10:11-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:10:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004584s ]
+[ 2012-01-14T18:10:14-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000418s ]
+[ 2012-01-14T18:10:14-05:00 ] SQL: UPDATE `ry_products` SET `image`='' WHERE ( `pid` = '1' ) [ RunTime:0.000266s ]
+[ 2012-01-14T18:10:40-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004218s ]
+[ 2012-01-14T18:10:40-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000676s ]
+[ 2012-01-14T18:10:40-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004266s ]
+[ 2012-01-14T18:10:40-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000375s ]
+[ 2012-01-14T18:10:40-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000403s ]
+[ 2012-01-14T18:10:40-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:10:40-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:10:40-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:10:40-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:10:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004261s ]
+[ 2012-01-14T18:10:44-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000645s ]
+[ 2012-01-14T18:10:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004310s ]
+[ 2012-01-14T18:10:44-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '2' ) LIMIT 1  [ RunTime:0.000412s ]
+[ 2012-01-14T18:10:44-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '2' ) LIMIT 1  [ RunTime:0.000299s ]
+[ 2012-01-14T18:10:44-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:10:44-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:10:44-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:10:44-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:11:36-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003806s ]
+[ 2012-01-14T18:11:36-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000602s ]
+[ 2012-01-14T18:11:36-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004186s ]
+[ 2012-01-14T18:11:36-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000379s ]
+[ 2012-01-14T18:11:36-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000214s ]
+[ 2012-01-14T18:11:36-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:11:36-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:11:36-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:11:36-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:11:49-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004230s ]
+[ 2012-01-14T18:11:49-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000624s ]
+[ 2012-01-14T18:11:49-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004298s ]
+[ 2012-01-14T18:11:49-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000583s ]
+[ 2012-01-14T18:11:49-05:00 ] SQL: UPDATE `ry_products` SET `cat_id`='18',`name`='Nygård is the Leader in Women\'s Clothing!',`description`='NYGÅRD is your one-stop shop for the latest in women\'s fashion. Our line of stylish and functional women\'s clothing is a hit throughout North America. From stylish shirts and dresses to sleek women\'s pants that will flatter your figure, NYGÅRD signature items are always fashionable and functional. Peter Nygård is a formal clothing line featuring pieces designed by Peter Nygård himself, with women\'s jackets, dresses, and blouses that create a chic, classy look that is great for both day and evening wear. The Bianca Nygård military-inspired collection features women\'s clothing pieces that put a new, edgy spin on style. The moderate ALIA and Tan Jay lines offer women\'s pants, skirts and casual tops that are easy to mix-and-match to suit any occasion. The women\'s jeans are incredibly versatile and comfortable to wear, and the women\'s capris are perfect for both corporate and casual settings. Whether you desire a look that is trendy or timeless, you have come to the right place. The Nygård Collection of women\'s fashion clothing perfectly matches your style and personality, available here at Nygard.com. <br />',`type`='1',`price`='200.00',`quantity`='500',`time_expire`=1323925200,`image`='4f120bb51a335.jpg,4f120bb51d769.jpg,4f120bb51f06b.jpg,4f120bb5229aa.jpg,4f120bb525961.jpg',`time_modify`=1326582709 WHERE ( `pid` = '1' ) [ RunTime:0.000503s ]
+[ 2012-01-14T18:11:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003924s ]
+[ 2012-01-14T18:11:50-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000613s ]
+[ 2012-01-14T18:11:50-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004247s ]
+[ 2012-01-14T18:11:50-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000449s ]
+[ 2012-01-14T18:11:50-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000471s ]
+[ 2012-01-14T18:11:50-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:11:50-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:11:50-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:11:50-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:11:55-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004300s ]
+[ 2012-01-14T18:11:55-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000391s ]
+[ 2012-01-14T18:11:55-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f120bb51a335.jpg,4f120bb51d769.jpg,4f120bb51f06b.jpg,4f120bb5229aa.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000332s ]
+[ 2012-01-14T18:12:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004176s ]
+[ 2012-01-14T18:12:12-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000740s ]
+[ 2012-01-14T18:12:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004088s ]
+[ 2012-01-14T18:12:12-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000414s ]
+[ 2012-01-14T18:12:12-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000280s ]
+[ 2012-01-14T18:12:12-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:12:12-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:12:12-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:12:12-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:12:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004076s ]
+[ 2012-01-14T18:12:15-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000365s ]
+[ 2012-01-14T18:12:15-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f120bb51a335.jpg,4f120bb51d769.jpg,4f120bb51f06b.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000317s ]
+[ 2012-01-14T18:12:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003817s ]
+[ 2012-01-14T18:12:27-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000639s ]
+[ 2012-01-14T18:12:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.003970s ]
+[ 2012-01-14T18:12:27-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000400s ]
+[ 2012-01-14T18:12:27-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000246s ]
+[ 2012-01-14T18:12:27-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:12:27-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:12:27-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:12:27-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:12:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004141s ]
+[ 2012-01-14T18:12:29-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000400s ]
+[ 2012-01-14T18:12:29-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f120bb51a335.jpg,4f120bb51d769.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000311s ]
+[ 2012-01-14T18:12:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003612s ]
+[ 2012-01-14T18:12:32-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( `is_show` = '1' ) ORDER BY parent_id asc [ RunTime:0.000725s ]
+[ 2012-01-14T18:12:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004187s ]
+[ 2012-01-14T18:12:32-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000380s ]
+[ 2012-01-14T18:12:32-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000388s ]
+[ 2012-01-14T18:12:32-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 55 行.
+[ 2012-01-14T18:12:32-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:12:32-05:00 ] NOTIC: [8] Undefined variable: msg b99f012f7b218c595b5aa07f55e33732.php 第 115 行.
+[ 2012-01-14T18:12:32-05:00 ] NOTIC: [8] Undefined variable: vo b99f012f7b218c595b5aa07f55e33732.php 第 144 行.
+[ 2012-01-14T18:13:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004018s ]
+[ 2012-01-14T18:13:02-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `pid` = '1' ) LIMIT 1  [ RunTime:0.000522s ]
+[ 2012-01-14T18:13:02-05:00 ] SQL: UPDATE `ry_products` SET `image`='4f120bb51a335.jpg' WHERE ( `pid` = '1' ) [ RunTime:0.000693s ]
