@@ -73,52 +73,124 @@
 <div id="wrapper">
 
 <div id="content">
-	<div id="content_left">aa</div>
-    <div id="content_right">
-    	<div><span>Schedule</span><a style="float:right;" href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add">Add</a></div>
-        <div>
-            <table>
-            	<thead>
-                	<tr>
-                    	<th colspan="2">Today</th>
-                    </tr>
-                </thead>
-            	<tbody>
-                <?php if(is_array($data["tb_task_today"])): foreach($data["tb_task_today"] as $key=>$vo): ?><tr>
-                        <td><?php echo ($vo["time"]); ?></td>
-                        <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
-                    </tr><?php endforeach; endif; ?>
-                </tbody>
-            </table>
-            <table>
-            	<thead>
-                	<tr>
-                    	<th colspan="2">Tomorrow</th>
-                    </tr>
-                </thead>
-            	<tbody>
-                <?php if(is_array($data["tb_task_tomorrow"])): foreach($data["tb_task_tomorrow"] as $key=>$vo): ?><tr>
-                        <td><?php echo ($vo["time"]); ?></td>
-                        <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
-                    </tr><?php endforeach; endif; ?>
-                </tbody>
-            </table>
-            <table>
-            	<thead>
-                	<tr>
-                    	<th colspan="2">Next Week</th>
-                    </tr>
-                </thead>
-            	<tbody>
-                <?php if(is_array($data["tb_task_nextweek"])): foreach($data["tb_task_nextweek"] as $key=>$vo): ?><tr>
-                        <td><?php echo ($vo["time"]); ?></td>
-                        <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
-                    </tr><?php endforeach; endif; ?>
-                </tbody>
-            </table>
-        </div>
-    </div>
+<!--
+	<div id="content_left"></div>
+    -->
+
+<script charset="utf-8" src="/editor/kindeditor.js"></script>
+<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+			editor = K.create('#description',{
+					langType : 'en'
+				});
+	});
+		
+	function form_check(){
+		if($("#product_name_id").val()==""){
+			alert("Title can not empty!");
+			return false;
+		}
+		return true;
+	}
+	
+	$(document).ready(function(){
+		$(function() {
+			$( "#time_expire" ).datepicker({ dateFormat: 'yy-mm-dd' });
+		});
+	});
+	//time_expire
+</script>
+<div id="content">
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      <div style='float:right;padding-right:8px;'>
+        <!--  //保留接口  -->
+      </div></td>
+  </tr>
+  <tr>
+    <td height="1" style='padding:0px'></td>
+  </tr>
+</table>
+<form id="add_cat" name="add_cat" method="post" action="http://xeno.recrazy.net/admin.php?s=Product/add" enctype="multipart/form-data"  onsubmit="return form_check();" >
+<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
+  <tr>
+    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Add New Product</span></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Product Name&nbsp; </div></td>
+    <td width="82%"><input name="name" id="product_name_id" type="text" size="30"/>&nbsp; <font color="#FF0000">*</font></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">User ID&nbsp; </div></td>
+    <td width="82%">
+		<input name="user_id" value="" /> Auto fill the current user id if leave empty
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF" style="display:none; ">
+    <td width="18%"><div align="right">Type&nbsp; </div></td>
+    <td width="82%">
+	<select name="type" id="type">
+ <!--
+	   <option value="1">Supply</option>
+   -->
+       <option value="2">Demand</option>
+      
+	</select>	</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Category&nbsp; </div></td>
+    <td width="82%">
+	<select name="cat_id" id="cat_id">
+	  <?php if(is_array($categoty)): $i = 0; $__LIST__ = $categoty;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): ++$i;$mod = ($i % 2 )?><option value="<?php echo ($key); ?>"><?php echo ($data); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	</select>	</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Image&nbsp; </div></td>
+    <td width="82%">
+    	<input name="image[]" type="file" size="30"/>&nbsp;
+    	<label>Max Width:</label><input type="text" name="thumbMaxWidth" id="thumbMaxWidth" size="10" value="" />&nbsp;
+        <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" /><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Price&nbsp; </div></td>
+    <td width="82%"><input name="price" type="text" size="15"/>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Quantity&nbsp; </div></td>
+    <td width="82%"><input name="quantity" type="text" size="15"/>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">Description &nbsp; </div></td>
+        <td width="82%"><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">Expire at: &nbsp; </div></td>
+        <td width="82%"><input name="time_expire" id="time_expire" type="text" size="15" value="<?php echo ($DATE_NOW); ?>"/></td>
+    </tr>
+   
+  <tr bgcolor="#FFFFFF">
+    <td colspan="2">
+	<div align="center">
+    		<input type="submit" name="Submit" value="Add"> 
+			<input type="reset" name="chongzhi" value="Reset">
+	</div>
+	</td>
+  </tr>
+</table>
+</form>
 </div>
+
+</div>
+
 
 
 
