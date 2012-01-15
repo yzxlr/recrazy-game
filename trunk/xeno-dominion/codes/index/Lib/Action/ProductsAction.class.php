@@ -51,8 +51,13 @@ class ProductsAction extends CommonAction
 			if($flag=="supply")$flag=1;
 			else if($flag=="demand")$flag=2;
 			else $flag= 0;
-			$condition = array("ry_products.cat_id"=>array("IN",$cat_id), 
-							   "ry_products.type"=>$flag);
+			
+			
+			if($flag=="all")
+				$condition = array("ry_products.cat_id"=>array("IN",$cat_id));
+			else
+				$condition = array("ry_products.cat_id"=>array("IN",$cat_id), 
+							       "ry_products.type"=>$flag);
 			
 			import("ORG.Util.Page");
 			$count = $tb_products -> table("ry_products")
@@ -96,6 +101,7 @@ class ProductsAction extends CommonAction
 		$this->assign("data",$data);
         $this->display();
 		//http://xeno.recrazy.net/index.php?s=Products/lists/flag/supply/cat_id/0?l=en-us
+		//http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/0?l=en-us
     }
 
 	public function product()

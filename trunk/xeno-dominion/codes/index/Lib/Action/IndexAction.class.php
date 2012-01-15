@@ -21,6 +21,19 @@ class IndexAction extends CommonAction
 		//10. Display
         $this->display();
     }
+	
+	public function test(){
+		$tb_product_cat = M("productsCat");
+		
+		$cats = $tb_product_cat
+								->table("ry_products_cat")
+								->join("ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id")
+								->field("ry_products_cat.*, ry_products_cat_lang.lang_code AS cat_lang_code")
+								//->where(array("ry_products_cat_lang.lang_code"=>LANG_SET))
+								->select();
+		var_dump($cats);
+		$this->display();
+	}
 
 }
 ?>

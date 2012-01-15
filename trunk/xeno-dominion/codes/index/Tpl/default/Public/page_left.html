@@ -26,86 +26,37 @@ $(document).ready( function(){
 			)
 	});
 </script>   
-      <ul class="category" >
-      <li><a href="product_list.php">Agriculture</a>
-      <!-- 2级菜单 -->
-      			<ul class="sub_category">
-       			  <li class="first"><a href="">Construction &amp; Real Estate</a></li>
-              <li><a href="">Consumer Electronics</a></li>
-              <li><a href="">Electrical Equipment &amp; Supplies</a></li>
-              <li><a href="">Energy</a></li>
-              <li><a href="">Fashion Accessories</a></li>
-      							  <li><a href="">Apparel</a></li>
-              <li><a href="">Automobiles &amp; Motorcycles</a></li>
-              <li><a href="">Beauty &amp; Personal Care</a></li>
-              <li><a href="">Chemicals</a></li>
-              <li><a href="">Computer Hardware &amp; Software</a></li>
-      				</ul>
-         <!-- end of 2级菜单 -->
-      </li>
-      <li><a href="product_list.php">Apparel</a></li>
-      <li><a href="product_list.php">Automobiles &amp; Motorcycles</a></li>
-      <li><a href="">Beauty &amp; Personal Care</a>
-      <!-- 2级菜单 -->
-      			 <ul class="sub_category">
-       			  	<li class="first"><a href="">Construction &amp; Real Estate</a></li>
-              <li><a href="">Consumer Electronics</a></li>
-              <li><a href="">Electrical Equipment &amp; Supplies</a></li>
-              <li><a href="">Energy</a></li>
-              <li><a href="">Fashion Accessories</a></li>
-      							  <li><a href="">Apparel</a></li>
-              <li><a href="">Automobiles &amp; Motorcycles</a></li>
-              <li><a href="">Beauty &amp; Personal Care</a></li>
-              <li><a href="">Chemicals</a></li>
-              <li><a href="">Computer Hardware &amp; Software</a></li>
-      				</ul>
-        <!-- end of 2级菜单 -->  
-      </li>    
-      <li><a href="product_list.php">Chemicals</a></li>
-      <li><a href="product_list.php">Computer Hardware &amp; Software</a></li>
-      <li><a href="product_list.php">Construction &amp; Real Estate</a></li>
-      <li><a href="product_list.php">Consumer Electronics</a></li>
-      <li><a href="product_list.php">Electrical Equipment &amp; Supplies</a></li>
-      <li><a href="product_list.php">Energy</a></li>
-      <li><a href="product_list.php">Fashion Accessories</a></li>
-      <li><a href="product_list.php">Food &amp; Beverage</a></li>
-      <li><a href="product_list.php">Furniture</a></li>
-      <li><a href="product_list.php">Gifts &amp; Crafts</a> </li>
-      <li><a href="product_list.php">Health &amp; Medical</a></li>
-      <li><a href="product_list.php">Home Appliances</a></li>
-      <li><a href="product_list.php">Home &amp; Garden</a></li>
-      <!--
-      <li><a href="">Lights &amp; Lighting</a></li>
-      <li><a href="">Machinery</a></li>
-      <li><a href="">Mechanical Parts &amp; Fabrication Services</a></li>
-      <li><a href="">Minerals &amp; Metallurgy</a></li>
-      <li><a href="">Office &amp; School Supplies</a></li>
-      <li><a href="">Packaging &amp; Printing</a></li>
-      <li><a href="">Shoes &amp; Accessories</a></li>     
-      <li><a href="">Sports &amp; Entertainment&nbsp;&nbsp;</a></li>
-      <li><a href="">Textiles &amp; Leather Products</a></li>
-      <li><a href="">Toys &amp; Hobbies</a></li>
-      <li><a href="">Transportation</a></li>
-      <li><a href="">Business Services</a></li>
-      <li><a href="">Electronic Components &amp; Supplies</a></li>
-      <li><a href="">Environment</a></li>
-      <li><a href="">Excess Inventory</a></li>
-      -->
-      <li class="showmore"><a href="javascript:;" class="showmore_btn">More Categories</a>
-      <!--
-      <ul id="hidden-cate" class="">
-      <li><a href="">Hardware</a></li>
-      <li><a href="">Luggage, Bags &amp; Cases</a></li>
-      <li><a href="">Measurement &amp; Analysis Instruments</a></li>
-      <li><a href="">Rubber &amp; Plastics</a></li>
-      <li><a href="">Security &amp; Protection</a></li>
-      <li><a href="">Service Equipment</a></li>
-      <li><a href="">Telecommunications</a></li>
-      <li><a href="">Timepieces, Jewelry &amp; Eyewear</a></li>
-      <li><a href="">Tools</a></li>
-      </ul>
-      </li>
-      -->
+      <ul class="category" ><?php //var_dump($categories); ?>
+          <foreach name="categories" item="vo1">
+              <li>
+              	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/{$vo1.cat_id}">
+                	<empty name="vo1.cat_name_with_lang">
+                		{$vo1.cat_name}
+                    </empty>
+                    <notempty name="vo1.cat_name_with_lang">
+                    	{$vo1.cat_name_with_lang}
+                    </notempty>
+                </a>
+              <!-- 2级菜单 -->
+                    <notempty name="vo1.child_cats">
+                        <ul class="sub_category">
+                        	<foreach name="vo1.child_cats" item="vo2">
+                          		<li class="first">
+                                	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/{$vo2.cat_id}">
+                                        <empty name="vo2.cat_name_with_lang">
+                                            {$vo2.cat_name}
+                                        </empty>
+                                        <notempty name="vo2.cat_name_with_lang">
+                                            {$vo2.cat_name_with_lang}
+                                        </notempty>
+                                    </a>
+                                </li>
+                            </foreach>
+                       </ul>
+                    </notempty>
+                 <!-- end of 2级菜单 -->
+              </li>
+          </foreach>
       </ul>
       <ul class="category hide" >
           <li><a href="product_list.php">Hardware</a></li>
