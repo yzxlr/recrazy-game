@@ -1,0 +1,38 @@
+[ 2012-01-14T21:59:29-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-14T21:59:29-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 149 行.
+[ 2012-01-14T21:59:29-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 179 行.
+[ 2012-01-14T22:03:36-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.027674s ]
+[ 2012-01-14T22:03:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:03:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-22 00:00:00') AND (`time` >= '2012-01-14 00:00:00')  ) ORDER BY time ASC [ RunTime:0.007306s ]
+[ 2012-01-14T22:03:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:03:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-15 00:00:00') AND (`time` >= '2012-01-14 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000380s ]
+[ 2012-01-14T22:03:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:03:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-16 00:00:00') AND (`time` >= '2012-01-15 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000357s ]
+[ 2012-01-14T22:03:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:03:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-22 00:00:00') AND (`time` >= '2012-01-16 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000316s ]
+[ 2012-01-14T22:05:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.005709s ]
+[ 2012-01-14T22:05:02-05:00 ] NOTIC: [8] Undefined variable: data ScheduleAction.class.php 第 44 行.
+[ 2012-01-14T22:05:04-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.004305s ]
+[ 2012-01-14T22:05:04-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:05:04-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-22 00:00:00') AND (`time` >= '2012-01-14 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000558s ]
+[ 2012-01-14T22:05:04-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:05:04-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-15 00:00:00') AND (`time` >= '2012-01-14 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000362s ]
+[ 2012-01-14T22:05:04-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:05:04-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-16 00:00:00') AND (`time` >= '2012-01-15 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000290s ]
+[ 2012-01-14T22:05:04-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-14T22:05:04-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-22 00:00:00') AND (`time` >= '2012-01-16 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000296s ]
+[ 2012-01-14T22:05:24-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-01-14T22:05:24-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 147 行.
+[ 2012-01-14T22:05:24-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 177 行.
+[ 2012-01-14T22:05:26-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-14T22:05:26-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 149 行.
+[ 2012-01-14T22:05:26-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 179 行.
+[ 2012-01-14T22:05:28-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-01-14T22:05:28-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 147 行.
+[ 2012-01-14T22:05:28-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 177 行.
+[ 2012-01-14T22:05:30-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-14T22:05:30-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 149 行.
+[ 2012-01-14T22:05:30-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 179 行.
+[ 2012-01-14T22:05:31-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-01-14T22:05:31-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 147 行.
+[ 2012-01-14T22:05:31-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 177 行.

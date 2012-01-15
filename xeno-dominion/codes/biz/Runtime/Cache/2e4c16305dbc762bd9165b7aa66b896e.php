@@ -38,16 +38,16 @@
         <div id="header_right_menu">
             <ul class="sf-menu">
             				<li>
-                  <a href="#">My world</a>
+                  <a href="<?php echo ($SITE_URL); ?>/biz.php">My world</a>
                  </li>
                  <li> 
                      <a href="#">Messenge &amp; Condition</a>
                   </li>
                   <li>   
-                     <a href="#">Buying</a>
+                     <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/buying">Buying</a>
                    </li>
                    <li>  
-                     <a href="#">Selling</a>
+                     <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/selling">Selling</a>
                    </li>
                    <li> 
                      <a href="#">Company</a>
@@ -61,6 +61,9 @@
                    <li> 
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/fraud">Fraud Report</a>
                 	 </li>
+                  <li>
+                			<a href="<?php echo ($SITE_URL); ?>/admin.php">Go To admin account(for test only)</a>
+                </li>
             </ul>
           </div>           
     </div>
@@ -114,7 +117,7 @@
 </div> <!-- wrapper -->
 
 <div id="footer"> 
-						<div class="padding20">
+						<div class="w960">
   
    <div style="overflow:hidden;  ">
      <ul class="ul5">
