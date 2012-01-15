@@ -32,12 +32,21 @@ class CommonAction extends Action
 			//$this->redirect('Public/login', array(), 3, 'Please login first!');
 		}
 		
+		
+		//2  Assign Category
+		$temp_cat = $this->GetCategoriesL2();
+		$this->assign("categories",$temp_cat);
 	}
 	
 	public function GetCategoriesL2(){  //get 2 levels of category (root and one sub level category
 		$tb_product_cat = M("productsCat");
 		
-		$cats = $tb_product_cat->select();
+		$cats = $tb_product_cat
+				->table("ry_products_cat")
+				->join("ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='".LANG_SET."'")
+				->field("ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang")
+				->select();
 		
 		foreach($cats as $key => $cat){
 			if($cat["parent_id"]==0){
