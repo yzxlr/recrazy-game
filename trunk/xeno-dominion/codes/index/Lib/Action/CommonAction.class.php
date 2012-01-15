@@ -34,6 +34,26 @@ class CommonAction extends Action
 		
 	}
 	
+	public function GetCategoriesL2(){  //get 2 levels of category (root and one sub level category
+		$tb_product_cat = M("productsCat");
+		
+		$cats = $tb_product_cat->select();
+		
+		foreach($cats as $key => $cat){
+			if($cat["parent_id"]==0){
+				foreach($cats as $key_child => $cat_child){
+					if($cat_child["parent_id"]==$cat["cat_id"]){
+						$cats[$key]["child_cats"][] = $cat_child;
+						unset($cats[$key_child]);
+					}
+				}
+			}
+			/////var_dump($cat);
+		}
+		/////var_dump($cats);
+		return $cats;
+	}
+	
 	
 	/*
 	 *  这里暂时hardcode
