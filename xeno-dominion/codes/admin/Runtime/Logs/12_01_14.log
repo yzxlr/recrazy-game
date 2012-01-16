@@ -1,0 +1,38 @@
+[ 2012-01-14T22:57:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005700s ]
+[ 2012-01-14T22:57:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004723s ]
+[ 2012-01-14T22:57:15-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000752s ]
+[ 2012-01-14T22:57:15-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000400s ]
+[ 2012-01-14T22:57:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004130s ]
+[ 2012-01-14T22:57:17-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
+[ 2012-01-14T22:57:17-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-01-14T22:57:17-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-01-14T22:57:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004408s ]
+[ 2012-01-14T22:57:17-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
+[ 2012-01-14T22:57:17-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-01-14T22:57:17-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-01-14T22:57:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_page` [ RunTime:0.003711s ]
+[ 2012-01-14T22:57:20-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_page` LIMIT 1  [ RunTime:0.000302s ]
+[ 2012-01-14T22:57:20-05:00 ] SQL: SELECT * FROM `ry_page` LIMIT 0,25  [ RunTime:0.000291s ]
+[ 2012-01-14T22:57:20-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 115 行.
+[ 2012-01-14T22:57:20-05:00 ] NOTIC: [8] Undefined index: info 54042c11aa449cd5c6bb37d6a4c6f773.php 第 115 行.
+[ 2012-01-14T22:57:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.022472s ]
+[ 2012-01-14T22:57:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.006749s ]
+[ 2012-01-14T22:57:28-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000761s ]
+[ 2012-01-14T22:57:28-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '3' ) [ RunTime:0.000492s ]
+[ 2012-01-14T22:57:28-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 115 行.
+[ 2012-01-14T22:57:28-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 115 行.
+[ 2012-01-14T22:57:28-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 158 行.
+[ 2012-01-14T22:57:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004089s ]
+[ 2012-01-14T22:57:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.014322s ]
+[ 2012-01-14T22:57:32-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000594s ]
+[ 2012-01-14T22:57:32-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '2' ) [ RunTime:0.000393s ]
+[ 2012-01-14T22:57:32-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 115 行.
+[ 2012-01-14T22:57:32-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 115 行.
+[ 2012-01-14T22:57:32-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 158 行.
+[ 2012-01-14T22:58:18-05:00 ] SQL: SHOW COLUMNS FROM `ry_langs` [ RunTime:0.004293s ]
+[ 2012-01-14T22:58:18-05:00 ] SQL: SHOW COLUMNS FROM `ry_page_lang` [ RunTime:0.004319s ]
+[ 2012-01-14T22:58:18-05:00 ] SQL: SELECT * FROM `ry_langs` WHERE lang_status <> 0 [ RunTime:0.000511s ]
+[ 2012-01-14T22:58:18-05:00 ] SQL: SELECT * FROM `ry_page_lang` WHERE ( `page_id` = '1' ) [ RunTime:0.000348s ]
+[ 2012-01-14T22:58:18-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 115 行.
+[ 2012-01-14T22:58:18-05:00 ] NOTIC: [8] Undefined index: info a560bbf73a30d4a718884003be1cf406.php 第 115 行.
+[ 2012-01-14T22:58:18-05:00 ] NOTIC: [8] Undefined index: page a560bbf73a30d4a718884003be1cf406.php 第 158 行.
