@@ -66,6 +66,14 @@ ul.sub_category li a { color:#333; border:none; padding:3px 10px 3px 20px;  }
 ul.sub_category li a:hover { border:none; }
 ul.sub_category li.first { border-left:#fff solid 1px}
 
+ul.category_show  li a { display:block; padding:3px 10px; text-decoration:none; color:#333; border-bottom:#eee solid 1px; border-top:#fff solid 1px; }
+ul.category_show  li a:hover, ul.category  li.hover>a  { border-bottom:#999 solid 1px; border-top:#999 solid 1px; color:#09c; background:#fff;  }
+ul.category_show  li.showmore a { font-weight:bold; color:#069; }
+
+ul.category_show  li:hover  { position:relative; }
+ul.category_show  li:hover ul { display:block; position:absolute; top:0; left:170px; z-index:99; background:#fff; border:#999 solid 1px; border-left:none;  width:200px; }
+
+
 
 #main_content { overflow:hidden; }
 
