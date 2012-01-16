@@ -16,8 +16,8 @@ class SearchAction extends CommonAction
 		$tb_products_cat = M("productsCat");
 		
 		$condition =array();
-		$flag = trim($_GET["flag"]);
-		$cat_id = $_GET["cat_id"];
+		$type = $_GET["type"];
+		$keyword = urldecode($_GET["keyword"]);
 		
 		//1 Table .get all subcategories
 		$data["tb_products_cat"] = $tb_products_cat 
@@ -35,18 +35,9 @@ class SearchAction extends CommonAction
 		
 		/////var_dump($flag); var_dump($cat_id);exit;
 		//tables
-		if(!empty($flag)&&isset($cat_id)){
+		if(!empty($type)&&isset($keyword)){
+			$condition = array();
 			
-			if($flag=="supply")$flag=1;
-			else if($flag=="demand")$flag=2;
-			else $flag= 0;
-			
-			
-			if($flag=="all")
-				$condition = array("ry_products.cat_id"=>array("IN",$cat_id));
-			else
-				$condition = array("ry_products.cat_id"=>array("IN",$cat_id), 
-							       "ry_products.type"=>$flag);
 			
 			import("ORG.Util.Page");
 			$count = $tb_products -> table("ry_products")
