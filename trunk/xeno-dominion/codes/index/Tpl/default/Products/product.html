@@ -14,8 +14,48 @@
         <div class="image_div">
         	<?php 
                 $images = explode(",",$data["tb_products"]["image"]);
+              
             ?>
-            <div class="title_image"><img src="{$SITE_URL}/public/uploads/images/{$images.0}" /></div>
+            <div class="title_image">
+            
+            			
+            
+            <?php  
+                                  $title_image = explode(",",$data["tb_products"]);
+                                     $vo["image"] = $title_image[0];
+                     
+                                 ?>
+            
+                 <notempty name="vo.image">      
+                    	<img src="{$SITE_URL}/public/uploads/images/{$images.0}" />
+                     
+                           </notempty>
+                           
+                             <empty name="vo.image">   
+                             
+                            
+                           <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+                           </empty>
+            
+                    
+                       
+            <!--               
+                               <notempty name="vo.image">      
+                           <img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
+                           </notempty>
+                           
+                             <empty name="vo.image">      
+                           <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+                           </empty>
+            
+            -->
+            
+             
+        
+           
+            
+            
+            </div>
             <ul class="image_showcase">
                 <foreach name="images" item="image">
                 	<li>
@@ -27,15 +67,12 @@
             </ul>
         </div>
         
-        <div class="basic_information">
-           	<h3>
-        	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
-            <empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
-        </h3>
+        <div class="basic_information" >
+        
         	<table>
             	<tbody>
                 	<tr>
-                    	<td>{$Think.lang.product_name}:</td>
+                    	<td width="100">{$Think.lang.product_name}:</td>
                         <td>
                         	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
           					<empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
@@ -69,6 +106,15 @@
                     </tr>
                 </tbody>
             </table>
+            
+             							 <p>
+                           	<img width="16" height="16" src="{$SITE_URL}/public/jack/forindex/images/icon_p.png"  />
+                           		<a href="">Online Support</a>
+                           </p>
+                           <p>
+                           	 <a class="contact_btn" href="">Contact Supplier</a>
+                           </p>
+            
         </div>
         
         <div style="clear:both"></div>
