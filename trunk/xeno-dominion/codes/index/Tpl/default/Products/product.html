@@ -36,24 +36,7 @@
                             
                            <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
                            </empty>
-            
-                    
-                       
-            <!--               
-                               <notempty name="vo.image">      
-                           <img src="{$SITE_URL}/public/uploads/images/{$vo.image}" />
-                           </notempty>
-                           
-                             <empty name="vo.image">      
-                           <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-                           </empty>
-            
-            -->
-            
-             
-        
-           
-            
+   
             
             </div>
             <ul class="image_showcase">
@@ -69,8 +52,15 @@
         
         <div class="basic_information" >
         
+        <h3>                 	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
+          					<empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
+               
+               </h3>
+        
+        
         	<table>
             	<tbody>
+             <!--
                 	<tr>
                     	<td width="100">{$Think.lang.product_name}:</td>
                         <td>
@@ -78,6 +68,7 @@
           					<empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
                         </td>
                     </tr>
+                -->    
                 	<tr>
                     	<td>{$Think.lang.product_price}:</td>
                         <td>${$data.tb_products.price}</td>
