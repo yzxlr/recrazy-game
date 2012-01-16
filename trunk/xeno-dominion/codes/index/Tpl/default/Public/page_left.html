@@ -3,6 +3,7 @@
    <div class="box">
    	<h4>Categories</h4>
 <script>
+/*
 $(function(){
 		$(".category>li").hover(
 			function (){
@@ -25,10 +26,29 @@ $(document).ready( function(){
 							}
 			)
 	});
+	*/
+$(document).ready( function(){	
+		$('.showmore a').click(
+							function(){
+							//	 $('.category').removeClass('hide');
+								$('li.hide').removeClass('hide');								
+								$('.showmore').parent().hide();
+							}
+			)
+	});
 </script>   
+
+
+
+
       <ul class="category" ><?php //var_dump($categories); ?>
+      <?php $i = 0; ?>
+      
           <foreach name="categories" item="vo1">
-              <li>
+     
+          <?php 		$i = $i + 1 ;  ?>
+        
+              <li class='<?php if($i > 18) echo "hide"; ?>'>
               	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/{$vo1.cat_id}">
                 	<empty name="vo1.cat_name_with_lang">
                 		{$vo1.cat_name}
@@ -56,18 +76,13 @@ $(document).ready( function(){
                     </notempty>
                  <!-- end of 2级菜单 -->
               </li>
+            
+              
           </foreach>
       </ul>
-      <ul class="category hide" >
-          <li><a href="product_list.php">Hardware</a></li>
-          <li><a href="product_list.php">Luggage, Bags &amp; Cases</a></li>
-          <li><a href="product_list.php">Measurement &amp; Analysis Instruments</a></li>
-          <li><a href="product_list.php">Rubber &amp; Plastics</a></li>
-          <li><a href="product_list.php">Security &amp; Protection</a></li>
-          <li><a href="product_list.php">Service Equipment</a></li>
-          <li><a href="product_list.php">Telecommunications</a></li>
-          <li><a href="product_list.php">Timepieces, Jewelry &amp; Eyewear</a></li>
-          <li><a href="product_list.php">Tools</a></li>
+      <ul class="category_show" >
+          <li class="showmore"><a href="javascript:;">Show More ..</a></li>
+      
       </ul>
    
       
