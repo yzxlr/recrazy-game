@@ -47,7 +47,8 @@ a {  outline:none; text-decoration:none; }
 a:hover  {  text-decoration:underline; }
 
 
-
+.fr { float:right; }
+.fl { float:left;}
 
 
 #content { overflow:hidden;  }
@@ -72,7 +73,7 @@ a:hover  {  text-decoration:underline; }
 				background-color: #f9f9f9;
 	   padding:10px; 
 				border:#eec solid 1px;
-				margin-bottom:20px;		
+				margin-bottom:10px;		
 	
 	}
 
@@ -98,6 +99,17 @@ div.hr { clear:both; margin:10px 0;   border:none; background:url(../images/divi
 
 .r3 { -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
 
+h5.schedule {  background:url(../images/schedule.png) 0 0 no-repeat; padding-left:20px;  }
+h5.website {  background:url(../images/home_icon.png) 0 0 no-repeat; padding-left:20px; } 
+#content_right h5 { color:#333;  }
+.schedule_table { margin-bottom:10px;}
+.schedule_table td a { color:#c00; font-weight:bold;  }
+.schedule_table td { border-bottom:#ccc solid 1px; }
+
+
+
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                       Buttons Style
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */																																						
@@ -116,5 +128,6 @@ background: -moz-linear-gradient(top,  #0099cc,  #003366); /* for firefox 3.6+ *
 }
 		
 
-
-
+.btn_s {background:url(../images/btn_s_bg.png) 0 0 no-repeat; padding-left:15px; display:inline-block;  height:24px; }
+.btn_s  span { background:url(../images/btn_s_bg.png) bottom right no-repeat; padding:0 15px 0 0; display:inline-block; height:24px; line-height:24px; font-weight:bold; color:#09c;   }
+.btn_s:hover  span {color:#069;  }
