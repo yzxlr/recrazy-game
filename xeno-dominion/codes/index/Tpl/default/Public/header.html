@@ -61,9 +61,12 @@
 <form action="{$SITE_URL}/index.php/index.php/Search/index">
 	   <input type="hidden" name="type" value="1" />
        <input type="text" name="keywords" value="" />
-       <select>
-       		<option>Select Country/Region</option>
+       
+       <select name="region">
+       		<option value="">Select Country/Region</option>
+            <option value="canada-ontario">Canada/Ontario</option>
        </select>
+       <?php //*/ ?>
        <input type="submit" value="Submit" />
 </form> 
        <?php /* ?>
