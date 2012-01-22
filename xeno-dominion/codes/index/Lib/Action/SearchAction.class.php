@@ -17,7 +17,7 @@ class SearchAction extends CommonAction
 		
 		$condition =array();
 		$type = $_GET["type"];
-		$keyword = urldecode($_GET["keyword"]);
+		$keyword = urldecode($_GET["keywords"]);
 		
 		//1 Table .get all subcategories
 		$data["tb_products_cat"] = $tb_products_cat 
@@ -37,6 +37,10 @@ class SearchAction extends CommonAction
 		//tables
 		if(!empty($type)&&isset($keyword)){
 			$condition = array();
+			$condition = array(
+								"ry_products.type" => $type,
+								"ry_products_lang.name" => array("LIKE","%".$keyword."%")
+							);
 			
 			
 			import("ORG.Util.Page");

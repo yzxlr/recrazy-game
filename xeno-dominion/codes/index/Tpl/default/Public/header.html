@@ -58,18 +58,19 @@
   </div>
   
 <div class="search_bar">
-    	
-    			<input type="text" value="Enter Keyword to Search" />
+<form action="{$SITE_URL}/index.php/index.php/Search/index">
+	   <input type="hidden" name="type" value="1" />
+       <input type="text" name="keywords" value="" />
        <select>
        		<option>Select Country/Region</option>
-       
-       
        </select>
-       
-       
+       <input type="submit" value="Submit" />
+</form> 
+       <?php /* ?>
        <a href="" class="search_btn">Search Now</a>
+       
        <a href="" class="search_btn2">Advance Search >></a>
-    
+       <?php //*/ ?>
     </div>
   
   
