@@ -39,9 +39,12 @@ class SearchAction extends CommonAction
 			$condition = array();
 			$condition = array(
 								"ry_products.type" => $type,
-								"ry_products_lang.name" => array("LIKE","%".$keyword."%")
+								"ry_products_lang.name" => array("LIKE","%".$keyword."%"),
 							);
-			
+			if(!empty($_GET["region"])){
+				$region = trim($_GET["region"]);
+				$condition["ry_products.location_code"] = $region;
+			}
 			
 			import("ORG.Util.Page");
 			$count = $tb_products -> table("ry_products")
