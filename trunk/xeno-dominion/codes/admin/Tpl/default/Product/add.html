@@ -69,6 +69,15 @@
 	</select>	</td>
   </tr>
   <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Region&nbsp; </div></td>
+    <td width="82%">
+	<select name="location_code" id="location_code_id">
+	  <foreach name="all_regions" item="vo">
+	   <option value="{$vo.region_code}">{$vo.region_country}/{$vo.region_province}</option>
+	  </foreach>
+	</select>	</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Image&nbsp; </div></td>
     <td width="82%">
     	<input name="image[]" type="file" size="30"/>&nbsp;

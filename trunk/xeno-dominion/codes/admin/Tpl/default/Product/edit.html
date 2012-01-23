@@ -107,6 +107,15 @@
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Region&nbsp; </div></td>
+    <td width="82%">
+	<select name="location_code" id="location_code_id">
+	  <foreach name="all_regions" item="vo">
+	   <option value="{$vo.region_code}" <?php  if($vo["region_code"] == $data["tb_products"]["location_code"]){ ?>selected="selected" <?php } ?>>{$vo.region_country}/{$vo.region_province}</option>
+	  </foreach>
+	</select>	</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
     <td width="150"><div align="right">Image&nbsp; </div></td>
     <td width="">
 
