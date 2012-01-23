@@ -42,7 +42,11 @@ class CommonAction extends Action
 			//$this->redirect('Public/login', array(), 3, 'Please login first!');
 		}
 		
-		
+		//2 load location
+		$tb_region = M("region");
+		$regions = $tb_region -> where(array("region_lang_code"=>"en-us")) -> select();
+		$this->assign("all_regions",$regions);
+		/////var_dump($regions);
 	}
 	
 	

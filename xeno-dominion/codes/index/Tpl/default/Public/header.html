@@ -60,11 +60,13 @@
 <div class="search_bar">
 <form action="{$SITE_URL}/index.php/index.php/Search/index">
 	   <input type="hidden" name="type" value="1" />
-       <input type="text" name="keywords" value="" />
-       
+       <input type="text" name="keywords" value="{$Think.get.keywords}" />
        <select name="region">
        		<option value="">Select Country/Region</option>
-            <option value="canada-ontario">Canada/Ontario</option>
+            <foreach name="all_regions" item="vo" >
+            	<option value="{$vo.region_code}"  <eq name="Think.get.region" value="$vo.region_code"> selected="selected" </eq> >{$vo.region_country}/{$vo.region_province}</option>
+            </foreach>
+            
        </select>
        <?php //*/ ?>
        <input type="submit" value="Submit" />

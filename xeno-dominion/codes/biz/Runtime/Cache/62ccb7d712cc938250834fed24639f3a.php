@@ -102,115 +102,8 @@
 	});
 	//time_expire
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-function del(id){
-	if(id)
-	{
-	  if(confirm("Delete?")){ 
-	    location="__URL__/delete/pid/"+id;
-      }
-	}
-}
-</script>
-
 <div id="content">
-
-
-
-	<!--  内容列表   -->
-        <form name="form2" style="margin-bottom:0px;">
-        <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
-            <tr bgcolor="#E7E7E7">
-                <td height="30" colspan="10">
-                    <span style="float:left; padding-top:3px; padding-left:5px;">Product List</span>
-                    <span style="float:right;"><a href="__URL__/add">Add Product</a></span>
-                </td>
-            </tr>
-            <tr align="center" bgcolor="#FAFAF1" height="22">
-                <th width="8%">ID</th>
-                <th width="5%">User ID</th>
-                <th width="13%">Product Name</th>
-                <th width="13%">Price</th>
-                <th width="13%">Quantity</th>
-                <th width="14%">Type</th>
-                <th width="10%">Option</th>
-                <th width="10%">Language List</th>
-            </tr>
-            
-            <?php if(is_array($data["tb_products"])): foreach($data["tb_products"] as $key=>$vo): ?><tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td><?php echo ($vo["pid"]); ?></td>
-                <td><?php echo ($vo["user_id"]); ?></td>
-                <td><?php echo ($vo["name"]); ?></td>
-                <td><?php echo ($vo["price"]); ?></td>
-                <td><?php echo ($vo["quantity"]); ?></td>
-                <td><?php if($vo["type"] == 1): ?>Supply<?php endif; ?><?php if($vo["type"] == 2): ?>Demand<?php endif; ?></td>
-                <td>
-                    <a href="__URL__/edit/pid/<?php echo ($vo["pid"]); ?>">Update</a> | 
-                    <a href="javascript:del(<?php echo ($vo["pid"]); ?>)">Delete</a>
-                </td>
-                <td>
-                	<a href="__URL__/lang_index/product_id/<?php echo ($vo["pid"]); ?>">List</a>
-                </td>
-            </tr><?php endforeach; endif; ?>
-            <tr bgcolor="#FAFAF1">
-            <td height="28" colspan="10">
-                <?php echo ($msg["page"]); ?>
-            </td>
-            </tr>
-        </table>
-    </form>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1>My Products</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3>Post a Buying Request</h3>
 
 <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
@@ -226,7 +119,7 @@ function del(id){
 <form id="add_cat" name="add_cat" method="post" action="http://xeno.recrazy.net/admin.php?s=Product/add" enctype="multipart/form-data"  onsubmit="return form_check();" >
 <table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
   <tr>
-    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Add New Product</span></td>
+    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Request for Product Info</span></td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Product Name&nbsp; </div></td>
@@ -242,10 +135,11 @@ function del(id){
     <td width="18%"><div align="right">Type&nbsp; </div></td>
     <td width="82%">
 	<select name="type" id="type">
+ <!--
 	   <option value="1">Supply</option>
-    <!--
+   -->
        <option value="2">Demand</option>
-       -->
+      
 	</select>	</td>
   </tr>
   <tr bgcolor="#FFFFFF">
@@ -273,7 +167,7 @@ function del(id){
     <td width="82%"><input name="price" type="text" size="15"/>&nbsp;</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Quantity&nbsp; </div></td>
+    <td width="18%"><div align="right">Quantity Required: </div></td>
     <td width="82%"><input name="quantity" type="text" size="15"/>&nbsp;</td>
   </tr>
   <tr bgcolor="#FFFFFF">
@@ -295,7 +189,7 @@ function del(id){
   </tr>
 </table>
 </form>
-
+</div>
 
 </div>
 

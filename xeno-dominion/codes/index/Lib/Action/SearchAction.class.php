@@ -36,14 +36,14 @@ class SearchAction extends CommonAction
 		/////var_dump($flag); var_dump($cat_id);exit;
 		//tables
 		if(!empty($type)&&isset($keyword)){
-			$condition = array();
-			$condition = array(
-								"ry_products.type" => $type,
-								"ry_products_lang.name" => array("LIKE","%".$keyword."%"),
-							);
+			$condition = "";
+			
+			$keyword = mysql_real_escape_string($keyword);
+			$condition = "((ry_products_lang.name LIKE '%".$keyword."%') OR (ry_products.name LIKE '%".$keyword."%'))";
 			if(!empty($_GET["region"])){
 				$region = trim($_GET["region"]);
-				$condition["ry_products.location_code"] = $region;
+				$region = mysql_real_escape_string($region);
+				$condition .= "AND (ry_products.location_code ='".$region."')"; 
 			}
 			
 			import("ORG.Util.Page");
