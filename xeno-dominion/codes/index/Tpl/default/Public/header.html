@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <?php /* 
 <!-- start: include -->
 		<!-- start: include jquery & jquery ui -->
@@ -23,65 +22,62 @@
 <!-- end: include -->
 
 //*/ ?>
-
 <link href="{$SITE_URL}/public/jack/forindex/css/style.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="{$SITE_URL}/public/jack/forindex/js/jquery.js"></script>
-   
-        
 <title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
-
-
 <div id="header">
-		<div class="w960">
-    <div class="login_info">
-    			 <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a> | <a href="{$SITE_URL}/admin.php">Go to admin area</a> | <a href="{$SITE_URL}/index.php/Page/index/id/15">Contact Us</a>
-  		</div>
-  <a href="{$SITE_URL}">  <img src="{$SITE_URL}/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
-  
-<div class="menu">
-    <ul>
-      <li class="selected"><a href="">Products</a></li>
-      <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
-      <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a></li>
-      <li><a href="{$SITE_URL}/index.php/Page/index/id/12">Business cooperation</a></li>
-      <li><a href="{$SITE_URL}/index.php/Page/index/id/13">Exhibition</a></li>
-      <li><a href="{$SITE_URL}/index.php/Page/index/id/14">Business Service</a></li>
-      <li><a href="">Forums</a></li>
-      <li><a href="{$SITE_URL}/index.php/Products/product/id/6?l=zh-cn">ProductPage(test)</a></li>
-      <li><a href="{$SITE_URL}/admin.php">Admin Area(test)</a></li>
-      <li><a href="{$SITE_URL}/biz.php">Biz Area(test)</a></li>
-      <li><a href="{$SITE_URL}/index.php?s=Search/index/type/1/keywords/aa">Search(test)</a></li>
-      
-   </ul>
-  </div>
-  
-<div class="search_bar">
-<form action="{$SITE_URL}/index.php/index.php/Search/index">
-	   <input type="hidden" name="type" value="1" />
-       <input type="text" name="keywords" value="{$Think.get.keywords}" />
-       <select name="region">
-       		<option value="">Select Country/Region</option>
-            <foreach name="all_regions" item="vo" >
-            	<option value="{$vo.region_code}"  <eq name="Think.get.region" value="$vo.region_code"> selected="selected" </eq> >{$vo.region_country}/{$vo.region_province}</option>
-            </foreach>
-            
-       </select>
-       <?php //*/ ?>
-       <input type="submit" value="Submit" />
-</form> 
-       <?php /* ?>
+  <div class="w960">
+    <div class="login_info"> 
+    	<notempty name="Think.session.user.uid" >
+    		<img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a>
+        </notempty>
+        <empty name="Think.session.user.uid">
+        	<a href="{$SITE_URL}/index.php/Public/login">Sign In</a>
+        </empty>
+         | <a href="{$SITE_URL}/admin.php">Go to admin area</a> | <a href="{$SITE_URL}/index.php/Page/index/id/15">Contact Us</a> </div>
+    <a href="{$SITE_URL}"> <img src="{$SITE_URL}/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
+    <div class="menu">
+      <ul>
+        <li class="selected"><a href="">Products</a></li>
+        <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
+        <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a></li>
+        <li><a href="{$SITE_URL}/index.php/Page/index/id/12">Business cooperation</a></li>
+        <li><a href="{$SITE_URL}/index.php/Page/index/id/13">Exhibition</a></li>
+        <li><a href="{$SITE_URL}/index.php/Page/index/id/14">Business Service</a></li>
+        <li><a href="">Forums</a></li>
+        <li><a href="{$SITE_URL}/index.php/Products/product/id/6?l=zh-cn">ProductPage(test)</a></li>
+        <li><a href="{$SITE_URL}/admin.php">Admin Area(test)</a></li>
+        <li><a href="{$SITE_URL}/biz.php">Biz Area(test)</a></li>
+        <li><a href="{$SITE_URL}/index.php?s=Search/index/type/1/keywords/aa">Search(test)</a></li>
+      </ul>
+    </div>
+    <div class="search_bar">
+      <form action="{$SITE_URL}/index.php/index.php/Search/index">
+        <input type="hidden" name="type" value="1" />
+        <input type="text" name="keywords" value="{$Think.get.keywords}" />
+        <select name="region">
+          <option value="">Select Country/Region</option>
+          <foreach name="all_regions" item="vo" > <option value="{$vo.region_code}"  
+            <eq name="Think.get.region" value="$vo.region_code"> selected="selected" </eq>
+            >{$vo.region_country}/{$vo.region_province}
+            </option>
+          </foreach>
+        </select>
+        <?php //*/ ?>
+        <input type="submit" value="Submit" />
+      </form>
+      <?php /* ?>
        <a href="" class="search_btn">Search Now</a>
        
        <a href="" class="search_btn2">Advance Search >></a>
        <?php //*/ ?>
     </div>
-  
-  
-  </div><!-- EO w960 -->
-</div> <!-- EO Header -->
-
+  </div>
+  <!-- EO w960 --> 
+</div>
+<!-- EO Header -->
 
 <div id="content">
 <div class="w960">
