@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <?php /* 
 <!-- start: include -->
 		<!-- start: include jquery & jquery ui -->
@@ -23,66 +22,61 @@
 <!-- end: include -->
 
 //*/ ?>
-
 <link href="<?php echo ($SITE_URL); ?>/public/jack/forindex/css/style.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jack/forindex/js/jquery.js"></script>
-   
-        
 <title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
-
-
 <div id="header">
-		<div class="w960">
-    <div class="login_info">
-    			 <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome <?php echo ($_SESSION['user']['user_name']); ?>, <a href="<?php echo ($SITE_URL); ?>/index.php?s=Public/logout">Sign out</a> | <a href="<?php echo ($SITE_URL); ?>/admin.php">Go to admin area</a> | <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/15">Contact Us</a>
-  		</div>
-  <a href="<?php echo ($SITE_URL); ?>">  <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
-  
-<div class="menu">
-    <ul>
-      <li class="selected"><a href="">Products</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/12">Business cooperation</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/13">Exhibition</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/14">Business Service</a></li>
-      <li><a href="">Forums</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/index.php/Products/product/id/6?l=zh-cn">ProductPage(test)</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/admin.php">Admin Area(test)</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/biz.php">Biz Area(test)</a></li>
-      <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Search/index/type/1/keywords/aa">Search(test)</a></li>
-      
-   </ul>
-  </div>
-  
-<div class="search_bar">
-<form action="<?php echo ($SITE_URL); ?>/index.php/index.php/Search/index">
-	   <input type="hidden" name="type" value="1" />
-       <input type="text" name="keywords" value="<?php echo ($_GET['keywords']); ?>" />
-       <select name="region">
-       		<option value="">Select Country/Region</option>
-            <?php if(is_array($all_regions)): foreach($all_regions as $key=>$vo): ?><option value="<?php echo ($vo["region_code"]); ?>"  <?php if(($_GET['region'])  ==  $vo["region_code"]): ?>selected="selected"<?php endif; ?> ><?php echo ($vo["region_country"]); ?>/<?php echo ($vo["region_province"]); ?></option><?php endforeach; endif; ?>
-            
-       </select>
-       <?php //*/ ?>
-       <input type="submit" value="Submit" />
-</form> 
-       <?php /* ?>
+  <div class="w960">
+    <div class="login_info"> 
+    	<?php if(!empty($_SESSION['user'])): ?><img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome <?php echo ($_SESSION['user']['user_name']); ?>, <a href="<?php echo ($SITE_URL); ?>/index.php?s=Public/logout">Sign out</a><?php endif; ?>
+        <?php if(empty($_SESSION['user'])): ?><a href="<?php echo ($SITE_URL); ?>/public/register">Join Free</a><?php endif; ?>
+         | <a href="<?php echo ($SITE_URL); ?>/admin.php">Go to admin area</a> | <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/15">Contact Us</a> </div>
+    <a href="<?php echo ($SITE_URL); ?>"> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
+    <div class="menu">
+      <ul>
+        <li class="selected"><a href="">Products</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/12">Business cooperation</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/13">Exhibition</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/14">Business Service</a></li>
+        <li><a href="">Forums</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php/Products/product/id/6?l=zh-cn">ProductPage(test)</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/admin.php">Admin Area(test)</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/biz.php">Biz Area(test)</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Search/index/type/1/keywords/aa">Search(test)</a></li>
+      </ul>
+    </div>
+    <div class="search_bar">
+      <form action="<?php echo ($SITE_URL); ?>/index.php/index.php/Search/index">
+        <input type="hidden" name="type" value="1" />
+        <input type="text" name="keywords" value="<?php echo ($_GET['keywords']); ?>" />
+        <select name="region">
+          <option value="">Select Country/Region</option>
+          <?php if(is_array($all_regions)): foreach($all_regions as $key=>$vo): ?><option value="<?php echo ($vo["region_code"]); ?>"  
+            <?php if(($_GET['region'])  ==  $vo["region_code"]): ?>selected="selected"<?php endif; ?>
+            ><?php echo ($vo["region_country"]); ?>/<?php echo ($vo["region_province"]); ?>
+            </option><?php endforeach; endif; ?>
+        </select>
+        <?php //*/ ?>
+        <input type="submit" value="Submit" />
+      </form>
+      <?php /* ?>
        <a href="" class="search_btn">Search Now</a>
        
        <a href="" class="search_btn2">Advance Search >></a>
        <?php //*/ ?>
     </div>
-  
-  
-  </div><!-- EO w960 -->
-</div> <!-- EO Header -->
-
+  </div>
+  <!-- EO w960 --> 
+</div>
+<!-- EO Header -->
 
 <div id="content">
 <div class="w960">
+
 <p> </p>
 <div id="page_left">
   <div class="left_bar">
