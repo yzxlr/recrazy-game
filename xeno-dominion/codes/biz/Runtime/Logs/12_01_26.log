@@ -1,0 +1,52 @@
+[ 2012-01-26T21:51:19-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.064579s ]
+[ 2012-01-26T21:51:19-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-26T21:51:19-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-03 00:00:00') AND (`time` >= '2012-01-26 00:00:00')  ) ORDER BY time ASC [ RunTime:0.009620s ]
+[ 2012-01-26T21:51:19-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-26T21:51:19-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-27 00:00:00') AND (`time` >= '2012-01-26 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000271s ]
+[ 2012-01-26T21:51:19-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-26T21:51:19-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-28 00:00:00') AND (`time` >= '2012-01-27 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000238s ]
+[ 2012-01-26T21:51:19-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-26T21:51:19-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-03 00:00:00') AND (`time` >= '2012-01-28 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000225s ]
+[ 2012-01-26T21:51:36-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-01-26T21:51:36-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 149 行.
+[ 2012-01-26T21:51:36-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 179 行.
+[ 2012-01-26T21:51:37-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-26T21:51:37-05:00 ] NOTIC: [8] Undefined variable: data 3f0a5e0180fdf3c6687d79502425d559.php 第 152 行.
+[ 2012-01-26T21:51:37-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 169 行.
+[ 2012-01-26T21:51:37-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 255 行.
+[ 2012-01-26T21:51:37-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 285 行.
+[ 2012-01-26T21:51:39-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T21:52:22-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T21:52:56-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T21:52:57-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T21:53:12-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T21:53:14-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T22:57:00-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T22:57:16-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T22:58:12-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:02:23-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:03:52-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:04:15-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:06:07-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:06:12-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T23:06:20-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:06:35-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T23:07:21-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T23:07:23-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:07:24-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T23:07:25-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:07:28-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T23:07:32-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:07:44-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-26T23:07:45-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T23:07:46-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-26T23:07:46-05:00 ] NOTIC: [8] Undefined variable: data 3f0a5e0180fdf3c6687d79502425d559.php 第 152 行.
+[ 2012-01-26T23:07:46-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 169 行.
+[ 2012-01-26T23:07:46-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 255 行.
+[ 2012-01-26T23:07:46-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 285 行.
+[ 2012-01-26T23:07:47-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-26T23:07:49-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-26T23:07:49-05:00 ] NOTIC: [8] Undefined variable: data 3f0a5e0180fdf3c6687d79502425d559.php 第 152 行.
+[ 2012-01-26T23:07:49-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 169 行.
+[ 2012-01-26T23:07:49-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 255 行.
+[ 2012-01-26T23:07:49-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 285 行.

@@ -31,7 +31,7 @@
   <div class="w960">
     <div class="login_info"> 
     	<?php if(!empty($_SESSION['user'])): ?><img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome <?php echo ($_SESSION['user']['user_name']); ?>, <a href="<?php echo ($SITE_URL); ?>/index.php?s=Public/logout">Sign out</a><?php endif; ?>
-        <?php if(empty($_SESSION['user'])): ?><a href="<?php echo ($SITE_URL); ?>/public/register">Join Free</a><?php endif; ?>
+        <?php if(empty($_SESSION['user'])): ?><a href="<?php echo ($SITE_URL); ?>/index.php/Public/login">Sign In</a><?php endif; ?>
          | <a href="<?php echo ($SITE_URL); ?>/admin.php">Go to admin area</a> | <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/15">Contact Us</a> </div>
     <a href="<?php echo ($SITE_URL); ?>"> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
     <div class="menu">
