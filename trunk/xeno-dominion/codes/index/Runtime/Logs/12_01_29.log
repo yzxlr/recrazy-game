@@ -1,0 +1,112 @@
+[ 2012-01-29T16:04:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004866s ]
+[ 2012-01-29T16:04:11-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000468s ]
+[ 2012-01-29T16:04:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004964s ]
+[ 2012-01-29T16:04:11-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.001960s ]
+[ 2012-01-29T16:04:11-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005261s ]
+[ 2012-01-29T16:04:11-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '18' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000423s ]
+[ 2012-01-29T16:04:11-05:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductsAction.class.php 第 43 行.
+[ 2012-01-29T16:04:11-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('18') ) LIMIT 1  [ RunTime:0.001709s ]
+[ 2012-01-29T16:04:11-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.* FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('18') ) LIMIT 0,25  [ RunTime:0.000707s ]
+[ 2012-01-29T16:04:11-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 55 行.
+[ 2012-01-29T16:04:11-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:04:11-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:04:11-05:00 ] NOTIC: [8] Undefined index: name 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 160 行.
+[ 2012-01-29T16:06:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003586s ]
+[ 2012-01-29T16:06:27-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000404s ]
+[ 2012-01-29T16:06:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003525s ]
+[ 2012-01-29T16:06:27-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000922s ]
+[ 2012-01-29T16:06:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.003961s ]
+[ 2012-01-29T16:06:27-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '3' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000394s ]
+[ 2012-01-29T16:06:27-05:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductsAction.class.php 第 43 行.
+[ 2012-01-29T16:06:27-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('3') ) LIMIT 1  [ RunTime:0.000354s ]
+[ 2012-01-29T16:06:27-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.* FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('3') ) LIMIT 0,25  [ RunTime:0.000651s ]
+[ 2012-01-29T16:06:27-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 55 行.
+[ 2012-01-29T16:06:27-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:27-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:27-05:00 ] NOTIC: [8] Undefined index: name 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 160 行.
+[ 2012-01-29T16:06:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003703s ]
+[ 2012-01-29T16:06:28-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000441s ]
+[ 2012-01-29T16:06:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003727s ]
+[ 2012-01-29T16:06:28-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000851s ]
+[ 2012-01-29T16:06:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.003873s ]
+[ 2012-01-29T16:06:29-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '18' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000382s ]
+[ 2012-01-29T16:06:29-05:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductsAction.class.php 第 43 行.
+[ 2012-01-29T16:06:29-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('18') ) LIMIT 1  [ RunTime:0.000364s ]
+[ 2012-01-29T16:06:29-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.* FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('18') ) LIMIT 0,25  [ RunTime:0.000627s ]
+[ 2012-01-29T16:06:29-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 55 行.
+[ 2012-01-29T16:06:29-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:29-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:29-05:00 ] NOTIC: [8] Undefined index: name 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 160 行.
+[ 2012-01-29T16:06:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003752s ]
+[ 2012-01-29T16:06:30-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000443s ]
+[ 2012-01-29T16:06:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003931s ]
+[ 2012-01-29T16:06:30-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000998s ]
+[ 2012-01-29T16:06:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004143s ]
+[ 2012-01-29T16:06:30-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '3' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000385s ]
+[ 2012-01-29T16:06:30-05:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductsAction.class.php 第 43 行.
+[ 2012-01-29T16:06:30-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('3') ) LIMIT 1  [ RunTime:0.000351s ]
+[ 2012-01-29T16:06:30-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.* FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('3') ) LIMIT 0,25  [ RunTime:0.000498s ]
+[ 2012-01-29T16:06:30-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 55 行.
+[ 2012-01-29T16:06:30-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:30-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:30-05:00 ] NOTIC: [8] Undefined index: name 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 160 行.
+[ 2012-01-29T16:06:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003561s ]
+[ 2012-01-29T16:06:31-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000430s ]
+[ 2012-01-29T16:06:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003687s ]
+[ 2012-01-29T16:06:31-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000983s ]
+[ 2012-01-29T16:06:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004026s ]
+[ 2012-01-29T16:06:31-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '17' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000453s ]
+[ 2012-01-29T16:06:31-05:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductsAction.class.php 第 43 行.
+[ 2012-01-29T16:06:31-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('17') ) LIMIT 1  [ RunTime:0.000473s ]
+[ 2012-01-29T16:06:31-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.* FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('17') ) LIMIT 0,25  [ RunTime:0.000426s ]
+[ 2012-01-29T16:06:31-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 55 行.
+[ 2012-01-29T16:06:31-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:31-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:31-05:00 ] NOTIC: [8] Undefined index: name 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 160 行.
+[ 2012-01-29T16:06:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003525s ]
+[ 2012-01-29T16:06:32-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000405s ]
+[ 2012-01-29T16:06:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004011s ]
+[ 2012-01-29T16:06:32-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000932s ]
+[ 2012-01-29T16:06:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004058s ]
+[ 2012-01-29T16:06:32-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '3' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000384s ]
+[ 2012-01-29T16:06:32-05:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductsAction.class.php 第 43 行.
+[ 2012-01-29T16:06:32-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('3') ) LIMIT 1  [ RunTime:0.000467s ]
+[ 2012-01-29T16:06:32-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.* FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('3') ) LIMIT 0,25  [ RunTime:0.000461s ]
+[ 2012-01-29T16:06:32-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 55 行.
+[ 2012-01-29T16:06:32-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:32-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:32-05:00 ] NOTIC: [8] Undefined index: name 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 160 行.
+[ 2012-01-29T16:06:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004085s ]
+[ 2012-01-29T16:06:33-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000457s ]
+[ 2012-01-29T16:06:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003768s ]
+[ 2012-01-29T16:06:33-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000891s ]
+[ 2012-01-29T16:06:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004007s ]
+[ 2012-01-29T16:06:33-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '18' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000393s ]
+[ 2012-01-29T16:06:33-05:00 ] NOTIC: [2] Invalid argument supplied for foreach() ProductsAction.class.php 第 43 行.
+[ 2012-01-29T16:06:33-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('18') ) LIMIT 1  [ RunTime:0.000457s ]
+[ 2012-01-29T16:06:33-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.* FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='zh-cn' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='zh-cn' WHERE ( ry_products.cat_id IN ('18') ) LIMIT 0,25  [ RunTime:0.000530s ]
+[ 2012-01-29T16:06:33-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 55 行.
+[ 2012-01-29T16:06:33-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:33-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 59 行.
+[ 2012-01-29T16:06:33-05:00 ] NOTIC: [8] Undefined index: name 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 160 行.
