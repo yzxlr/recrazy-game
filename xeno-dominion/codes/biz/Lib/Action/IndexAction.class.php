@@ -72,6 +72,34 @@ class IndexAction extends CommonAction
 		$this->display();
 	}
 	
+	public function account(){
+		//var_dump($this->user["uid"]);
+		$tb_user_profile = M("usersProfile");
+		if($_POST){
+			if($tb_user_profile->create()){
+				$_POST["user_id"] = $this->user["uid"];
+				$_POST["profile_lang"] = "en-us";
+				if($tb_user_profile->where(array("user_id"=>$this->user["uid"], "profile_lang"=>"en-us"))->save()){
+					$this->success("Update successfully!");
+				}
+				else if($tb_user_profile->add()){
+					$this->success("Success: created new profile");
+				}
+				else{
+					$this->error("Error");
+				}
+			}else{
+				$this->error("Error on create!");
+			}
+		}
+		//1.4
+		$data["tb_user_profile"] = $tb_user_profile -> where(array("user_id"=>$this->user["uid"], "profile_lang"=>"en-us")) -> find();
+		
+		/////var_dump($data);
+		$this->assign("data",$data);
+		$this->display();
+	}
+	
 	
 
 }
