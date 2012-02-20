@@ -1,0 +1,39 @@
+[ 2012-02-20T13:11:48-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.025362s ]
+[ 2012-02-20T13:11:48-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:11:48-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-28 00:00:00') AND (`time` >= '2012-02-20 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000524s ]
+[ 2012-02-20T13:11:48-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:11:48-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-21 00:00:00') AND (`time` >= '2012-02-20 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000286s ]
+[ 2012-02-20T13:11:48-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:11:48-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-22 00:00:00') AND (`time` >= '2012-02-21 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000242s ]
+[ 2012-02-20T13:11:48-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:11:48-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-28 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000383s ]
+[ 2012-02-20T13:11:53-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-02-20T13:11:53-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 149 行.
+[ 2012-02-20T13:11:53-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 179 行.
+[ 2012-02-20T13:17:03-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:17:55-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:18:45-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:19:01-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:19:23-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004302s ]
+[ 2012-02-20T13:19:23-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LIMIT 1  [ RunTime:0.000264s ]
+[ 2012-02-20T13:19:23-05:00 ] SQL: SELECT * FROM `ry_products` LIMIT 0,25  [ RunTime:0.000405s ]
+[ 2012-02-20T13:19:29-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:19:59-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:20:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.003950s ]
+[ 2012-02-20T13:20:30-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:20:30-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-28 00:00:00') AND (`time` >= '2012-02-20 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000407s ]
+[ 2012-02-20T13:20:30-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:20:30-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-21 00:00:00') AND (`time` >= '2012-02-20 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000385s ]
+[ 2012-02-20T13:20:30-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:20:30-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-22 00:00:00') AND (`time` >= '2012-02-21 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000283s ]
+[ 2012-02-20T13:20:30-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-20T13:20:30-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-28 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000255s ]
+[ 2012-02-20T13:20:33-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-02-20T13:20:33-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 149 行.
+[ 2012-02-20T13:20:33-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 179 行.
+[ 2012-02-20T13:20:47-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:21:16-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:21:36-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:21:57-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
+[ 2012-02-20T13:22:04-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/Index.html]
+[ 2012-02-20T13:22:10-05:00 ] ERR: (ThinkException) _TEMPLATE_NOT_EXIST_[./biz/Tpl/default/Product/index.html]
