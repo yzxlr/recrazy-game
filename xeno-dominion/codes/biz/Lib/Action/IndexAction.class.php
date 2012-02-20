@@ -100,6 +100,39 @@ class IndexAction extends CommonAction
 		$this->display();
 	}
 	
+	public function company(){
+		//var_dump($this->user["uid"]);
+		$tb_user_company = M("usersCompany");
+		if($_POST){
+			if($tb_user_company->create()){
+				$_POST["userId"] = $this->user["uid"];
+				/////var_dump($_POST["companySell"]);
+				//if(!empty($_POST["companyType"]))$_POST["companyType"] = json_encode($_POST["companyType"]);
+				if(!empty($_POST["companySell"]))$_POST["companySell"] = json_encode($_POST["companySell"]);
+				if(!empty($_POST["companyBuy"]))$_POST["companyBuy"] = json_encode($_POST["companyBuy"]);
+				/////var_dump($_POST["companySell"]);exit;
+				//companySell
+				if($tb_user_company->where(array("userId"=>$this->user["uid"]))->save()){
+					$this->success("Update successfully!");
+				}
+				else if($tb_user_company->add()){
+					$this->success("Success: created new profile");
+				}
+				else{
+					$this->error("Error");
+				}
+			}else{
+				$this->error("Error on create!");
+			}
+		}
+		//1.4
+		$data["tb_user_company"] = $tb_user_company -> where(array("userId"=>$this->user["uid"])) -> find();
+		
+		var_dump($data);
+		$this->assign("data",$data);
+		$this->display();
+	}
+	
 	
 
 }

@@ -72,7 +72,7 @@
 
 <div id="wrapper">
 <div id="content">
-  <form action="" method="post" id="GroupListForm">
+  <form action="#" method="post" id="GroupListForm">
     <input type="hidden" value="yzfdvn2ct1bt" name="_csrf_token_">
     <input type="hidden" value="/organization/manage_person_profile_action" name="action">
     <input type="hidden" value="anything" name="event_submit_do_edit">
