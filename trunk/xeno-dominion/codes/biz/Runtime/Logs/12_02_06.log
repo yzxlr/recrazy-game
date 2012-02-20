@@ -1,0 +1,32 @@
+[ 2012-02-06T20:59:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.056340s ]
+[ 2012-02-06T20:59:31-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004253s ]
+[ 2012-02-06T20:59:31-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.067769s ]
+[ 2012-02-06T20:59:31-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000388s ]
+[ 2012-02-06T20:59:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.032521s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-14 00:00:00') AND (`time` >= '2012-02-06 00:00:00')  ) ORDER BY time ASC [ RunTime:0.007282s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-07 00:00:00') AND (`time` >= '2012-02-06 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000279s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-08 00:00:00') AND (`time` >= '2012-02-07 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000248s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-14 00:00:00') AND (`time` >= '2012-02-08 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000251s ]
+[ 2012-02-06T20:59:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.004042s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-14 00:00:00') AND (`time` >= '2012-02-06 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000473s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-07 00:00:00') AND (`time` >= '2012-02-06 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000253s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-08 00:00:00') AND (`time` >= '2012-02-07 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000231s ]
+[ 2012-02-06T20:59:32-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-06T20:59:32-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-02-14 00:00:00') AND (`time` >= '2012-02-08 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000238s ]
+[ 2012-02-06T20:59:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.004211s ]
+[ 2012-02-06T20:59:47-05:00 ] NOTIC: [8] Undefined variable: data ScheduleAction.class.php 第 44 行.
+[ 2012-02-06T20:59:56-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-02-06T20:59:56-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 149 行.
+[ 2012-02-06T20:59:56-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 179 行.
+[ 2012-02-06T21:00:02-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-02-06T21:00:04-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.031303s ]
+[ 2012-02-06T21:00:04-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) AND ( `profile_lang` = 'en-us' ) LIMIT 1  [ RunTime:0.006750s ]
+[ 2012-02-06T21:00:05-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-02-06T21:00:06-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
