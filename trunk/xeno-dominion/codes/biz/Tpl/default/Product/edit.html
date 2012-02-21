@@ -29,7 +29,7 @@
 			//location="{$SITE_URL}/admin.php?s=/Product/del_img/pid/{$Think.get.pid}/img_name/<?php echo urlencode($vo['imagename']); ?>";
 			$.ajax({ 
 					type: "post", 
-					url: "{$SITE_URL}/admin.php?s=/Product/del_img/pid/{$Think.get.pid}/img_name/"+img_name, 
+					url: "{$SITE_URL}/biz.php?s=/Product/del_img/pid/{$Think.get.pid}/img_name/"+img_name, 
 					dataType: "json", 
 					success: function (data) { 
 							rv = data.data;
@@ -72,7 +72,7 @@
     <td width="150"><div align="right">Product Name&nbsp; </div></td>
     <td width=""><input name="name" id="product_name_id" type="text" size="30" value="{$data.tb_products.name}" />&nbsp; <font color="#FF0000">*</font></td>
   </tr>
-  <tr bgcolor="#FFFFFF">
+  <tr bgcolor="#FFFFFF" style="display:none;">
     <td width="150"><div align="right">User ID&nbsp; </div></td>
     <td width="">
 		<input name="user_id" value="" />

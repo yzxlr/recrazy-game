@@ -21,7 +21,9 @@ class ProductAction extends CommonAction
 		//0.9 massenger
 		$msg = array("title"=>"List Products"); 
 		
+
 		//1. Table product
+		$condition["user_id"]=$user["uid"];
 		$count = $tb_products ->where($condition) ->count();
 		$Page = new Page($count,25);
 		$show = $Page->show();
@@ -38,20 +40,20 @@ class ProductAction extends CommonAction
 	public function delete(){
 		$user = $_SESSION["user"];
 		$tb_products = M("products");
-		if($tb_products->where(array("pid"=>$_GET["pid"]))->delete()){
+		if($tb_products->where(array("pid"=>$_GET["pid"],"user_id"=>$user["uid"]))->delete()){
 			$this->assign("waitSecond", "0"); 
-			$this->assign("jumpUrl", SITE_URL."/admin.php?s=Product/index"); 
+			$this->assign("jumpUrl", SITE_URL."/biz.php?s=Product/index"); 
 			$this->success("Deleted!");
 		}else{
 			$this->assign("waitSecond", "0"); 
-			$this->assign("jumpUrl", SITE_URL."/admin.php?s=Product/index"); 
+			$this->assign("jumpUrl", SITE_URL."/biz.php?s=Product/index"); 
 			$this->error("Error on deleting");
 		}
 	}
 	
 	public function add(){
 		//1 display Category
-		require(CMS_PATH."/admin/Common/class.php");
+		require(CMS_PATH."/biz/Common/class.php");
 		
 		$Tree = new Tree('Root Category');
 		
@@ -118,7 +120,8 @@ class ProductAction extends CommonAction
 				$tb_products->time_add = time();
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
 				$tb_products->time_expire = $_POST["time_expire"];
-				if(empty($_POST["user_id"])) $tb_products->user_id = $this->user["uid"];
+				//if(empty($_POST["user_id"])) $tb_products->user_id = $this->user["uid"];
+				$tb_products->user_id = $this->user["uid"];
 				if($tb_products->add()){
 					$this->success("Insert Successfully!");
 				}else{
@@ -210,7 +213,8 @@ class ProductAction extends CommonAction
 				$tb_products->time_modify = time();
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
 				$tb_products->time_expire = $_POST["time_expire"];
-				if(empty($_POST["user_id"])) unset($tb_products->user_id);
+				//if(empty($_POST["user_id"])) unset($tb_products->user_id);
+				$tb_products->user_id = $user["uid"];
 				if($tb_products->save()){
 					$this->success("Insert Successfully!");
 				}else{
