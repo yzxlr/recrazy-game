@@ -15,7 +15,7 @@ class CommonAction extends Action
 		$port = $_SERVER["SERVER_PORT"]==80?'':':'.$_SERVER["SERVER_PORT"];  
 		$url = $http.$_SERVER['SERVER_NAME'].$port;//.$_SERVER["REQUEST_URI"];
 		$this->assign("SITE_URL",$url);
-		//define("SITE_URL",$url);
+		define("SITE_URL",$url);
 		
 		//1 Validate User (only biz can login at here
 		if(!empty($_SESSION["user"])){
@@ -32,6 +32,11 @@ class CommonAction extends Action
 			//$this->redirect('Public/login', array(), 3, 'Please login first!');
 		}
 		
+		//2 load location
+		$tb_region = M("region");
+		$regions = $tb_region -> where(array("region_lang_code"=>"en-us")) -> select();
+		$this->assign("all_regions",$regions);
+		/////var_dump($regions);
 	}
 	
 	/*
