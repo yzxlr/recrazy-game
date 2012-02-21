@@ -44,10 +44,7 @@
                      <a href="#">Messenge &amp; Condition</a>
                   </li>
                   <li>   
-                     <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/buying">Buying</a>
-                   </li>
-                   <li>  
-                     <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/selling">Selling</a>
+                     <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index">My Products</a>
                    </li>
                    <li> 
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/company">Company</a>
