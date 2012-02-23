@@ -1,0 +1,568 @@
+[ 2012-02-22T20:24:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.061371s ]
+[ 2012-02-22T20:24:23-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004335s ]
+[ 2012-02-22T20:24:23-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000526s ]
+[ 2012-02-22T20:24:23-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000428s ]
+[ 2012-02-22T20:24:25-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.121644s ]
+[ 2012-02-22T20:24:25-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000645s ]
+[ 2012-02-22T20:24:25-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.032643s ]
+[ 2012-02-22T20:24:25-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:24:25-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-01 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000647s ]
+[ 2012-02-22T20:24:25-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:24:25-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-23 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000448s ]
+[ 2012-02-22T20:24:25-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:24:25-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-24 00:00:00') AND (`time` >= '2012-02-23 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000270s ]
+[ 2012-02-22T20:24:25-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:24:25-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-01 00:00:00') AND (`time` >= '2012-02-24 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000246s ]
+[ 2012-02-22T20:24:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004000s ]
+[ 2012-02-22T20:24:27-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000476s ]
+[ 2012-02-22T20:24:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.037414s ]
+[ 2012-02-22T20:24:27-05:00 ] SQL: SELECT * FROM `ry_users_company` WHERE ( `userId` = '1' ) LIMIT 1  [ RunTime:0.000528s ]
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 106 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 107 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 108 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 109 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 110 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 111 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 112 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 113 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 114 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 115 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 116 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 117 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 118 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 119 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 120 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 121 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 122 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 123 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 124 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 125 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 126 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 127 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 128 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 129 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 130 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 131 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 132 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 133 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 134 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 135 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 136 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 137 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 138 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 139 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 140 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 141 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 142 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 143 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 144 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 145 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 146 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 147 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 148 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 149 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 150 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 151 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 152 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 153 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 154 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 155 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 156 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 157 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 158 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 159 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 160 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 161 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 162 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 163 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 164 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 165 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 166 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 167 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 168 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 169 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 170 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 171 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 172 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 173 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 174 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 175 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 176 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 177 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 178 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 179 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 180 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 181 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 182 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 183 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 184 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 185 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 186 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 187 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 188 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 189 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 190 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 191 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 192 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 193 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 194 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 195 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 196 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 197 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 198 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 199 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 200 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 201 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 202 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 203 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 204 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 205 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 206 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 207 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 208 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 209 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 210 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 211 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 212 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 213 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 214 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 215 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 216 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 217 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 218 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 219 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 220 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 221 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 222 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 223 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 224 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 225 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 226 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 227 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 228 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 229 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 230 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 231 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 232 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 233 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 234 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 235 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 236 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 237 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 238 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 239 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 240 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 241 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 242 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 243 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 244 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 245 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 246 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 247 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 248 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 249 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 250 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 251 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 252 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 253 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 254 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 255 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 256 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 257 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 258 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 259 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 260 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 261 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 262 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 263 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 264 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 265 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 266 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 267 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 268 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 269 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 270 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 271 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 272 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 273 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 274 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 275 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 276 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 277 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 278 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 279 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 280 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 281 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 282 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 283 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 284 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 285 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 286 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 287 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 288 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 289 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 290 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 291 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 292 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 293 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 294 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 295 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 296 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 297 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 298 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 299 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 300 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 301 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 302 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 303 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 304 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 305 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 306 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 307 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 308 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 309 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 310 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 311 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 312 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 313 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 314 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 315 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 316 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 317 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 318 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 319 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 320 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 321 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 322 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 323 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 324 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 325 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 326 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 327 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 328 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 329 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 330 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 331 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 332 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 333 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 334 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 335 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 336 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 337 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 338 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 339 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 340 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 341 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 342 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 343 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 344 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 345 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 346 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 347 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 348 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 349 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 350 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 351 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 352 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 353 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 354 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 355 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 356 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 357 行.
+[ 2012-02-22T20:24:27-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 358 行.
+[ 2012-02-22T20:25:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004120s ]
+[ 2012-02-22T20:25:05-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000343s ]
+[ 2012-02-22T20:25:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004281s ]
+[ 2012-02-22T20:25:05-05:00 ] SQL: SELECT * FROM `ry_users_company` WHERE ( `userId` = '1' ) LIMIT 1  [ RunTime:0.000357s ]
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 108 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 109 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 110 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 111 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 112 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 113 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 114 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 115 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 116 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 117 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 118 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 119 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 120 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 121 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 122 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 123 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 124 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 125 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 126 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 127 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 128 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 129 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 130 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 131 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 132 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 133 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 134 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 135 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 136 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 137 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 138 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 139 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 140 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 141 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 142 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 143 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 144 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 145 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 146 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 147 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 148 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 149 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 150 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 151 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 152 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 153 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 154 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 155 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 156 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 157 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 158 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 159 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 160 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 161 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 162 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 163 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 164 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 165 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 166 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 167 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 168 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 169 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 170 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 171 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 172 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 173 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 174 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 175 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 176 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 177 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 178 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 179 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 180 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 181 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 182 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 183 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 184 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 185 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 186 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 187 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 188 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 189 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 190 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 191 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 192 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 193 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 194 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 195 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 196 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 197 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 198 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 199 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 200 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 201 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 202 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 203 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 204 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 205 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 206 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 207 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 208 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 209 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 210 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 211 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 212 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 213 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 214 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 215 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 216 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 217 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 218 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 219 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 220 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 221 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 222 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 223 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 224 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 225 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 226 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 227 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 228 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 229 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 230 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 231 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 232 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 233 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 234 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 235 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 236 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 237 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 238 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 239 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 240 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 241 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 242 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 243 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 244 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 245 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 246 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 247 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 248 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 249 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 250 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 251 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 252 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 253 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 254 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 255 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 256 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 257 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 258 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 259 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 260 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 261 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 262 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 263 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 264 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 265 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 266 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 267 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 268 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 269 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 270 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 271 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 272 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 273 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 274 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 275 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 276 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 277 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 278 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 279 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 280 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 281 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 282 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 283 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 284 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 285 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 286 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 287 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 288 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 289 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 290 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 291 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 292 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 293 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 294 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 295 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 296 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 297 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 298 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 299 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 300 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 301 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 302 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 303 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 304 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 305 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 306 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 307 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 308 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 309 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 310 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 311 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 312 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 313 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 314 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 315 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 316 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 317 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 318 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 319 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 320 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 321 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 322 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 323 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 324 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 325 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 326 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 327 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 328 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 329 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 330 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 331 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 332 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 333 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 334 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 335 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 336 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 337 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 338 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 339 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 340 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 341 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 342 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 343 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 344 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 345 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 346 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 347 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 348 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 349 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 350 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 351 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 352 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 353 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 354 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 355 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 356 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 357 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 358 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 359 行.
+[ 2012-02-22T20:25:05-05:00 ] NOTIC: [8] Undefined index: tb_user_profile fca0a88235b390ef0264fc041257369f.php 第 360 行.
+[ 2012-02-22T20:25:07-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004186s ]
+[ 2012-02-22T20:25:07-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000331s ]
+[ 2012-02-22T20:25:07-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.026145s ]
+[ 2012-02-22T20:25:07-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `user_id` = '1' ) LIMIT 1  [ RunTime:0.000364s ]
+[ 2012-02-22T20:25:07-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `user_id` = '1' ) LIMIT 0,25  [ RunTime:0.000473s ]
+[ 2012-02-22T20:25:09-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003792s ]
+[ 2012-02-22T20:25:09-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000360s ]
+[ 2012-02-22T20:25:09-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.098254s ]
+[ 2012-02-22T20:25:09-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) AND ( `profile_lang` = 'en-us' ) LIMIT 1  [ RunTime:0.000601s ]
+[ 2012-02-22T20:25:09-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-02-22T20:25:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004050s ]
+[ 2012-02-22T20:25:14-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000449s ]
+[ 2012-02-22T20:25:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.004202s ]
+[ 2012-02-22T20:25:14-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:14-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-01 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000454s ]
+[ 2012-02-22T20:25:14-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:14-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-23 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000440s ]
+[ 2012-02-22T20:25:14-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:14-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-24 00:00:00') AND (`time` >= '2012-02-23 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000271s ]
+[ 2012-02-22T20:25:14-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:14-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-01 00:00:00') AND (`time` >= '2012-02-24 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000404s ]
+[ 2012-02-22T20:25:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003968s ]
+[ 2012-02-22T20:25:17-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000333s ]
+[ 2012-02-22T20:25:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.004075s ]
+[ 2012-02-22T20:25:17-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` WHERE ( `user_id` = '1' ) LIMIT 1  [ RunTime:0.000337s ]
+[ 2012-02-22T20:25:17-05:00 ] SQL: SELECT * FROM `ry_products` WHERE ( `user_id` = '1' ) LIMIT 0,25  [ RunTime:0.000437s ]
+[ 2012-02-22T20:25:18-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004087s ]
+[ 2012-02-22T20:25:18-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000357s ]
+[ 2012-02-22T20:25:18-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.003787s ]
+[ 2012-02-22T20:25:18-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:18-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-01 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000379s ]
+[ 2012-02-22T20:25:18-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:18-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-23 00:00:00') AND (`time` >= '2012-02-22 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000289s ]
+[ 2012-02-22T20:25:18-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:18-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-02-24 00:00:00') AND (`time` >= '2012-02-23 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000267s ]
+[ 2012-02-22T20:25:18-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-02-22T20:25:18-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-01 00:00:00') AND (`time` >= '2012-02-24 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000349s ]
