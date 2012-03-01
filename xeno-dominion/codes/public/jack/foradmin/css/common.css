@@ -107,8 +107,12 @@ h5.website {  background:url(../images/home_icon.png) 0 0 no-repeat; padding-lef
 .schedule_table td { border-bottom:#ccc solid 1px; }
 
 
+table.list_table { background:#eee; margin:10px 0; border:#ddd solid 1px;   }
+table.list_table td { padding:5px; }
+table.list_table td  a { color:#069; }
 
-
+table.tables th { text-align:right; padding-right:20px;  }
+table.tables  td { padding:5px; }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                       Buttons Style
