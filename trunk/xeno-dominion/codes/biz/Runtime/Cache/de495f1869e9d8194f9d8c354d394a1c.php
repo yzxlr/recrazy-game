@@ -54,9 +54,11 @@
                    <li>
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/account">Account</a>
                    </li>
+                   <!--
                    <li>
                      <a href="#">Service Package</a>
                    </li>
+                   -->
                    <li> 
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/fraud">Fraud Report</a>
                 	 </li>
@@ -70,20 +72,101 @@
 </div>
 
 <div id="wrapper">
+
+    <div id="content_left">
+    		<div class="out_box">
+         <h3>Quick Access</h3>
+         
+         <ul class="quick_links">
+         
+        
+         
+            <li><a href="">Check  Messages</a></li>
+            <li><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index">Display New Products</a></li>
+       
+   
+            <li><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/account">My Account</a></li>
+          
+           
+         		<li><a href=" <?php echo ($SITE_URL); ?>">Go to Index</a></li>
+         
+         </ul>
+     </div>     
+         
+       <div class="out_box">
+              
+             <h5 class="schedule">Schedule       		  <a class="btn_s fr"  href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add"><span>Add ++</span></a></h5>
+       
+             
+                   
+                      <table class="schedule_table">
+                       <thead>
+                           <tr>
+                               <th colspan="2" style="text-align:left; ">Today</th>
+                              </tr>
+                          </thead>
+                       <tbody>
+                          <?php if(is_array($data["tb_task_today"])): foreach($data["tb_task_today"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                   
+                           <tr>
+                               <th colspan="2"  style="text-align:left;" >Tomorrow</th>
+                              </tr>
+                     
+                          <?php if(is_array($data["tb_task_tomorrow"])): foreach($data["tb_task_tomorrow"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                    
+                           <tr>
+                               <th colspan="2"  style="text-align:left; ">Next Week</th>
+                              </tr>
+                      
+                          <?php if(is_array($data["tb_task_nextweek"])): foreach($data["tb_task_nextweek"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                          </tbody>
+                      </table>
+                      
+                           
+                      
+               
+               </div>   
+         
+         
+      <div class="out_box">   
+      			<img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/professional2.jpg"  width="180" />
+      <!--
+      			<img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/star.png"  />
+         -->
+         <p style="color:#069; font-weight:bold; ">Different serice package will heko you get best benefit in the shortest time and lowest cost.</p>
+         
+         <a href="" style="cursor:default;" class="btn1 r3"><span class="r3">Coming Soon</span></a><br />
+								<!--
+         <a href=""><strong>Learn More >></strong></a>        
+         -->
+       </div>
+       
+    </div>  
+
+
 <div id="content">
   <form action="#" method="post" id="GroupListForm">
     <input type="hidden" value="yzfdvn2ct1bt" name="_csrf_token_">
     <input type="hidden" value="/organization/manage_person_profile_action" name="action">
     <input type="hidden" value="anything" name="event_submit_do_edit">
     <input type="hidden" value="" name="src">
-    <h1 class="guide">Edit Member Profile</h1>
+    <h2>Edit Member Profile</h2>
     <style media="all" type="text/css">
 		#ReasonList{line-height:150%;font-size:10px!important;}
 		#ReasonList p{margin:0;font-size:10px!important;}
 		#ReasonList br{line-height:5px; margin:0; padding:0; font-size:0;}
 		</style>
     <div class="board successB" id="successNote"> <b>Note: </b> Modifications to your Member Profile have been approved. Any further modification must be submitted again for review. </div>
-    <div align="right"><span class="required">required information</span></div>
+    <div><span class="required">required information</span></div>
     <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tables V">
       <tbody>
         <tr>
@@ -108,23 +191,24 @@
             <p style="margin:3px 0; color:#949494;">(Your alternative email address can be used to receive inquiries so please make sure it is accurate and up-to-date.)</p></td>
         </tr>
         <tr>
-          <th><span class="required">Contact Address:</span></th>
-          <td><table width="100%" cellspacing="0" cellpadding="0" border="0">
-              <tbody>
+          <th><h3><span class="required">Contact Address:</span></h3></th>
+          <td></td>
+        </tr>  
+        
                 <tr>
-                  <td width="23%" valign="top" class="subHead">Street Address:</td>
+                  <th  valign="top" class="subHead">Street Address:</th>
                   <td><input type="text" maxlength="250" size="37" value="<?php echo ($data["tb_user_profile"]["profile_address"]); ?>" name="profile_address"></td>
                 </tr>
                 <tr>
-                  <td valign="top" class="subHead">City:</td>
+                  <th valign="top" class="subHead">City:</th>
                   <td><input type="text" size="37" value="<?php echo ($data["tb_user_profile"]["profile_city"]); ?>" name="profile_city" maxlength="80"></td>
                 </tr>
                 <tr style="" id="provinceWrap">
-                  <td class="subHead">Province/State/County:</td>
+                  <th class="subHead">Province/State/County:</th>
                   <td nowrap=""><input type="text" value="<?php echo ($data["tb_user_profile"]["profile_province"]); ?>" name="profile_province" id="province"></td>
                 </tr>
                 <tr>
-                  <td class="subHead">Country/Region:</td>
+                  <th class="subHead">Country/Region:</th>
                   <td><select name="profile_country" id="countrySelect">
                       <option value="">- Select where your company is located -</option>
                       <option value="AF" <?php if(($data["tb_user_profile"]["profile_country"])  ==  "AF"): ?>selected="selected"<?php endif; ?>> Afghanistan </option>
@@ -383,11 +467,9 @@
                     </select></td>
                 </tr>
                 <tr>
-                  <td valign="top" class="subHead">Zip/Postal Code:</td>
+                  <th valign="top" class="subHead">Zip/Postal Code:</th>
                   <td><input type="text" size="12" value="<?php echo ($data["tb_user_profile"]["profile_zip"]); ?>" maxlength="12" name="profile_zip"></td>
-                </tr>
-              </tbody>
-            </table></td>
+         
         </tr>
         <tr>
           <th><span class="required">Tel:</span></th>

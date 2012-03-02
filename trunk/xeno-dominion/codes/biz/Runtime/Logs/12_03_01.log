@@ -50,3 +50,33 @@
 [ 2012-03-01T21:02:10-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-03-03 00:00:00') AND (`time` >= '2012-03-02 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000352s ]
 [ 2012-03-01T21:02:10-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
 [ 2012-03-01T21:02:10-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-09 00:00:00') AND (`time` >= '2012-03-03 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000281s ]
+[ 2012-03-01T22:22:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004209s ]
+[ 2012-03-01T22:22:20-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000539s ]
+[ 2012-03-01T22:22:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.005781s ]
+[ 2012-03-01T22:22:20-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:22:20-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-09 00:00:00') AND (`time` >= '2012-03-01 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000498s ]
+[ 2012-03-01T22:22:20-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:22:20-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-03-02 00:00:00') AND (`time` >= '2012-03-01 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000276s ]
+[ 2012-03-01T22:22:20-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:22:20-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-03-03 00:00:00') AND (`time` >= '2012-03-02 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000470s ]
+[ 2012-03-01T22:22:20-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:22:20-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-09 00:00:00') AND (`time` >= '2012-03-03 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000415s ]
+[ 2012-03-01T22:22:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003843s ]
+[ 2012-03-01T22:22:22-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000382s ]
+[ 2012-03-01T22:22:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.005568s ]
+[ 2012-03-01T22:22:22-05:00 ] SQL: SELECT * FROM `ry_users_profile` WHERE ( `user_id` = '1' ) AND ( `profile_lang` = 'en-us' ) LIMIT 1  [ RunTime:0.000480s ]
+[ 2012-03-01T22:22:22-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-03-01T22:22:22-05:00 ] NOTIC: [8] Undefined index: tb_task_today de495f1869e9d8194f9d8c354d394a1c.php 第 109 行.
+[ 2012-03-01T22:22:22-05:00 ] NOTIC: [8] Undefined index: tb_task_tomorrow de495f1869e9d8194f9d8c354d394a1c.php 第 118 行.
+[ 2012-03-01T22:22:22-05:00 ] NOTIC: [8] Undefined index: tb_task_nextweek de495f1869e9d8194f9d8c354d394a1c.php 第 127 行.
+[ 2012-03-01T22:25:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003897s ]
+[ 2012-03-01T22:25:02-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000443s ]
+[ 2012-03-01T22:25:02-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.003966s ]
+[ 2012-03-01T22:25:02-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:25:02-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-09 00:00:00') AND (`time` >= '2012-03-01 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000366s ]
+[ 2012-03-01T22:25:02-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:25:02-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-03-02 00:00:00') AND (`time` >= '2012-03-01 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000268s ]
+[ 2012-03-01T22:25:02-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:25:02-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-03-03 00:00:00') AND (`time` >= '2012-03-02 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000440s ]
+[ 2012-03-01T22:25:02-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-03-01T22:25:02-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-03-09 00:00:00') AND (`time` >= '2012-03-03 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000369s ]
