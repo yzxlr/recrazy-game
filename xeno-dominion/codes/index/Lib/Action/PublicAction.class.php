@@ -77,6 +77,32 @@ class PublicAction extends Action
         $this->display();
     }
 	
+	public function register(){
+		$msg = array("title"=>"Register"); 
+		$tb_users = M("users");
+		$tb_users_company = M("usersCompany");
+		$tb_users_profile = M("usersProfile");
+		
+		if($_POST){
+			//var_dump($_POST);
+			if($tb_users->create()){
+				$tb_users->user_password = md5($_POST["user_password"]);
+				$tb_users->user_regtime = date("Y-m-d H:i:s",time());
+				$tb_users->user_updatetime = date("Y-m-d H:i:s",time());
+				if($lastInsId = $tb_users->add()){
+					$this->assign("jumpUrl","index.php/Index/index");
+					$this->success("User added");
+				} else {
+					$this->error("User Name already exist!");
+				}
+			}else{
+				exit($tb_users->getError().' [ <a href="javascript:history.back()">返 回</a> ]');
+			}
+		}
+		
+		$this->display();
+	}
+	
 	public function logout(){
 		$_SESSION["user"]=null;
 		$this->assign("jumpUrl","/index.php?s=Public/login");
