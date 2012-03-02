@@ -54,9 +54,11 @@
                    <li>
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/account">Account</a>
                    </li>
+                   <!--
                    <li>
                      <a href="#">Service Package</a>
                    </li>
+                   -->
                    <li> 
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/fraud">Fraud Report</a>
                 	 </li>
@@ -71,51 +73,55 @@
 
 <div id="wrapper">
 				
- <div id="content_right">
-    <div class="out_box">
-       
-  			 <h5 class="schedule">Schedule       		  <a class="btn_s fr"  href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add"><span>Add ++</span></a></h5>
 
-      
- 	          
-               <table class="schedule_table">
-                <thead>
-                    <tr>
-                        <th colspan="2" style="text-align:left; ">Today</th>
-                       </tr>
-                   </thead>
-                <tbody>
-                   <?php if(is_array($data["tb_task_today"])): foreach($data["tb_task_today"] as $key=>$vo): ?><tr>
-                           <td><?php echo ($vo["time"]); ?></td>
-                           <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
-                       </tr><?php endforeach; endif; ?>
-            
-                    <tr>
-                        <th colspan="2"  style="text-align:left;" >Tomorrow</th>
-                       </tr>
+  <div id="content_right">
+  				<!--
+           <div class="out_box">
               
-                   <?php if(is_array($data["tb_task_tomorrow"])): foreach($data["tb_task_tomorrow"] as $key=>$vo): ?><tr>
-                           <td><?php echo ($vo["time"]); ?></td>
-                           <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
-                       </tr><?php endforeach; endif; ?>
+             <h5 class="schedule">Schedule       		  <a class="btn_s fr"  href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add"><span>Add ++</span></a></h5>
+       
              
-                    <tr>
-                        <th colspan="2"  style="text-align:left; ">Next Week</th>
-                       </tr>
-               
-                   <?php if(is_array($data["tb_task_nextweek"])): foreach($data["tb_task_nextweek"] as $key=>$vo): ?><tr>
-                           <td><?php echo ($vo["time"]); ?></td>
-                           <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
-                       </tr><?php endforeach; endif; ?>
-                   </tbody>
-               </table>
-               
+                   
+                      <table class="schedule_table">
+                       <thead>
+                           <tr>
+                               <th colspan="2" style="text-align:left; ">Today</th>
+                              </tr>
+                          </thead>
+                       <tbody>
+                          <?php if(is_array($data["tb_task_today"])): foreach($data["tb_task_today"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                   
+                           <tr>
+                               <th colspan="2"  style="text-align:left;" >Tomorrow</th>
+                              </tr>
+                     
+                          <?php if(is_array($data["tb_task_tomorrow"])): foreach($data["tb_task_tomorrow"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
                     
-      									
+                           <tr>
+                               <th colspan="2"  style="text-align:left; ">Next Week</th>
+                              </tr>
+                      
+                          <?php if(is_array($data["tb_task_nextweek"])): foreach($data["tb_task_nextweek"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                          </tbody>
+                      </table>
+                      
+                           
+                      
+               
+               </div>
         
-        </div>
         
           <div class="out_box">
+          
           
            <h5 class="website">Website Status</h5>
             <a class="btn_s"  href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add"><span>View My Website</span></a>
@@ -124,32 +130,73 @@
             <img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/webdesign.png"  width="180" />
            <p><a href=""><strong>Learn more >></strong></a></p>
            
+          
           </div>
-         
-    </div>
-
-   
-
-
-
-    <div id="content_left">
+          -->
+    </div>  
+     <div id="content_left">
     		<div class="out_box">
          <h3>Quick Access</h3>
          
          <ul class="quick_links">
-            <li><a href="">Check New Messages</a></li>
-            <li><a href="">Display New Products</a></li>
-            <li><a href="">Smart Product Posting</a></li>
-            <li><a href="">Bath Upload Products</a></li>
-            <li><a href="">Post Buying Requests</a></li>
-            <li><a href="">Check Security Levels</a></li>
-            <li><a href="">Subsribe to Trade Alert</a></li>
-            <li><a href="">Join New Promotions</a></li>
-            <li><a href="">Delivery Address Settings</a></li>
          
+        
+         
+            <li><a href="">Check  Messages</a></li>
+            <li><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index">Display New Products</a></li>
+       
+   
+            <li><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/account">My Account</a></li>
+          
+           
+         		<li><a href=" <?php echo ($SITE_URL); ?>">Go to Index</a></li>
          
          </ul>
      </div>     
+         
+       <div class="out_box">
+              
+             <h5 class="schedule">Schedule       		  <a class="btn_s fr"  href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add"><span>Add ++</span></a></h5>
+       
+             
+                   
+                      <table class="schedule_table">
+                       <thead>
+                           <tr>
+                               <th colspan="2" style="text-align:left; ">Today</th>
+                              </tr>
+                          </thead>
+                       <tbody>
+                          <?php if(is_array($data["tb_task_today"])): foreach($data["tb_task_today"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                   
+                           <tr>
+                               <th colspan="2"  style="text-align:left;" >Tomorrow</th>
+                              </tr>
+                     
+                          <?php if(is_array($data["tb_task_tomorrow"])): foreach($data["tb_task_tomorrow"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                    
+                           <tr>
+                               <th colspan="2"  style="text-align:left; ">Next Week</th>
+                              </tr>
+                      
+                          <?php if(is_array($data["tb_task_nextweek"])): foreach($data["tb_task_nextweek"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                          </tbody>
+                      </table>
+                      
+                           
+                      
+               
+               </div>   
+         
          
       <div class="out_box">   
       			<img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/professional2.jpg"  width="180" />
@@ -158,12 +205,17 @@
          -->
          <p style="color:#069; font-weight:bold; ">Different serice package will heko you get best benefit in the shortest time and lowest cost.</p>
          
-         <a href="" class="btn1 r3"><span class="r3">Upgrade Now</span></a><br />
-
+         <a href="" style="cursor:default;" class="btn1 r3"><span class="r3">Coming Soon</span></a><br />
+								<!--
          <a href=""><strong>Learn More >></strong></a>        
-         
+         -->
        </div>
-    </div>
+       
+    </div>  
+
+
+
+
 
 
 
@@ -182,7 +234,7 @@
     <p><img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/product24.png"  style=" float:left; margin-right:2px;""/><strong>1</strong> product(s) width improvement suggesrions.</p>
     <p> As of 09:14:13 Oct. 2011</p>
     
-    <a href="" class="btn1 r3"><span class="r3">Display more product now!</span></a>
+    <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index" class="btn1 r3"><span class="r3">Display more product now!</span></a>
     
    <div class="hr"></div>
     
@@ -200,9 +252,10 @@
 
     <p>Gold supplier and get<strong> 22x more</strong> inquiries!</p>
     
-    <a href="" class="btn1 r3"><span class="r3">Upgrade My Account Level</span></a><br />
+    <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/account" class="btn1 r3"><span class="r3">Update My Account Info</span></a><br />
+    <!--
      <p>What's new ? <a href=""><strong>Learn More >></strong></a></p>
-    
+    -->
  
     
     

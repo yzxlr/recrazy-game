@@ -1,0 +1,10 @@
+[ 2012-02-24T22:16:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.005552s ]
+[ 2012-02-24T22:16:15-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000465s ]
+[ 2012-02-24T22:16:15-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005542s ]
+[ 2012-02-24T22:16:15-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.020025s ]
+[ 2012-02-24T22:16:15-05:00 ] NOTIC: [8] Undefined index: user IndexAction.class.php 第 61 行.
+[ 2012-02-24T22:16:15-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 27 行.
+[ 2012-02-24T22:16:15-05:00 ] NOTIC: [8] Undefined index: keywords 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 55 行.
+[ 2012-02-24T22:16:15-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.
+[ 2012-02-24T22:16:15-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.

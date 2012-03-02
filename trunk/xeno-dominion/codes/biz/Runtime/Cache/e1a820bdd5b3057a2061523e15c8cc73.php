@@ -54,9 +54,11 @@
                    <li>
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/account">Account</a>
                    </li>
+                   <!--
                    <li>
                      <a href="#">Service Package</a>
                    </li>
+                   -->
                    <li> 
                      <a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/fraud">Fraud Report</a>
                 	 </li>
@@ -82,17 +84,97 @@ function del(id){
 }
 </script>
 
+     <div id="content_left">
+    		<div class="out_box">
+         <h3>Quick Access</h3>
+         
+         <ul class="quick_links">
+         
+        
+         
+            <li><a href="">Check  Messages</a></li>
+            <li><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index">Display New Products</a></li>
+       
+   
+            <li><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/account">My Account</a></li>
+          
+           
+         		<li><a href=" <?php echo ($SITE_URL); ?>">Go to Index</a></li>
+         
+         </ul>
+     </div>     
+         
+       <div class="out_box">
+              
+             <h5 class="schedule">Schedule       		  <a class="btn_s fr"  href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_add"><span>Add ++</span></a></h5>
+       
+             
+                   
+                      <table class="schedule_table">
+                       <thead>
+                           <tr>
+                               <th colspan="2" style="text-align:left; ">Today</th>
+                              </tr>
+                          </thead>
+                       <tbody>
+                          <?php if(is_array($data["tb_task_today"])): foreach($data["tb_task_today"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                   
+                           <tr>
+                               <th colspan="2"  style="text-align:left;" >Tomorrow</th>
+                              </tr>
+                     
+                          <?php if(is_array($data["tb_task_tomorrow"])): foreach($data["tb_task_tomorrow"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                    
+                           <tr>
+                               <th colspan="2"  style="text-align:left; ">Next Week</th>
+                              </tr>
+                      
+                          <?php if(is_array($data["tb_task_nextweek"])): foreach($data["tb_task_nextweek"] as $key=>$vo): ?><tr>
+                                  <td><?php echo ($vo["time"]); ?></td>
+                                  <td><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Schedule/task_update/task_id/<?php echo ($vo["task_id"]); ?>"><?php echo ($vo["title"]); ?></a></td>
+                              </tr><?php endforeach; endif; ?>
+                          </tbody>
+                      </table>
+                      
+                           
+                      
+               
+               </div>   
+         
+         
+      <div class="out_box">   
+      			<img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/professional2.jpg"  width="180" />
+      <!--
+      			<img src="<?php echo ($SITE_URL); ?>/public/jack/foradmin/images/star.png"  />
+         -->
+         <p style="color:#069; font-weight:bold; ">Different serice package will heko you get best benefit in the shortest time and lowest cost.</p>
+         
+         <a href="" style="cursor:default;" class="btn1 r3"><span class="r3">Coming Soon</span></a><br />
+								<!--
+         <a href=""><strong>Learn More >></strong></a>        
+         -->
+       </div>
+       
+    </div>  
+ 
 <div id="content">
+<h2>My Product List</h2>
+
 	<!--  内容列表   -->
         <form name="form2" style="margin-bottom:0px;">
-        <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
-            <tr bgcolor="#E7E7E7">
-                <td height="30" colspan="10">
-                    <span style="float:left; padding-top:3px; padding-left:5px;">Product List</span>
-                    <span style="float:right;"><a href="__URL__/add">Add Product</a></span>
-                </td>
-            </tr>
-            <tr align="center" bgcolor="#FAFAF1" height="22">
+        
+        
+        
+        
+        <table class="list_table" width="98%" border="0" cellpadding="2" cellspacing="1"  align="left" >
+           
+            <tr align="center"  height="28">
                 <th width="8%">ID</th>
                 <th width="5%">User ID</th>
                 <th width="13%">Product Name</th>
@@ -118,13 +200,16 @@ function del(id){
                 	<a href="__URL__/lang_index/product_id/<?php echo ($vo["pid"]); ?>">List</a>
                 </td>
             </tr><?php endforeach; endif; ?>
-            <tr bgcolor="#FAFAF1">
+            <tr>
             <td height="28" colspan="10">
                 <?php echo ($msg["page"]); ?>
             </td>
             </tr>
         </table>
     </form>
+    
+    <a href="__URL__/add" class="btn1 r3"><span class="r3">Add Product</span></a>
+    
 </div>
 </div> <!-- wrapper -->
 

@@ -1,0 +1,164 @@
+[ 2012-03-01T20:47:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.005093s ]
+[ 2012-03-01T20:47:46-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.009996s ]
+[ 2012-03-01T20:47:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005349s ]
+[ 2012-03-01T20:47:46-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.002502s ]
+[ 2012-03-01T20:47:46-05:00 ] NOTIC: [8] Undefined index: user IndexAction.class.php 第 61 行.
+[ 2012-03-01T20:47:46-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 27 行.
+[ 2012-03-01T20:47:46-05:00 ] NOTIC: [8] Undefined index: keywords 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.
+[ 2012-03-01T20:47:46-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T20:47:46-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T20:49:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005212s ]
+[ 2012-03-01T20:49:25-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004166s ]
+[ 2012-03-01T20:49:25-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000367s ]
+[ 2012-03-01T20:49:25-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000362s ]
+[ 2012-03-01T20:49:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003798s ]
+[ 2012-03-01T20:49:26-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000324s ]
+[ 2012-03-01T20:49:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.003777s ]
+[ 2012-03-01T20:49:26-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000769s ]
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 27 行.
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined index: keywords 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T20:49:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.003864s ]
+[ 2012-03-01T20:49:26-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000336s ]
+[ 2012-03-01T20:49:26-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004026s ]
+[ 2012-03-01T20:49:26-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000887s ]
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 27 行.
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined index: keywords 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T20:49:26-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T21:51:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.005012s ]
+[ 2012-03-01T21:51:30-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000512s ]
+[ 2012-03-01T21:51:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005452s ]
+[ 2012-03-01T21:51:30-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.002068s ]
+[ 2012-03-01T21:51:30-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 27 行.
+[ 2012-03-01T21:51:30-05:00 ] NOTIC: [8] Undefined index: keywords 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.
+[ 2012-03-01T21:51:30-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T21:51:30-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T21:51:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005538s ]
+[ 2012-03-01T21:51:44-05:00 ] ERR: (ThinkException) 非法操作register
+[ 2012-03-01T21:51:55-05:00 ] ERR: (ThinkException) 非法操作signin
+[ 2012-03-01T21:58:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004259s ]
+[ 2012-03-01T21:58:48-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T21:58:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004562s ]
+[ 2012-03-01T21:58:59-05:00 ] NOTIC: [8] Undefined index: password PublicAction.class.php 第 86 行.
+[ 2012-03-01T21:58:59-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('aaa','aaa') [ RunTime:0.005919s ]
+[ 2012-03-01T21:58:59-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:00:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004553s ]
+[ 2012-03-01T22:00:06-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('aaa','47bce5c74f589f4867dbd57e9ca9f808') [ RunTime:0.000357s ]
+[ 2012-03-01T22:00:06-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:00:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004237s ]
+[ 2012-03-01T22:00:44-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:00:52-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004272s ]
+[ 2012-03-01T22:00:52-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:00:53-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004350s ]
+[ 2012-03-01T22:00:53-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:00:53-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004404s ]
+[ 2012-03-01T22:00:53-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:01:06-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004290s ]
+[ 2012-03-01T22:01:06-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('aaa','47bce5c74f589f4867dbd57e9ca9f808') [ RunTime:0.000368s ]
+[ 2012-03-01T22:01:06-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:01:30-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004278s ]
+[ 2012-03-01T22:01:30-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:01:38-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004268s ]
+[ 2012-03-01T22:01:38-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('aaa','47bce5c74f589f4867dbd57e9ca9f808') [ RunTime:0.000274s ]
+[ 2012-03-01T22:01:38-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:02:04-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004333s ]
+[ 2012-03-01T22:02:04-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('aaaa','74b87337454200d4d33f80c4663dc5e5') [ RunTime:0.000425s ]
+[ 2012-03-01T22:02:04-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:03:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004345s ]
+[ 2012-03-01T22:03:32-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:03:39-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004839s ]
+[ 2012-03-01T22:03:39-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('aaaaa','594f803b380a41396ed63dca39503542') [ RunTime:0.000397s ]
+[ 2012-03-01T22:03:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004334s ]
+[ 2012-03-01T22:03:45-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('bbb','08f8e0260c64418510cefb2b06eee5cd') [ RunTime:0.000245s ]
+[ 2012-03-01T22:04:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005156s ]
+[ 2012-03-01T22:04:32-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('bbb','08f8e0260c64418510cefb2b06eee5cd') [ RunTime:0.000520s ]
+[ 2012-03-01T22:04:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004246s ]
+[ 2012-03-01T22:04:33-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:08:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004204s ]
+[ 2012-03-01T22:08:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004345s ]
+[ 2012-03-01T22:08:27-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004380s ]
+[ 2012-03-01T22:08:27-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('hhh','a3aca2964e72000eea4c56cb341002a4','2012-03-01 22:08:27','2012-03-01 22:08:27') [ RunTime:0.000325s ]
+[ 2012-03-01T22:08:49-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.018209s ]
+[ 2012-03-01T22:08:49-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004471s ]
+[ 2012-03-01T22:08:49-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004859s ]
+[ 2012-03-01T22:08:49-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('hhhh','e61e7de603852182385da5e907b4b232','2012-03-01 22:08:49','2012-03-01 22:08:49') [ RunTime:0.000281s ]
+[ 2012-03-01T22:09:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004519s ]
+[ 2012-03-01T22:09:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004118s ]
+[ 2012-03-01T22:09:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004350s ]
+[ 2012-03-01T22:09:17-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('hhhh','e61e7de603852182385da5e907b4b232') [ RunTime:0.000259s ]
+[ 2012-03-01T22:09:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004511s ]
+[ 2012-03-01T22:09:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004322s ]
+[ 2012-03-01T22:09:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004617s ]
+[ 2012-03-01T22:09:29-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:09:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004488s ]
+[ 2012-03-01T22:09:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004483s ]
+[ 2012-03-01T22:09:29-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004684s ]
+[ 2012-03-01T22:09:29-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:09:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004556s ]
+[ 2012-03-01T22:09:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.005009s ]
+[ 2012-03-01T22:09:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004526s ]
+[ 2012-03-01T22:09:34-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('ooo','7f94dd413148ff9ac9e9e4b6ff2b6ca9') [ RunTime:0.000315s ]
+[ 2012-03-01T22:09:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004390s ]
+[ 2012-03-01T22:09:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004563s ]
+[ 2012-03-01T22:09:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004835s ]
+[ 2012-03-01T22:09:41-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`) VALUES ('ooo','7f94dd413148ff9ac9e9e4b6ff2b6ca9') [ RunTime:0.000297s ]
+[ 2012-03-01T22:11:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004616s ]
+[ 2012-03-01T22:11:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.005329s ]
+[ 2012-03-01T22:11:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004438s ]
+[ 2012-03-01T22:11:16-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('ooo','7f94dd413148ff9ac9e9e4b6ff2b6ca9','2012-03-01 22:11:16','2012-03-01 22:11:16') [ RunTime:0.000376s ]
+[ 2012-03-01T22:11:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004184s ]
+[ 2012-03-01T22:11:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004259s ]
+[ 2012-03-01T22:11:20-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004357s ]
+[ 2012-03-01T22:11:20-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:11:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004066s ]
+[ 2012-03-01T22:11:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004370s ]
+[ 2012-03-01T22:11:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004379s ]
+[ 2012-03-01T22:11:28-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_email`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('ooo','user@recrazy.net','7f94dd413148ff9ac9e9e4b6ff2b6ca9','2012-03-01 22:11:28','2012-03-01 22:11:28') [ RunTime:0.000348s ]
+[ 2012-03-01T22:12:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004902s ]
+[ 2012-03-01T22:12:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004420s ]
+[ 2012-03-01T22:12:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004589s ]
+[ 2012-03-01T22:12:16-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_email`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('ooo','useraa@recrazy.net','7f94dd413148ff9ac9e9e4b6ff2b6ca9','2012-03-01 22:12:16','2012-03-01 22:12:16') [ RunTime:0.000379s ]
+[ 2012-03-01T22:12:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.012786s ]
+[ 2012-03-01T22:12:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004234s ]
+[ 2012-03-01T22:12:17-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004612s ]
+[ 2012-03-01T22:12:17-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:13:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004417s ]
+[ 2012-03-01T22:13:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004751s ]
+[ 2012-03-01T22:13:28-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004649s ]
+[ 2012-03-01T22:13:28-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_email`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('ppp','ppp@ppp.com','e8b93d5e7a63e880629ea7d32619c19e','2012-03-01 22:13:28','2012-03-01 22:13:28') [ RunTime:0.000364s ]
+[ 2012-03-01T22:14:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004392s ]
+[ 2012-03-01T22:14:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004348s ]
+[ 2012-03-01T22:14:05-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004496s ]
+[ 2012-03-01T22:14:05-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_email`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('oooa','useraaa@recrazy.net','46dfcca4d8ce78a71d38cb36a069cad6','2012-03-01 22:14:05','2012-03-01 22:14:05') [ RunTime:0.000405s ]
+[ 2012-03-01T22:14:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004234s ]
+[ 2012-03-01T22:14:24-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000379s ]
+[ 2012-03-01T22:14:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004090s ]
+[ 2012-03-01T22:14:24-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000809s ]
+[ 2012-03-01T22:14:24-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 27 行.
+[ 2012-03-01T22:14:24-05:00 ] NOTIC: [8] Undefined index: keywords 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.
+[ 2012-03-01T22:14:24-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T22:14:24-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T22:14:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004160s ]
+[ 2012-03-01T22:14:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004519s ]
+[ 2012-03-01T22:14:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004289s ]
+[ 2012-03-01T22:14:58-05:00 ] NOTIC: [8] Undefined variable: msg 4ee3490ea059f507c0387fa3567ac65b.php 第 6 行.
+[ 2012-03-01T22:15:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.004407s ]
+[ 2012-03-01T22:15:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_company` [ RunTime:0.004655s ]
+[ 2012-03-01T22:15:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_users_profile` [ RunTime:0.004431s ]
+[ 2012-03-01T22:15:12-05:00 ] SQL: INSERT INTO `ry_users` (`user_name`,`user_email`,`user_password`,`user_regtime`,`user_updatetime`) VALUES ('wqr','sadf@fdsa.com','8d41627e46d5b8556d0d3e30ec15538e','2012-03-01 22:15:12','2012-03-01 22:15:12') [ RunTime:0.000373s ]
+[ 2012-03-01T22:15:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004036s ]
+[ 2012-03-01T22:15:13-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000510s ]
+[ 2012-03-01T22:15:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.004162s ]
+[ 2012-03-01T22:15:13-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='zh-cn' [ RunTime:0.000797s ]
+[ 2012-03-01T22:15:13-05:00 ] NOTIC: [8] Undefined variable: msg 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 27 行.
+[ 2012-03-01T22:15:13-05:00 ] NOTIC: [8] Undefined index: keywords 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 59 行.
+[ 2012-03-01T22:15:13-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.
+[ 2012-03-01T22:15:13-05:00 ] NOTIC: [8] Undefined index: region 6f9ff6e3cd1727a9c4c714dfe3682b60.php 第 63 行.

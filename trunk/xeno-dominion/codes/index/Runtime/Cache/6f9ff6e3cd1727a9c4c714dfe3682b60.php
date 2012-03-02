@@ -36,17 +36,21 @@
     <a href="<?php echo ($SITE_URL); ?>"> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
     <div class="menu">
       <ul>
-        <li class="selected"><a href="">Products</a></li>
+      		<li class="selected"><a href="<?php echo ($SITE_URL); ?>">Home</a></li>
+        <li><a href="">Products</a></li>
         <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
         <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a></li>
+        <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/14">Business Service</a></li>
+        <!--
         <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/12">Business cooperation</a></li>
         <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/13">Exhibition</a></li>
-        <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/14">Business Service</a></li>
+      
         <li><a href="">Forums</a></li>
+       
         <li><a href="<?php echo ($SITE_URL); ?>/index.php/Products/product/id/6?l=zh-cn">ProductPage(test)</a></li>
+         -->
         <li><a href="<?php echo ($SITE_URL); ?>/admin.php">Admin Area(test)</a></li>
         <li><a href="<?php echo ($SITE_URL); ?>/biz.php">Biz Area(test)</a></li>
-        <li><a href="<?php echo ($SITE_URL); ?>/index.php?s=Search/index/type/1/keywords/aa">Search(test)</a></li>
       </ul>
     </div>
     <div class="search_bar">
@@ -177,6 +181,7 @@ $(document).ready( function(){
   </div>
   </div>
 </div>
+
 <div id="main_content">
   <div class="row">
     <div class="signup_sidebar">
@@ -188,6 +193,7 @@ $(document).ready( function(){
           <img src="images/signup.jpg" width="180" height="210" />
           --> 
     </div>
+   
     <link rel="stylesheet" type="text/css" href="<?php echo ($SITE_URL); ?>/public/jack/forindex/css/style2.css" />
 <script language="javascript" type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jack/forindex/js/jquery.easing.js"></script>
 <script language="javascript" type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jack/forindex/js/script.js"></script>
@@ -208,9 +214,11 @@ $(document).ready( function(){
  <!-- MAIN CONTENT --> 
   <div class="lof-main-outer">
   	<ul class="lof-main-wapper">
-  		<li>
+  		<li> 
+    			<img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/credit.png" title="Newsflash 2" height="210" width="574"> 
+    		<!--  
         		<img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images2/sample1.jpg" title="Newsflash 2" height="210" width="390"> 
-            <!--    
+             
              <div class="lof-main-item-desc">
                 <h3><a target="_parent" title="Newsflash 2" href="#">Newsflash 2</a></h3>
 
@@ -218,6 +226,15 @@ $(document).ready( function(){
              </div>
              -->
         </li> 
+        <li>
+        	<img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/service2.png" title="Newsflash 1" height="210" width="574">            
+        </li> 
+       <li>
+        	<img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/solutions2.png" title="Newsflash 3" height="210" width="574">            
+        
+        </li> 
+       
+        <!--
        <li>
         	<img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images2/sample2.jpg" title="Newsflash 1" height="210" width="390">            
          	
@@ -237,12 +254,14 @@ $(document).ready( function(){
         	<img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images2/sample5.jpg" title="Newsflash 5" height="210" width="390">            
         
         </li> 
-      
+      		-->
       </ul>  	
   </div>
   <!-- END MAIN CONTENT --> 
     <!-- NAVIGATOR -->
-
+    
+    
+<!--
   <div class="lof-navigator-outer">
   		<ul class="lof-navigator">
             <li>
@@ -291,6 +310,7 @@ $(document).ready( function(){
                 </div>
             </li>     		
         </ul>
+       --> 
   </div>
  </div> 
  </div> 
@@ -370,6 +390,7 @@ $(function(){
       <p><span>Nov 12, 2011 - Peter White</span></p>
     </div>
   </div>
+  
   <div class="ads"> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/sample250a.jpg" width="250" style="margin-right:5px;" /> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/sample250b.jpg" width="250" style="margin-right:5px;"  /> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/sample250c.jpg" width="250" /> </div>
 </div>
 <!--
@@ -383,9 +404,46 @@ $(function(){
 <div id="footer">
 		<div class="w960">
   
+  <div class="foot_bar">
+  					<a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/12">About Us</a> | 
+       <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/13">Contact us</a> | 
+       <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/14">Frequently asked questions</a> | 
+       <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/15">Terms & Conditions</a> | 
+       <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/16">Privacy Policy</a> 
+  
+  </div>
+  
+  
+  		<b>Product Categories:</b>
+  
+      <?php //var_dump($categories); ?>
+      <?php $i = 0; ?>
+      
+          <?php if(is_array($categories)): foreach($categories as $key=>$vo1): ?><?php 		$i = $i + 1 ;  ?>
+        
+              
+              	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/<?php echo ($vo1["cat_id"]); ?>">
+                	<?php if(empty($vo1["cat_name_with_lang"])): ?><?php echo ($vo1["cat_name"]); ?><?php endif; ?>
+                    <?php if(!empty($vo1["cat_name_with_lang"])): ?><?php echo ($vo1["cat_name_with_lang"]); ?><?php endif; ?>
+                </a>
+                
+              <!-- 2级菜单 -->
+                    <?php if(!empty($vo1["child_cats"])): ?><ul class="sub_category">
+                        	<?php if(is_array($vo1["child_cats"])): foreach($vo1["child_cats"] as $key=>$vo2): ?><li class="first">
+                                	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/<?php echo ($vo2["cat_id"]); ?>">
+                                        <?php if(empty($vo2["cat_name_with_lang"])): ?><?php echo ($vo2["cat_name"]); ?><?php endif; ?>
+                                        <?php if(!empty($vo2["cat_name_with_lang"])): ?><?php echo ($vo2["cat_name_with_lang"]); ?><?php endif; ?>
+                                    </a>
+                                </li><?php endforeach; endif; ?>
+                       </ul><?php endif; ?>
+                 <!-- end of 2级菜单 --><?php endforeach; endif; ?>
+      
+  
+  
+  <!--
    <div style="overflow:hidden; background:#f5f5f5; border:#eee solid 1px; padding:10px; ">
      <ul class="ul5">
-     	<h5>About Comtoworld.com</h5>
+     	<h5>Company Information</h5>
      		<li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/1">Company Information</a></li>
      		<li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/2">Partner with Us</a></li>
      		<li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/3">Site Map</a></li>
@@ -394,7 +452,7 @@ $(function(){
        
        
        <ul class="ul5">
-									<h5>Buying on Comtoworld.com</h5>
+									<h5>Customer Service</h5>
          <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/8">Post Buying Requests</a></li>
          <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/9">Browse Categories</a></li>
          <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/11">How to Buy</a></li>
@@ -422,6 +480,7 @@ $(function(){
          <li><a href="">Contact us</a></li>
         </ul>
 	</div>
+  -->
   
       <p style="color:#999; font-size:11px; text-align:center; ">Copyright &copy; 2011 Comtoworld.com  Limited and licensors. All rights reserved. </p>
   
