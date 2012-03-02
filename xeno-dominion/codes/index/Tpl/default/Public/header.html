@@ -29,22 +29,19 @@
 <body>
 <div id="header">
   <div class="w960">
-    <div class="login_info"> 
-    	<notempty name="Think.session.user.uid" >
-    		<img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a>
-        </notempty>
-        <empty name="Think.session.user.uid">
-        	<a href="{$SITE_URL}/index.php/Public/login">Sign In</a>
-        </empty>
-         | <a href="{$SITE_URL}/admin.php">Go to admin area</a> | <a href="{$SITE_URL}/index.php/Page/index/id/15">Contact Us</a> </div>
+    <div class="login_info">
+      <notempty name="Think.session.user.uid" > <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a> </notempty>
+      <empty name="Think.session.user.uid"> <a href="{$SITE_URL}/index.php/Public/login">Sign In</a> </empty>
+      | <a href="{$SITE_URL}/admin.php">Go to admin area</a> | <a href="{$SITE_URL}/index.php/Page/index/id/15">Contact Us</a> </div>
     <a href="{$SITE_URL}"> <img src="{$SITE_URL}/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
     <div class="menu">
+      <?php /////var_dump(MODULE_NAME); var_dump(ACTION_NAME); ?>
       <ul>
-      		<li class="selected"><a href="{$SITE_URL}">Home</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
-        <li><a href="{$SITE_URL}/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a></li>
-        <li><a href="{$SITE_URL}/index.php/Page/index/id/14">Business Service</a></li>
+        <li <?php if(MODULE_NAME=="Index"&& ACTION_NAME=="index"){ echo 'class="selected"'; } ?> ><a href="{$SITE_URL}">Home</a></li>
+        <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="all")echo 'class="selected"'; }} ?>><a href="{$SITE_URL}/index.php?s=Products/lists/flag/all/cat_id/0">Products</a></li>
+        <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="supply")echo 'class="selected"'; }} ?>><a href="{$SITE_URL}/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
+        <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="demand")echo 'class="selected"'; }} ?>> <a href="{$SITE_URL}/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a> </li>
+        <li <?php if(MODULE_NAME=="Page"&& ACTION_NAME=="index"){ if(!empty($_GET["id"])){ if($_GET["id"]=="14")echo 'class="selected"'; }} ?>><a href="{$SITE_URL}/index.php/Page/index/id/14">Business Service</a></li>
         <!--
         <li><a href="{$SITE_URL}/index.php/Page/index/id/12">Business cooperation</a></li>
         <li><a href="{$SITE_URL}/index.php/Page/index/id/13">Exhibition</a></li>
@@ -64,8 +61,10 @@
         <select name="region">
           <option value="">Select Country/Region</option>
           <foreach name="all_regions" item="vo" > <option value="{$vo.region_code}"  
+            
             <eq name="Think.get.region" value="$vo.region_code"> selected="selected" </eq>
             >{$vo.region_country}/{$vo.region_province}
+            
             </option>
           </foreach>
         </select>

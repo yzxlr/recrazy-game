@@ -116,3 +116,9 @@
 [ 2012-03-01T20:50:22-05:00 ] NOTIC: [8] Undefined index: uid 1282e97849dec9495baef5755c79259c.php 第 129 行.
 [ 2012-03-01T22:14:37-05:00 ] ERR: (ThinkException) 非法操作register
 [ 2012-03-01T22:14:45-05:00 ] ERR: (ThinkException) 非法操作register
+[ 2012-03-01T22:22:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.005431s ]
+[ 2012-03-01T22:22:14-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000429s ]
+[ 2012-03-01T22:22:14-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005301s ]
+[ 2012-03-01T22:22:14-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
+[ 2012-03-01T22:22:14-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-03-01T22:22:14-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
