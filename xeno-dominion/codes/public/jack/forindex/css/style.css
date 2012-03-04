@@ -151,6 +151,10 @@ p.s { font-size:10px; font-weight:bold; margin:0; padding:0; }
 .product_list  .company_info { float:left; width:250px; width:170px; float:right; }
 .product_list  .company_info p { padding:0; }
 
+.signin_quicklink { padding:0 10px;}
+.signin_quicklink a { color:#069; text-decoration:none;  }
+.signin_quicklink a:hover { color:#000; text-decoration:underline; }
+
 
 #product_box { padding:10px 0; }
 
