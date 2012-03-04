@@ -27,6 +27,15 @@
 <title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
+<?php
+$the_uri = $_SERVER['REQUEST_URI'];
+$the_uri = str_replace("?l=zh-cn", "", $the_uri);
+$the_uri = str_replace("?l=en-us", "", $the_uri);
+$the_uri = str_replace("/l/zh-cn", "", $the_uri);
+$the_uri = str_replace("/l/en-us", "", $the_uri);
+?>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=zh-cn'; else echo '/l/zh-cn'; ?>">中文</a>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>?l=en-us">English</a>
 <div id="header">
   <div class="w960">
     <div class="login_info">
