@@ -27,6 +27,15 @@
 <title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
+<?php
+$the_uri = $_SERVER['REQUEST_URI'];
+$the_uri = str_replace("?l=zh-cn", "", $the_uri);
+$the_uri = str_replace("?l=en-us", "", $the_uri);
+$the_uri = str_replace("/l/zh-cn", "", $the_uri);
+$the_uri = str_replace("/l/en-us", "", $the_uri);
+?>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=zh-cn'; else echo '/l/zh-cn'; ?>">中文</a>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>">English</a>
 <div id="header">
   <div class="w960">
     <div class="login_info">
@@ -104,9 +113,6 @@
     <?php //*/ ?>
 </p>
 
-<!--
-<p>箱包 、配件 手提包 手拿包 皮夹 明星 镜框 皮带 墨镜 Casio 围巾 旅行箱 珠宝 、饰品 美钻 项链 戒指 胸针 日韩发饰 假发 专柜swarovski 耳环 开运 食品 、百货 茶叶 零食 家纺 收纳 成人用品 数码 、3C配件 国货精品 平板电脑 Apple配件 小家电 保健按摩 电玩配件 母婴用品 智能玩具 童装 孕妇装 亲子装 爬爬服 宝宝纪念品 手工DIY 其它 运动 户外用品 汽车用品 文具 书籍 音像 个性定制 收藏品 </p>
---> 
 
 <div id="page_left">
   <div class="left_bar">
@@ -188,10 +194,26 @@ $(document).ready( function(){
 <div id="main_content">
   <div class="row">
     <div class="signup_sidebar">
-      <?php if(!empty($_SESSION['user'])): ?><p>Already A Member?<br />
-        <a href="<?php echo ($SITE_URL); ?>/index.php/Public/login" class="signin_btn">Sign In</a> </p><?php endif; ?>
-      <?php if(empty($_SESSION['user'])): ?><p class="s">Not a member yet? <a href="">Join Free</a> </p><?php endif; ?>
-      <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/login-key.jpg" width="170" /> 
+      <?php if(!empty($_SESSION['user'])): ?><!--
+      		  <p class="s">Not a member yet? <a href="">Join Free</a> </p>
+      		-->	 
+       <p style="font-weight:bold; color:#069; border-bottom:#ccc dashed 1px;">
+          Welcome back, 	<?php echo ($_SESSION['user']['user_name']); ?>
+      		</p>
+        
+        <div class="signin_quicklink">
+           <h4>Quick Access</h4>
+           <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index">My Product</a><br />
+           <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/accoun">Account Info</a><br />
+
+
+          
+        </div><?php endif; ?>
+      <?php if(empty($_SESSION['user'])): ?><p>Already A Member?<br />
+        <a href="<?php echo ($SITE_URL); ?>/index.php/Public/login" class="signin_btn">Sign In</a> </p>
+          		  <p class="s">Not a member yet? <a href="">Join Free</a> </p>
+                <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/login-key.jpg" width="170" /><?php endif; ?>
+    
       <!--  
           <img src="images/signup.jpg" width="180" height="210" />
           --> 
