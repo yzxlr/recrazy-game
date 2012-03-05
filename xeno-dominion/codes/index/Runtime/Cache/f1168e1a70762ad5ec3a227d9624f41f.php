@@ -27,6 +27,15 @@
 <title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
+<?php
+$the_uri = $_SERVER['REQUEST_URI'];
+$the_uri = str_replace("?l=zh-cn", "", $the_uri);
+$the_uri = str_replace("?l=en-us", "", $the_uri);
+$the_uri = str_replace("/l/zh-cn", "", $the_uri);
+$the_uri = str_replace("/l/en-us", "", $the_uri);
+?>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=zh-cn'; else echo '/l/zh-cn'; ?>">中文</a>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>">English</a>
 <div id="header">
   <div class="w960">
     <div class="login_info">
@@ -35,7 +44,7 @@
       | <a href="<?php echo ($SITE_URL); ?>/admin.php">Go to admin area</a> | <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/15">Contact Us</a> </div>
     <a href="<?php echo ($SITE_URL); ?>"> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
     <div class="menu">
-      <?php var_dump(MODULE_NAME); var_dump(ACTION_NAME); ?>
+      <?php /////var_dump(MODULE_NAME); var_dump(ACTION_NAME); ?>
       <ul>
         <li <?php if(MODULE_NAME=="Index"&& ACTION_NAME=="index"){ echo 'class="selected"'; } ?> ><a href="<?php echo ($SITE_URL); ?>">Home</a></li>
         <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="all")echo 'class="selected"'; }} ?>><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/all/cat_id/0">Products</a></li>
