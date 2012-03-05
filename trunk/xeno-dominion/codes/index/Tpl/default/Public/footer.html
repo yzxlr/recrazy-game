@@ -14,7 +14,7 @@
   
   </div>
   
-  
+  <!--
   		<b>Product Categories:</b>
   
       <?php //var_dump($categories); ?>
@@ -34,29 +34,12 @@
                     </notempty>
                 </a>
                 
-              <!-- 2级菜单 -->
-                    <notempty name="vo1.child_cats">
-                        <ul class="sub_category">
-                        	<foreach name="vo1.child_cats" item="vo2">
-                          		<li class="first">
-                                	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/{$vo2.cat_id}">
-                                        <empty name="vo2.cat_name_with_lang">
-                                            {$vo2.cat_name}
-                                        </empty>
-                                        <notempty name="vo2.cat_name_with_lang">
-                                            {$vo2.cat_name_with_lang}
-                                        </notempty>
-                                    </a>
-                                </li>
-                            </foreach>
-                       </ul>
-                    </notempty>
-                 <!-- end of 2级菜单 -->
+       
              
             
               
           </foreach>
-      
+      -->
   
   
   <!--

@@ -24,6 +24,42 @@
 //*/ ?>
 <link href="{$SITE_URL}/public/jack/forindex/css/style.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="{$SITE_URL}/public/jack/forindex/js/jquery.js"></script>
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+		<script src="{$SITE_URL}/public/jack/forindex/js/jquery.colorbox.js"></script>
+ <link href="{$SITE_URL}/public/jack/forindex/js/colorbox.css" rel="stylesheet" type="text/css" /> 
+  <script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+-->  
+
+
+
 <title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
@@ -45,13 +81,20 @@ $the_uri = str_replace("/l/en-us", "", $the_uri);
 <a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>">English</a>
   
   		</div>
+
  
 
   
     <div class="login_info">
-      <notempty name="Think.session.user.uid" > <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a> </notempty>
-      <empty name="Think.session.user.uid"> <a href="{$SITE_URL}/index.php/Public/login">Sign In</a> </empty>
-      <span style="color:#999;">|</span> <a href="{$SITE_URL}/admin.php">Go to admin area</a> <span style="color:#999;">|</span> <a href="{$SITE_URL}/index.php/Page/index/id/15">Contact Us</a> </div>
+      <notempty name="Think.session.user.uid" > 
+                               <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome {$Think.session.user.user_name}, <a href="{$SITE_URL}/index.php?s=Public/logout">Sign out</a>
+      															 <span style="color:#999;">|</span> <a href="{$SITE_URL}/admin.php">Go to admin area</a>
+       </notempty>
+      <empty name="Think.session.user.uid"> 
+                <a href="{$SITE_URL}/index.php/Public/login">LogIn</a>   <span style="color:#999;">|</span>  
+                <a href="{$SITE_URL}/index.php/Public/register">Sign Up</a> 
+      <!-- | <a class="iframe" href="{$SITE_URL}/index.php/Public/login">test</a> --> </empty>
+      <span style="color:#999;">|</span> <a href="{$SITE_URL}/index.php/Page/index/id/15">Contact Us</a> </div>
     <a href="{$SITE_URL}" class="logo"> <img src="{$SITE_URL}/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
     <div class="menu">
       <?php /////var_dump(MODULE_NAME); var_dump(ACTION_NAME); ?>
