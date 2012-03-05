@@ -14,3 +14,29 @@
 [ 2012-03-04T17:39:16-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
 [ 2012-03-04T17:39:16-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
 [ 2012-03-04T17:39:16-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-03-04T18:45:57-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005681s ]
+[ 2012-03-04T18:45:59-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005845s ]
+[ 2012-03-04T18:45:59-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000494s ]
+[ 2012-03-04T18:45:59-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000426s ]
+[ 2012-03-04T18:46:01-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.005405s ]
+[ 2012-03-04T18:46:01-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000418s ]
+[ 2012-03-04T18:46:01-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005608s ]
+[ 2012-03-04T18:46:01-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
+[ 2012-03-04T18:46:01-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-03-04T18:46:01-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-03-04T18:49:42-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005477s ]
+[ 2012-03-04T18:49:45-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005536s ]
+[ 2012-03-04T18:49:45-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000420s ]
+[ 2012-03-04T18:49:45-05:00 ] SQL: SELECT * FROM `ry_users` WHERE ( `user_name` = 'admin' ) AND ( `user_password` = 'e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1  [ RunTime:0.000272s ]
+[ 2012-03-04T18:49:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.005029s ]
+[ 2012-03-04T18:49:46-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000771s ]
+[ 2012-03-04T18:49:46-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.005819s ]
+[ 2012-03-04T18:49:47-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
+[ 2012-03-04T18:49:47-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-03-04T18:49:47-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-03-04T18:49:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004991s ]
+[ 2012-03-04T18:49:47-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000576s ]
+[ 2012-03-04T18:49:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_users` [ RunTime:0.006808s ]
+[ 2012-03-04T18:49:47-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 55 行.
+[ 2012-03-04T18:49:47-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.
+[ 2012-03-04T18:49:47-05:00 ] NOTIC: [8] Undefined variable: msg 3b07957a53ccb31105e96f96aaa794c8.php 第 115 行.

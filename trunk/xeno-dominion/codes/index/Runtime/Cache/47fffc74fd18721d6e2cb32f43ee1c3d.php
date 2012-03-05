@@ -35,7 +35,7 @@ $the_uri = str_replace("/l/zh-cn", "", $the_uri);
 $the_uri = str_replace("/l/en-us", "", $the_uri);
 ?>
 <a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=zh-cn'; else echo '/l/zh-cn'; ?>">中文</a>
-<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>?l=en-us">English</a>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>">English</a>
 <div id="header">
   <div class="w960">
     <div class="login_info">
@@ -223,7 +223,10 @@ $(document).ready( function(){
             </p>
             <p> <span><?php echo ($vo["region_country"]); ?></span> <span><?php echo ($vo["region_province"]); ?></span> </p>
             <p> <img width="16" height="16" src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png"  /> <a href="">Online Support</a> </p>
-            <p> <a class="contact_btn" href="">Contact Supplier</a> </p>
+            <p> 
+            	<?php if(($vo["type"])  ==  "1"): ?><a class="contact_btn" href="to:<?php echo ($vo["user_email"]); ?>">Contact Supplier</a><?php endif; ?>
+                <?php if(($vo["type"])  ==  "2"): ?><a class="contact_btn" href="to:<?php echo ($vo["user_email"]); ?>">Contact Buyer</a><?php endif; ?>
+            </p>
           </div>
           
           <!--

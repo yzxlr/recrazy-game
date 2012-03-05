@@ -80,13 +80,15 @@ class ProductsAction extends CommonAction
 												-> join(
 														array(
 																"ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'" ,
-																"ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='".LANG_SET."'"
+																"ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='".LANG_SET."'",
+																"ry_users ON ry_products.user_id = ry_users.uid"
 															)
 														)
 												-> field("
 														ry_products.*, 
 														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
-														ry_region.*
+														ry_region.*,
+														ry_users.user_email
 														")
 												-> where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		}else{
