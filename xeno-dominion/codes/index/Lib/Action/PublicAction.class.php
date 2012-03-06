@@ -105,7 +105,7 @@ class PublicAction extends Action
 	
 	public function logout(){
 		$_SESSION["user"]=null;
-		$this->assign("jumpUrl","/index.php/Public/index");
+		$this->assign("jumpUrl","/index.php/Index/index");
 		$this->success('You logout successfully!');
 		//$this->redirect('Public/login', array(), 3, 'You logout successfully!');
 	}
