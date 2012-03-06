@@ -58,7 +58,7 @@ class PublicAction extends Action
 				$user = $tb_users -> where($condition_check) -> find();
 				if($user["role"]>=0){
 					$_SESSION["user"] = $user;
-					$this->assign("jumpUrl","/index.php?s=Index/index");
+					$this->assign("jumpUrl","/index.php/Index/index");
 					$this->success('You login successfully!');
 					//$this->redirect('Index/index', array(), 3, 'You login successfully!');
 				}else{
