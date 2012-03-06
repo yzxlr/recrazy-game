@@ -18,6 +18,7 @@ class CommonAction extends Action
 		//define("SITE_URL",$url);
 		
 		//1 Validate User (only admin can login at here
+		/*
 		if(!empty($_SESSION["user"])){
 			$this->user = $_SESSION["user"];
 			if($this->user["role"]>=0){
@@ -31,6 +32,7 @@ class CommonAction extends Action
 			$this->error('Please login first!');
 			//$this->redirect('Public/login', array(), 3, 'Please login first!');
 		}
+		//*/
 		
 		//2 load location
 		$tb_region = M("region");
