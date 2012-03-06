@@ -69,7 +69,7 @@ ul.lof-main-wapper{
 	padding:0px;
 	margin:0;
 	height:210px;
-	width:600px;
+	width:600px; width:574px; 
 	position:absolute;
 	overflow:hidden;
 }
@@ -79,7 +79,7 @@ ul.lof-main-wapper li{
 	padding:0px;
 	margin:0px;
 	height:100%;
-	width:600px;
+	width:600px; width:574px; 
 	float:left;
 }
 .lof-opacity  li{
