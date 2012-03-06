@@ -1,0 +1,48 @@
+[ 2012-03-05T21:48:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.006677s ]
+[ 2012-03-05T21:48:41-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000460s ]
+[ 2012-03-05T21:48:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.006550s ]
+[ 2012-03-05T21:48:41-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='en-us' [ RunTime:0.003112s ]
+[ 2012-03-05T21:48:41-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.007193s ]
+[ 2012-03-05T21:48:41-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000893s ]
+[ 2012-03-05T21:48:41-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='en-us' WHERE ( ry_products.cat_id IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( ry_products.type = 1 ) LIMIT 1  [ RunTime:0.002925s ]
+[ 2012-03-05T21:48:41-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.*,
+														ry_users.user_email FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='en-us' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='en-us' LEFT JOIN ry_users ON ry_products.user_id = ry_users.uid WHERE ( ry_products.cat_id IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( ry_products.type = 1 ) LIMIT 0,12  [ RunTime:0.002634s ]
+[ 2012-03-05T21:48:41-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 119 行.
+[ 2012-03-05T21:48:41-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 124 行.
+[ 2012-03-05T21:48:41-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 124 行.
+[ 2012-03-05T21:48:41-05:00 ] NOTIC: [8] Undefined variable: user 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 228 行.
+[ 2012-03-05T21:48:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.004963s ]
+[ 2012-03-05T21:48:44-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000495s ]
+[ 2012-03-05T21:48:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005183s ]
+[ 2012-03-05T21:48:44-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='en-us' [ RunTime:0.000937s ]
+[ 2012-03-05T21:48:44-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005999s ]
+[ 2012-03-05T21:48:44-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000999s ]
+[ 2012-03-05T21:48:44-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='en-us' WHERE ( ry_products.cat_id IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( ry_products.type = 1 ) LIMIT 1  [ RunTime:0.001143s ]
+[ 2012-03-05T21:48:44-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.*,
+														ry_users.user_email FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='en-us' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='en-us' LEFT JOIN ry_users ON ry_products.user_id = ry_users.uid WHERE ( ry_products.cat_id IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( ry_products.type = 1 ) LIMIT 12,12  [ RunTime:0.001250s ]
+[ 2012-03-05T21:48:44-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 119 行.
+[ 2012-03-05T21:48:44-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 124 行.
+[ 2012-03-05T21:48:44-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 124 行.
+[ 2012-03-05T21:48:44-05:00 ] NOTIC: [8] Undefined variable: user 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 228 行.
+[ 2012-03-05T21:48:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_region` [ RunTime:0.005426s ]
+[ 2012-03-05T21:48:47-05:00 ] SQL: SELECT * FROM `ry_region` WHERE ( `region_lang_code` = 'en-us' ) [ RunTime:0.000417s ]
+[ 2012-03-05T21:48:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_products_cat` [ RunTime:0.005405s ]
+[ 2012-03-05T21:48:47-05:00 ] SQL: SELECT ry_products_cat.*, ry_products_cat_lang.catlang_id, ry_products_cat_lang.lang_code AS cat_lang_code, 
+							ry_products_cat_lang.lang_name AS cat_lang_name, ry_products_cat_lang.cat_name AS cat_name_with_lang FROM `ry_products_cat` LEFT JOIN ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='en-us' [ RunTime:0.001017s ]
+[ 2012-03-05T21:48:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_products` [ RunTime:0.005509s ]
+[ 2012-03-05T21:48:47-05:00 ] SQL: SELECT * FROM `ry_products_cat` WHERE ( ry_products_cat.parent_id = '0' ) AND ( ry_products_cat.is_show = 1 ) [ RunTime:0.000878s ]
+[ 2012-03-05T21:48:47-05:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='en-us' WHERE ( ry_products.cat_id IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( ry_products.type = 1 ) LIMIT 1  [ RunTime:0.000931s ]
+[ 2012-03-05T21:48:47-05:00 ] SQL: SELECT ry_products.*, 
+														ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description, 
+														ry_region.*,
+														ry_users.user_email FROM `ry_products` LEFT JOIN ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='en-us' LEFT JOIN ry_region ON ry_products.location_code = ry_region.region_code AND ry_region.region_lang_code='en-us' LEFT JOIN ry_users ON ry_products.user_id = ry_users.uid WHERE ( ry_products.cat_id IN ('0','18','17','8','9','10','11','12','13','14','15','16','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','67') ) AND ( ry_products.type = 1 ) LIMIT 0,12  [ RunTime:0.001001s ]
+[ 2012-03-05T21:48:47-05:00 ] NOTIC: [8] Undefined index: keywords 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 119 行.
+[ 2012-03-05T21:48:47-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 124 行.
+[ 2012-03-05T21:48:47-05:00 ] NOTIC: [8] Undefined index: region 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 124 行.
+[ 2012-03-05T21:48:47-05:00 ] NOTIC: [8] Undefined variable: user 47fffc74fd18721d6e2cb32f43ee1c3d.php 第 228 行.
