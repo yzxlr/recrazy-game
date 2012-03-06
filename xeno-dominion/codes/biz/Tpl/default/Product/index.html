@@ -14,7 +14,10 @@ function del(id){
  <include file="Public:left_menu" />  
  
 <div id="content">
-<h2>My Product List</h2>
+<h2>
+	<eq name="Think.get.type" value="1">My Supply Products</eq>
+	<eq name="Think.get.type" value="2">My Demand Products</eq>    
+</h2>
 
 	<!--  内容列表   -->
         <form name="form2" style="margin-bottom:0px;">
@@ -60,7 +63,7 @@ function del(id){
         </table>
     </form>
     
-    <a href="__URL__/add" class="btn1 r3"><span class="r3">Add Product</span></a>
+    <a href="__URL__/add<?php if(!empty($_GET['type'])) echo '/type/'.$_GET['type']; ?>" class="btn1 r3"><span class="r3">Add Product</span></a>
     
 </div>
 <include file="Public:footer" />

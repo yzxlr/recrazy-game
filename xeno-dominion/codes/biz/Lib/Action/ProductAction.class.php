@@ -24,6 +24,7 @@ class ProductAction extends CommonAction
 
 		//1. Table product
 		$condition["user_id"]=$user["uid"];
+		if(!empty($_GET["type"]))$condition["type"]=$_GET["type"];
 		$count = $tb_products ->where($condition) ->count();
 		$Page = new Page($count,25);
 		$show = $Page->show();
