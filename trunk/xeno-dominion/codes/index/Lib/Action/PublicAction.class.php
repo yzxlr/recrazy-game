@@ -7,6 +7,17 @@ class PublicAction extends Action
     * 默认操作
     +----------------------------------------------------------
     */
+	
+	public function _initialize(){
+		//0. Initialization
+		//0.1 Global variables
+		$http = (isset($_SERVER['HTTPS'])&&$_SERVER['HTTPS']!='off')?'https://':'http://';  
+		$port = $_SERVER["SERVER_PORT"]==80?'':':'.$_SERVER["SERVER_PORT"];  
+		$url = $http.$_SERVER['SERVER_NAME'].$port;//.$_SERVER["REQUEST_URI"];
+		$this->assign("SITE_URL",$url);
+		//define("SITE_URL",$url);
+	}
+	
     public function index()
     {
 		/*

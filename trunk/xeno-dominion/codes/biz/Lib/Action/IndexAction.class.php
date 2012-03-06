@@ -56,7 +56,7 @@ class IndexAction extends CommonAction
 			if($_SESSION['verify'] != md5($_POST['verify'])) {   
 				$this->error('Varification code error');   
 			} else{
-				$to = "luolisave@gmail.com";
+				$to = "2488743549@qq.com";
 				$name=$_POST["name"];
 				$email_from = $_POST["email"];
 				$title = $_POST["title"];
