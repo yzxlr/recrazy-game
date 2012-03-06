@@ -24,6 +24,42 @@
 //*/ ?>
 <link href="<?php echo ($SITE_URL); ?>/public/jack/forindex/css/style.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="<?php echo ($SITE_URL); ?>/public/jack/forindex/js/jquery.js"></script>
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+		<script src="<?php echo ($SITE_URL); ?>/public/jack/forindex/js/jquery.colorbox.js"></script>
+ <link href="<?php echo ($SITE_URL); ?>/public/jack/forindex/js/colorbox.css" rel="stylesheet" type="text/css" /> 
+  <script>
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+-->  
+
+
+
 <title><?php echo $msg["title"][LANG_SET]; ?></title>
 </head>
 <body>
@@ -34,22 +70,36 @@ $the_uri = str_replace("?l=en-us", "", $the_uri);
 $the_uri = str_replace("/l/zh-cn", "", $the_uri);
 $the_uri = str_replace("/l/en-us", "", $the_uri);
 ?>
-<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=zh-cn'; else echo '/l/zh-cn'; ?>">中文</a>
-<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>">English</a>
+
 <div id="header">
   <div class="w960">
+  
+  
+  		<div class="language">
+     <strong>Lanuage - </strong>
+    			   <a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=zh-cn'; else echo '/l/zh-cn'; ?>">中文</a>
+<a href="<?php echo $SITE_URL.$the_uri; if(empty($the_uri)||$the_uri=='/') echo '?l=en-us'; else echo '/l/en-us'; ?>">English</a>
+  
+  		</div>
+
+ 
+
+  
     <div class="login_info">
-      <?php if(!empty($_SESSION['user'])): ?><img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome <?php echo ($_SESSION['user']['user_name']); ?>, <a href="<?php echo ($SITE_URL); ?>/index.php?s=Public/logout">Sign out</a><?php endif; ?>
-      <?php if(empty($_SESSION['user'])): ?><a href="<?php echo ($SITE_URL); ?>/index.php/Public/login">Sign In</a><?php endif; ?>
-      | <a href="<?php echo ($SITE_URL); ?>/admin.php">Go to admin area</a> | <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/15">Contact Us</a> </div>
-    <a href="<?php echo ($SITE_URL); ?>"> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
+      <?php if(!empty($_SESSION['user'])): ?><img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /> Welcome <?php echo ($_SESSION['user']['user_name']); ?>, <a href="<?php echo ($SITE_URL); ?>/index.php?s=Public/logout">Sign out</a>
+      															 <span style="color:#999;">|</span> <a href="<?php echo ($SITE_URL); ?>/admin.php">Go to admin area</a><?php endif; ?>
+      <?php if(empty($_SESSION['user'])): ?><a href="<?php echo ($SITE_URL); ?>/index.php/Public/login">LogIn</a>   <span style="color:#999;">|</span>  
+                <a href="<?php echo ($SITE_URL); ?>/index.php/Public/register">Sign Up</a> 
+      <!-- | <a class="iframe" href="<?php echo ($SITE_URL); ?>/index.php/Public/login">test</a> --><?php endif; ?>
+      <span style="color:#999;">|</span> <a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/15">Contact Us</a> </div>
+    <a href="<?php echo ($SITE_URL); ?>" class="logo"> <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/logo.png"  height="54" alt="Come To Word" /></a>
     <div class="menu">
       <?php /////var_dump(MODULE_NAME); var_dump(ACTION_NAME); ?>
       <ul>
         <li <?php if(MODULE_NAME=="Index"&& ACTION_NAME=="index"){ echo 'class="selected"'; } ?> ><a href="<?php echo ($SITE_URL); ?>">Home</a></li>
-        <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="all")echo 'class="selected"'; }} ?>><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/all/cat_id/0">Products</a></li>
+      
         <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="supply")echo 'class="selected"'; }} ?>><a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/supply/cat_id/0">Suppliers </a></li>
-        <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="demand")echo 'class="selected"'; }} ?>> <a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/demand/cat_id/0?l=en-us">Buyers</a> </li>
+        <li <?php if(MODULE_NAME=="Products"&& ACTION_NAME=="lists"){ if(!empty($_GET["flag"])){ if($_GET["flag"]=="demand")echo 'class="selected"'; }} ?>> <a href="<?php echo ($SITE_URL); ?>/index.php?s=Products/lists/flag/demand/cat_id/0">Buyers</a> </li>
         <li <?php if(MODULE_NAME=="Page"&& ACTION_NAME=="index"){ if(!empty($_GET["id"])){ if($_GET["id"]=="14")echo 'class="selected"'; }} ?>><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/14">Business Service</a></li>
         <!--
         <li><a href="<?php echo ($SITE_URL); ?>/index.php/Page/index/id/12">Business cooperation</a></li>
@@ -93,8 +143,9 @@ $the_uri = str_replace("/l/en-us", "", $the_uri);
 <div id="content">
 <div class="w960">
 
-<p>
+
   <?php /* ?>
+  <p>
     <b>Latest Update Gategories</b>
     <a href="">Agriculture</a>
     <a href="">Apparel</a>
@@ -110,8 +161,9 @@ $the_uri = str_replace("/l/en-us", "", $the_uri);
     <a href="">Food & Beverage</a>
     <a href="">Furniture</a>
     <a href="">Gifts & Crafts</a>
+    </p>
     <?php //*/ ?>
-</p>
+
 
 
 <div id="page_left">
@@ -203,8 +255,8 @@ $(document).ready( function(){
         
         <div class="signin_quicklink">
            <h4>Quick Access</h4>
-           <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index">My Product</a><br />
-           <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/icon_p.png" width="16" height="16" /><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/accoun">Account Info</a><br />
+           <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/package.gif" width="16" height="16" style="padding-right:5px;" /><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Product/index">My Product</a><br />
+           <img src="<?php echo ($SITE_URL); ?>/public/jack/forindex/images/account16.png" width="16" height="16" style="padding-right:5px;" /><a href="<?php echo ($SITE_URL); ?>/biz.php?s=Index/accoun">Account Info</a><br />
 
 
           
@@ -338,7 +390,7 @@ $(document).ready( function(){
        --> 
   </div>
  </div> 
- </div> 
+
     
 
 
@@ -438,7 +490,7 @@ $(function(){
   
   </div>
   
-  
+  <!--
   		<b>Product Categories:</b>
   
       <?php //var_dump($categories); ?>
@@ -450,19 +502,8 @@ $(function(){
               	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/<?php echo ($vo1["cat_id"]); ?>">
                 	<?php if(empty($vo1["cat_name_with_lang"])): ?><?php echo ($vo1["cat_name"]); ?><?php endif; ?>
                     <?php if(!empty($vo1["cat_name_with_lang"])): ?><?php echo ($vo1["cat_name_with_lang"]); ?><?php endif; ?>
-                </a>
-                
-              <!-- 2级菜单 -->
-                    <?php if(!empty($vo1["child_cats"])): ?><ul class="sub_category">
-                        	<?php if(is_array($vo1["child_cats"])): foreach($vo1["child_cats"] as $key=>$vo2): ?><li class="first">
-                                	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/<?php echo ($vo2["cat_id"]); ?>">
-                                        <?php if(empty($vo2["cat_name_with_lang"])): ?><?php echo ($vo2["cat_name"]); ?><?php endif; ?>
-                                        <?php if(!empty($vo2["cat_name_with_lang"])): ?><?php echo ($vo2["cat_name_with_lang"]); ?><?php endif; ?>
-                                    </a>
-                                </li><?php endforeach; endif; ?>
-                       </ul><?php endif; ?>
-                 <!-- end of 2级菜单 --><?php endforeach; endif; ?>
-      
+                </a><?php endforeach; endif; ?>
+      -->
   
   
   <!--
