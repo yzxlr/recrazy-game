@@ -64,7 +64,7 @@ class ProductsAction extends CommonAction
 									-> join("ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'")
 									-> field("ry_products.*, ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description")
 									-> where($condition)->count();
-			$Page = new Page($count,25);
+			$Page = new Page($count,12);
 			//>>>> page English support start
 			if($count>1)
 				$Page->setConfig('header','Records'); 
