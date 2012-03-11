@@ -70,7 +70,8 @@ class PublicAction extends Action
 				if($user["role"]>=0){
 					$_SESSION["user"] = $user;
 					$this->assign("jumpUrl","/index.php/Index/index");
-					$this->success('You login successfully!');
+					$this->redirect("Index/index");
+					//$this->success('You login successfully!');
 					//$this->redirect('Index/index', array(), 3, 'You login successfully!');
 				}else{
 					$this->error("You are not an user!");
@@ -117,7 +118,8 @@ class PublicAction extends Action
 	public function logout(){
 		$_SESSION["user"]=null;
 		$this->assign("jumpUrl","/index.php/Index/index");
-		$this->success('You logout successfully!');
+		$this->redirect("Index/index");
+		//$this->success('You logout successfully!');
 		//$this->redirect('Public/login', array(), 3, 'You logout successfully!');
 	}
 	
