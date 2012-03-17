@@ -1,0 +1,175 @@
+[ 2012-01-17T10:25:13-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.055424s ]
+[ 2012-01-17T10:25:13-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T10:25:13-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.010500s ]
+[ 2012-01-17T10:25:13-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T10:25:13-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001148s ]
+[ 2012-01-17T10:25:13-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T10:25:13-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001217s ]
+[ 2012-01-17T10:25:13-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T10:25:13-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001584s ]
+[ 2012-01-17T10:25:31-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-17T10:25:33-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-17T10:25:34-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-17T10:25:36-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-17T10:25:40-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-17T10:25:41-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-17T10:25:47-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-17T10:25:47-05:00 ] NOTIC: [8] Undefined variable: data 3f0a5e0180fdf3c6687d79502425d559.php 第 152 行.
+[ 2012-01-17T10:25:47-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 169 行.
+[ 2012-01-17T10:25:47-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 255 行.
+[ 2012-01-17T10:25:47-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 285 行.
+[ 2012-01-17T10:25:49-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-17T10:25:57-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-17T13:04:08-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.015850s ]
+[ 2012-01-17T13:04:08-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:08-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001101s ]
+[ 2012-01-17T13:04:08-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:08-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000949s ]
+[ 2012-01-17T13:04:08-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:08-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000982s ]
+[ 2012-01-17T13:04:08-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:08-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000955s ]
+[ 2012-01-17T13:04:47-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.015338s ]
+[ 2012-01-17T13:04:47-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:47-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001002s ]
+[ 2012-01-17T13:04:47-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:47-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000965s ]
+[ 2012-01-17T13:04:47-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:47-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001281s ]
+[ 2012-01-17T13:04:47-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:04:47-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000935s ]
+[ 2012-01-17T13:04:52-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-01-17T13:04:52-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 149 行.
+[ 2012-01-17T13:04:52-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 179 行.
+[ 2012-01-17T13:04:56-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-17T13:04:56-05:00 ] NOTIC: [8] Undefined variable: data 3f0a5e0180fdf3c6687d79502425d559.php 第 152 行.
+[ 2012-01-17T13:04:56-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 169 行.
+[ 2012-01-17T13:04:56-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 255 行.
+[ 2012-01-17T13:04:56-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 285 行.
+[ 2012-01-17T13:06:12-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.014594s ]
+[ 2012-01-17T13:06:12-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:12-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001075s ]
+[ 2012-01-17T13:06:12-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:12-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001146s ]
+[ 2012-01-17T13:06:12-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:12-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001159s ]
+[ 2012-01-17T13:06:12-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:12-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001053s ]
+[ 2012-01-17T13:06:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.009949s ]
+[ 2012-01-17T13:06:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000770s ]
+[ 2012-01-17T13:06:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000911s ]
+[ 2012-01-17T13:06:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000813s ]
+[ 2012-01-17T13:06:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000829s ]
+[ 2012-01-17T13:06:54-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.011470s ]
+[ 2012-01-17T13:06:54-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:54-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000827s ]
+[ 2012-01-17T13:06:54-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:54-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000784s ]
+[ 2012-01-17T13:06:54-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:54-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000740s ]
+[ 2012-01-17T13:06:54-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:06:54-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000738s ]
+[ 2012-01-17T13:07:01-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.013011s ]
+[ 2012-01-17T13:07:01-05:00 ] NOTIC: [8] Undefined variable: data ScheduleAction.class.php 第 44 行.
+[ 2012-01-17T13:07:16-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.012601s ]
+[ 2012-01-17T13:07:16-05:00 ] SQL: INSERT INTO `ry_task` (`user_id`,`time`,`title`,`content`) VALUES ('1','2012-01-17 00:00:00','bjhjhjmeeet','vbbvn') [ RunTime:0.073096s ]
+[ 2012-01-17T13:07:18-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.018126s ]
+[ 2012-01-17T13:07:18-05:00 ] NOTIC: [8] Undefined variable: data ScheduleAction.class.php 第 44 行.
+[ 2012-01-17T13:07:21-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.009300s ]
+[ 2012-01-17T13:07:21-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:21-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000924s ]
+[ 2012-01-17T13:07:21-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:21-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000942s ]
+[ 2012-01-17T13:07:21-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:21-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000832s ]
+[ 2012-01-17T13:07:21-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:21-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000820s ]
+[ 2012-01-17T13:07:24-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.016079s ]
+[ 2012-01-17T13:07:24-05:00 ] NOTIC: [8] Undefined variable: data ScheduleAction.class.php 第 44 行.
+[ 2012-01-17T13:07:32-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.017357s ]
+[ 2012-01-17T13:07:32-05:00 ] SQL: INSERT INTO `ry_task` (`user_id`,`time`,`title`,`content`) VALUES ('1','2012-01-18 00:00:00','jghjgh','ghjghj') [ RunTime:0.001429s ]
+[ 2012-01-17T13:07:34-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.016552s ]
+[ 2012-01-17T13:07:34-05:00 ] NOTIC: [8] Undefined variable: data ScheduleAction.class.php 第 44 行.
+[ 2012-01-17T13:07:52-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.013134s ]
+[ 2012-01-17T13:07:52-05:00 ] SQL: INSERT INTO `ry_task` (`user_id`,`time`,`title`,`content`) VALUES ('1','2012-01-25 00:00:00','ghgfhgf','gggjbvjvbnv') [ RunTime:0.001165s ]
+[ 2012-01-17T13:07:53-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.017098s ]
+[ 2012-01-17T13:07:53-05:00 ] NOTIC: [8] Undefined variable: data ScheduleAction.class.php 第 44 行.
+[ 2012-01-17T13:07:56-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.013418s ]
+[ 2012-01-17T13:07:56-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:56-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001525s ]
+[ 2012-01-17T13:07:56-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:56-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001539s ]
+[ 2012-01-17T13:07:56-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:56-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001208s ]
+[ 2012-01-17T13:07:56-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:07:56-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001311s ]
+[ 2012-01-17T13:07:59-05:00 ] NOTIC: [8] Undefined variable: msg 4e053f024670b206a12d75c919481381.php 第 27 行.
+[ 2012-01-17T13:08:12-05:00 ] NOTIC: [2] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() CommonAction.class.php 第 52 行.
+[ 2012-01-17T13:08:22-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.014799s ]
+[ 2012-01-17T13:08:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:08:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001569s ]
+[ 2012-01-17T13:08:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:08:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001347s ]
+[ 2012-01-17T13:08:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:08:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001348s ]
+[ 2012-01-17T13:08:22-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:08:22-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '1' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001125s ]
+[ 2012-01-17T13:08:25-05:00 ] NOTIC: [8] Undefined variable: msg fca0a88235b390ef0264fc041257369f.php 第 27 行.
+[ 2012-01-17T13:08:29-05:00 ] NOTIC: [8] Undefined variable: msg de495f1869e9d8194f9d8c354d394a1c.php 第 27 行.
+[ 2012-01-17T13:08:33-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 27 行.
+[ 2012-01-17T13:08:33-05:00 ] NOTIC: [8] Undefined variable: data 3f0a5e0180fdf3c6687d79502425d559.php 第 152 行.
+[ 2012-01-17T13:08:33-05:00 ] NOTIC: [8] Undefined variable: msg 3f0a5e0180fdf3c6687d79502425d559.php 第 169 行.
+[ 2012-01-17T13:08:33-05:00 ] NOTIC: [8] Undefined variable: categoty 3f0a5e0180fdf3c6687d79502425d559.php 第 255 行.
+[ 2012-01-17T13:08:33-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 3f0a5e0180fdf3c6687d79502425d559.php 第 285 行.
+[ 2012-01-17T13:08:35-05:00 ] NOTIC: [8] Undefined variable: msg 62ccb7d712cc938250834fed24639f3a.php 第 27 行.
+[ 2012-01-17T13:08:35-05:00 ] NOTIC: [8] Undefined variable: categoty 62ccb7d712cc938250834fed24639f3a.php 第 149 行.
+[ 2012-01-17T13:08:35-05:00 ] NOTIC: [8] Undefined variable: DATE_NOW 62ccb7d712cc938250834fed24639f3a.php 第 179 行.
+[ 2012-01-17T13:11:23-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.016928s ]
+[ 2012-01-17T13:11:23-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:23-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.042137s ]
+[ 2012-01-17T13:11:23-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:23-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001217s ]
+[ 2012-01-17T13:11:23-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:23-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001288s ]
+[ 2012-01-17T13:11:23-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:23-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001309s ]
+[ 2012-01-17T13:11:37-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.017437s ]
+[ 2012-01-17T13:11:37-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:37-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001659s ]
+[ 2012-01-17T13:11:37-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:37-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001163s ]
+[ 2012-01-17T13:11:37-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:37-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001198s ]
+[ 2012-01-17T13:11:37-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:37-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001169s ]
+[ 2012-01-17T13:11:58-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.016645s ]
+[ 2012-01-17T13:11:58-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:58-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001118s ]
+[ 2012-01-17T13:11:58-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:58-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001318s ]
+[ 2012-01-17T13:11:58-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:58-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001092s ]
+[ 2012-01-17T13:11:58-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:11:58-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001065s ]
+[ 2012-01-17T13:12:33-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.015549s ]
+[ 2012-01-17T13:12:33-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:33-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001561s ]
+[ 2012-01-17T13:12:33-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:33-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.000864s ]
+[ 2012-01-17T13:12:33-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:33-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001224s ]
+[ 2012-01-17T13:12:33-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:33-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001134s ]
+[ 2012-01-17T13:12:36-05:00 ] SQL: SHOW COLUMNS FROM `ry_task` [ RunTime:0.017966s ]
+[ 2012-01-17T13:12:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001440s ]
+[ 2012-01-17T13:12:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-18 00:00:00') AND (`time` >= '2012-01-17 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001279s ]
+[ 2012-01-17T13:12:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` < '2012-01-19 00:00:00') AND (`time` >= '2012-01-18 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001502s ]
+[ 2012-01-17T13:12:36-05:00 ] NOTIC: [2] trim() expects parameter 1 to be string, array given Db.class.php 第 507 行.
+[ 2012-01-17T13:12:36-05:00 ] SQL: SELECT * FROM `ry_task` WHERE ( `user_id` = '16' ) AND ( `status` = 1 ) AND ( (`time` <= '2012-01-25 00:00:00') AND (`time` >= '2012-01-19 00:00:00')  ) ORDER BY time ASC [ RunTime:0.001184s ]
