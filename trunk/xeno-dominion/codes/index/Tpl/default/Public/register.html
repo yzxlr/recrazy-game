@@ -1,41 +1,109 @@
 <include file="Public:header" />
 
-<div id="wrapper" class="login_page">
+<div style="padding:60px 40px; overflow:hidden; min-height:500px; background:url({$SITE_URL}/public/jack/forindex/images/map.png) 0 60px no-repeat;  ">
 
-<form action="#" method="post">
-<table>
-	<thead>
-    	<tr>
-        	<td colspan="2"><h3>Register</h3></td>
-        </tr>
-    </thead>
-    <tbody>
-    	<tr>
-        	<td colspan="2"></td>
-      	</tr>
-        <tr>
-        	<td>User name:</td>
-            <td><input type="text" name="user_name" value="" /> </td>
-        </tr>
-        <tr>
-        	<td>Eamil:</td>
-            <td><input type="text" name="user_email" value="" /> </td>
-        </tr>
-        <tr>
-        	<td>Password : </td>
-            <td><input type="user_password" name="user_password" value="" /></td>
-        </tr>
-         <tr>
-        	<td></td>
-            <td><input type="submit" value="login" /></td>
-        </tr>
-    </tbody>
-</table>
-</form>
+							<div style="float:right; width:530px;">							
+           <h4>Sign in to continue</h4>
+           <h1>International trade management anytime, anywhere</h1>
+           
+           <ul class="book_list">
+              <li>    Manage your Product Listings / Buying Leads</li>
+              <li>    List your Company Profile </li>
+              <li>    Access your contact lists fast</li>
+              <li>    Communicate with trade partners in real-time</li>
+              <li>    Send and receive messages</li>
+           </ul>
+           
+           <img src="{$SITE_URL}/public/jack/forindex/images/professionals.png" style="width:350px; float:right; padding-top:30px;" />
+           
+           
+       </div>	
+
+<style>
 
 
-</div> <!-- wrapper -->
+.search_bar, .menu, .foot_bar { display:none; }
 
+
+#think_page_trace { display:none; }
+
+
+</style>
+
+
+     <div id="wrapper" class="login_form">
+     		<h3>Register</h3>
+     <form action="#" method="post">
+     
+     
+             <ul> 
+               	 	<li>
+                 				<label>User name:</label><br />
+                     <input type="text" name="user_name" value="" />
+                 </li>   
+                 	<li>
+                 				<label>Eamil:</label><br />
+                     <input type="text" name="user_email" value="" /> 
+                 </li> 
+                 <li>
+                 				<label>Password:</label><br />
+                     <input type="user_password" name="user_password" value="" />
+                 </li> 
+              
+                 	<li>
+                 				<input type="submit" value="Sign Up" />
+                     <a class="contact_btn">Free Sign Up</a> 
+                 </li>  
+                 
+                 
+                 
+              </ul>   
+            
+             
+             <img src="{$SITE_URL}/public/jack/forindex/images/login-key.jpg"  />
+             
+            <h5> I have account already.</h5>
+            
+            <a class="contact_btn" href="{$SITE_URL}/index.php/Public/login">Login</a>
+            
+				<!--
+     <table>
+      <thead>
+          <tr>
+              <td colspan="2"><h3>Register</h3></td>
+             </tr>
+         </thead>
+         <tbody>
+          <tr>
+              <td colspan="2"></td>
+            </tr>
+             <tr>
+              <td>User name:</td>
+                 <td><input type="text" name="user_name" value="" /> </td>
+             </tr>
+             <tr>
+              <td>Eamil:</td>
+                 <td><input type="text" name="user_email" value="" /> </td>
+             </tr>
+             <tr>
+              <td>Password : </td>
+                 <td><input type="user_password" name="user_password" value="" /></td>
+             </tr>
+              <tr>
+              <td></td>
+                 <td><input type="submit" value="login" /></td>
+             </tr>
+         </tbody>
+     </table>
+     -->
+     
+     </form>
+     
+     
+     </div> <!-- wrapper -->
+
+
+</div>
 
 
 <include file="Public:footer" />
