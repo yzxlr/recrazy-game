@@ -1,0 +1,72 @@
+<include file="Public:header" />
+
+
+
+
+
+<include file="Public:page_left" />
+
+<div id="main_content">
+  <div class="row">
+    <div class="signup_sidebar">
+      <notempty name="Think.session.user.uid" > 
+      <!--
+      		  <p class="s">Not a member yet? <a href="">Join Free</a> </p>
+      		-->	 
+       <p style="font-weight:bold; color:#069; border-bottom:#ccc dashed 1px;">
+          Welcome back, 	{$Think.session.user.user_name}
+      		</p>
+        
+        <div class="signin_quicklink">
+           <h4>Quick Access</h4>
+           <img src="{$SITE_URL}/public/jack/forindex/images/package.gif" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php?s=Product/index">My Product</a><br />
+           <img src="{$SITE_URL}/public/jack/forindex/images/account16.png" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php?s=Index/accoun">Account Info</a><br />
+
+
+          
+        </div>
+        
+      </notempty>
+      <empty name="Think.session.user.uid"> 
+        			  <p>Already A Member?<br />
+        <a href="{$SITE_URL}/index.php/Public/login" class="signin_btn">Sign In</a> </p>
+          		  <p class="s">Not a member yet? <a href="">Join Free</a> </p>
+                <img src="{$SITE_URL}/public/jack/forindex/images/login-key.jpg" width="170" /> 
+      </empty>
+    
+      <!--  
+          <img src="images/signup.jpg" width="180" height="210" />
+          --> 
+    </div>
+ 
+    <include file="Public:slideshow" /> 
+
+    
+ </div>
+     <div class="row">
+        <div id="city_list">
+            <h3>Browse Jobs by City</h3>
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/calgary-alberta">Calgary</a></div>
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/edmonton-alberta">Edmonton</a></div>
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/hamilton-ontario">Hamilton</a></div>
+
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/mississauga-ontario">Mississauga</a></div>
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/montreal-quebec">Montreal</a></div>
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/ottawa-ontario">Ottawa</a></div>
+
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/quebec-city-quebec">Quebec City</a></div>
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/toronto-ontario">Toronto</a></div>
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/vancouver-bc">Vancouver</a></div>
+
+            <div class="city_item"><a href="/job.php?s=jobs/lists/location/calgary-manitoba">Winnipeg</a></div> 
+        </div>
+    
+     </div>
+  
+  <div class="ads"> <img src="{$SITE_URL}/public/jack/forindex/images/sample250a.jpg" width="250" style="margin-right:5px;" /> <img src="{$SITE_URL}/public/jack/forindex/images/sample250b.jpg" width="250" style="margin-right:5px;"  /> <img src="{$SITE_URL}/public/jack/forindex/images/sample250c.jpg" width="250" /> </div>
+</div>
+<!--
+<img src="images/index_sample.jpg"  />
+--> 
+
+<include file="Public:footer" />

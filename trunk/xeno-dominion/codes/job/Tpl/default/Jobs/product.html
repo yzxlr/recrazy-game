@@ -1,0 +1,134 @@
+<include file="Public:header" />
+   
+
+
+   <div id="main_content">   
+
+								<div class="out_box" >
+        
+        
+        
+        sdfsdfsdf
+        
+        </div>
+
+    
+       <div id="product_box">
+    
+   			
+   
+ 
+        
+        <div class="image_div">
+        	<?php 
+                $images = explode(",",$data["tb_products"]["image"]);
+              
+            ?>
+            <div class="title_image">
+            
+            			
+            
+            <?php  
+                                  $title_image = explode(",",$data["tb_products"]);
+                                     $vo["image"] = $title_image[0];
+                     
+                                 ?>
+            
+                 <notempty name="vo.image">      
+                    	<img src="{$SITE_URL}/public/uploads/images/{$images.0}" />
+                     
+                           </notempty>
+                           
+                             <empty name="vo.image">   
+                             
+                            
+                           <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+                           </empty>
+   
+            
+            </div>
+            <ul class="image_showcase">
+                <foreach name="images" item="image">
+                	<li>
+                    	<a href="#">
+                        	<img src="{$SITE_URL}/public/uploads/images/{$image}" />
+                        </a>
+                    </li>
+                </foreach>
+            </ul>
+        </div>
+        
+        <div class="basic_information" >
+        
+        <h3>                 	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
+          					<empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
+               
+               </h3>
+        
+        
+        	<table>
+            	<tbody>
+             <!--
+                	<tr>
+                    	<td width="100">{$Think.lang.product_name}:</td>
+                        <td>
+                        	<notempty name="data.tb_products.lang_name">{$data.tb_products.lang_name}</notempty>
+          					<empty name="data.tb_products.lang_name">{$data.tb_products.name}</empty>
+                        </td>
+                    </tr>
+                -->    
+                	<tr>
+                    	<td>{$Think.lang.product_price}:</td>
+                        <td>${$data.tb_products.price}</td>
+                    </tr>
+                    <tr>
+                    	<td>{$Think.lang.product_quantity}</td>
+                        <td>{$data.tb_products.quantity}</td>
+                    </tr>
+                    <tr>
+                    	<td>{$Think.lang.product_location}</td>
+                        <td>
+                        	<span>{$data.tb_products.region_country}</span>
+            				<span>{$data.tb_products.region_province}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>{$Think.lang.product_type}</td>
+                        <td>
+                
+                        	<?php if($data["tb_products"]["type"]==1){ ?>
+                            	{$Think.lang.product_supply}
+                            <?php }else if($data["tb_products"]["type"]==2){ ?>
+                            	{$Think.lang.product_demand}
+                            <?php } ?>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+             							 <p>
+                           	<img width="16" height="16" src="{$SITE_URL}/public/jack/forindex/images/icon_p.png"  />
+                           		<a href="">Online Support</a>
+                           </p>
+                           <p>
+                           	 <a class="contact_btn" href="">Contact Supplier</a>
+                           </p>
+            
+        </div>
+        
+        <div style="clear:both"></div>
+        
+        <ul class="product_info_tag">
+        		<li class="desciption_tag"><a href="">description</a></li>
+        
+        </ul>
+        <div class="description_div">
+        	<notempty name="data.tb_products.lang_description">{$data.tb_products.lang_description}</notempty>
+            <empty name="data.tb_products.lang_description">{$data.tb_products.description}</empty>
+        </div>
+        
+     </div>
+ 
+ </div>
+
+<include file="Public:footer" />
