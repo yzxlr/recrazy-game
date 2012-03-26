@@ -15,7 +15,7 @@
     <div class="banner570"> <img src="{$SITE_URL}/public/jack/forindex/images/128801480001111112140006.gif" /> </div>
   </div>
   -->
-  <p>Products > Agriculture > Fruit > Fresh Fruit > Fresh Apples:</p>
+  <p>Jobs > {$data.cat_name}: </p>
   
   <div class="page_navi">
   {$msg.page}
@@ -28,29 +28,31 @@
 		-->
     
     <ul class="product_list">
-      <foreach name="data.tb_products" item="vo">
+       
+      <foreach name="data.tb_jobs" item="vo">
         <li>
           
-          <div class="thumnbnail_img"> <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+          <div class="thumnbnail_img"> <a href="{$SITE_URL}/job.php/jobs/job/id/{$vo.job_id}">
             <?php 
-                                  $title_image = explode(",",$vo["image"]);
-                                     $vo["image"] = $title_image[0];
+                                  $title_image = explode(",",$vo["employer_logo"]);
+                                     $vo["employer_logo"] = $title_image[0];
                                  ?>
-            <notempty name="vo.image"> <img src="{$SITE_URL}/public/uploads/images/{$vo.image}" /> </notempty>
-            <empty name="vo.image"> <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" /> </empty>
+            <notempty name="vo.employer_logo"> <img src="{$SITE_URL}/public/uploads/images/{$vo.employer_logo}" /> </notempty>
+            <empty name="vo.employer_logo"> <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" /> </empty>
             </a> </div>
           <div class="desc">
-            <h2> <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
-              <notempty name="vo.lang_name">{$vo.lang_name}</notempty>
-              <empty name="vo.lang_name">{$vo.name}</empty>
+            <h2> <a href="{$SITE_URL}/job.php/jobs/job/id/{$vo.job_id}">
+              <notempty name="vo.job_title">{$vo.job_title}</notempty>
+              <empty name="vo.job_title">{$vo.job_title}</empty>
               </a> </h2>
             <p class="summary">
-              <notempty name="vo.lang_description">{$vo.lang_description}</notempty>
-              <empty name="vo.lang_description">{$vo.description}</empty>
+              <notempty name="vo.job_description">{$vo.job_description}</notempty>
+              <empty name="vo.job_description">{$vo.job_description}</empty>
             </p>
-            <p class="min_order">
-              <?php /* ?>Min. Order: 10 Pieces<?php //*/ ?>
-              <span class="price"><b>Price: </b> US ${$vo.price}/ each</span> </p>
+            <p class="location">
+                <notempty name="vo.job_description">{$vo.job_location}</notempty>
+                <empty name="vo.job_description">{$vo.job_location}</empty>
+            </p>
           </div>
           <div class="company_info">
             <p>
@@ -59,14 +61,11 @@
                                     <?php //*/ ?>
             </p>
             <p> <span>{$vo.region_country}</span> <span>{$vo.region_province}</span> </p>
-            <p> <img width="16" height="16" src="{$SITE_URL}/public/jack/forindex/images/icon_p.png"  /> <a href="">Online Support</a> </p>
+            <p> <img width="16" height="16" src="{$SITE_URL}/public/jack/forindex/images/icon_p.png"  /> {$vo.time_add} </p>
             <p> 
-            	<eq name="vo.type" value="1">
-            	<a class="contact_btn" href="mailto:{$vo.user_email}">Contact Supplier</a> 
-                </eq>
-                <eq name="vo.type" value="2">
-            	<a class="contact_btn" href="mailto:{$vo.user_email}">Contact Buyer</a> 
-                </eq>
+            	
+            	<!--a class="contact_btn" href="mailto:{$vo.user_email}">Save Job</a--> 
+                
             </p>
           </div>
           
