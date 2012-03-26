@@ -263,7 +263,17 @@ ul.book_list  li { background:url('../images/book-red-check.png') 0 0 no-repeat;
 #city_list{border: 1px solid #DDDDDD;overflow: hidden;padding: 20px 0 20px 10px}
 .city_item{width:180px;font-size:14px;text-align: center;float: left;margin:5px 0}
 .city_item  a{text-decoration: none;color:#333333}
+.desc p.location { height:60px; overflow:hidden;font-weight: bold}
+.job_header{height: 100px;padding: 10px;border:solid 1px #CCCCCC}
+.job_header .thumnbnail_img img {
+    margin-left:20px;
+    height: 100px;
+    float: right;
+    width: 100px;
+    border:solid 1px #CCCCCC;
+}
 
-
-		
+cite{float:right;font-size: 14px}
+.job_box{overflow: hidden;}
+.job_box .basic_information{padding:20px}
 		
