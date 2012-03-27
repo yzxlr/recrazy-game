@@ -1,0 +1,31 @@
+<include file="Public:header" />
+
+<include file="Public:left_menu" />  
+ 
+<div id="content">
+
+<a href="__URL__/add" class="btn1 r3"><span class="r3">Add News</span></a>
+
+<div>
+<div style="width:1200px;height:20px;padding:5px;background:#fff;color:#333;font-size:12px;">
+<i>Company News</i>
+</div>
+<table class="newstable" cellspacing="1">
+<tr><th style="width:50px;">ID</th><th style="width:500px;">News Title</th><th style="width:150px;">Added</th><th style="width:150px;">Updated</th><th style="width:150px;">Options</th><th style="width:147px;">Language List</th></tr>
+<?php
+if($news_count == 0){
+	
+}else{
+	?>
+    <foreach name="company_news" item="vo">
+    <tr><td>{$vo.nid}</td><td>{$vo.n_title}</td><td>{$vo.added}</td><td>{$vo.updated}</td><td><a href="__URL__/update/id/{$cid}/nid/{vo.nid}">Update</a>&nbsp;|&nbsp;<a href="__URL__/delete/id/{$cid}/nid/{$vo.nid}">Delete</a></td><td><a href="#">List</a></td></tr>
+    </foreach>
+    <?php
+}
+?>
+<tr bgcolor="#f5f5f5"><th colspan="6">{$show}</td></tr>
+</table>
+</div>
+
+</div>
+<include file="Public:footer" />
