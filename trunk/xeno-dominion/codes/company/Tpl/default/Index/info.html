@@ -1,0 +1,115 @@
+<include file="Public:header" />
+
+<div class="companynav"><a href="{$SITE_URL}/company.php">Company</a>&nbsp;&gt;&nbsp;<a href="{$SITE_URL}/company.php/Index/info/id/{$cid}"><?php echo $user_company_info['companyName']; ?></a>&nbsp;&gt;&nbsp;Home</div><div class="clr"></div>
+
+<div id="page_left">
+<include file="Public:page_menu" />
+<br />
+<include file="Public:page_left" />
+</div>
+
+<div id="main_content">
+  
+
+ <div class="row">
+ 	<div class="companytitle">
+    	Welcome to <?php echo $user_company_info['companyName']; ?>
+    </div>
+    
+    <div class="contactbox">
+    	<div class="sectitle">&bull;&nbsp;Contact Us</div>
+        <table align="center" class="contacttable">
+        	<tr><td>Province:</td><td><?php echo $user_company_info['companyProvince']; ?></td></tr>
+            <tr><td>Country:</td><td><?php echo $user_company_info['companyCountry']; ?></td></tr>
+            <tr><td>Zip Code:</td><td><?php echo $user_company_info['companyZip']; ?></td></tr>
+            <tr><td>Phone:</td><td><?php echo $user_company_info['companyPhone']; ?></td></tr>
+            <tr><td>Fax:</td><td><?php echo $user_company_info['companyFax']; ?></td></tr>
+            <tr><td>E-Mail:</td><td><?php echo $user_company_info['companyEmail']; ?></td></tr>
+        </table>
+    </div>
+ 
+ 	<div class="aboutbox">
+    	<div class="sectitle">&bull;&nbsp;About Us</div>
+        <?php echo $user_company_info['companyAbout']; ?>
+    </div>
+
+    <div class="clr"></div>
+ </div>
+ 
+ <div class="row">
+ 	<div class="newssec1">
+    	<div class="sectitle2">Industrial News</div>
+        <div class="newstitle">{$latest_industiral_news['n_title']}</div>
+        <div class="newscontent">{$latest_industiral_news['n_content']}</div>
+    </div>
+    
+    <div class="newssec2">
+    	<div class="sectitle2">Company News</div>
+        <div class="newstitle">{$latest_company_news['n_title']}</div>
+        <div class="newscontent">{$latest_company_news['n_content']}</div>
+    </div>
+    
+    <div class="clr"></div>
+ </div>
+ 
+ <div>Company Product</div>
+ <div class="page_navi">
+  {$show}
+  </div>
+ <div class="row">
+    <ul class="product_list">
+      <foreach name="user_company_products" item="vo">
+        <li>
+          
+          <div class="thumnbnail_img"> <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+            <?php 
+                                  $title_image = explode(",",$vo["image"]);
+                                     $vo["image"] = $title_image[0];
+                                 ?>
+            <notempty name="vo.image"> <img src="{$SITE_URL}/public/uploads/images/{$vo.image}" /> </notempty>
+            <empty name="vo.image"> <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" /> </empty>
+            </a> </div>
+          <div class="pdesc">
+            <h2> <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+              <notempty name="vo.lang_name">{$vo.lang_name}</notempty>
+              <empty name="vo.lang_name">{$vo.name}</empty>
+              </a> </h2>
+            <div style="width:644px;height:57px;background:#f5f5f5;overflow:hidden;padding:3px;text-align:justify;">
+              <notempty name="vo.lang_description">{$vo.lang_description}</notempty>
+              <empty name="vo.lang_description">{$vo.description}</empty>
+            </div>
+            <div class="pbottom">
+              <?php /* ?>Min. Order: 10 Pieces<?php //*/ ?>
+              <span style="float:right;">&nbsp;&nbsp;</span>
+              <span style="float:right;"><a href="mailto:{$vo.user_email}">Contact Supplier</a></span><span style="float:right;">&nbsp;&nbsp;</span>
+              <span class="price"><b>Price: </b> US ${$vo.price}/ each</span></div>
+          </div>
+          
+          
+          <!--
+                         <h4>
+                          <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
+                                 <notempty name="vo.lang_name">{$vo.lang_name}</notempty>
+                                 <empty name="vo.lang_name">{$vo.name}</empty>
+                             </a>
+                         </h4>
+                       
+                         <div class="region_div">
+                          <span>{$vo.region_country}</span>
+                             <span>{$vo.region_province}</span>
+                         </div>
+                     --> 
+          
+        </li>
+      </foreach>
+    </ul>
+ </div>
+ <div class="page_navi">
+  {$show}
+  </div>
+</div>
+<!--
+<img src="images/index_sample.jpg"  />
+--> 
+
+<include file="Public:footer" />
