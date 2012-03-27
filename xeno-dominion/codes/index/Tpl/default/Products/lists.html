@@ -68,6 +68,12 @@
             	<a class="contact_btn" href="mailto:{$vo.user_email}">Contact Buyer</a> 
                 </eq>
             </p>
+            <br />
+            <p>
+            	<neq name="vo.user_id" value="0">
+            	<a href="{$SITE_URL}/company.php/Index/info/id/{$vo.user_id}">&raquo;&nbsp;View Supplier</a>
+                </neq>
+            </p>
           </div>
           
           <!--
