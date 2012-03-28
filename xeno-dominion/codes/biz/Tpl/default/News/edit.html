@@ -16,12 +16,6 @@
 		}
 		return true;
 	}
-	
-	$(document).ready(function(){
-		$(function() {
-			$( "#time_expire" ).datepicker({ dateFormat: 'yy-mm-dd' });
-		});
-	});
 	//time_expire
 </script>
 
@@ -39,24 +33,27 @@
     <td height="1" style='padding:0px'></td>
   </tr>
 </table>
-&raquo;&nbsp;<a href="__URL__/industrial">Industrial News List</a><br />
-&raquo;&nbsp;<a href="__URL__/company">Company News List</a>
-<h2>Add News</h2>
-<form id="add_news" name="add_news" method="post" action="#" enctype="multipart/form-data"  onsubmit="return form_check();" >
+<?php if($read_news['n_type'] == "1"){ ?>
+<a href="__URL__/industrial">Return to Industrial News List</a>
+<?php }else if($read_news['n_type'] == "2"){ ?>
+<a href="__URL__/company">Return to Company News List</a>
+<?php } ?>
+<h2>Edit News</h2>
+<form id="edit_news" name="edit_news" method="post" action="#" enctype="multipart/form-data"  onsubmit="return form_check();" >
 <table class="list_table"  width="98%" align="center" border="0" cellpadding="3" cellspacing="1" >
 
     <tr >
     <td width="18%"><div align="right">Type&nbsp; </div></td>
     <td width="82%">
-      <select name="n_type" id="n_type">
-         <option value="1" <eq name="Think.get.type" value="1">selected="selected"</eq>>Industrial News</option>
-         <option value="2" <eq name="Think.get.type" value="2">selected="selected"</eq>>Company News</option>
+      <select name="n_type" id="n_type" disabled="disabled">
+         <option value="1" <?php if($read_news['n_type'] == "1") { echo 'selected="selected"'; } ?>>Industrial News</option>
+         <option value="2" <?php if($read_news['n_type'] == "2") { echo 'selected="selected"'; } ?>>Company News</option>
       </select>	
  	</td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">News Title&nbsp; </div></td>
-    <td width="82%"><input name="n_title" id="n_title" type="text" size="30"/>&nbsp; <font color="#FF0000">*</font></td>
+    <td width="82%"><input name="n_title" id="n_title" type="text" size="30" value="{$read_news['n_title']}" />&nbsp; <font color="#FF0000">*</font></td>
   </tr>
   <tr bgcolor="#FFFFFF" style="display:none;">
     <td width="18%"><div align="right">User ID&nbsp; </div></td>
@@ -64,19 +61,14 @@
 		<input name="uid" value="{$cid}" /> Auto fill the current user id if leave empty
     </td>
   </tr>
-  <tr bgcolor="#FFFFFF" style="display:none;">
-        <td width="18%"><div align="right">Added&nbsp; </div></td>
-        <td width="82%"><input name="added" value="" /></td>
-    </tr>
   <tr bgcolor="#FFFFFF">
         <td width="18%"><div align="right">News Content &nbsp; </div></td>
-        <td width="82%"><textarea name="n_content" id="description" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+        <td width="82%"><textarea name="n_content" id="description" style="width:700px;height:200px;visibility:hidden;">{$read_news['n_content']}</textarea></td>
   </tr>
   <tr bgcolor="#FFFFFF">
     <td colspan="2">
 	<div align="center">
-    		<input type="submit" name="Submit" value="Add"> 
-			<input type="reset" name="chongzhi" value="Reset">
+    		<input type="submit" name="Submit" value="Edit" /> 
 	</div>
 	</td>
   </tr>
