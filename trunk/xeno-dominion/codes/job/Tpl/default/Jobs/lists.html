@@ -27,22 +27,19 @@
     <h3>List</h3>
 		-->
     
-    <ul class="product_list">
+    <ul class="job_list">
        
       <foreach name="data.tb_jobs" item="vo">
         <li>
           
           <div class="thumnbnail_img"> <a href="{$SITE_URL}/job.php/jobs/job/id/{$vo.job_id}">
-            <?php 
-                                  $title_image = explode(",",$vo["employer_logo"]);
-                                     $vo["employer_logo"] = $title_image[0];
-                                 ?>
+            
             <notempty name="vo.employer_logo"> <img src="{$SITE_URL}/public/uploads/images/{$vo.employer_logo}" /> </notempty>
             <empty name="vo.employer_logo"> <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" /> </empty>
             </a> </div>
           <div class="desc">
             <h2> <a href="{$SITE_URL}/job.php/jobs/job/id/{$vo.job_id}">
-              <notempty name="vo.job_title">{$vo.job_title}</notempty>
+              <notempty name="vo.job_title">123123123123123123123123123123{$vo.job_title}</notempty>
               <empty name="vo.job_title">{$vo.job_title}</empty>
               </a> </h2>
             <p class="summary">

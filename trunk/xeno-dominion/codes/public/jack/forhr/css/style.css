@@ -126,12 +126,26 @@ ul.category_show  li:hover ul { display:block; position:absolute; top:0; left:17
 
 .ad3_full { border:#aaa solid 1px; height:200px; background:#fff; display:none; }
 .ad3_full_auto { border:#aaa solid 1px;background:#fff; display:none; }
-.commercial_news { float:left; width:380px; height:140px; border:#ddd solid 1px;  }
-.commercial_news h5 { margin:0; padding:5px 10px; background:#f5f5f5; border-bottom:#ccc solid 1px; }
-.commercial_news p { padding:5px 10px; color:#333;  }
-.commercial_news p img { width:90px; padding:0 10px 10px 0; float:left;  }
-.commercial_news p span { font-style:italic; font-size:10px; }
+.new_jobs { height:280px; border:#ddd solid 1px; margin:10px 0; overflow:hidden;}
+.new_jobs h5 { margin:0; padding:5px 10px; background:#f5f5f5; border-bottom:#ccc solid 1px; }
+.new_jobs p { padding:5px 10px; color:#333;  }
 
+.new_job_list{padding:10px;}
+.new_job_list li { overflow:hidden; padding-bottom:10px; border-bottom:#ccc dashed 1px; margin-bottom:20px;}
+.new_job_list li input[type=checkbox] { float:left; margin-right:10px; }
+.new_job_list  .thumnbnail_img { float:left; width:110px; margin-right:10px;}
+.new_job_list  .thumnbnail_img  img { width:100px; height:100px;  border:#ccc solid 1px; padding:2px; }
+
+.new_job_list  .desc { float:left;  margin-right:30px; width:420px;}
+.new_job_list  .desc  h2 { padding:0 0 10px 0;  margin:0; height:20px; overflow:hidden;}
+.new_job_list  .desc h2 a { font-size:16px;; color:#09c; font-weight:normal; text-decoration:none;}
+.new_job_list  .desc h2 a:hover { color:#069;  }
+.new_job_list  .desc p { padding:0;   }
+.new_job_list  .desc p.summary { height:60px; overflow:hidden;}
+.new_job_list  .min_order { color:#666}
+.new_job_list  .price { float:right; }
+.new_job_list  .company_info { float:left; width:250px; width:170px; float:right; }
+.new_job_list  .company_info p { padding:0; }
 
 .signup_sidebar { width:170px;height:200px;  padding:5px;  border:#ddd solid 1px; float:right; margin-left:10px; overflow:hidden; border:#09c solid 1px;
    -moz-box-shadow:inset 0 0 5px #09c;
@@ -153,22 +167,22 @@ background: -moz-linear-gradient(top,  #0099cc,  #003366); /* for firefox 3.6+ *
 p.s { font-size:10px; font-weight:bold; margin:0; padding:0; } 
 	
 
-.product_list { padding:10px 0; }
-.product_list li { overflow:hidden; padding-bottom:10px; border-bottom:#ccc dashed 1px; margin-bottom:20px;}
-.product_list li input[type=checkbox] { float:left; margin-right:10px; }
-.product_list  .thumnbnail_img { float:left; width:110px; margin-right:10px;}
-.product_list  .thumnbnail_img  img { width:100px; height:100px;  border:#ccc solid 1px; padding:2px; }
+.job_list { padding:10px 0;}
+.job_list li { overflow:hidden; padding-bottom:10px; border-bottom:#ccc dashed 1px; margin-bottom:20px;}
+.job_list li input[type=checkbox] { float:left; margin-right:10px; }
+.job_list  .thumnbnail_img { float:left; width:110px; margin-right:10px;}
+.job_list  .thumnbnail_img  img { width:100px; height:100px;  border:#ccc solid 1px; padding:2px; }
 
-.product_list  .desc { float:left; width:340px; margin-right:30px; width:420px;}
-.product_list  .desc  h2 { padding:0 0 10px 0;  margin:0; height:20px; overflow:hidden; }
-.product_list  .desc h2 a { font-size:16px;; color:#09c; font-weight:normal;  }
-.product_list  .desc h2 a:hover { color:#069;  }
-.product_list  .desc p { padding:0;   }
-.product_list  .desc p.summary { height:60px; overflow:hidden;}
-.product_list  .min_order { color:#666}
-.product_list  .price { float:right; }
-.product_list  .company_info { float:left; width:250px; width:170px; float:right; }
-.product_list  .company_info p { padding:0; }
+.job_list  .desc { float:left;  margin-right:30px; width:420px;}
+.job_list  .desc  h2 { padding:0 0 10px 0;  margin:0; height:18px; overflow:hidden;}
+.job_list  .desc h2 a { font-size:16px;; color:#09c; font-weight:normal; text-decoration:none;}
+.job_list  .desc h2 a:hover { color:#069;  }
+.job_list  .desc p { padding:0;   }
+.job_list  .desc p.summary { height:60px; overflow:hidden;}
+.job_list  .min_order { color:#666}
+.job_list  .price { float:right; }
+.job_list  .company_info { float:left; width:250px; width:170px; float:right; }
+.job_list  .company_info p { padding:0; }
 
 .signin_quicklink { padding:0 10px;}
 .signin_quicklink a { color:#069; text-decoration:none;  }

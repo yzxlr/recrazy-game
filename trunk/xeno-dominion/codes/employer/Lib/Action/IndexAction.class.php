@@ -16,7 +16,7 @@ class IndexAction extends CommonAction
 		//0.4 Condition
 		$condition = array();
 		//0.9 massenger
-		$msg = array("title"=>"Biz Index"); 
+		$msg = array("title"=>"HR Center"); 
 		//1. Table task
 		//1.1 add
 		//1.4 Select
