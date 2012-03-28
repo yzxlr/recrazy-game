@@ -18,7 +18,7 @@ if($news_count == 0){
 }else{
 	?>
     <foreach name="company_news" item="vo">
-    <tr><td>{$vo.nid}</td><td>{$vo.n_title}</td><td>{$vo.added}</td><td>{$vo.updated}</td><td><a href="__URL__/update/id/{$cid}/nid/{vo.nid}">Update</a>&nbsp;|&nbsp;<a href="__URL__/delete/id/{$cid}/nid/{$vo.nid}">Delete</a></td><td><a href="#">List</a></td></tr>
+    <tr><td>{$vo.nid}</td><td>{$vo.n_title}</td><td>{$vo.added}</td><td>{$vo.updated}</td><td><a href="__URL__/edit/id/{$cid}/nid/{$vo.nid}">Update</a>&nbsp;|&nbsp;<a href="__URL__/delete/id/{$cid}/nid/{$vo.nid}">Delete</a></td><td><a href="#">List</a></td></tr>
     </foreach>
     <?php
 }
