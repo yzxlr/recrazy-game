@@ -8,8 +8,23 @@
 <include file="Public:page_left" />
 </div>
 
-<div id="main_content">
-	
+<div class="newsbox">
+	<div class="settitle"><div style="float:left;width:370px;overflow:hidden;">{$read_industrial_news[0]['n_title']}</div>
+    	<div style="float:left;width:120px;font-size:10px;color:#933;">{$read_industrial_news[0]['added']}</div><div class="clr"></div>
+    </div>
+    <div class="font11">{$read_industrial_news[0]['n_content']}</div>
 </div>
+
+<div class="newslist">
+	<div class="settitle">&nbsp;&nbsp;Industrial News</div>
+	<foreach name="industrial_news" item="vo">
+    <ul>
+    	<li><a href="{$SITE_URL}/company.php/News/industrial/id/{$cid}/nid/{$vo.nid}" class="companynews" title="{$vo.nid}">&bull;&nbsp;{$vo.n_title}</a></li>
+    </ul>
+    </foreach>
+    <div class="companypage">{$show}</div>
+</div>
+
+<div class="clr"></div>
 
 <include file="Public:footer" />
