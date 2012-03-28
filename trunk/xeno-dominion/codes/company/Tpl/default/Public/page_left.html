@@ -49,7 +49,7 @@ $(document).ready( function(){
           <?php 		$i = $i + 1 ;  ?>
         
               <li class='<?php if($i > 18) echo "hide"; ?>'>
-              	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/{$vo1.cat_id}">
+              	<a href="{$SITE_URL}/company.php/Category/index/id/{$cid}/cat_id/{$vo1.cat_id}">
                 	<empty name="vo1.cat_name_with_lang">
                 		{$vo1.cat_name} - (<font class="dred">{$vo1.product_count}</font>)
                     </empty>
@@ -62,7 +62,7 @@ $(document).ready( function(){
                         <ul class="sub_category">
                         	<foreach name="vo1.child_cats" item="vo2">
                           		<li class="first">
-                                	<a href="http://xeno.recrazy.net/index.php?s=Products/lists/flag/all/cat_id/{$vo2.cat_id}">
+                                	<a href="{$SITE_URL}/company.php/Category/index/id/{$cid}/cat_id/{$vo2.cat_id}">
                                         <empty name="vo2.cat_name_with_lang">
                                             {$vo2.cat_name} - (<font class="dred">{$vo2.sub_product_count}</font>)
                                         </empty>
