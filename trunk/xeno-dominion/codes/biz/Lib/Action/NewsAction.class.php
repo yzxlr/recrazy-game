@@ -91,7 +91,27 @@ class NewsAction extends CommonAction
 	}
 	
 	public function edit(){
+		$nid = $_REQUEST["nid"];
+		$read_condition['nid'] = $nid;
+		$users_company_news = M("users_company_news");
+		$read_news = $users_company_news->where($read_condition)->find();
+		$this->assign("read_news", $read_news);
 		
+		if($_POST){ 
+			//get now time and insert to database
+			if($users_company_news->create()){
+				$users_company_news->nid = $nid;
+				if($users_company_news->save()){
+					$this->success("Update Successfully!");
+				}else{
+					$this->error("Error on update!".$users_company_news->getError());
+				}
+			}else{
+				$this->error("Error on update!".$users_company_news->getError());
+			}
+		}
+		
+		$this->display();
 	}
 	
 	public function delete(){
