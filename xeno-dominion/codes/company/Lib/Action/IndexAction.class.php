@@ -27,6 +27,28 @@ class IndexAction extends Action
 		$cid = $_REQUEST["id"];
 		$temp_cat = $this->GetCategoriesL2($cid);
 		$this->assign("categories",$temp_cat);
+		
+		//count click for company page
+		//get IP
+		import("ORG.Net.Click");
+		$Click = new Click();
+		$ip = $Click->getIP();//echo $ip;
+		//get user information
+		$user = $_SESSION["user"];
+		$uid = $user["uid"];//echo $uid;
+		if(isset($uid)){
+			echo $uid;
+		}else{
+			echo "null object";
+		}	
+		
+		if(isset($cid)){
+			import("ORG.Net.Click");
+			$Click = new Click($cid, $uid, "1");
+			$ip = $Click->getIP();//echo $ip;
+		}
+		
+		//$uid = $user["user_name"];echo $user_name;
 	}
 	
 	//show category for each company... only category containing product can be shown below...
@@ -124,13 +146,7 @@ class IndexAction extends Action
 	
     public function info()
     {
-        //$this->display(THINK_PATH.'/Tpl/Autoindex/hello.html');
-		//0. Initialization
-		//0.1 Global variables
 		$user = $_SESSION["user"];
-		
-		//0.9 massenger
-		//$msg = array("title"=>"xxxx"); 
 
 		$cid = $_REQUEST["id"];
 		//if(!isset($cid)){ $cid = "test"; }
