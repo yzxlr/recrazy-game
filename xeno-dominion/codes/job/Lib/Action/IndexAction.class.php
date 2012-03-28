@@ -61,26 +61,19 @@ class IndexAction extends Action
 		$user = $_SESSION["user"];
 		
 		//0.9 massenger
-		$msg = array("title"=>"xxxx"); 
+		
+                $msg = array("title"=>array("en-us" => "Jobs",
+                                            "zh-cn" => "工作首页")
+                                            );
 		//1. Table users
 		
 		/////var_dump($user);
 		//10. Display
-        $this->display();
+                $tb_jobs = M("jobs");
+                $data["tb_jobs"] = $tb_jobs->order('time_add desc')->limit(10)->select();
+                $this->assign("msg",$msg);
+		$this->assign("data",$data);
+                $this->display();
     }
-	
-	public function test(){
-		$tb_job_cat = M("jobsCat");
-		
-		$cats = $tb_job_cat
-								->table("ry_jobs_cat")
-								->join("ry_jobs_cat_lang on ry_jobs_cat_lang.cat_id = ry_jobs_cat.cat_id")
-								->field("ry_jobs_cat.*, ry_jobs_cat_lang.lang_code AS cat_lang_code")
-								//->where(array("ry_jobs_cat_lang.lang_code"=>LANG_SET))
-								->select();
-		var_dump($cats);
-		$this->display();
-	}
-
 }
 ?>

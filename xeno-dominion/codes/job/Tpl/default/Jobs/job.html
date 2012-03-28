@@ -1,0 +1,118 @@
+<include file="Public:header" />
+   
+<include file="Public:page_left" />
+
+   <div id="main_content">   
+<?php //var_dump($data['tb_jobs']);?>
+        <div class="job_header">
+            <!--div class="thumnbnail_img"> 
+               
+                <notempty name="data.tb_jobs.job_description"> <img src="{$SITE_URL}/public/uploads/images/{$data.tb_jobs.employer_logo}" /> </notempty>
+                <empty name="data.tb_jobs.job_description"> <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" /> </empty>
+            
+            </div-->
+          <div class="desc">
+              <cite>{$data.tb_jobs.time_add}<br/>
+                  {$data.tb_jobs.position_number} <?php if($data.tb_jobs.position_number>1){echo "Positions";}else{echo "Position";}?>
+              </cite>
+            <h1> 
+              <notempty name="vo.job_title">{$data.tb_jobs.job_title}</notempty>
+              <empty name="vo.job_title">{$data.tb_jobs.job_title}</empty>
+            </h1>
+            <p>{$data.tb_jobs.company_name}<br/>
+            <b>
+                <notempty name="vo.job_description">{$data.tb_jobs.job_location}</notempty>
+                <empty name="vo.job_description">{$data.tb_jobs.job_location}</empty>
+            </b>
+            </p>
+            
+          </div>
+          <div class="company_info">
+            <p>
+              <?php /* ?>
+                       				<b>Supplier:</b> Company Name
+                                    <?php //*/ ?>
+            </p>
+            <p> <span>{$vo.region_country}</span> <span>{$vo.region_province}</span> </p>
+            <p> <img width="16" height="16" src="{$SITE_URL}/public/jack/forindex/images/icon_p.png"  /> {$data.tb_jobs.time_add} </p>
+            <p> 
+            	
+            	<!--a class="contact_btn" href="mailto:{$vo.user_email}">Save Job</a--> 
+                
+            </p>
+          </div>
+          
+          
+        
+        </div>
+
+       
+       <div id="job_box">
+           <div class="">
+               
+               <notempty name="data.tb_jobs.top_image">     
+                   
+                    	<img src="{$SITE_URL}/public/uploads/images/{$data.tb_jobs.top_image}" />
+                     
+                           </notempty>
+                           
+                             <empty name="data.tb_jobs.top_image">   
+                             
+                            
+                           <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
+                           </empty>
+           </div>
+   			
+   
+ 
+        <div class="basic_information" >
+        
+        <h3>                 	<notempty name="data.tb_jobs.lang_name">{$data.tb_jobs.lang_name}</notempty>
+          					<empty name="data.tb_jobs.lang_name">{$data.tb_jobs.name}</empty>
+               
+               </h3>
+        
+        
+        	<table>
+            	<tbody>
+             
+                	<tr>
+                    	<td width="100">{$Think.lang.job_type}:</td>
+                        <td>
+                            {$data.tb_jobs.job_type}
+                        </td>
+                    </tr>
+              
+                	<tr>
+                    	<td>{$Think.lang.salary}:</td>
+                        <td>${$data.tb_jobs.salary_from}-${$data.tb_jobs.salary_to}</td>
+                    </tr>
+                    <tr>
+                    	<td>{$Think.lang.experience}</td>
+                        <td>{$data.tb_jobs.experience_years} year(s)</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+             							
+                           
+            
+        </div>
+        
+        <div style="clear:both"></div>
+        
+        <ul class="product_info_tag">
+        		<li class="desciption_tag"><a href="">description</a></li>
+        
+        </ul>
+        <div class="description_div">
+        	<notempty name="data.tb_jobs.job_description">{$data.tb_jobs.job_description}</notempty>
+            <empty name="data.tb_jobs.job_description">{$data.tb_jobs.job_description}</empty>
+        </div>
+        
+     </div>
+ 
+ </div>
+
+<include file="Public:footer" />

@@ -19,8 +19,8 @@
         
         <div class="signin_quicklink">
            <h4>Quick Access</h4>
-           <img src="{$SITE_URL}/public/jack/forindex/images/package.gif" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php?s=Product/index">My Product</a><br />
-           <img src="{$SITE_URL}/public/jack/forindex/images/account16.png" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php?s=Index/accoun">Account Info</a><br />
+           <img src="{$SITE_URL}/public/jack/forindex/images/package.gif" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php">Biz Area</a><br />
+           <img src="{$SITE_URL}/public/jack/forindex/images/account16.png" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/employer.php">HR Center</a><br />
 
 
           
@@ -43,26 +43,47 @@
 
     
  </div>
-     <div class="row">
-        <div id="city_list">
-            <h3>Browse Jobs by City</h3>
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/calgary-alberta">Calgary</a></div>
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/edmonton-alberta">Edmonton</a></div>
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/hamilton-ontario">Hamilton</a></div>
-
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/mississauga-ontario">Mississauga</a></div>
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/montreal-quebec">Montreal</a></div>
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/ottawa-ontario">Ottawa</a></div>
-
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/quebec-city-quebec">Quebec City</a></div>
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/toronto-ontario">Toronto</a></div>
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/vancouver-bc">Vancouver</a></div>
-
-            <div class="city_item"><a href="/job.php?s=jobs/lists/location/calgary-manitoba">Winnipeg</a></div> 
-        </div>
     
-     </div>
-  
+  <div class="new_jobs"> 
+    
+    <h5>New Jobs</h5>
+		
+    <!-- marquee onmouseover="this.stop()" onmouseout="this.start()" scrollAmount="1" scrollDelay="1" direction="up" hspace="10" align="top" style="height: 100px;" -->
+    <ul class="new_job_list">
+       
+      <foreach name="data.tb_jobs" item="vo">
+        <li>
+          <div class="company_info">
+            <p>
+             
+            </p>
+            <p> <span>{$vo.region_country}</span> <span>{$vo.region_province}</span> </p>
+            <p> <img width="16" height="16" src="{$SITE_URL}/public/jack/forindex/images/icon_p.png"  /><?php echo date('d F,Y',strtotime($vo['time_add']));?> </p>
+            <p> 
+            	<a c href="{$SITE_URL}/job.php/jobs/job/id/{$vo.job_id}">View Details</a> 
+            </p>
+          </div>
+            <div class="desc">
+            <h2> <a href="{$SITE_URL}/job.php/jobs/job/id/{$vo.job_id}">
+              <notempty name="vo.job_title">12312312312312312{$vo.job_title}</notempty>
+              <empty name="vo.job_title">{$vo.job_title}</empty>
+              </a> </h2>
+            
+            <p class="location">
+                <notempty name="vo.job_description">{$vo.job_location}</notempty>
+                <empty name="vo.job_description">{$vo.job_location}</empty>
+            </p>
+          </div>
+          
+       
+        </li>
+      </foreach>
+    </ul>
+        <!-- /marquee-->
+    
+
+  </div>
+  <!-- EO row --> 
   <div class="ads"> <img src="{$SITE_URL}/public/jack/forindex/images/sample250a.jpg" width="250" style="margin-right:5px;" /> <img src="{$SITE_URL}/public/jack/forindex/images/sample250b.jpg" width="250" style="margin-right:5px;"  /> <img src="{$SITE_URL}/public/jack/forindex/images/sample250c.jpg" width="250" /> </div>
 </div>
 <!--
