@@ -39,14 +39,22 @@
  <div class="row">
  	<div class="newssec1">
     	<div class="sectitle2">Industrial News</div>
-        <div class="newstitle">{$latest_industiral_news['n_title']}</div>
+        <div class="newstitle"><div style="float:left;width:250px;overflow:hidden;">{$latest_industiral_news['n_title']}</div>
+        	<div style="float:left;font-size:10px;color:#933;width:100px;overflow:hidden;">{$latest_industiral_news['added']}</div>
+        	<div class="clr"></div>
+        </div>
         <div class="newscontent">{$latest_industiral_news['n_content']}</div>
+        <div style="float:right">[ <a href="{$SITE_URL}/company.php/News/industrial/id/{$cid}/nid/{$latest_industiral_news['nid']}">Read More</a> ]&nbsp;&nbsp;</div>
     </div>
     
     <div class="newssec2">
     	<div class="sectitle2">Company News</div>
-        <div class="newstitle">{$latest_company_news['n_title']}</div>
+        <div class="newstitle"><div style="float:left;width:250px;overflow:hidden;">{$latest_company_news['n_title']}</div>
+        	<div style="float:left;font-size:10px;color:#933;width:100px;overflow:hidden;">{$latest_company_news['added']}</div>
+        	<div class="clr"></div>
+        </div>
         <div class="newscontent">{$latest_company_news['n_content']}</div>
+        <div style="float:right">[ <a href="{$SITE_URL}/company.php/News/company/id/{$cid}/nid/{$latest_company_news['nid']}">Read More</a> ]&nbsp;&nbsp;</div>
     </div>
     
     <div class="clr"></div>
