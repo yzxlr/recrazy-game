@@ -23,6 +23,5 @@ define('__PUBLIC__'	, CMS_URL."/public");
 define('UPLOAD_PATH', CMS_PATH."/data/uploads/");	// 结尾有 /
 define('UPLOAD_URL'	, CMS_URL."/data/uploads/");		// 结尾有 /
 
-//
 
 ?>
