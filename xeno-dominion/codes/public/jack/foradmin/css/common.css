@@ -119,6 +119,11 @@ table.v2 td textarea { width:300px;}
 .newstable th{ text-align:center;background:#eee;padding:8px 5px; }
 .newstable td{ text-align:center;background:#fff;padding:8px 5px; }
 .newstable td a{ color:#369; }
+
+.statstable{  }
+.statstable th{ text-align:center;background:#eee;padding:3px 15px; }
+.statstable td{ text-align:center;background:#fff;padding:3px 15px;border-bottom:1px solid #eee; }
+.statstable td a{ color:#369; }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                       Buttons Style
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */																																						
