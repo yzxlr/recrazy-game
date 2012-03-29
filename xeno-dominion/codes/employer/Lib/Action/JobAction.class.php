@@ -19,13 +19,14 @@ class JobAction extends CommonAction
 		//0.4 conditon
 		$condition = array();
 		//0.9 massenger
-		$msg = array("title"=>"List Products"); 
+		$msg = array("title"=>"List Jobs"); 
 		
 
 		//1. Table job
-		$condition["user_id"]=$user["uid"];
-		if(!empty($_GET["type"]))$condition["type"]=$_GET["type"];
+		$condition["employer_id"]=$user["uid"];
+		//if(!empty($_GET["type"]))$condition["type"]=$_GET["type"];
 		$count = $tb_jobs ->where($condition) ->count();
+                echo $count;
 		$Page = new Page($count,25);
 		$show = $Page->show();
 		$msg["page"]=$show;
@@ -35,7 +36,7 @@ class JobAction extends CommonAction
 		/////var_dump($data);
 		$this->assign("data",$data);
 		$this->assign("msg",$msg);
-        $this->display();
+                $this->display();
     }
 	
 	public function delete(){

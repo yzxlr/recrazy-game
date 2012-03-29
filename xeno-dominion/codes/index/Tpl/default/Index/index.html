@@ -9,6 +9,7 @@
 <div id="main_content">
   <div class="row">
     <div class="signup_sidebar">
+       
       <notempty name="Think.session.user.uid" > 
       <!--
       		  <p class="s">Not a member yet? <a href="">Join Free</a> </p>
@@ -19,7 +20,13 @@
         
         <div class="signin_quicklink">
            <h4>Quick Access</h4>
+           <?php if($_SESSION['user']['role']<=10){ ?>
            <img src="{$SITE_URL}/public/jack/forindex/images/package.gif" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php?s=Product/index">My Product</a><br />
+           <img src="{$SITE_URL}/public/jack/forindex/images/icon_p.png" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/employer.php">HR Center</a><br />
+           <?php }else{ ?>
+           <img src="{$SITE_URL}/public/jack/forindex/images/package.gif" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php?s=Product/index">Be a Biz User?</a><br />
+           
+           <?php } ?>
            <img src="{$SITE_URL}/public/jack/forindex/images/account16.png" width="16" height="16" style="padding-right:5px;" /><a href="{$SITE_URL}/biz.php?s=Index/accoun">Account Info</a><br />
 
 

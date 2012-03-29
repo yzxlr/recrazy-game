@@ -81,6 +81,28 @@ class IndexAction extends Action
 		var_dump($cats);
 		$this->display();
 	}
+        
+        
+        public function mkdir(){
+            $today = date('Y-m-d');
+            echo $today."<br/>";
+            $one_year_later=date('Y-m-d',  strtotime("$today + 1 year"));
+            echo $one_year_later;
+            
+            /*
+            if(!is_dir("")) 
+            {
+                mkdir("");
+             
+                if(!file_exists("index.html")) 
+                {
+                    fopen(html.html,"w");
+                } 
+             
+            }
+             * 
+             */
+        }
 
 }
 ?>
