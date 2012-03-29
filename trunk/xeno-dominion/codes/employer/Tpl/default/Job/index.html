@@ -14,45 +14,36 @@ function del(id){
  <include file="Public:left_menu" />  
  
 <div id="content">
-<h2>
-	<eq name="Think.get.type" value="1">My Supply Products</eq>
-	<eq name="Think.get.type" value="2">My Demand Products</eq>    
-</h2>
 
 	<!--  内容列表   -->
         <form name="form2" style="margin-bottom:0px;">
         
-        
-        
-        
         <table class="list_table" width="98%" border="0" cellpadding="2" cellspacing="1"  align="left" >
            
             <tr align="center"  height="28">
-                <th width="8%">ID</th>
-                <th width="5%">User ID</th>
-                <th width="13%">Product Name</th>
-                <th width="13%">Price</th>
-                <th width="13%">Quantity</th>
-                <th width="14%">Type</th>
+                <th width="5%">Job ID</th>
+                <th width="13%">Employer</th>
+                <th width="20%">Job Title</th>
+                <th width="10%">Location</th>
+                <th width="5%">Position(s)</th>
+                <th width="10%">Type</th>
                 <th width="10%">Option</th>
-                <th width="10%">Language List</th>
+                
             </tr>
             
-            <foreach name="data.tb_products" item="vo" >
+            <foreach name="data.tb_jobs" item="vo" >
             <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td>{$vo.pid}</td>
-                <td>{$vo.user_id}</td>
-                <td>{$vo.name}</td>
-                <td>{$vo.price}</td>
-                <td>{$vo.quantity}</td>
-                <td><if condition="$vo.type eq 1">Supply</if><if condition="$vo.type eq 2">Demand</if></td>
+                <td>{$vo.job_id}</td>
+                <td>{$vo.company_name}</td>
+                <td>{$vo.job_title}</td>
+                <td>{$vo.job_location}</td>
+                <td>{$vo.position_number}</td>
+                <td>{$vo.job_type}</td>
                 <td>
                     <a href="__URL__/edit/pid/{$vo.pid}">Update</a> | 
                     <a href="javascript:del({$vo.pid})">Delete</a>
                 </td>
-                <td>
-                	<a href="__URL__/lang_index/product_id/{$vo.pid}">List</a>
-                </td>
+                
             </tr>
             </foreach>
             <tr>
