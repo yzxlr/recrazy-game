@@ -82,27 +82,54 @@ class IndexAction extends Action
 		$this->display();
 	}
         
-        
+        /*
         public function mkdir(){
-            $today = date('Y-m-d');
+            $today = '2012-01-01'; //date('Y-m-d');
             echo $today."<br/>";
-            $one_year_later=date('Y-m-d',  strtotime("$today + 1 year"));
-            echo $one_year_later;
             
-            /*
-            if(!is_dir("")) 
-            {
-                mkdir("");
-             
-                if(!file_exists("index.html")) 
+            $ten_days_later=date('Y-m-d',  strtotime("$today + 1 day"));
+            echo $ten_days_later;
+            //create 1 year folders
+            $base_dir = $_SERVER['DOCUMENT_ROOT'].'/public/uploads/user';
+            echo $base_dir;
+            
+            
+            for($i=1;$i<=730;$i++){
+                $new_time = strtotime("$today + $i day");
+                $new_year = date('Y',$new_time);
+                $new_month = date('m',$new_time);
+                $new_day = date('d',$new_time);
+                if(!is_dir($base_dir."/".$new_year)) 
                 {
-                    fopen(html.html,"w");
-                } 
-             
+                    mkdir($base_dir."/".$new_year);
+                }
+                
+                if(!file_exists($base_dir."/".$new_year."/index.html")) 
+                {
+                    fopen($base_dir."/".$new_year."/index.html","w");
+                }
+                    
+                if(!is_dir($base_dir."/".$new_year."/".$new_month)) 
+                {
+                    mkdir($base_dir."/".$new_year."/".$new_month);
+                }
+                
+                if(!file_exists($base_dir."/".$new_year."/".$new_month."/index.html")) 
+                {
+                    fopen($base_dir."/".$new_year."/".$new_month."/index.html","w");
+                }
+                    
+                if(!is_dir($base_dir."/".$new_year."/".$new_month."/".$new_day)) 
+                {
+                    mkdir($base_dir."/".$new_year."/".$new_month."/".$new_day);
+                }
+                
+                if(!file_exists($base_dir."/".$new_year."/".$new_month."/".$new_day."/index.html")) 
+                {
+                    fopen($base_dir."/".$new_year."/".$new_month."/".$new_day."/index.html","w");
+                }
             }
-             * 
-             */
-        }
+        }*/
 
 }
 ?>

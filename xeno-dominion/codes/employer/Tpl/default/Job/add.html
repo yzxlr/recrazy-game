@@ -10,8 +10,8 @@
 	});
 		
 	function form_check(){
-		if($("#product_name_id").val()==""){
-			alert("Title can not empty!");
+		if($("#job_name_id").val()==""){
+			alert("Title can not be empty!");
 			return false;
 		}
 		return true;
@@ -19,6 +19,9 @@
 	
 	$(document).ready(function(){
 		$(function() {
+			$( "#time_start" ).datepicker({ dateFormat: 'yy-mm-dd' });
+		});
+                $(function() {
 			$( "#time_expire" ).datepicker({ dateFormat: 'yy-mm-dd' });
 		});
 	});
@@ -43,8 +46,11 @@
 <h2>Post New Job</h2>
 <form id="add_cat" name="add_cat" method="post" action="#" enctype="multipart/form-data"  onsubmit="return form_check();" >
 <table class="list_table"  width="98%" align="center" border="0" cellpadding="3" cellspacing="1" >
-
-    <tr >
+    <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Job Title&nbsp; </div></td>
+    <td width="82%"><input name="job_title" id="job_name_id" type="text" size="30"/>&nbsp; <i class="red">*</i></td>
+  </tr>
+    <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Job Type&nbsp; </div></td>
     <td width="82%">
       <select  id="job_type" name="job_type">
@@ -61,16 +67,7 @@
         </select>	
  	</td>
   </tr>
-  <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Product Name&nbsp; </div></td>
-    <td width="82%"><input name="name" id="product_name_id" type="text" size="30"/>&nbsp; <i class="red">*</i></td>
-  </tr>
-  <tr bgcolor="#FFFFFF" style="display:none;">
-    <td width="18%"><div align="right">User ID&nbsp; </div></td>
-    <td width="82%">
-		<input name="user_id" value="" /> Auto fill the current user id if leave empty
-    </td>
-  </tr>
+  
 
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Category&nbsp; </div></td>
@@ -82,15 +79,18 @@
 	</select>	&nbsp; <font color="#FF0000">*</font></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Job Location&nbsp; </div></td>
+    <td width="18%"><div align="right">Location&nbsp; </div></td>
+    
     <td width="82%">
-	<select name="location_code" id="location_code_id">
+        City <input name="job_city" type="text" size="15"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	Region
+        <select name="location_code" id="location_code_id">
 	  <foreach name="all_regions" item="vo">
 	   <option value="{$vo.region_code}">{$vo.region_country}/{$vo.region_province}</option>
 	  </foreach>
 	</select>	</td>
   </tr>
-  <tr bgcolor="#FFFFFF">
+  <!--tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Image&nbsp; </div></td>
     <td width="82%">
     	<input name="image[]" type="file" size="30"/>&nbsp;
@@ -102,22 +102,48 @@
         <input name="image[]" type="file" size="30"/><br />
         <input name="image[]" type="file" size="30"/><br />
     </td>
+  </tr-->
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Experience&nbsp; </div></td>
+    <td width="82%">
+        <input name="experience_years" type="text" size="15"/> Year(s)
+    </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Price&nbsp; </div></td>
-    <td width="82%"><input name="price" type="text" size="15"/>&nbsp;</td>
+    <td width="18%"><div align="right">Education Level&nbsp; </div></td>
+    <td width="82%">
+        <select  name="edu_level">
+		<option value="ALL" selected="selected">Select</option>
+		<option value="Bachelors (Including Honours)">Bachelors (Including Honours)</option>
+		<option value="Masters">Masters</option>
+		<option value="Doctorate">Doctorate</option>
+		<option value="Certification">Certification</option>
+		<option value="Diploma">Diploma</option>
+		<option value="High School Diploma">High School Diploma</option>
+		<option value="Undergraduate">Undergraduate</option>
+
+	</select></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Quantity&nbsp; </div></td>
-    <td width="82%"><input name="quantity" type="text" size="15"/>&nbsp;</td>
+    <td width="18%"><div align="right">Salary&nbsp; </div></td>
+    <td width="82%">From <input name="salary_from" type="text" size="15"/>&nbsp; To <input name="salary_to" type="text" size="15"/></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-        <td width="18%"><div align="right">Description &nbsp; </div></td>
-        <td width="82%"><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+    <td width="18%"><div align="right">Position(s)&nbsp; </div></td>
+    <td width="82%"><input name="position_number" type="text" size="15"/>&nbsp;</td>
+  </tr>
+  
+    <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">Start date: &nbsp; </div></td>
+        <td width="82%"><input name="time_start" id="time_start" type="text" size="15" value="{$DATE_NOW}"/></td>
     </tr>
     <tr bgcolor="#FFFFFF">
-        <td width="18%"><div align="right">Expire at: &nbsp; </div></td>
-        <td width="82%"><input name="time_expire" id="time_expire" type="text" size="15" value="{$DATE_NOW}"/></td>
+        <td width="18%"><div align="right">Expire date: &nbsp; </div></td>
+        <td width="82%"><input name="time_end" id="time_expire" type="text" size="15" value="{$DATE_NOW}"/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">Description &nbsp; </div></td>
+        <td width="82%"><textarea name="job_description" id="description" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
     </tr>
    
   <tr bgcolor="#FFFFFF">

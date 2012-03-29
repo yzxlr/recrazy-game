@@ -47,8 +47,8 @@
               <empty name="vo.job_description">{$vo.job_description}</empty>
             </p>
             <p class="location">
-                <notempty name="vo.job_description">{$vo.job_location}</notempty>
-                <empty name="vo.job_description">{$vo.job_location}</empty>
+                <notempty name="vo.job_description">{$vo.job_city} {$vo.location_code}</notempty>
+                <empty name="vo.job_description">{$vo.job_city} {$vo.location_code}</empty>
             </p>
           </div>
           <div class="company_info">
