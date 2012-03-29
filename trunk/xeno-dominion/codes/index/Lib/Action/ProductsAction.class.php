@@ -108,6 +108,19 @@ class ProductsAction extends CommonAction
 
 	public function product()
     {
+		//use click class to update month_click and year_product_click table
+		$pid = $_REQUEST['id']; //echo $pid;
+		//get user information
+		$user = $_SESSION["user"];
+		$uid = $user["uid"];//echo $uid;
+		if(isset($pid)){
+			import("ORG.Net.Click");
+			$cid = $this->getCidByPid($pid); //echo $cid;
+			$Click = new Click($cid, $pid, $uid, "2");
+			$ip = $Click->getIP(); //echo $ip;
+		}
+		
+		
 		$msg = array("title"=>array("en-us" => "Product",
 									"zh-cn" => "产品")
 					);
@@ -137,6 +150,14 @@ class ProductsAction extends CommonAction
 		$this->assign("msg",$msg);
 		$this->assign("data",$data);
         $this->display();
+	}
+	
+	//function to get company id based on product id
+	public function getCidByPid($pid){
+		$products = M("Products");
+		$condition['pid'] = $pid;
+		$get_cid = $products->field('user_id')->where($condition)->find();
+		return $get_cid['user_id'];
 	}
 
 }
