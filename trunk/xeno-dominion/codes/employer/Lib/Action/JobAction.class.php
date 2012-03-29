@@ -26,7 +26,7 @@ class JobAction extends CommonAction
 		$condition["employer_id"]=$user["uid"];
 		//if(!empty($_GET["type"]))$condition["type"]=$_GET["type"];
 		$count = $tb_jobs ->where($condition) ->count();
-                echo $count;
+                //echo $count;
 		$Page = new Page($count,25);
 		$show = $Page->show();
 		$msg["page"]=$show;
@@ -55,7 +55,7 @@ class JobAction extends CommonAction
 	
 	public function add(){
 		//1 display Category
-		require(CMS_PATH."/biz/Common/class.php");
+		require(CMS_PATH."/employer/Common/class.php");
 		
 		$Tree = new Tree('Root Category');
 		
@@ -79,12 +79,19 @@ class JobAction extends CommonAction
 		$this->assign("categoty",$new_cat);
 		
 		// Upload image
+                $now = date('Y-m-d H:i:s');
+                $folder_year = date('Y');
+                $folder_month = date('m');
+                $folder_day = date('d');
 		if($_POST){
 			import("ORG.Net.UploadFile");
 			$upload = new UploadFile(); // 实例化上传类
 			$upload->maxSize  = 2088576 ; // 设置附件上传大小/ 2 MB
 			$upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg'); // 设置附件上传类型
-			$upload->savePath =  CMS_PATH.'/public/uploads/images/'; // 设置附件上传目录
+                        
+                        
+			
+                        $upload->savePath =  CMS_PATH.'/public/uploads/company'.'/'.$folder_year.'/'.$folder_month.'/'.$folder_day; // 设置附件上传目录
 			$upload->saveRule = 'uniqid';
 			// thumb => 
 			if(!empty($_POST["thumbMaxWidth"])||!empty($_POST["thumbMaxHeight"])){
@@ -110,7 +117,7 @@ class JobAction extends CommonAction
 			if($tb_jobs->create()){
 				if(!empty($info[0]["savename"])){
 					/////var_dump($info);
-					$tb_jobs->image = "";
+					$tb_jobs->image = '/company'.'/'.$folder_year.'/'.$folder_month.'/'.$folder_day.'/';
 					foreach($info as $key => $value){
 						$tb_jobs->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
 					}
@@ -119,11 +126,12 @@ class JobAction extends CommonAction
 				}else{
 					$tb_jobs->image = "";
 				}
-				$tb_jobs->time_add = time();
+				$tb_jobs->time_add = $now;
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
 				$tb_jobs->time_expire = $_POST["time_expire"];
 				//if(empty($_POST["user_id"])) $tb_jobs->user_id = $this->user["uid"];
-				$tb_jobs->user_id = $this->user["uid"];
+				$tb_jobs->employer_id = $this->user["uid"];
+                                
 				if($tb_jobs->add()){
 					$this->success("Insert Successfully!");
 				}else{
@@ -140,7 +148,7 @@ class JobAction extends CommonAction
 	
 	public function edit(){
 		//1 display Category
-		require(CMS_PATH."/admin/Common/class.php");
+		require(CMS_PATH."/employer/Common/class.php");
 		
 		$Tree = new Tree('Root Category');
 		
@@ -164,12 +172,16 @@ class JobAction extends CommonAction
 		$this->assign("categoty",$new_cat);
 		
 		// Upload image
+                $now = date('Y-m-d H:i:s');
+                $folder_year = date('Y');
+                $folder_month = date('m');
+                $folder_day = date('d');
 		if($_POST){
 			import("ORG.Net.UploadFile");
 			$upload = new UploadFile(); // 实例化上传类
 			$upload->maxSize  = 2088576 ; // 设置附件上传大小/ 2 MB
 			$upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg'); // 设置附件上传类型
-			$upload->savePath =  CMS_PATH.'/public/uploads/images/'; // 设置附件上传目录
+			$upload->savePath =  CMS_PATH.'/public/uploads/company'.'/'.$folder_year.'/'.$folder_month.'/'.$folder_day; // 设置附件上传目录
 			$upload->saveRule = 'uniqid';
 			// thumb => 
 			if(!empty($_POST["thumbMaxWidth"])||!empty($_POST["thumbMaxHeight"])){
@@ -201,7 +213,7 @@ class JobAction extends CommonAction
 			if($tb_jobs->create()){
 				if(!empty($info[0]["savename"])){
 					if(empty($current_job["image"]))
-						$tb_jobs->image = "";
+						$tb_jobs->image = '/company'.'/'.$folder_year.'/'.$folder_month.'/'.$folder_day.'/';
 					else 
 						$tb_jobs->image = $current_job["image"].",";
 					foreach($info as $key => $value){
@@ -212,11 +224,11 @@ class JobAction extends CommonAction
 					$tb_jobs->image = "";
 				}
 				$tb_jobs->pid = $_GET["pid"];
-				$tb_jobs->time_modify = time();
+				$tb_jobs->time_modify = $now;
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
 				$tb_jobs->time_expire = $_POST["time_expire"];
 				//if(empty($_POST["user_id"])) unset($tb_jobs->user_id);
-				$tb_jobs->user_id = $user["uid"];
+				$tb_jobs->employer_id = $user["uid"];
 				if($tb_jobs->save()){
 					$this->success("Insert Successfully!");
 				}else{
@@ -227,7 +239,7 @@ class JobAction extends CommonAction
 			}
 		}
 		
-		$data["tb_jobs"] = $tb_jobs->where(array("pid"=>$_GET["pid"]))->find();
+		$data["tb_jobs"] = $tb_jobs->where(array("job_id"=>$_GET["jid"]))->find();
 		/////var_dump($new_cat);
 		$this->assign("data",$data);
 		$this->display();
