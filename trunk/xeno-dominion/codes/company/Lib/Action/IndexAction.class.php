@@ -36,15 +36,11 @@ class IndexAction extends Action
 		//get user information
 		$user = $_SESSION["user"];
 		$uid = $user["uid"];//echo $uid;
-		if(isset($uid)){
-			echo $uid;
-		}else{
-			echo "null object";
-		}	
 		
 		if(isset($cid)){
 			import("ORG.Net.Click");
-			$Click = new Click($cid, $uid, "1");
+			$pid = NULL;
+			$Click = new Click($cid, $pid, $uid, "1");
 			$ip = $Click->getIP();//echo $ip;
 		}
 		
