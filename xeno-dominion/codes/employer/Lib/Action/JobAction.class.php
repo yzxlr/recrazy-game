@@ -42,13 +42,13 @@ class JobAction extends CommonAction
 	public function delete(){
 		$user = $_SESSION["user"];
 		$tb_jobs = M("jobs");
-		if($tb_jobs->where(array("pid"=>$_GET["pid"],"user_id"=>$user["uid"]))->delete()){
+		if($tb_jobs->where(array("job_id"=>$_GET["jid"],"employer_id"=>$user["uid"]))->delete()){
 			$this->assign("waitSecond", "0"); 
-			$this->assign("jumpUrl", SITE_URL."/biz.php?s=Product/index"); 
+			$this->assign("jumpUrl", SITE_URL."/employer.php?s=Job/index"); 
 			$this->success("Deleted!");
 		}else{
 			$this->assign("waitSecond", "0"); 
-			$this->assign("jumpUrl", SITE_URL."/biz.php?s=Product/index"); 
+			$this->assign("jumpUrl", SITE_URL."/employer.php?s=Job/index"); 
 			$this->error("Error on deleting");
 		}
 	}
