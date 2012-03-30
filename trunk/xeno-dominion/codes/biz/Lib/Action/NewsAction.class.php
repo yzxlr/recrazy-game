@@ -23,7 +23,7 @@ class NewsAction extends CommonAction
 		import("ORG.Util.Page");
 		$Page = new Page($news_count,10);
 		//>>>> page English support start
-		if($$news_count>1)
+		if($news_count>1)
 			$Page->setConfig('header','Records'); 
 		else
 			$Page->setConfig('header','Record'); 
@@ -53,7 +53,7 @@ class NewsAction extends CommonAction
 		import("ORG.Util.Page");
 		$Page = new Page($news_count,10);
 		//>>>> page English support start
-		if($$news_count>1)
+		if($news_count>1)
 			$Page->setConfig('header','Records'); 
 		else
 			$Page->setConfig('header','Record'); 
