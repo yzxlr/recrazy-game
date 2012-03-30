@@ -1,0 +1,66 @@
+ <div id="content_right">
+  		
+           <div class="out_box">
+              
+             <h5 class="schedule">Schedule       		  <a class="btn_s fr"  href="{$SITE_URL}/biz.php?s=Schedule/task_add"><span>Add ++</span></a></h5>
+       
+             
+                   
+                      <table class="schedule_table">
+                       <thead>
+                           <tr>
+                               <th colspan="2" style="text-align:left; ">Today</th>
+                              </tr>
+                          </thead>
+                       <tbody>
+                          <foreach name="data.tb_task_today" item="vo">
+                           <tr>
+                                  <td>{$vo.time}</td>
+                                  <td><a href="{$SITE_URL}/biz.php?s=Schedule/task_update/task_id/{$vo.task_id}">{$vo.title}</a></td>
+                              </tr>
+                          </foreach>
+                   
+                           <tr>
+                               <th colspan="2"  style="text-align:left;" >Tomorrow</th>
+                              </tr>
+                     
+                          <foreach name="data.tb_task_tomorrow" item="vo">
+                           <tr>
+                                  <td>{$vo.time}</td>
+                                  <td><a href="{$SITE_URL}/biz.php?s=Schedule/task_update/task_id/{$vo.task_id}">{$vo.title}</a></td>
+                              </tr>
+                          </foreach>
+                    
+                           <tr>
+                               <th colspan="2"  style="text-align:left; ">Next Week</th>
+                              </tr>
+                      
+                          <foreach name="data.tb_task_nextweek" item="vo">
+                           <tr>
+                                  <td>{$vo.time}</td>
+                                  <td><a href="{$SITE_URL}/biz.php?s=Schedule/task_update/task_id/{$vo.task_id}">{$vo.title}</a></td>
+                              </tr>
+                          </foreach>
+                          </tbody>
+                      </table>
+                      
+                           
+                      
+               
+               </div>
+        
+        
+          <div class="out_box">
+          
+          
+           <h5 class="website">Website Status</h5>
+            <a class="btn_s"  href="{$SITE_URL}/biz.php?s=Schedule/task_add"><span>View My Website</span></a>
+            <p style="margin-bottom:0; "> If you don't have a website, we can help ...</p>
+            
+            <img src="{$SITE_URL}/public/jack/foradmin/images/webdesign.png"  width="180" />
+           <p><a href=""><strong>Learn more >></strong></a></p>
+           
+          
+          </div>
+        
+    </div>

@@ -1,0 +1,78 @@
+<include file="Public:header" />
+<script charset="utf-8" src="/editor/kindeditor.js"></script>
+<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+			editor = K.create('#description',{
+					langType : 'en'
+				});
+	});
+		
+	function form_check(){
+		if($("#n_title").val()==""){
+			alert("Title can not empty!");
+			return false;
+		}
+		return true;
+	}
+	//time_expire
+</script>
+
+ <include file="Public:left_menu" /> 
+
+<div id="content">
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      <div style='float:right;padding-right:8px;'>
+        <!--  //保留接口  -->
+      </div></td>
+  </tr>
+  <tr>
+    <td height="1" style='padding:0px'></td>
+  </tr>
+</table>
+<?php if($read_news['n_type'] == "1"){ ?>
+<a href="__URL__/industrial">Return to Industrial News List</a>
+<?php }else if($read_news['n_type'] == "2"){ ?>
+<a href="__URL__/company">Return to Company News List</a>
+<?php } ?>
+<h2>Edit News</h2>
+<form id="edit_news" name="edit_news" method="post" action="#" enctype="multipart/form-data"  onsubmit="return form_check();" >
+<table class="list_table"  width="98%" align="center" border="0" cellpadding="3" cellspacing="1" >
+
+    <tr >
+    <td width="18%"><div align="right">Type&nbsp; </div></td>
+    <td width="82%">
+      <select name="n_type" id="n_type" disabled="disabled">
+         <option value="1" <?php if($read_news['n_type'] == "1") { echo 'selected="selected"'; } ?>>Industrial News</option>
+         <option value="2" <?php if($read_news['n_type'] == "2") { echo 'selected="selected"'; } ?>>Company News</option>
+      </select>	
+ 	</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">News Title&nbsp; </div></td>
+    <td width="82%"><input name="n_title" id="n_title" type="text" size="30" value="{$read_news['n_title']}" />&nbsp; <font color="#FF0000">*</font></td>
+  </tr>
+  <tr bgcolor="#FFFFFF" style="display:none;">
+    <td width="18%"><div align="right">User ID&nbsp; </div></td>
+    <td width="82%">
+		<input name="uid" value="{$cid}" /> Auto fill the current user id if leave empty
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">News Content &nbsp; </div></td>
+        <td width="82%"><textarea name="n_content" id="description" style="width:700px;height:200px;visibility:hidden;">{$read_news['n_content']}</textarea></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td colspan="2">
+	<div align="center">
+    		<input type="submit" name="Submit" value="Edit" /> 
+	</div>
+	</td>
+  </tr>
+</table>
+</form>
+</div>
+<include file="Public:footer" />

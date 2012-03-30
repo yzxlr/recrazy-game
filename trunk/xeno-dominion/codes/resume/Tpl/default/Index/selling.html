@@ -1,0 +1,237 @@
+<include file="Public:header" />
+
+<div id="content">
+<!--
+	<div id="content_left"></div>
+    -->
+
+<script charset="utf-8" src="/editor/kindeditor.js"></script>
+<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+			editor = K.create('#description',{
+					langType : 'en'
+				});
+	});
+		
+	function form_check(){
+		if($("#product_name_id").val()==""){
+			alert("Title can not empty!");
+			return false;
+		}
+		return true;
+	}
+	
+	$(document).ready(function(){
+		$(function() {
+			$( "#time_expire" ).datepicker({ dateFormat: 'yy-mm-dd' });
+		});
+	});
+	//time_expire
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function del(id){
+	if(id)
+	{
+	  if(confirm("Delete?")){ 
+	    location="__URL__/delete/pid/"+id;
+      }
+	}
+}
+</script>
+
+<div id="content">
+
+
+
+	<!--  内容列表   -->
+        <form name="form2" style="margin-bottom:0px;">
+        <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px; margin-bottom:0px;">
+            <tr bgcolor="#E7E7E7">
+                <td height="30" colspan="10">
+                    <span style="float:left; padding-top:3px; padding-left:5px;">Product List</span>
+                    <span style="float:right;"><a href="__URL__/add">Add Product</a></span>
+                </td>
+            </tr>
+            <tr align="center" bgcolor="#FAFAF1" height="22">
+                <th width="8%">ID</th>
+                <th width="5%">User ID</th>
+                <th width="13%">Product Name</th>
+                <th width="13%">Price</th>
+                <th width="13%">Quantity</th>
+                <th width="14%">Type</th>
+                <th width="10%">Option</th>
+                <th width="10%">Language List</th>
+            </tr>
+            
+            <foreach name="data.tb_products" item="vo" >
+            <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+                <td>{$vo.pid}</td>
+                <td>{$vo.user_id}</td>
+                <td>{$vo.name}</td>
+                <td>{$vo.price}</td>
+                <td>{$vo.quantity}</td>
+                <td><if condition="$vo.type eq 1">Supply</if><if condition="$vo.type eq 2">Demand</if></td>
+                <td>
+                    <a href="__URL__/edit/pid/{$vo.pid}">Update</a> | 
+                    <a href="javascript:del({$vo.pid})">Delete</a>
+                </td>
+                <td>
+                	<a href="__URL__/lang_index/product_id/{$vo.pid}">List</a>
+                </td>
+            </tr>
+            </foreach>
+            <tr bgcolor="#FAFAF1">
+            <td height="28" colspan="10">
+                {$msg.page}
+            </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>My Products</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      <div style='float:right;padding-right:8px;'>
+        <!--  //保留接口  -->
+      </div></td>
+  </tr>
+  <tr>
+    <td height="1" style='padding:0px'></td>
+  </tr>
+</table>
+<form id="add_cat" name="add_cat" method="post" action="http://xeno.recrazy.net/admin.php?s=Product/add" enctype="multipart/form-data"  onsubmit="return form_check();" >
+<table width="98%" align="center" border="0" cellpadding="3" cellspacing="1" bgcolor="#CBD8AC" style="margin-bottom:8px;margin-top:8px;">
+  <tr>
+    <td colspan="2" bgcolor="#EEF4EA" class='title'><span>Add New Product</span></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Product Name&nbsp; </div></td>
+    <td width="82%"><input name="name" id="product_name_id" type="text" size="30"/>&nbsp; <font color="#FF0000">*</font></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">User ID&nbsp; </div></td>
+    <td width="82%">
+		<input name="user_id" value="" /> Auto fill the current user id if leave empty
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF" style="display:none; ">
+    <td width="18%"><div align="right">Type&nbsp; </div></td>
+    <td width="82%">
+	<select name="type" id="type">
+	   <option value="1">Supply</option>
+    <!--
+       <option value="2">Demand</option>
+       -->
+	</select>	</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Category&nbsp; </div></td>
+    <td width="82%">
+	<select name="cat_id" id="cat_id">
+	  <volist name="categoty" id="data"  >
+	   <option value="{$key}">{$data}</option>
+	  </volist>
+	</select>	</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Image&nbsp; </div></td>
+    <td width="82%">
+    	<input name="image[]" type="file" size="30"/>&nbsp;
+    	<label>Max Width:</label><input type="text" name="thumbMaxWidth" id="thumbMaxWidth" size="10" value="" />&nbsp;
+        <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" /><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+        <input name="image[]" type="file" size="30"/><br />
+    </td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Price&nbsp; </div></td>
+    <td width="82%"><input name="price" type="text" size="15"/>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Quantity&nbsp; </div></td>
+    <td width="82%"><input name="quantity" type="text" size="15"/>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">Description &nbsp; </div></td>
+        <td width="82%"><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;"></textarea></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">Expire at: &nbsp; </div></td>
+        <td width="82%"><input name="time_expire" id="time_expire" type="text" size="15" value="{$DATE_NOW}"/></td>
+    </tr>
+   
+  <tr bgcolor="#FFFFFF">
+    <td colspan="2">
+	<div align="center">
+    		<input type="submit" name="Submit" value="Add"> 
+			<input type="reset" name="chongzhi" value="Reset">
+	</div>
+	</td>
+  </tr>
+</table>
+</form>
+
+
+</div>
+
+
+
+
+<include file="Public:footer" />
