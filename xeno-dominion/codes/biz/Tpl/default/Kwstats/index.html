@@ -1,0 +1,108 @@
+<include file="Public:header" />
+
+<include file="Public:left_menu" />  
+ 
+<div id="content" style="height:auto;">
+
+<script>
+	$(function() {
+		var dates = $( "#from, #to" ).datepicker({
+			dateFormat: "yy-mm-dd",
+			defaultDate: "-1m",
+			changeMonth: true,
+			changeYear: true,
+			numberOfMonths: 2,
+			maxDate: 'today',
+			onSelect: function( selectedDate ) {
+				var option = this.id == "from" ? "minDate" : "maxDate",
+					instance = $( this ).data( "datepicker" ),
+					date = $.datepicker.parseDate(
+						instance.settings.dateFormat ||
+						$.datepicker._defaults.dateFormat,
+						selectedDate, instance.settings );
+				dates.not( this ).datepicker( "option", option, date );
+			}
+		});
+	});
+</script>
+
+<div class="demo">
+<label for="from">From</label>
+<input type="text" id="from" name="from" />
+<label for="to">to</label>
+<input type="text" id="to" name="to" />
+&nbsp; <input type="button" id="submitdate" name="submitdate" value="Submit" />
+</div>
+
+<h3>Key Word Statistics</h3>
+Selected Date: <span style="color:#069"><?php
+if($d1 == $d2){
+    	echo $d1;
+    }else{
+    	echo $d1." - ".$d2;
+    }
+?></span>
+
+<table class="statstable" cellspacing="1">
+<tr><th width="100px">Key Word</th><th width="100px">Counter</th><th width="100px">Date</th></tr>
+<?php
+if($count_month_kw_select == 0){
+	echo "<tr><td colspan='3'>There is no data fetched from specified date</td></tr>";
+}else{
+	?>
+    <foreach name="month_kw_select" item="vo">
+    <tr><td>{$vo.kw}</td><td>{$vo.counter}</td><td>{$vo.added}</td></tr>
+    </foreach>
+    <?php
+}
+?>
+</table>
+{$show}
+<script type="text/javascript">
+$("#submitdate").click(function(){
+	var d1 = $("#from").val();
+	var d2 = $("#to").val();
+	var url = "{$SITE_URL}/biz.php/Kwstats/index/d1/"+d1+"/d2/"+d2;
+	var cid = "<?php echo $cid; ?>";
+	
+	location.href = url;
+});
+</script>
+
+<h3>Top 10 Keywords</h3>
+<table class="statstable" cellspacing="1">
+<tr><th width="50px">Counter</th><th width="250px">Key Word(s)</th></tr>
+<?php
+if($top_10_counter == 0){
+	?>
+    <tr><td colspan="2">There is no data fetched from database</td></tr>
+    <?php
+}else{
+	foreach($top_10_counter_array as $key => $value){
+    	?>
+        <tr><td>{$key}</td>
+        <td width="250px">
+        	<?php
+            $i = 0;
+            $total_kw = count($value);
+            foreach($value as $each_value){ 
+            	echo $each_value;
+                $i++;
+                if($i == $total_kw){
+                	//do nothing
+                }else{
+                	echo ",&nbsp;&nbsp;";
+                }
+            }
+            ?>
+        </td></tr>
+        <?php
+    }
+}
+?>
+</table>
+
+<h3>Total Key Words Statistics<h3>
+<a href="{$SITE_URL}/biz.php/Kwstats/totallist/">Click Here to View</a>
+</div>
+<include file="Public:footer" />
