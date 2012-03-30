@@ -2,6 +2,7 @@
 //开发时的一半配置
 //http://www.ciphp.com/2010/05/436
 
+//jack调试用 （另外的调试设置在 admin/conf/config.php中的末尾）
 define('NO_CACHE_RUNTIME',True);//不生成runtime文件
 //firePHP
 require_once('./public/FirePHPCore/FirePHP.class.php');
