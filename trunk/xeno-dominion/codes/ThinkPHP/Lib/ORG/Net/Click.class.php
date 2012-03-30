@@ -15,7 +15,7 @@ class Click
     // 	$this->ip = $this->get_ip_address(); //get the ip directly from the constructor
     //}
 	
-	//this constructor is used to update company click 
+	//this constructor is used to update click 
 	public function __construct($cid, $pid, $uid, $p_type) {
 		$this->ip = $this->get_ip_address();
 		$this->cid = $cid;
