@@ -23,5 +23,11 @@ define('__PUBLIC__'	, CMS_URL."/public");
 define('UPLOAD_PATH', CMS_PATH."/data/uploads/");	// 结尾有 /
 define('UPLOAD_URL'	, CMS_URL."/data/uploads/");		// 结尾有 /
 
+/*company images */
+define('COMPANY_LOGO_WIDTH'	, 100);	
+define('COMPANY_LOGO_HEIGHT'	, 100);	
+
+define('COMPANY_BANNER_WIDTH'	, 768);		
+define('COMPANY_BANNER_HEIGHT'	, 100);	
 
 ?>
