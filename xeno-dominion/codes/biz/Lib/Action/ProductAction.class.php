@@ -77,13 +77,15 @@ class ProductAction extends CommonAction
 
 		$this->assign("categoty",$new_cat);
 		
+		$today = date("/Y/m/d/");
 		// Upload image
 		if($_POST){
 			import("ORG.Net.UploadFile");
 			$upload = new UploadFile(); // 实例化上传类
 			$upload->maxSize  = 2088576 ; // 设置附件上传大小/ 2 MB
 			$upload->allowExts  = array('jpg', 'gif', 'png', 'jpeg'); // 设置附件上传类型
-			$upload->savePath =  CMS_PATH.'/public/uploads/images/'; // 设置附件上传目录
+			//updated by jason: set date path for image upload
+			$upload->savePath =  CMS_PATH.'/public/uploads/product'.$today; // 设置附件上传目录
 			$upload->saveRule = 'uniqid';
 			// thumb => 
 			if(!empty($_POST["thumbMaxWidth"])||!empty($_POST["thumbMaxHeight"])){
@@ -107,16 +109,28 @@ class ProductAction extends CommonAction
 		if($_POST){ 
 		/////var_dump($_POST); /////var_dump($tb_products);
 			if($tb_products->create()){
-				if(!empty($info[0]["savename"])){
+				//if(!empty($info[0]["savename"])){
+				if(!empty($info)){
 					/////var_dump($info);
 					$tb_products->image = "";
-					foreach($info as $key => $value){
-						$tb_products->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
-					}
-					$tb_products->image = rtrim($tb_products->image,",");
-					
+					//foreach($info as $key => $value){
+					//	$tb_products->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
+					//}
+					//$tb_products->image = rtrim($tb_products->image,",");
+					if(isset($info[0]["savename"])){ $tb_products->image1 = $today.$info[0]["savename"]; }
+					if(isset($info[1]["savename"])){ $tb_products->image2 = $today.$info[1]["savename"]; }
+					if(isset($info[2]["savename"])){ $tb_products->image3 = $today.$info[2]["savename"]; }
+					if(isset($info[3]["savename"])){ $tb_products->image4 = $today.$info[3]["savename"]; }
+					if(isset($info[4]["savename"])){ $tb_products->image5 = $today.$info[4]["savename"]; }
+					if(isset($info[5]["savename"])){ $tb_products->image6 = $today.$info[5]["savename"]; }
 				}else{
 					$tb_products->image = "";
+					$tb_products->image1 = "";
+					$tb_products->image2 = "";
+					$tb_products->image3 = "";
+					$tb_products->image4 = "";
+					$tb_products->image5 = "";
+					$tb_products->image6 = "";
 				}
 				$tb_products->time_add = time();
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
