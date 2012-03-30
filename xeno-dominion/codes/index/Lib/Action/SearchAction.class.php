@@ -19,6 +19,14 @@ class SearchAction extends CommonAction
 		$type = $_GET["type"];
 		$keyword = urldecode($_GET["keywords"]);
 		
+		//************insert kw record*************
+		$company_kw = M("companyKw");
+		$total_kw = M("totalKw");
+		
+		import("ORG.Net.Kw");
+		$kw = new Kw($keyword);
+		//*****************************************
+		
 		//1 Table .get all subcategories
 		$data["tb_products_cat"] = $tb_products_cat 
 												->table('ry_products_cat') 
