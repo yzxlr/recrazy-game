@@ -36,8 +36,8 @@
                                   $title_image = explode(",",$vo["image"]);
                                      $vo["image"] = $title_image[0];
                                  ?>
-            <notempty name="vo.image"> <img src="{$SITE_URL}/public/uploads/images/{$vo.image}" /> </notempty>
-            <empty name="vo.image"> <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" /> </empty>
+            <notempty name="vo.image1"> <img src="{$SITE_URL}/public/uploads/product/{$vo.image1}" /> </notempty>
+            <empty name="vo.image1"> <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" /> </empty>
             </a> </div>
           <div class="desc">
             <h2> <a href="{$SITE_URL}/index.php/Products/product/id/{$vo.pid}">
