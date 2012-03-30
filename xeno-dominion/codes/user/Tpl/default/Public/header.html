@@ -32,50 +32,31 @@
 
 <div id="header">
 
-<div id="header_left"><img src="{$SITE_URL}/public/jack/foradmin/images/logo.jpg" /></div>
+    <div id="header_left"><a href="{$SITE_URL}"><img src="{$SITE_URL}/public/jack/foradmin/images/logo.jpg" /></a></div>
 
  <div id="header_right">
         <div id="header_right_control">Welcome back, {$user.user_name} / <a href="{$SITE_URL}/admin.php?s=Public/logout">Logout</a> 
         </div>
         <div id="header_right_menu">
             <ul class="sf-menu">
-            				<li>
-                  <a href="{$SITE_URL}/biz.php">My world</a>
+            	<li>
+                  <a href="{$SITE_URL}/user.php">My world</a>
                  </li>
                  <li> 
                      <a href="#">Messenge &amp; Condition</a>
                   </li>
                   <li>   
-                     <a href="{$SITE_URL}/biz.php?s=Product/index">My Products</a>
+                     <a href="{$SITE_URL}/user.php?s=Resume">My Resume</a>
                    </li>
-                   <?php /* ?>
-                   <li> 
-                     <a href="{$SITE_URL}/biz.php?s=Index/company">Company</a>
-                   </li> 
-                   <?php //*/ ?>
+                  
                    <li>
-                     <a href="{$SITE_URL}/biz.php?s=Index/account">Account</a>
+                     <a href="{$SITE_URL}/user.php?s=Index/account">My Account</a>
                    </li>
-                   <!--
-                   <li>
-                     <a href="#">Service Package</a>
-                   </li>
-                   -->
+                  
                    <li> 
                      <a href="{$SITE_URL}/biz.php?s=Index/fraud">Fraud Report</a>
-                	 </li>
-                  <li>
-                			<a href="{$SITE_URL}/admin.php">Go To admin account(for test only)</a>
-                  </li>
-                  <li>
-                			<a href="{$SITE_URL}/biz.php?s=News/industrial">Industrial News</a>
-                  </li>
-                  <li>
-                			<a href="{$SITE_URL}/biz.php?s=News/company">Company News</a>
-                  </li>
-                   <li>
-                			<a href="{$SITE_URL}/employer.php">Go to HR Center</a>
-                  </li>
+                    </li>
+                 
             </ul>
           </div>           
     </div>

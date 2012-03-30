@@ -1,6 +1,6 @@
 <?php
 // 本文档自动生成，仅供测试运行
-class IndexAction extends CommonAction
+class ResumeAction extends CommonAction
 {
     /**
     +----------------------------------------------------------
@@ -16,7 +16,7 @@ class IndexAction extends CommonAction
 		//0.4 Condition
 		$condition = array();
 		//0.9 massenger
-		$msg = array("title"=>"My World"); 
+		$msg = array("title"=>"Biz Index"); 
 		//1. Table task
 		//1.1 add
 		//1.4 Select
@@ -50,27 +50,6 @@ class IndexAction extends CommonAction
     }
 	
 	
-	
-	public function fraud(){
-		if($_POST){
-			if($_SESSION['verify'] != md5($_POST['verify'])) {   
-				$this->error('Varification code error');   
-			} else{
-				$to = "2488743549@qq.com";
-				$name=$_POST["name"];
-				$email_from = $_POST["email"];
-				$title = $_POST["title"];
-				$content=$_POST["content"];
-				if($this->sendEmail($email_from, $to, $title, $content)){
-					$this->success("Fraud Report sented");
-				}else{
-					$this->error("Failed to send Fraud report! Please try again latter.");
-				}
-				
-			}
-		}
-		$this->display();
-	}
 	
 	public function account(){
 		//var_dump($this->user["uid"]);
@@ -131,8 +110,7 @@ class IndexAction extends CommonAction
 		var_dump($data);
 		$this->assign("data",$data);
 		$this->display();
-	}
-	
+	}	
 	
 
 }
