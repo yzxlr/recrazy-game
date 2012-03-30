@@ -1,0 +1,29 @@
+<include file="Public:header" />
+
+<include file="Public:left_menu" />  
+ 
+<div id="content" style="height:auto;">
+
+<a href="{$SITE_URL}/biz.php/Kwstats/index">Return to Key Word Statistics Main Page</a><br />
+<h3>Total Key Words Statistics<h3>
+<table class="statstable" cellspacing="1">
+<tr><th width="100px">Key Word</th><th width="100px">Counter</th></tr>
+<?php
+if($count_total_kw_select == 0){
+	?>
+	<tr><td colspan="2">There is no data fetched from the database</td></tr>
+    <?php
+}else{
+	?>
+    	<foreach name="total_kw_select" item="vo">
+			<tr><td>{$vo.kw}</td><td>{$vo.counter}</td></tr>
+		</foreach>
+    <?php
+}
+
+?>
+</table>
+{$show}
+</div>
+
+<include file="Public:footer" />
