@@ -22,21 +22,20 @@ function del(id){
            
             <tr align="center"  height="28">
                 <th width="5%">Job ID</th>
-                <th width="13%">Employer</th>
+                
                 <th width="20%">Job Title</th>
                 <th width="10%">Location</th>
                 <th width="5%">Position(s)</th>
+                
                 <th width="10%">Type</th>
                 <th width="10%">Option</th>
-                
             </tr>
             
             <foreach name="data.tb_jobs" item="vo" >
             <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-                <td>{$vo.job_id}</td>
-                <td>{$vo.company_name}</td>
+                <td>{$vo.job_id}</td>                
                 <td>{$vo.job_title}</td>
-                <td>{$vo.job_location}</td>
+                <td>{$vo.job_city}</td>
                 <td>{$vo.position_number}</td>
                 <td>{$vo.job_type}</td>
                 <td>

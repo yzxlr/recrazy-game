@@ -24,6 +24,7 @@ class JobAction extends CommonAction
 
 		//1. Table job
 		$condition["employer_id"]=$user["uid"];
+                $condition["status"]=1;
 		//if(!empty($_GET["type"]))$condition["type"]=$_GET["type"];
 		$count = $tb_jobs ->where($condition) ->count();
                 //echo $count;
@@ -42,15 +43,21 @@ class JobAction extends CommonAction
 	public function delete(){
 		$user = $_SESSION["user"];
 		$tb_jobs = M("jobs");
-		if($tb_jobs->where(array("job_id"=>$_GET["jid"],"employer_id"=>$user["uid"]))->delete()){
-			$this->assign("waitSecond", "0"); 
+                $tb_jobs->status = '0'; 
+                $tb_jobs->time_modify = date('Y-m-d H:i:s');
+                $tb_jobs->job_id = $_GET["jid"];
+                
+                $tb_jobs->employer_id = $user["uid"];
+                if($tb_jobs->save()){
+                        $this->assign("waitSecond", "0"); 
 			$this->assign("jumpUrl", SITE_URL."/employer.php?s=Job/index"); 
 			$this->success("Deleted!");
 		}else{
 			$this->assign("waitSecond", "0"); 
-			$this->assign("jumpUrl", SITE_URL."/employer.php?s=Job/index"); 
+			//$this->assign("jumpUrl", SITE_URL."/employer.php?s=Job/index"); 
 			$this->error("Error on deleting");
 		}
+               
 	}
 	
 	public function add(){
@@ -58,7 +65,7 @@ class JobAction extends CommonAction
 		require(CMS_PATH."/employer/Common/class.php");
 		
 		$Tree = new Tree('Root Category');
-		
+		$user = $_SESSION["user"];
 		$category = M('jobsCat');
 		$condition['is_show'] = '1';
 		      // 把查询条件传入查询方法
@@ -127,8 +134,11 @@ class JobAction extends CommonAction
 					$tb_jobs->image = "";
 				}
 				$tb_jobs->time_add = $now;
-				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
-				$tb_jobs->time_expire = $_POST["time_expire"];
+				if(trim($_POST["time_end"])!=""){
+                                    $time_end = strtotime($_POST["time_end"]);
+                                    $tb_jobs->time_end = date('Y-m-d H:i:s',$time_end);
+                                }
+                                 
 				//if(empty($_POST["user_id"])) $tb_jobs->user_id = $this->user["uid"];
 				$tb_jobs->employer_id = $this->user["uid"];
                                 
@@ -151,7 +161,7 @@ class JobAction extends CommonAction
 		require(CMS_PATH."/employer/Common/class.php");
 		
 		$Tree = new Tree('Root Category');
-		
+		$user = $_SESSION["user"];
 		$category = M('jobsCat');
 		$condition['is_show'] = '1';
 		      // 把查询条件传入查询方法
@@ -204,7 +214,7 @@ class JobAction extends CommonAction
 		$tb_jobs = M("jobs");
 		
 		//debug start here
-		$current_job = $tb_jobs->where(array("pid"=>$_GET["pid"]))->find(); 
+		$current_job = $tb_jobs->where(array("job_id"=>$_GET["jid"]))->find(); 
 		$data["images"] = explode(",",$current_job["image"]); 
 		//var_dump($data["images"]);
 		//exit;
@@ -223,10 +233,12 @@ class JobAction extends CommonAction
 				}else{
 					$tb_jobs->image = "";
 				}
-				$tb_jobs->pid = $_GET["pid"];
+				$tb_jobs->job_id = $_GET["jid"];
 				$tb_jobs->time_modify = $now;
-				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
-				$tb_jobs->time_expire = $_POST["time_expire"];
+				if(trim($_POST["time_end"])!=""){
+                                    $time_end = strtotime($_POST["time_end"]);
+                                    $tb_jobs->time_end = date('Y-m-d H:i:s',$time_end);
+                                }
 				//if(empty($_POST["user_id"])) unset($tb_jobs->user_id);
 				$tb_jobs->employer_id = $user["uid"];
 				if($tb_jobs->save()){
