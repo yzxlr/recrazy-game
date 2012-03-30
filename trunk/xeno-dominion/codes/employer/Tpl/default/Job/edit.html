@@ -81,53 +81,31 @@
   </tr>
   
   <tr bgcolor="#FFFFFF">
-    <td width="150"><div align="right">Type&nbsp; </div></td>
-    <td width="">
-	<select name="type" id="type">
-	   <option value="1" <eq name="data.tb_products.type" value="1" >selected="selected"</eq> >Supply</option>
-       <option value="2" <eq name="data.tb_products.type" value="2" >selected="selected"</eq> >Demand</option>
-	</select>	</td>
-  </tr>
-  <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Job Type&nbsp; </div></td>
     <td width="82%">
       <select  id="job_type" name="job_type">
-	<option value="FULLTIME" <eq name="data.tb_products.type" value="FULLTIME" >selected="selected"</eq> >Full Time</option>
-	<option value="PARTTIME" <eq name="data.tb_products.type" value="PARTTIME" >selected="selected"</eq> >Part Time</option>
-	<option value="CONTRACT" <eq name="data.tb_products.type" value="CONTRACT" >selected="selected"</eq> >Contract</option>
-	<option value="CASUAL" <eq name="data.tb_products.type" value="CASUAL" >selected="selected"</eq> >Casual</option>
-	<option value="FIELD" <eq name="data.tb_products.type" value="FIELD" >selected="selected"</eq> >Field Placement/Work Practicum</option>
-	<option value="VOLUNTEER" <eq name="data.tb_products.type" value="VOLUNTEER" >selected="selected"</eq> >Volunteer</option>
-	<option value="SUMMER" <eq name="data.tb_products.type" value="SUMMER" >selected="selected"</eq> >Summer Positions</option>
-	<option value="INTERN" <eq name="data.tb_products.type" value="INTERN" >selected="selected"</eq> >Internship</option>
-	<option value="GRAD" <eq name="data.tb_products.type" value="GRAD" >selected="selected"</eq> >Graduate Year Recruitment Program</option>
+	<option value="FULLTIME" <eq name="data.tb_jobs.job_type" value="FULLTIME" >selected="selected"</eq> >Full Time</option>
+	<option value="PARTTIME" <eq name="data.tb_jobs.job_type" value="PARTTIME" >selected="selected"</eq> >Part Time</option>
+	<option value="CONTRACT" <eq name="data.tb_jobs.job_type" value="CONTRACT" >selected="selected"</eq> >Contract</option>
+	<option value="CASUAL" <eq name="data.tb_jobs.job_type" value="CASUAL" >selected="selected"</eq> >Casual</option>
+	<option value="FIELD" <eq name="data.tb_jobs.job_type" value="FIELD" >selected="selected"</eq> >Field Placement/Work Practicum</option>
+	<option value="VOLUNTEER" <eq name="data.tb_jobs.job_type" value="VOLUNTEER" >selected="selected"</eq> >Volunteer</option>
+	<option value="SUMMER" <eq name="data.tb_jobs.job_type" value="SUMMER" >selected="selected"</eq> >Summer Positions</option>
+	<option value="INTERN" <eq name="data.tb_jobs.job_type" value="INTERN" >selected="selected"</eq> >Internship</option>
+	<option value="GRAD" <eq name="data.tb_jobs.job_type" value="GRAD" >selected="selected"</eq> >Graduate Year Recruitment Program</option>
 
         </select>	
  	</td>
   </tr>
   
-  <tr bgcolor="#FFFFFF">
-    <td width="150"><div align="right">Category&nbsp; </div></td>
-    <td width="">
-     
-     <select name="cat_id" id="cat_id">
-     <?php
-      foreach($categoty as $key => $value){
-     ?>
-     	<option value="<?php echo $key; ?>" <?php if($key == $data["tb_products"]["cat_id"]){ ?>selected="selected" <?php } ?> > <?php echo $value; ?></option>
-     <?php
-    
-    }
-    ?>
-      </select>
-    
-    </td>
-  </tr>
+  
   <tr bgcolor="#FFFFFF">
     <td width="18%"><div align="right">Category&nbsp; </div></td>
     <td width="82%">
+        
 	<select name="cat_id" id="cat_id">
             <?php
+            
                 foreach($categoty as $key => $value){
             ?>
      	<option value="<?php echo $key; ?>" <?php if($key == $data["tb_jobs"]["cat_id"]){ ?>selected="selected" <?php } ?> > <?php echo $value; ?></option>
@@ -139,86 +117,63 @@
     </td>
   </tr>
   
-  
-  
   <tr bgcolor="#FFFFFF">
-    <td width="18%"><div align="right">Region&nbsp; </div></td>
+    <td width="18%"><div align="right">Location&nbsp; </div></td>
+    
     <td width="82%">
-	<select name="location_code" id="location_code_id">
+        City <input name="job_city" type="text" size="15" value="{$data.tb_jobs.job_city}"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	Region
+        <select name="location_code" id="location_code_id">
 	  <foreach name="all_regions" item="vo">
-	   <option value="{$vo.region_code}" <?php  if($vo["region_code"] == $data["tb_products"]["location_code"]){ ?>selected="selected" <?php } ?>>{$vo.region_country}/{$vo.region_province}</option>
+	   <option value="{$vo.region_code}" <?php  if($vo["region_code"] == $data["tb_jobs"]["location_code"]){ ?>selected="selected" <?php } ?>>{$vo.region_country}/{$vo.region_province}</option>
 	  </foreach>
 	</select>	</td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="150"><div align="right">Image&nbsp; </div></td>
-    <td width="">
+    <td width="18%"><div align="right">Experience&nbsp; </div></td>
+    <td width="82%">
+        <input name="experience_years" type="text" size="15" value="{$data.tb_jobs.experience_years}"/> Year(s)
+    </td>
+  </tr>
+  
+  <tr bgcolor="#FFFFFF">
+    <td width="18%"><div align="right">Education Level&nbsp; </div></td>
+    <td width="82%">
+        <select  name="edu_level">
+		<option value="ALL" <eq name="data.tb_jobs.edu_level" value="ALL" >selected="selected"</eq> >Select</option>
+		<option value="Bachelors (Including Honours)" <eq name="data.tb_jobs.edu_level" value="Bachelors (Including Honours)" >selected="selected"</eq> >Bachelors (Including Honours)</option>
+		<option value="Masters" <eq name="data.tb_jobs.edu_level" value="Masters" >selected="selected"</eq> >Masters</option>
+		<option value="Doctorate" <eq name="data.tb_jobs.edu_level" value="Doctorate" >selected="selected"</eq> >Doctorate</option>
+		<option value="Certification" <eq name="data.tb_jobs.edu_level" value="Certification" >selected="selected"</eq> >Certification</option>
+		<option value="Diploma" <eq name="data.tb_jobs.edu_level" value="Diploma" >selected="selected"</eq> >Diploma</option>
+		<option value="High School Diploma" <eq name="data.tb_jobs.edu_level" value="High School Diploma" >selected="selected"</eq> >High School Diploma</option>
+		<option value="Undergraduate" <eq name="data.tb_jobs.edu_level" value="Undergraduate" >selected="selected"</eq> >Undergraduate</option>
 
-<style>
-.product_photo { padding:0; margin:0; }
-.product_photo li { list-style:none; margin-right:10px; border-bottom:#eee solid 1px; padding:10px; overflow:hidden; }
-.product_photo li img  {  width:50px; height:50px; float:left; margin-right:10px; padding:2px; border:#ccc solid 1px;  }
-.product_photo li input {  }
-</style>    
+	</select>
     
-    
-    <?php 
-        $images = explode(",",$data["tb_products"]["image"]);
-        
-        //image name without extension
-        foreach($images as $key => $value){
-       		$filenames[$key]["imagename"] = $value;
-        	$filetype = strrchr($value, ".");
-        	$value = str_replace($filetype,"",$value);
-        	$filenames[$key]["filename"] = $value;
-            $filenames[$key]["filetype"] = $filetype;
-        }
-        /////var_dump($filenames);
-    ?>
-            
-        <ul class="product_photo">
-        	<foreach name="filenames" item="vo">
-                <li id="img_li_{$vo['filename']}">       
-                <notempty name="vo">      
-                    <img src="{$SITE_URL}/public/uploads/images/{$vo.imagename}"  />
-                    <a href="javascript:del_img('<?php echo urlencode($vo['imagename']); ?>', '{$vo['filename']}' );">Remove Image</a>
-                </notempty>
-                <empty name="vo">      
-                    <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
-                </empty>
-                </li>
-            </foreach>
-        </ul>
-        
-        <input name="image[]" type="file" size="30" /><br />
-        <input name="image[]" type="file" size="30" /><br />
-        <input name="image[]" type="file" size="30" /><br />
-        <input name="image[]" type="file" size="30" /><br />
-        <input name="image[]" type="file" size="30" /><br />
-        <input name="image[]" type="file" size="30" /><br />
-        <!--
-    	<label>Max Width:</label><input type="text" name="thumbMaxWidth" id="thumbMaxWidth" size="10" value="" />&nbsp;
-        <label>Max Height:</label><input type="text" name="thumbMaxHeight" id="thumbMaxHeight" size="10" value="" /><br />
-        -->
     </td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="150"><div align="right">Price&nbsp; </div></td>
-    <td width=""><input name="price" type="text" size="15" value="{$data.tb_products.price}" />&nbsp;</td>
+    <td width="18%"><div align="right">Salary&nbsp; </div></td>
+    <td width="82%">From <input name="salary_from" type="text" size="15"  value="{$data.tb_jobs.salary_from}"/>&nbsp; To <input name="salary_to" type="text" size="15" value="{$data.tb_jobs.salary_to}"/></td>
   </tr>
   <tr bgcolor="#FFFFFF">
-    <td width="150"><div align="right">Quantity&nbsp; </div></td>
-    <td width=""><input name="quantity" type="text" size="15" value="{$data.tb_products.quantity}" />&nbsp;</td>
+    <td width="18%"><div align="right">Position(s)&nbsp; </div></td>
+    <td width="82%"><input name="position_number" type="text" size="15" value="{$data.tb_jobs.position_number}"/>&nbsp;</td>
   </tr>
-  <tr bgcolor="#FFFFFF">
-        <td width="150"><div align="right">Description &nbsp; </div></td>
-        <td width=""><textarea name="description" id="description" style="width:700px;height:200px;visibility:hidden;">{$data.tb_products.description}</textarea></td>
+  
+    <tr bgcolor="#FFFFFF">
+        <td width="18%"><div align="right">Start date: &nbsp; </div></td>
+        <td width="82%"><input name="time_start" id="time_start" type="text" size="15" value="<?php echo date('Y-m-d', strtotime($data['tb_jobs']['time_start']) ); ?>"/></td>
     </tr>
     <tr bgcolor="#FFFFFF">
-        <td width="150"><div align="right">Expire at: &nbsp; </div></td>
-        <td width=""><input name="time_expire" id="time_expire" type="text" size="15" value="<?php echo date('Y-m-d', $data['tb_products']['time_expire'] ); ?>" /></td>
+        <td width="18%"><div align="right">Expire date: &nbsp; </div></td>
+        <td width="82%"><input name="time_end" id="time_expire" type="text" size="15" value="<?php echo date('Y-m-d', strtotime($data['tb_jobs']['time_end']) ); ?>"/></td>
     </tr>
-   
+   <tr bgcolor="#FFFFFF">
+        <td width="150"><div align="right">Description &nbsp; </div></td>
+        <td width=""><textarea name="job_description" id="description" style="width:700px;height:200px;visibility:hidden;">{$data.tb_jobs.job_description}</textarea></td>
+    </tr>
   <tr bgcolor="#FFFFFF">
     <td colspan="2">
 	<div align="center">
