@@ -20,16 +20,15 @@ class CommonAction extends Action
 		//1 Validate User (only biz can login at here
 		if(!empty($_SESSION["user"])){
 			$this->user = $_SESSION["user"];
-			if($this->user["role"]<=10){
+			if($this->user["role"]<=100){
 				$this->assign("user",$this->user);
 			}else{
-				$this->assign("jumpUrl","/biz.php?s=Public/login");
-				$this->error('You are not biz user!');
+				$this->assign("jumpUrl","/resume.php?s=Public/login");
+				$this->error('You are not normal user!');
 			}
 		}else{
-			$this->assign("jumpUrl","/biz.php?s=Public/login");
+			$this->assign("jumpUrl","/resume.php?s=Public/login");
 			$this->error('Please login first!');
-			//$this->redirect('Public/login', array(), 3, 'Please login first!');
 		}
 		
 		//2 load location
@@ -80,6 +79,5 @@ class CommonAction extends Action
 		
 		return $user_role;
 	}
-
 }
 ?>
