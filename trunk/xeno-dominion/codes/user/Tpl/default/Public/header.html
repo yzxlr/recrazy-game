@@ -35,26 +35,27 @@
     <div id="header_left"><a href="{$SITE_URL}"><img src="{$SITE_URL}/public/jack/foradmin/images/logo.jpg" /></a></div>
 
  <div id="header_right">
-        <div id="header_right_control">Welcome back, {$user.user_name} / <a href="{$SITE_URL}/admin.php?s=Public/logout">Logout</a> 
+        <div id="header_right_control">Welcome back, {$user.user_name} / <a href="{$SITE_URL}/index.php?s=Public/logout">Logout</a> 
         </div>
         <div id="header_right_menu">
+            
             <ul class="sf-menu">
-            	<li>
-                  <a href="{$SITE_URL}/user.php">My world</a>
+            	<li <?php  if(MODULE_NAME=="Index" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>>
+                  <a href="{$SITE_URL}/user.php"   >My world</a>
                  </li>
-                 <li> 
+                 <li <?php  if(MODULE_NAME=="Message" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>> 
                      <a href="#">Messenge &amp; Condition</a>
                   </li>
-                  <li>   
+                  <li <?php  if(MODULE_NAME=="Resume" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>>   
                      <a href="{$SITE_URL}/user.php?s=Resume">My Resume</a>
                    </li>
                   
-                   <li>
+                   <li <?php  if(MODULE_NAME=="Index" && ACTION_NAME=="account"){ echo 'class="selected"'; } ?>>
                      <a href="{$SITE_URL}/user.php?s=Index/account">My Account</a>
                    </li>
                   
-                   <li> 
-                     <a href="{$SITE_URL}/biz.php?s=Index/fraud">Fraud Report</a>
+                   <li <?php  if(MODULE_NAME=="Index" && ACTION_NAME=="fraud"){ echo 'class="selected"'; } ?>> 
+                     <a href="{$SITE_URL}/user.php?s=Index/fraud">Fraud Report</a>
                     </li>
                  
             </ul>
