@@ -1,4 +1,14 @@
 <include file="Public:header" />
+<script charset="utf-8" src="/editor/kindeditor.js"></script>
+<script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+<script>
+	var editor;
+	KindEditor.ready(function(K) {
+			editor = K.create('#description',{
+					langType : 'en'
+				});
+	});
+</script>
 
 <include file="Public:left_menu" />  
 
@@ -20,27 +30,99 @@
     <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tables V">
       <tbody>
         <tr>
-          <th> <span class="required">Career Objectives:</span> </th>
+          <th> <span class="required">Resume Name:</span> </th>
           <td><div class="column subHead">
-              <input value="{$data.tb_resumes.career_objectives}" name="career_objectives" maxlength="255" style="WIDTH: 100px" />
-            </div>
-            <div style="clear:both;"></div></td>
-        </tr>
-        <tr>
-          <th> <span class="required">Career Focus</span> </th>
-          <td><div class="column subHead">
-              <input value="{$data.tb_resumes.career_focus}" name="career_focus" maxlength="255" style="WIDTH: 100px" />
+                  <?php if($data['tb_resumes']){ ?>
+               <input value="{$data.tb_resumes.resume_name}" name="resume_name" maxlength="100" size="37" />
+            <?php  }else{ ?>
+              
+             <input value="My Resume" name="resume_name" maxlength="100" size="37" />
+            <?php  } ?> 
+             
             </div>
             <div style="clear:both;"></div></td>
         </tr>
         
+        
+        
                 <tr>
                   <th valign="top" class="subHead">City:</th>
-                  <td><input type="text" size="37" value="{$data.tb_resumes.resume_city}" name="profile_city" maxlength="80"></td>
+                  <td><input type="text" size="37" value="{$data.tb_resumes.city}" name="city" maxlength="80"></td>
                 </tr>
+                
                 <tr style="" id="provinceWrap">
                   <th class="subHead">Province/State:</th>
-                  <td nowrap=""><input type="text" value="{$data.tb_resumes.resume_province}" name="profile_province" id="province"></td>
+                  <td nowrap="">
+                      <select id="province" name="province">
+	<option value="Alberta"  <eq name="data.tb_resumes.province" value="Alberta"> selected="selected" </eq> >Alberta</option>
+	<option value="British Columbia" <eq name="data.tb_resumes.province" value="British Columbia"> selected="selected" </eq>  >British Columbia</option>
+	<option value="Manitoba" <eq name="data.tb_resumes.province" value="Manitoba"> selected="selected" </eq> >Manitoba</option>
+	<option value="New Brunswick" <eq name="data.tb_resumes.province" value="New Brunswick"> selected="selected" </eq> >New Brunswick</option>
+	<option value="Newfoundland and Labrador" <eq name="data.tb_resumes.province" value="Newfoundland and Labrador"> selected="selected" </eq> >Newfoundland and Labrador</option>
+	<option value="Northwest Territories" <eq name="data.tb_resumes.province" value="Northwest Territories"> selected="selected" </eq> >Northwest Territories</option>
+	<option value="Nova Scotia" <eq name="data.tb_resumes.province" value="Nova Scotia"> selected="selected" </eq> >Nova Scotia</option>
+	<option value="Nunavut" <eq name="data.tb_resumes.province" value="Nunavut"> selected="selected" </eq> >Nunavut</option>
+	<option value="Ontario" <eq name="data.tb_resumes.province" value="Ontario"> selected="selected" </eq> >Ontario</option>
+	<option value="Prince Edward Island" <eq name="data.tb_resumes.province" value="Prince Edward Island"> selected="selected" </eq> >Prince Edward Island</option>
+	<option value="Quebec" <eq name="data.tb_resumes.province" value="Quebec"> selected="selected" </eq> >Quebec</option>
+	<option value="Saskatchewan" <eq name="data.tb_resumes.province" value="Saskatchewan"> selected="selected" </eq> >Saskatchewan</option>
+	<option value="Yukon Territory" <eq name="data.tb_resumes.province" value="Yukon Territory"> selected="selected" </eq> >Yukon Territory</option>
+	<option value="Alabama" <eq name="data.tb_resumes.province" value="Alabama"> selected="selected" </eq> >Alabama</option>
+	<option value="Alaska" <eq name="data.tb_resumes.province" value="Alaska"> selected="selected" </eq> >Alaska</option>
+	<option value="Arizona" <eq name="data.tb_resumes.province" value="Arizona"> selected="selected" </eq> >Arizona</option>
+	<option value="Arkansas" <eq name="data.tb_resumes.province" value="Arkansas"> selected="selected" </eq> >Arkansas</option>
+	<option value="California" <eq name="data.tb_resumes.province" value="California"> selected="selected" </eq> >California</option>
+	<option value="Colorado" <eq name="data.tb_resumes.province" value="Colorado"> selected="selected" </eq> >Colorado</option>
+	<option value="Connecticut" <eq name="data.tb_resumes.province" value="Connecticut"> selected="selected" </eq> >Connecticut</option>
+	<option value="Delaware" <eq name="data.tb_resumes.province" value="Delaware"> selected="selected" </eq> >Delaware</option>
+	<option value="District Of Columbia" <eq name="data.tb_resumes.province" value="District Of Columbia"> selected="selected" </eq> >District Of Columbia</option>
+	<option value="Florida" <eq name="data.tb_resumes.province" value="Florida"> selected="selected" </eq> >Florida</option>
+	<option value="Georgia" <eq name="data.tb_resumes.province" value="Georgia"> selected="selected" </eq> >Georgia</option>
+	<option value="Hawaii" <eq name="data.tb_resumes.province" value="Hawaii"> selected="selected" </eq> >Hawaii</option>
+	<option value="Idaho" <eq name="data.tb_resumes.province" value="Idaho"> selected="selected" </eq> >Idaho</option>
+	<option value="Illinois" <eq name="data.tb_resumes.province" value="Illinois"> selected="selected" </eq> >Illinois</option>
+	<option value="Indiana" <eq name="data.tb_resumes.province" value="Indiana"> selected="selected" </eq> >Indiana</option>
+	<option value="Iowa" <eq name="data.tb_resumes.province" value="Iowa"> selected="selected" </eq> >Iowa</option>
+	<option value="Kansas" <eq name="data.tb_resumes.province" value="Kansas"> selected="selected" </eq> >Kansas</option>
+	<option value="Kentucky" <eq name="data.tb_resumes.province" value="Kentucky"> selected="selected" </eq> >Kentucky</option>
+	<option value="Louisiana" <eq name="data.tb_resumes.province" value="Louisiana"> selected="selected" </eq> >Louisiana</option>
+	<option value="Maine" <eq name="data.tb_resumes.province" value="Maine"> selected="selected" </eq> >Maine</option>
+	<option value="Maryland" <eq name="data.tb_resumes.province" value="Maryland"> selected="selected" </eq> >Maryland</option>
+	<option value="Massachusetts" <eq name="data.tb_resumes.province" value="Massachusetts"> selected="selected" </eq> >Massachusetts</option>
+	<option value="Michigan" <eq name="data.tb_resumes.province" value="Michigan"> selected="selected" </eq> >Michigan</option>
+	<option value="Minnesota" <eq name="data.tb_resumes.province" value="Minnesota"> selected="selected" </eq> >Minnesota</option>
+	<option value="Mississippi" <eq name="data.tb_resumes.province" value="Mississippi"> selected="selected" </eq> >Mississippi</option>
+	<option value="Missouri" <eq name="data.tb_resumes.province" value="Missouri"> selected="selected" </eq> >Missouri</option>
+	<option value="Montana" <eq name="data.tb_resumes.province" value="Montana"> selected="selected" </eq> >Montana</option>
+	<option value="Nebraska" <eq name="data.tb_resumes.province" value="Nebraska"> selected="selected" </eq> >Nebraska</option>
+	<option value="Nevada" <eq name="data.tb_resumes.province" value="Nevada"> selected="selected" </eq> >Nevada</option>
+	<option value="New Hampshire" <eq name="data.tb_resumes.province" value="New Hampshire"> selected="selected" </eq> >New Hampshire</option>
+	<option value="New Jersey" <eq name="data.tb_resumes.province" value="New Jersey"> selected="selected" </eq> >New Jersey</option>
+	<option value="New Mexico" <eq name="data.tb_resumes.province" value="New Mexico"> selected="selected" </eq> >New Mexico</option>
+	<option value="New York" <eq name="data.tb_resumes.province" value="New York"> selected="selected" </eq> >New York</option>
+	<option value="North Carolina" <eq name="data.tb_resumes.province" value="North Carolina"> selected="selected" </eq> >North Carolina</option>
+	<option value="North Dakota" <eq name="data.tb_resumes.province" value="North Dakota"> selected="selected" </eq> >North Dakota</option>
+	<option value="Ohio" <eq name="data.tb_resumes.province" value="Ohio"> selected="selected" </eq> >Ohio</option>
+	<option value="Oklahoma" <eq name="data.tb_resumes.province" value="Oklahoma"> selected="selected" </eq> >Oklahoma</option>
+	<option value="Oregon" <eq name="data.tb_resumes.province" value="Oregon"> selected="selected" </eq> >Oregon</option>
+	<option value="Pennsylvania" <eq name="data.tb_resumes.province" value="Pennsylvania"> selected="selected" </eq> >Pennsylvania</option>
+	<option value="Rhode Island" <eq name="data.tb_resumes.province" value="Rhode Island"> selected="selected" </eq> >Rhode Island</option>
+	<option value="South Carolina" <eq name="data.tb_resumes.province" value="South Carolina"> selected="selected" </eq> >South Carolina</option>
+	<option value="South Dakota" <eq name="data.tb_resumes.province" value="South Dakota"> selected="selected" </eq> >South Dakota</option>
+	<option value="Tennessee" <eq name="data.tb_resumes.province" value="Tennessee"> selected="selected" </eq> >Tennessee</option>
+	<option value="Texas" <eq name="data.tb_resumes.province" value="Texas"> selected="selected" </eq> >Texas</option>
+	<option value="Utah" <eq name="data.tb_resumes.province" value="Utah"> selected="selected" </eq> >Utah</option>
+	<option value="Vermont" <eq name="data.tb_resumes.province" value="Vermont"> selected="selected" </eq> >Vermont</option>
+	<option value="Virgin Islands" <eq name="data.tb_resumes.province" value="Virgin Islands"> selected="selected" </eq> >Virgin Islands</option>
+	<option value="Virginia" <eq name="data.tb_resumes.province" value="Virginia"> selected="selected" </eq> >Virginia</option>
+	<option value="Washington" <eq name="data.tb_resumes.province" value="Washington"> selected="selected" </eq> >Washington</option>
+	<option value="West Virginia" <eq name="data.tb_resumes.province" value="West Virginia"> selected="selected" </eq> >West Virginia</option>
+	<option value="Wisconsin" <eq name="data.tb_resumes.province" value="Wisconsin"> selected="selected" </eq> >Wisconsin</option>
+	<option value="Wyoming" <eq name="data.tb_resumes.province" value="Wyoming"> selected="selected" </eq> >Wyoming</option>
+	<option value="" <eq name="data.tb_resumes.province" value=""> selected="selected" </eq> >Other</option>
+
+</select>
+                    </td>
                 </tr>
                 <tr>
                   <th class="subHead">Country/Region:</th>
@@ -302,61 +384,98 @@
                     </select></td>
                 </tr>
                 
-            
+            <tr>
+          <th> <span class="required">Postal Code:</span> </th>
+          <td>
+              <div class="column subHead">
+                <input value="{$data.tb_resumes.postal_code}" name="postal_code" maxlength="100" size="6" />
+              </div>
+                <div style="clear:both;"></div>
+          </td>
+        </tr>
         <tr>
           <th><span class="required">Phone:</span></th>
-          <td><table cellspacing="2" cellpadding="0" border="0">
-              <tbody>
-                <tr>
-                  <td><input type="text" value="{$data.tb_resumes.phone_number}" size="6" maxlength="8" name="phone_number">
-                    </span></span></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table></td>
+          <td><div class="column subHead"><input type="text" value="{$data.tb_resumes.phone_number}" size="37" maxlength="100" name="phone_number" />
+                    </div>
+            <div style="clear:both;"></div></td>
+        </tr>
+        <tr>
+          <th> <span class="required">Career Objectives:</span> </th>
+          <td><div class="column subHead">
+              
+              <textarea name="career_objectives" id="description" style="width:700px;height:200px;visibility:hidden;">{$data.tb_resumes.career_objectives}</textarea>
+            </div>
+            <div style="clear:both;"></div></td>
         </tr>
         
+        <tr>
+          <th> <span class="required">Career Focus(area of interest)</span> </th>
+          <td><div class="column subHead">
+              <input value="{$data.tb_resumes.career_focus}" name="career_focus" maxlength="255" style="WIDTH: 100px" />
+            </div>
+            <div style="clear:both;"></div></td>
+        </tr>
         <tr>
             <th><span class="required">Job Type</span></th>
     <td>
       <select  id="job_type" name="job_type">
-	<option value="FULLTIME" <eq name="data.tb_jobs.job_type" value="FULLTIME" >selected="selected"</eq> >Full Time</option>
-	<option value="PARTTIME" <eq name="data.tb_jobs.job_type" value="PARTTIME" >selected="selected"</eq> >Part Time</option>
-	<option value="CONTRACT" <eq name="data.tb_jobs.job_type" value="CONTRACT" >selected="selected"</eq> >Contract</option>
-	<option value="CASUAL" <eq name="data.tb_jobs.job_type" value="CASUAL" >selected="selected"</eq> >Casual</option>
-	<option value="FIELD" <eq name="data.tb_jobs.job_type" value="FIELD" >selected="selected"</eq> >Field Placement/Work Practicum</option>
-	<option value="VOLUNTEER" <eq name="data.tb_jobs.job_type" value="VOLUNTEER" >selected="selected"</eq> >Volunteer</option>
-	<option value="SUMMER" <eq name="data.tb_jobs.job_type" value="SUMMER" >selected="selected"</eq> >Summer Positions</option>
-	<option value="INTERN" <eq name="data.tb_jobs.job_type" value="INTERN" >selected="selected"</eq> >Internship</option>
-	<option value="GRAD" <eq name="data.tb_jobs.job_type" value="GRAD" >selected="selected"</eq> >Graduate Year Recruitment Program</option>
+	<option value="FULLTIME" <eq name="data.tb_resumes.job_type" value="FULLTIME" >selected="selected"</eq> >Full Time</option>
+	<option value="PARTTIME" <eq name="data.tb_resumes.job_type" value="PARTTIME" >selected="selected"</eq> >Part Time</option>
+	<option value="CONTRACT" <eq name="data.tb_resumes.job_type" value="CONTRACT" >selected="selected"</eq> >Contract</option>
+	<option value="CASUAL" <eq name="data.tb_resumes.job_type" value="CASUAL" >selected="selected"</eq> >Casual</option>
+	<option value="FIELD" <eq name="data.tb_resumes.job_type" value="FIELD" >selected="selected"</eq> >Field Placement/Work Practicum</option>
+	<option value="VOLUNTEER" <eq name="data.tb_resumes.job_type" value="VOLUNTEER" >selected="selected"</eq> >Volunteer</option>
+	<option value="SUMMER" <eq name="data.tb_resumes.job_type" value="SUMMER" >selected="selected"</eq> >Summer Positions</option>
+	<option value="INTERN" <eq name="data.tb_resumes.job_type" value="INTERN" >selected="selected"</eq> >Internship</option>
+	<option value="GRAD" <eq name="data.tb_resumes.job_type" value="GRAD" >selected="selected"</eq> >Graduate Year Recruitment Program</option>
 
         </select>	
  	</td>
   </tr>
   <tr>
-            <th><span class="required">Job Type</span></th>
+            <th><span class="required">Salary Range</span></th>
     <td>
   <select  name="salary_range">
-	<option value="0">Select</option>
-	<option value="29999">Under 29999</option>
-	<option value="49999">$30000-49999</option>
-	<option value="74999">$50000-74999</option>
-	<option value="99999">$75000-99999</option>
-	<option value="124999">$100000-124999</option>
-	<option value="199999">$125000-199999</option>
-	<option value="1000000">$200K+</option>
+	<option value="0" <eq name="data.tb_resumes.salary_range" value="0" >selected="selected"</eq> >Select</option>
+	<option value="29999" <eq name="data.tb_resumes.salary_range" value="29999" >selected="selected"</eq> >Under 29999</option>
+	<option value="49999" <eq name="data.tb_resumes.salary_range" value="49999" >selected="selected"</eq> >$30000-49999</option>
+	<option value="74999" <eq name="data.tb_resumes.salary_range" value="74999" >selected="selected"</eq> >$50000-74999</option>
+	<option value="99999" <eq name="data.tb_resumes.salary_range" value="99999" >selected="selected"</eq> >$75000-99999</option>
+	<option value="124999" <eq name="data.tb_resumes.salary_range" value="124999" >selected="selected"</eq> >$100000-124999</option>
+	<option value="199999" <eq name="data.tb_resumes.salary_range" value="199999" >selected="selected"</eq> >$125000-199999</option>
+	<option value="1000000" <eq name="data.tb_resumes.salary_range" value="1000000" >selected="selected"</eq> >$200K+</option>
 
 </select>
         </td>
   </tr>
+  
+  <tr>
+          <th><span class="required">Professional Certifications</span></th>
+          <td><div class="column subHead"><input type="text" value="{$data.tb_resumes.pro_certifications}" size="37" maxlength="255" name="pro_certifications" />
+                    </div>
+            <div style="clear:both;"></div></td>
+        </tr>
   <tr>
           <th> <span class="required">Resume Status:</span> </th>
           <td nowrap="">
-          	<input type="radio" name="resume_status" value="m" <eq name="data.tb_jobs.resume_status" value="m">checked="checked"</eq> />
-            <label for="mr">Male</label>
-            <input type="radio" name="resume_status" value="f" <eq name="data.tb_jobs.resume_status" value="f">checked="checked"</eq> />
-            <label for="ms">Female</label></td>
+              <?php if($data['tb_resumes']){ ?>
+              <input type="radio" name="resume_status" value="0" <eq name="data.tb_resumes.resume_status" value="0">checked="checked"</eq> />
+            <label for="mr">Searchable</label>
+            <input type="radio" name="resume_status" value="1" <eq name="data.tb_resumes.resume_status" value="1">checked="checked"</eq> />
+            <label for="ms">Confidential</label>
+            <input type="radio" name="resume_status" value="2" <eq name="data.tb_resumes.resume_status" value="2">checked="checked"</eq> />
+            <label for="ms">Non-Searchable</label>
+            <?php  }else{ ?>
+              
+            <input type="radio" name="resume_status" value="0" checked="checked" />
+            <label for="mr">Searchable</label>
+            <input type="radio" name="resume_status" value="1"  />
+            <label for="ms">Confidential</label>
+            <input type="radio" name="resume_status" value="2"  />
+            <label for="ms">Non-Searchable</label>
+            <?php  } ?>
+            
+          </td>
         </tr>
        
         <tr>
