@@ -7,61 +7,23 @@ class ResumeAction extends CommonAction
     * 默认操作
     +----------------------------------------------------------
     */
-    public function index()
-    {
-        //0. Initialization
-		//0.1 Global variables
-		//0.2 Define Tables
-		$tb_task = M("task");
-		//0.4 Condition
-		$condition = array();
-		//0.9 massenger
-		$msg = array("title"=>"Biz Index"); 
-		//1. Table task
-		//1.1 add
-		//1.4 Select
-		date_default_timezone_set("America/Toronto");
-		$today = date("Y-m-d");
-		$today .= " 00:00:00";
-		$tomorrow = date("Y-m-d",strtotime("+1 day"));
-		$tomorrow .= " 00:00:00";
-		$tomorrow_one = date("Y-m-d",strtotime("+2 day"));
-		$tomorrow_one .= " 00:00:00";
-		$nextweek = date("Y-m-d",strtotime("+8 day"));
-		$nextweek .= " 00:00:00";
-		//$nextweek .= " 00:00:00";
-		$condition = array("user_id"=>$this->user["uid"], "status"=>1, "time"=>array(array("elt",$nextweek),array("egt",$today)));
-		$data["tb_task"] = $tb_task -> where($condition) ->order("time ASC") -> select();
-		
-		//today
-		$condition = array("user_id"=>$this->user["uid"], "status"=>1, "time"=>array(array("lt",$tomorrow),array("egt",$today)));
-		$data["tb_task_today"] = $tb_task -> where($condition) ->order("time ASC") -> select();
-		//tomorrow
-		$condition = array("user_id"=>$this->user["uid"], "status"=>1, "time"=>array(array("lt",$tomorrow_one),array("egt",$tomorrow)));
-		$data["tb_task_tomorrow"] = $tb_task -> where($condition) ->order("time ASC") -> select();
-		//nextweek
-		$condition = array("user_id"=>$this->user["uid"], "status"=>1, "time"=>array(array("elt",$nextweek),array("egt",$tomorrow_one)));
-		$data["tb_task_nextweek"] = $tb_task -> where($condition) ->order("time ASC") -> select();
-		
-		//10. Display
-		$this->assign("data",$data);
-		$this->assign("msg",$msg);
-        $this->display();
-    }
+    
 	
-	
-	
-	public function account(){
+	public function index(){
 		//var_dump($this->user["uid"]);
-		$tb_user_profile = M("usersProfile");
+		$tb_resumes = M("Resumes");
+                $this->user = $_SESSION["user"];
 		if($_POST){
-			if($tb_user_profile->create()){
-				$_POST["user_id"] = $this->user["uid"];
-				$_POST["profile_lang"] = "en-us";
-				if($tb_user_profile->where(array("user_id"=>$this->user["uid"], "profile_lang"=>"en-us"))->save()){
+                    
+			if($tb_resumes->create()){
+				
+                                $tb_products->uid = $this->user["uid"];
+				//$_POST["profile_lang"] = "en-us";
+                                $resume_lang = "en-us";
+				if($tb_resumes->where(array("uid"=>$this->user["uid"], "resume_lang"=>$resume_lang))->save()){
 					$this->success("Update successfully!");
 				}
-				else if($tb_user_profile->add()){
+				else if($tb_resumes->add()){
 					$this->success("Success: created new profile");
 				}
 				else{
@@ -72,7 +34,7 @@ class ResumeAction extends CommonAction
 			}
 		}
 		//1.4
-		$data["tb_user_profile"] = $tb_user_profile -> where(array("user_id"=>$this->user["uid"], "profile_lang"=>"en-us")) -> find();
+		$data["tb_resumes"] = $tb_resumes -> where(array("uid"=>$this->user["uid"], "resume_lang"=>"en-us")) -> find();
 		
 		/////var_dump($data);
 		$this->assign("data",$data);

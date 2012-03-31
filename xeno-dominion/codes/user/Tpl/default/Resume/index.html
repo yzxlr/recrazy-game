@@ -1,73 +1,369 @@
 <include file="Public:header" />
-				
 
- <include file="Public:right_menu" />  
- <include file="Public:left_menu" />  
-
-
-
-
-
-
+<include file="Public:left_menu" />  
 
 
 <div id="content">
-			
+  <form action="#" method="post" id="GroupListForm">
+    <input type="hidden" value="yzfdvn2ct1bt" name="_csrf_token_">
+    <input type="hidden" value="/organization/manage_person_profile_action" name="action">
+    <input type="hidden" value="anything" name="event_submit_do_edit">
+    <input type="hidden" value="" name="src">
+    <h2>My Resume</h2>
+    <style media="all" type="text/css">
+		#ReasonList{line-height:150%;font-size:10px!important;}
+		#ReasonList p{margin:0;font-size:10px!important;}
+		#ReasonList br{line-height:5px; margin:0; padding:0; font-size:0; }
+		</style>
+    <div class="board successB" id="successNote"> <b>Note: </b> Modifications to your Resume have been approved. Any further modification must be submitted again for review. </div>
+    <div><span class="required">required information</span></div>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tables V">
+      <tbody>
+        <tr>
+          <th> <span class="required">Career Objectives:</span> </th>
+          <td><div class="column subHead">
+              <input value="{$data.tb_resumes.career_objectives}" name="career_objectives" maxlength="255" style="WIDTH: 100px" />
+            </div>
+            <div style="clear:both;"></div></td>
+        </tr>
+        <tr>
+          <th> <span class="required">Career Focus</span> </th>
+          <td><div class="column subHead">
+              <input value="{$data.tb_resumes.career_focus}" name="career_focus" maxlength="255" style="WIDTH: 100px" />
+            </div>
+            <div style="clear:both;"></div></td>
+        </tr>
+        
+                <tr>
+                  <th valign="top" class="subHead">City:</th>
+                  <td><input type="text" size="37" value="{$data.tb_resumes.resume_city}" name="profile_city" maxlength="80"></td>
+                </tr>
+                <tr style="" id="provinceWrap">
+                  <th class="subHead">Province/State:</th>
+                  <td nowrap=""><input type="text" value="{$data.tb_resumes.resume_province}" name="profile_province" id="province"></td>
+                </tr>
+                <tr>
+                  <th class="subHead">Country/Region:</th>
+                  <td><select name="country" id="countrySelect">
+                      <option value="">- Select where your company is located -</option>
+                      <option value="AF" <eq name="data.tb_resumes.country" value="AF"> selected="selected" </eq>> Afghanistan </option>
+                      <option value="ALA" <eq name="data.tb_resumes.country" value="ALA"> selected="selected" </eq>> Aland Islands </option>
+                      <option value="AL" <eq name="data.tb_resumes.country" value="AL"> selected="selected" </eq>> Albania </option>
+                      <option value="GBA" <eq name="data.tb_resumes.country" value="GBA"> selected="selected" </eq>> Alderney </option>
+                      <option value="DZ" <eq name="data.tb_resumes.country" value="DZ"> selected="selected" </eq>> Algeria </option>
+                      <option value="AS" <eq name="data.tb_resumes.country" value="AS"> selected="selected" </eq>> American Samoa </option>
+                      <option value="AD" <eq name="data.tb_resumes.country" value="AD"> selected="selected" </eq>> Andorra </option>
+                      <option value="AO" <eq name="data.tb_resumes.country" value="AO"> selected="selected" </eq>> Angola </option>
+                      <option value="AI" <eq name="data.tb_resumes.country" value="AI"> selected="selected" </eq>> Anguilla </option>
+                      <option value="AQ" <eq name="data.tb_resumes.country" value="AQ"> selected="selected" </eq>> Antarctica </option>
+                      <option value="AG" <eq name="data.tb_resumes.country" value="AG"> selected="selected" </eq>> Antigua and Barbuda </option>
+                      <option value="AR" <eq name="data.tb_resumes.country" value="AR"> selected="selected" </eq>> Argentina </option>
+                      <option value="AM" <eq name="data.tb_resumes.country" value="AM"> selected="selected" </eq>> Armenia </option>
+                      <option value="AW" <eq name="data.tb_resumes.country" value="AW"> selected="selected" </eq>> Aruba </option>
+                      <option value="ASC" <eq name="data.tb_resumes.country" value="ASC"> selected="selected" </eq>> Ascension Island </option>
+                      <option value="AU" <eq name="data.tb_resumes.country" value="AU"> selected="selected" </eq>> Australia </option>
+                      <option value="AT" <eq name="data.tb_resumes.country" value="AT"> selected="selected" </eq>> Austria </option>
+                      <option value="AZ" <eq name="data.tb_resumes.country" value="AZ"> selected="selected" </eq>> Azerbaijan </option>
+                      <option value="BS" <eq name="data.tb_resumes.country" value="BS"> selected="selected" </eq>> Bahamas </option>
+                      <option value="BH" <eq name="data.tb_resumes.country" value="BH"> selected="selected" </eq>> Bahrain </option>
+                      <option value="BD" <eq name="data.tb_resumes.country" value="BD"> selected="selected" </eq>> Bangladesh </option>
+                      <option value="BB" <eq name="data.tb_resumes.country" value="BB"> selected="selected" </eq>> Barbados </option>
+                      <option value="BY" <eq name="data.tb_resumes.country" value="BY"> selected="selected" </eq>> Belarus </option>
+                      <option value="BE" <eq name="data.tb_resumes.country" value="BE"> selected="selected" </eq>> Belgium </option>
+                      <option value="BZ" <eq name="data.tb_resumes.country" value="BZ"> selected="selected" </eq>> Belize </option>
+                      <option value="BJ" <eq name="data.tb_resumes.country" value="BJ"> selected="selected" </eq>> Benin </option>
+                      <option value="BM" <eq name="data.tb_resumes.country" value="BM"> selected="selected" </eq>> Bermuda </option>
+                      <option value="BT" <eq name="data.tb_resumes.country" value="BT"> selected="selected" </eq>> Bhutan </option>
+                      <option value="BO" <eq name="data.tb_resumes.country" value="BO"> selected="selected" </eq>> Bolivia </option>
+                      <option value="BA" <eq name="data.tb_resumes.country" value="BA"> selected="selected" </eq>> Bosnia and Herzegovina </option>
+                      <option value="BW" <eq name="data.tb_resumes.country" value="BW"> selected="selected" </eq>> Botswana </option>
+                      <option value="BV" <eq name="data.tb_resumes.country" value="BV"> selected="selected" </eq>> Bouvet Island </option>
+                      <option value="BR" <eq name="data.tb_resumes.country" value="BR"> selected="selected" </eq>> Brazil </option>
+                      <option value="IO" <eq name="data.tb_resumes.country" value="IO"> selected="selected" </eq>> British Indian Ocean Territory </option>
+                      <option value="BN" <eq name="data.tb_resumes.country" value="BN"> selected="selected" </eq>> Brunei Darussalam </option>
+                      <option value="BG" <eq name="data.tb_resumes.country" value="BG"> selected="selected" </eq>> Bulgaria </option>
+                      <option value="BF" <eq name="data.tb_resumes.country" value="BF"> selected="selected" </eq>> Burkina Faso </option>
+                      <option value="BI" <eq name="data.tb_resumes.country" value="BI"> selected="selected" </eq>> Burundi </option>
+                      <option value="KH" <eq name="data.tb_resumes.country" value="KH"> selected="selected" </eq>> Cambodia </option>
+                      <option value="CM" <eq name="data.tb_resumes.country" value="CM"> selected="selected" </eq>> Cameroon </option>
+                      <option value="CA" <eq name="data.tb_resumes.country" value="CA"> selected="selected" </eq>> Canada </option>
+                      <option value="CV" <eq name="data.tb_resumes.country" value="CV"> selected="selected" </eq>> Cape Verde </option>
+                      <option value="KY" <eq name="data.tb_resumes.country" value="KY"> selected="selected" </eq>> Cayman Islands </option>
+                      <option value="CF" <eq name="data.tb_resumes.country" value="CF"> selected="selected" </eq>> Central African Republic </option>
+                      <option value="TD" <eq name="data.tb_resumes.country" value="TD"> selected="selected" </eq>> Chad </option>
+                      <option value="CL" <eq name="data.tb_resumes.country" value="CL"> selected="selected" </eq>> Chile </option>
+                      <option value="CX" <eq name="data.tb_resumes.country" value="CX"> selected="selected" </eq>> Christmas Island </option>
+                      <option value="CC" <eq name="data.tb_resumes.country" value="CC"> selected="selected" </eq>> Cocos (Keeling) Islands </option>
+                      <option value="CO" <eq name="data.tb_resumes.country" value="CO"> selected="selected" </eq>> Colombia </option>
+                      <option value="KM" <eq name="data.tb_resumes.country" value="KM"> selected="selected" </eq>> Comoros </option>
+                      <option value="ZR" <eq name="data.tb_resumes.country" value="ZR"> selected="selected" </eq>> Congo, The Democratic Republic Of The </option>
+                      <option value="CG" <eq name="data.tb_resumes.country" value="CG"> selected="selected" </eq>> Congo, The Republic of Congo </option>
+                      <option value="CK" <eq name="data.tb_resumes.country" value="CK"> selected="selected" </eq>> Cook Islands </option>
+                      <option value="CR" <eq name="data.tb_resumes.country" value="CR"> selected="selected" </eq>> Costa Rica </option>
+                      <option value="CI" <eq name="data.tb_resumes.country" value="CI"> selected="selected" </eq>> Cote D'Ivoire </option>
+                      <option value="HR" <eq name="data.tb_resumes.country" value="HR"> selected="selected" </eq>> Croatia (local name: Hrvatska) </option>
+                      <option value="CU" <eq name="data.tb_resumes.country" value="CU"> selected="selected" </eq>> Cuba </option>
+                      <option value="CY" <eq name="data.tb_resumes.country" value="CY"> selected="selected" </eq>> Cyprus </option>
+                      <option value="CZ" <eq name="data.tb_resumes.country" value="CZ"> selected="selected" </eq>> Czech Republic </option>
+                      <option value="DK" <eq name="data.tb_resumes.country" value="DK"> selected="selected" </eq>> Denmark </option>
+                      <option value="DJ" <eq name="data.tb_resumes.country" value="DJ"> selected="selected" </eq>> Djibouti </option>
+                      <option value="DM" <eq name="data.tb_resumes.country" value="DM"> selected="selected" </eq>> Dominica </option>
+                      <option value="DO" <eq name="data.tb_resumes.country" value="DO"> selected="selected" </eq>> Dominican Republic </option>
+                      <option value="TP" <eq name="data.tb_resumes.country" value="TP"> selected="selected" </eq>> East Timor </option>
+                      <option value="EC" <eq name="data.tb_resumes.country" value="EC"> selected="selected" </eq>> Ecuador </option>
+                      <option value="EG" <eq name="data.tb_resumes.country" value="EG"> selected="selected" </eq>> Egypt </option>
+                      <option value="SV" <eq name="data.tb_resumes.country" value="SV"> selected="selected" </eq>> El Salvador </option>
+                      <option value="GQ" <eq name="data.tb_resumes.country" value="GQ"> selected="selected" </eq>> Equatorial Guinea </option>
+                      <option value="ER" <eq name="data.tb_resumes.country" value="ER"> selected="selected" </eq>> Eritrea </option>
+                      <option value="EE" <eq name="data.tb_resumes.country" value="EE"> selected="selected" </eq>> Estonia </option>
+                      <option value="ET" <eq name="data.tb_resumes.country" value="ET"> selected="selected" </eq>> Ethiopia </option>
+                      <option value="FK" <eq name="data.tb_resumes.country" value="FK"> selected="selected" </eq>> Falkland Islands (Malvinas) </option>
+                      <option value="FO" <eq name="data.tb_resumes.country" value="FO"> selected="selected" </eq>> Faroe Islands </option>
+                      <option value="FJ" <eq name="data.tb_resumes.country" value="FJ"> selected="selected" </eq>> Fiji </option>
+                      <option value="FI" <eq name="data.tb_resumes.country" value="FT"> selected="selected" </eq>> Finland </option>
+                      <option value="FR" <eq name="data.tb_resumes.country" value="FR"> selected="selected" </eq>> France </option>
+                      <option value="FX" <eq name="data.tb_resumes.country" value="FX"> selected="selected" </eq>> France Metropolitan </option>
+                      <option value="GF" <eq name="data.tb_resumes.country" value="GF"> selected="selected" </eq>> French Guiana </option>
+                      <option value="PF" <eq name="data.tb_resumes.country" value="PF"> selected="selected" </eq>> French Polynesia </option>
+                      <option value="TF" <eq name="data.tb_resumes.country" value="TF"> selected="selected" </eq>> French Southern Territories </option>
+                      <option value="GA" <eq name="data.tb_resumes.country" value="GA"> selected="selected" </eq>> Gabon </option>
+                      <option value="GM" <eq name="data.tb_resumes.country" value="GM"> selected="selected" </eq>> Gambia </option>
+                      <option value="GE" <eq name="data.tb_resumes.country" value="GE"> selected="selected" </eq>> Georgia </option>
+                      <option value="DE" <eq name="data.tb_resumes.country" value="DE"> selected="selected" </eq>> Germany </option>
+                      <option value="GH" <eq name="data.tb_resumes.country" value="GH"> selected="selected" </eq>> Ghana </option>
+                      <option value="GI" <eq name="data.tb_resumes.country" value="GI"> selected="selected" </eq>> Gibraltar </option>
+                      <option value="GR" <eq name="data.tb_resumes.country" value="GR"> selected="selected" </eq>> Greece </option>
+                      <option value="GL" <eq name="data.tb_resumes.country" value="GL"> selected="selected" </eq>> Greenland </option>
+                      <option value="GD" <eq name="data.tb_resumes.country" value="GD"> selected="selected" </eq>> Grenada </option>
+                      <option value="GP" <eq name="data.tb_resumes.country" value="GP"> selected="selected" </eq>> Guadeloupe </option>
+                      <option value="GU" <eq name="data.tb_resumes.country" value="GU"> selected="selected" </eq>> Guam </option>
+                      <option value="GT" <eq name="data.tb_resumes.country" value="GT"> selected="selected" </eq>> Guatemala </option>
+                      <option value="GGY" <eq name="data.tb_resumes.country" value="GGY"> selected="selected" </eq>> Guernsey </option>
+                      <option value="GN" <eq name="data.tb_resumes.country" value="GN"> selected="selected" </eq>> Guinea </option>
+                      <option value="GW" <eq name="data.tb_resumes.country" value="GW"> selected="selected" </eq>> Guinea-Bissau </option>
+                      <option value="GY" <eq name="data.tb_resumes.country" value="GY"> selected="selected" </eq>> Guyana </option>
+                      <option value="HT" <eq name="data.tb_resumes.country" value="HT"> selected="selected" </eq>> Haiti </option>
+                      <option value="HM" <eq name="data.tb_resumes.country" value="HM"> selected="selected" </eq>> Heard and Mc Donald Islands </option>
+                      <option value="HN" <eq name="data.tb_resumes.country" value="HN"> selected="selected" </eq>> Honduras </option>
+                      <option value="HK" <eq name="data.tb_resumes.country" value="HK"> selected="selected" </eq>> Hong Kong </option>
+                      <option value="HU" <eq name="data.tb_resumes.country" value="HU"> selected="selected" </eq>> Hungary </option>
+                      <option value="IS" <eq name="data.tb_resumes.country" value="IS"> selected="selected" </eq>> Iceland </option>
+                      <option value="IN" <eq name="data.tb_resumes.country" value="IN"> selected="selected" </eq>> India </option>
+                      <option value="ID" <eq name="data.tb_resumes.country" value="ID"> selected="selected" </eq>> Indonesia </option>
+                      <option value="IR" <eq name="data.tb_resumes.country" value="IR"> selected="selected" </eq>> Iran (Islamic Republic of) </option>
+                      <option value="IQ" <eq name="data.tb_resumes.country" value="IQ"> selected="selected" </eq>> Iraq </option>
+                      <option value="IE" <eq name="data.tb_resumes.country" value="IE"> selected="selected" </eq>> Ireland </option>
+                      <option value="IM" <eq name="data.tb_resumes.country" value="IM"> selected="selected" </eq>> Isle of Man </option>
+                      <option value="IL" <eq name="data.tb_resumes.country" value="IL"> selected="selected" </eq>> Israel </option>
+                      <option value="IT" <eq name="data.tb_resumes.country" value="IT"> selected="selected" </eq>> Italy </option>
+                      <option value="JM" <eq name="data.tb_resumes.country" value="JM"> selected="selected" </eq>> Jamaica </option>
+                      <option value="JP" <eq name="data.tb_resumes.country" value="JP"> selected="selected" </eq>> Japan </option>
+                      <option value="JEY" <eq name="data.tb_resumes.country" value="JEY"> selected="selected" </eq>> Jersey </option>
+                      <option value="JO" <eq name="data.tb_resumes.country" value="JO"> selected="selected" </eq>> Jordan </option>
+                      <option value="KZ" <eq name="data.tb_resumes.country" value="KZ"> selected="selected" </eq>> Kazakhstan </option>
+                      <option value="KE" <eq name="data.tb_resumes.country" value="KE"> selected="selected" </eq>> Kenya </option>
+                      <option value="KI" <eq name="data.tb_resumes.country" value="KI"> selected="selected" </eq>> Kiribati </option>
+                      <option value="KS" <eq name="data.tb_resumes.country" value="KS"> selected="selected" </eq>> Kosovo </option>
+                      <option value="KW" <eq name="data.tb_resumes.country" value="KW"> selected="selected" </eq>> Kuwait </option>
+                      <option value="KG" <eq name="data.tb_resumes.country" value="KG"> selected="selected" </eq>> Kyrgyzstan </option>
+                      <option value="LA" <eq name="data.tb_resumes.country" value="LA"> selected="selected" </eq>> Lao People's Democratic Republic </option>
+                      <option value="LV" <eq name="data.tb_resumes.country" value="LV"> selected="selected" </eq>> Latvia </option>
+                      <option value="LB" <eq name="data.tb_resumes.country" value="LB"> selected="selected" </eq>> Lebanon </option>
+                      <option value="LS" <eq name="data.tb_resumes.country" value="LS"> selected="selected" </eq>> Lesotho </option>
+                      <option value="LR" <eq name="data.tb_resumes.country" value="LR"> selected="selected" </eq>> Liberia </option>
+                      <option value="LY" <eq name="data.tb_resumes.country" value="LY"> selected="selected" </eq>> Libyan Arab Jamahiriya </option>
+                      <option value="LI" <eq name="data.tb_resumes.country" value="LI"> selected="selected" </eq>> Liechtenstein </option>
+                      <option value="LT" <eq name="data.tb_resumes.country" value="LT"> selected="selected" </eq>> Lithuania </option>
+                      <option value="LU" <eq name="data.tb_resumes.country" value="LU"> selected="selected" </eq>> Luxembourg </option>
+                      <option value="MO" <eq name="data.tb_resumes.country" value="MO"> selected="selected" </eq>> Macau </option>
+                      <option value="MK" <eq name="data.tb_resumes.country" value="MK"> selected="selected" </eq>> Macedonia </option>
+                      <option value="MG" <eq name="data.tb_resumes.country" value="MG"> selected="selected" </eq>> Madagascar </option>
+                      <option value="MW" <eq name="data.tb_resumes.country" value="MW"> selected="selected" </eq>> Malawi </option>
+                      <option value="MY" <eq name="data.tb_resumes.country" value="MY"> selected="selected" </eq>> Malaysia </option>
+                      <option value="MV" <eq name="data.tb_resumes.country" value="MV"> selected="selected" </eq>> Maldives </option>
+                      <option value="ML" <eq name="data.tb_resumes.country" value="ML"> selected="selected" </eq>> Mali </option>
+                      <option value="MT" <eq name="data.tb_resumes.country" value="MT"> selected="selected" </eq>> Malta </option>
+                      <option value="MH" <eq name="data.tb_resumes.country" value="MH"> selected="selected" </eq>> Marshall Islands </option>
+                      <option value="MQ" <eq name="data.tb_resumes.country" value="MQ"> selected="selected" </eq>> Martinique </option>
+                      <option value="MR" <eq name="data.tb_resumes.country" value="MR"> selected="selected" </eq>> Mauritania </option>
+                      <option value="MU" <eq name="data.tb_resumes.country" value="MU"> selected="selected" </eq>> Mauritius </option>
+                      <option value="YT" <eq name="data.tb_resumes.country" value="YT"> selected="selected" </eq>> Mayotte </option>
+                      <option value="MX" <eq name="data.tb_resumes.country" value="MX"> selected="selected" </eq>> Mexico </option>
+                      <option value="FM" <eq name="data.tb_resumes.country" value="FM"> selected="selected" </eq>> Micronesia </option>
+                      <option value="MD" <eq name="data.tb_resumes.country" value="MD"> selected="selected" </eq>> Moldova </option>
+                      <option value="MC" <eq name="data.tb_resumes.country" value="MC"> selected="selected" </eq>> Monaco </option>
+                      <option value="MN" <eq name="data.tb_resumes.country" value="MN"> selected="selected" </eq>> Mongolia </option>
+                      <option value="MNE" <eq name="data.tb_resumes.country" value="MNE"> selected="selected" </eq>> Montenegro </option>
+                      <option value="MS" <eq name="data.tb_resumes.country" value="MS"> selected="selected" </eq>> Montserrat </option>
+                      <option value="MA" <eq name="data.tb_resumes.country" value="MA"> selected="selected" </eq>> Morocco </option>
+                      <option value="MZ" <eq name="data.tb_resumes.country" value="MZ"> selected="selected" </eq>> Mozambique </option>
+                      <option value="MM" <eq name="data.tb_resumes.country" value="MM"> selected="selected" </eq>> Myanmar </option>
+                      <option value="NA" <eq name="data.tb_resumes.country" value="NA"> selected="selected" </eq>> Namibia </option>
+                      <option value="NR" <eq name="data.tb_resumes.country" value="NR"> selected="selected" </eq>> Nauru </option>
+                      <option value="NP" <eq name="data.tb_resumes.country" value="NP"> selected="selected" </eq>> Nepal </option>
+                      <option value="NL" <eq name="data.tb_resumes.country" value="NL"> selected="selected" </eq>> Netherlands </option>
+                      <option value="AN" <eq name="data.tb_resumes.country" value="AN"> selected="selected" </eq>> Netherlands Antilles </option>
+                      <option value="NC" <eq name="data.tb_resumes.country" value="NC"> selected="selected" </eq>> New Caledonia </option>
+                      <option value="NZ" <eq name="data.tb_resumes.country" value="NZ"> selected="selected" </eq>> New Zealand </option>
+                      <option value="NI" <eq name="data.tb_resumes.country" value="NI"> selected="selected" </eq>> Nicaragua </option>
+                      <option value="NE" <eq name="data.tb_resumes.country" value="NE"> selected="selected" </eq>> Niger </option>
+                      <option value="NG" <eq name="data.tb_resumes.country" value="NG"> selected="selected" </eq>> Nigeria </option>
+                      <option value="NU" <eq name="data.tb_resumes.country" value="NU"> selected="selected" </eq>> Niue </option>
+                      <option value="NF" <eq name="data.tb_resumes.country" value="NF"> selected="selected" </eq>> Norfolk Island </option>
+                      <option value="KP" <eq name="data.tb_resumes.country" value="KP"> selected="selected" </eq>> North Korea </option>
+                      <option value="MP" <eq name="data.tb_resumes.country" value="MP"> selected="selected" </eq>> Northern Mariana Islands </option>
+                      <option value="NO" <eq name="data.tb_resumes.country" value="NO"> selected="selected" </eq>> Norway </option>
+                      <option value="OM" <eq name="data.tb_resumes.country" value="OM"> selected="selected" </eq>> Oman </option>
+                      <option value="Other" <eq name="data.tb_resumes.country" value="Other"> selected="selected" </eq>> Other Country </option>
+                      <option value="PK" <eq name="data.tb_resumes.country" value="PK"> selected="selected" </eq>> Pakistan </option>
+                      <option value="PW" <eq name="data.tb_resumes.country" value="PW"> selected="selected" </eq>> Palau </option>
+                      <option value="PS" <eq name="data.tb_resumes.country" value="PS"> selected="selected" </eq>> Palestine </option>
+                      <option value="PA" <eq name="data.tb_resumes.country" value="PA"> selected="selected" </eq>> Panama </option>
+                      <option value="PG" <eq name="data.tb_resumes.country" value="PG"> selected="selected" </eq>> Papua New Guinea </option>
+                      <option value="PY" <eq name="data.tb_resumes.country" value="PY"> selected="selected" </eq>> Paraguay </option>
+                      <option value="PE" <eq name="data.tb_resumes.country" value="PE"> selected="selected" </eq>> Peru </option>
+                      <option value="PH" <eq name="data.tb_resumes.country" value="PH"> selected="selected" </eq>> Philippines </option>
+                      <option value="PN" <eq name="data.tb_resumes.country" value="PN"> selected="selected" </eq>> Pitcairn </option>
+                      <option value="PL" <eq name="data.tb_resumes.country" value="PL"> selected="selected" </eq>> Poland </option>
+                      <option value="PT" <eq name="data.tb_resumes.country" value="PT"> selected="selected" </eq>> Portugal </option>
+                      <option value="PR" <eq name="data.tb_resumes.country" value="PR"> selected="selected" </eq>> Puerto Rico </option>
+                      <option value="QA" <eq name="data.tb_resumes.country" value="QA"> selected="selected" </eq>> Qatar </option>
+                      <option value="RE" <eq name="data.tb_resumes.country" value="RE"> selected="selected" </eq>> Reunion </option>
+                      <option value="RO" <eq name="data.tb_resumes.country" value="RO"> selected="selected" </eq>> Romania </option>
+                      <option value="RU" <eq name="data.tb_resumes.country" value="RU"> selected="selected" </eq>> Russian Federation </option>
+                      <option value="RW" <eq name="data.tb_resumes.country" value="RW"> selected="selected" </eq>> Rwanda </option>
+                      <option value="BLM" <eq name="data.tb_resumes.country" value="BLM"> selected="selected" </eq>> SaintBarthelemy </option>
+                      <option value="KN" <eq name="data.tb_resumes.country" value="KN"> selected="selected" </eq>> Saint Kitts and Nevis </option>
+                      <option value="LC" <eq name="data.tb_resumes.country" value="LC"> selected="selected" </eq>> Saint Lucia </option>
+                      <option value="MAF" <eq name="data.tb_resumes.country" value="MAF"> selected="selected" </eq>> SaintMartin </option>
+                      <option value="VC" <eq name="data.tb_resumes.country" value="VC"> selected="selected" </eq>> Saint Vincent and the Grenadines </option>
+                      <option value="WS" <eq name="data.tb_resumes.country" value="WS"> selected="selected" </eq>> Samoa </option>
+                      <option value="SM" <eq name="data.tb_resumes.country" value="SM"> selected="selected" </eq>> San Marino </option>
+                      <option value="ST" <eq name="data.tb_resumes.country" value="ST"> selected="selected" </eq>> Sao Tome and Principe </option>
+                      <option value="SA" <eq name="data.tb_resumes.country" value="SA"> selected="selected" </eq>> Saudi Arabia </option>
+                      <option value="SN" <eq name="data.tb_resumes.country" value="SN"> selected="selected" </eq>> Senegal </option>
+                      <option value="SRB" <eq name="data.tb_resumes.country" value="SRB"> selected="selected" </eq>> Serbia </option>
+                      <option value="SC" <eq name="data.tb_resumes.country" value="SC"> selected="selected" </eq>> Seychelles </option>
+                      <option value="SL" <eq name="data.tb_resumes.country" value="SL"> selected="selected" </eq>> Sierra Leone </option>
+                      <option value="SG" <eq name="data.tb_resumes.country" value="SG"> selected="selected" </eq>> Singapore </option>
+                      <option value="SK" <eq name="data.tb_resumes.country" value="SK"> selected="selected" </eq>> Slovakia (Slovak Republic) </option>
+                      <option value="SI" <eq name="data.tb_resumes.country" value="SI"> selected="selected" </eq>> Slovenia </option>
+                      <option value="SB" <eq name="data.tb_resumes.country" value="SB"> selected="selected" </eq>> Solomon Islands </option>
+                      <option value="SO" <eq name="data.tb_resumes.country" value="SO"> selected="selected" </eq>> Somalia </option>
+                      <option value="ZA" <eq name="data.tb_resumes.country" value="ZA"> selected="selected" </eq>> South Africa </option>
+                      <option value="SGS" <eq name="data.tb_resumes.country" value="SGS"> selected="selected" </eq>> South Georgia and the South Sandwich Islands </option>
+                      <option value="KR" <eq name="data.tb_resumes.country" value="KR"> selected="selected" </eq>> South Korea </option>
+                      <option value="ES" <eq name="data.tb_resumes.country" value="ES"> selected="selected" </eq>> Spain </option>
+                      <option value="LK" <eq name="data.tb_resumes.country" value="LK"> selected="selected" </eq>> Sri Lanka </option>
+                      <option value="SH" <eq name="data.tb_resumes.country" value="SH"> selected="selected" </eq>> St. Helena </option>
+                      <option value="PM" <eq name="data.tb_resumes.country" value="PM"> selected="selected" </eq>> St. Pierre and Miquelon </option>
+                      <option value="SD" <eq name="data.tb_resumes.country" value="SD"> selected="selected" </eq>> Sudan </option>
+                      <option value="SR" <eq name="data.tb_resumes.country" value="SR"> selected="selected" </eq>> Suriname </option>
+                      <option value="SJ" <eq name="data.tb_resumes.country" value="SJ"> selected="selected" </eq>> Svalbard and Jan Mayen Islands </option>
+                      <option value="SZ" <eq name="data.tb_resumes.country" value="SZ"> selected="selected" </eq>> Swaziland </option>
+                      <option value="SE" <eq name="data.tb_resumes.country" value="SE"> selected="selected" </eq>> Sweden </option>
+                      <option value="CH" <eq name="data.tb_resumes.country" value="CH"> selected="selected" </eq>> Switzerland </option>
+                      <option value="SY" <eq name="data.tb_resumes.country" value="SY"> selected="selected" </eq>> Syrian Arab Republic </option>
+                      <option value="TW" <eq name="data.tb_resumes.country" value="TW"> selected="selected" </eq>> Taiwan </option>
+                      <option value="TJ" <eq name="data.tb_resumes.country" value="TJ"> selected="selected" </eq>> Tajikistan </option>
+                      <option value="TZ" <eq name="data.tb_resumes.country" value="TZ"> selected="selected" </eq>> Tanzania </option>
+                      <option value="TH" <eq name="data.tb_resumes.country" value="TH"> selected="selected" </eq>> Thailand </option>
+                      <option value="TLS" <eq name="data.tb_resumes.country" value="TLS"> selected="selected" </eq>> Timor-Leste </option>
+                      <option value="TG" <eq name="data.tb_resumes.country" value="TG"> selected="selected" </eq>> Togo </option>
+                      <option value="TK" <eq name="data.tb_resumes.country" value="TK"> selected="selected" </eq>> Tokelau </option>
+                      <option value="TO" <eq name="data.tb_resumes.country" value="TO"> selected="selected" </eq>> Tonga </option>
+                      <option value="TT" <eq name="data.tb_resumes.country" value="TT"> selected="selected" </eq>> Trinidad and Tobago </option>
+                      <option value="TN" <eq name="data.tb_resumes.country" value="TN"> selected="selected" </eq>> Tunisia </option>
+                      <option value="TR" <eq name="data.tb_resumes.country" value="TR"> selected="selected" </eq>> Turkey </option>
+                      <option value="TM" <eq name="data.tb_resumes.country" value="TM"> selected="selected" </eq>> Turkmenistan </option>
+                      <option value="TC" <eq name="data.tb_resumes.country" value="TC"> selected="selected" </eq>> Turks and Caicos Islands </option>
+                      <option value="TV" <eq name="data.tb_resumes.country" value="TV"> selected="selected" </eq>> Tuvalu </option>
+                      <option value="UG" <eq name="data.tb_resumes.country" value="UG"> selected="selected" </eq>> Uganda </option>
+                      <option value="UA" <eq name="data.tb_resumes.country" value="UA"> selected="selected" </eq>> Ukraine </option>
+                      <option value="AE" <eq name="data.tb_resumes.country" value="AE"> selected="selected" </eq>> United Arab Emirates </option>
+                      <option value="UK" <eq name="data.tb_resumes.country" value="UK"> selected="selected" </eq>> United Kingdom </option>
+                      <option value="US" <eq name="data.tb_resumes.country" value="US"> selected="selected" </eq>> United States </option>
+                      <option value="UM" <eq name="data.tb_resumes.country" value="UM"> selected="selected" </eq>> United States Minor Outlying Islands </option>
+                      <option value="UY" <eq name="data.tb_resumes.country" value="UY"> selected="selected" </eq>> Uruguay </option>
+                      <option value="UZ" <eq name="data.tb_resumes.country" value="UZ"> selected="selected" </eq>> Uzbekistan </option>
+                      <option value="VU" <eq name="data.tb_resumes.country" value="VU"> selected="selected" </eq>> Vanuatu </option>
+                      <option value="VA" <eq name="data.tb_resumes.country" value="VA"> selected="selected" </eq>> Vatican City State (Holy See) </option>
+                      <option value="VE" <eq name="data.tb_resumes.country" value="VE"> selected="selected" </eq>> Venezuela </option>
+                      <option value="VN" <eq name="data.tb_resumes.country" value="VN"> selected="selected" </eq>> Vietnam </option>
+                      <option value="VG" <eq name="data.tb_resumes.country" value="VG"> selected="selected" </eq>> Virgin Islands (British) </option>
+                      <option value="VI" <eq name="data.tb_resumes.country" value="VI"> selected="selected" </eq>> Virgin Islands (U.S.) </option>
+                      <option value="WF" <eq name="data.tb_resumes.country" value="WF"> selected="selected" </eq>> Wallis And Futuna Islands </option>
+                      <option value="EH" <eq name="data.tb_resumes.country" value="EH"> selected="selected" </eq>> Western Sahara </option>
+                      <option value="YE" <eq name="data.tb_resumes.country" value="YE"> selected="selected" </eq>> Yemen </option>
+                      <option value="YU" <eq name="data.tb_resumes.country" value="YU"> selected="selected" </eq>> Yugoslavia </option>
+                      <option value="ZM" <eq name="data.tb_resumes.country" value="ZM"> selected="selected" </eq>> Zambia </option>
+                      <option value="EAZ" <eq name="data.tb_resumes.country" value="EAZ"> selected="selected" </eq>> Zanzibar </option>
+                      <option value="ZW" <eq name="data.tb_resumes.country" value="ZW"> selected="selected" </eq>> Zimbabwe </option>
+                    </select></td>
+                </tr>
+                
+            
+        <tr>
+          <th><span class="required">Phone:</span></th>
+          <td><table cellspacing="2" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+                  <td><input type="text" value="{$data.tb_resumes.phone_number}" size="6" maxlength="8" name="phone_number">
+                    </span></span></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table></td>
+        </tr>
+        
+        <tr>
+            <th><span class="required">Job Type</span></th>
+    <td>
+      <select  id="job_type" name="job_type">
+	<option value="FULLTIME" <eq name="data.tb_jobs.job_type" value="FULLTIME" >selected="selected"</eq> >Full Time</option>
+	<option value="PARTTIME" <eq name="data.tb_jobs.job_type" value="PARTTIME" >selected="selected"</eq> >Part Time</option>
+	<option value="CONTRACT" <eq name="data.tb_jobs.job_type" value="CONTRACT" >selected="selected"</eq> >Contract</option>
+	<option value="CASUAL" <eq name="data.tb_jobs.job_type" value="CASUAL" >selected="selected"</eq> >Casual</option>
+	<option value="FIELD" <eq name="data.tb_jobs.job_type" value="FIELD" >selected="selected"</eq> >Field Placement/Work Practicum</option>
+	<option value="VOLUNTEER" <eq name="data.tb_jobs.job_type" value="VOLUNTEER" >selected="selected"</eq> >Volunteer</option>
+	<option value="SUMMER" <eq name="data.tb_jobs.job_type" value="SUMMER" >selected="selected"</eq> >Summer Positions</option>
+	<option value="INTERN" <eq name="data.tb_jobs.job_type" value="INTERN" >selected="selected"</eq> >Internship</option>
+	<option value="GRAD" <eq name="data.tb_jobs.job_type" value="GRAD" >selected="selected"</eq> >Graduate Year Recruitment Program</option>
 
+        </select>	
+ 	</td>
+  </tr>
+  <tr>
+            <th><span class="required">Job Type</span></th>
+    <td>
+  <select  name="salary_range">
+	<option value="0">Select</option>
+	<option value="29999">Under 29999</option>
+	<option value="49999">$30000-49999</option>
+	<option value="74999">$50000-74999</option>
+	<option value="99999">$75000-99999</option>
+	<option value="124999">$100000-124999</option>
+	<option value="199999">$125000-199999</option>
+	<option value="1000000">$200K+</option>
 
-
-
-
-    
-       <h2>Product Status</h2>
-    
-    <p><img src="{$SITE_URL}/public/jack/foradmin/images/product24.png"  style=" float:left; margin-right:2px;""/><strong>1</strong> products (<strong>1/50</strong>, 0 Editiong required)</p>
-    <p><img src="{$SITE_URL}/public/jack/foradmin/images/product24.png"  style=" float:left; margin-right:2px;""/><strong>1</strong> product(s) width improvement suggesrions.</p>
-    <p> As of 09:14:13 Oct. 2011</p>
-    
-    <a href="{$SITE_URL}/biz.php?s=Product/index" class="btn1 r3"><span class="r3">Display more product now!</span></a>
-    
-   <div class="hr"></div>
-    
-    <h2>Message Status</h2>
-    <img src="{$SITE_URL}/public/jack/foradmin/images/email_icon.png"  style="float:left; margin-right:10px; " />
-    
-    <p><img src="{$SITE_URL}/public/jack/foradmin/images/msg24.png"  style=" float:left; margin-right:2px;""/><strong>0</strong> unread messages in inbox</p>
-    
-    
-  <div class="hr"></div>
-    
-    <h2>Member Status</h2>
-        <img src="{$SITE_URL}/public/jack/foradmin/images/premium_p.png"  style=" float:left; margin-right:2px;"/>
-    <p>You are a Free Member Now.</p>
-
-    <p>Gold supplier and get<strong> 22x more</strong> inquiries!</p>
-    
-    <a href="{$SITE_URL}/biz.php?s=Index/account" class="btn1 r3"><span class="r3">Update My Account Info</span></a><br />
-    <!--
-     <p>What's new ? <a href=""><strong>Learn More >></strong></a></p>
-    -->
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
- 
-   
+</select>
+        </td>
+  </tr>
+  <tr>
+          <th> <span class="required">Resume Status:</span> </th>
+          <td nowrap="">
+          	<input type="radio" name="resume_status" value="m" <eq name="data.tb_jobs.resume_status" value="m">checked="checked"</eq> />
+            <label for="mr">Male</label>
+            <input type="radio" name="resume_status" value="f" <eq name="data.tb_jobs.resume_status" value="f">checked="checked"</eq> />
+            <label for="ms">Female</label></td>
+        </tr>
+       
+        <tr>
+          <td class="formAction" colspan="2"><input type="submit" value=" Save " name="Submit" id="formSubmit"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
 </div>
-
-
-
 <include file="Public:footer" />
