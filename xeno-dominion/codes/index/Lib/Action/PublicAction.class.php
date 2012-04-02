@@ -92,6 +92,9 @@ class PublicAction extends Action
     }
 	
 	public function register(){
+		$site_domain = $_SERVER['SERVER_NAME'];
+		
+		$msg = array("title"=>"Register"); 
 		
                 $msg = array("title"=>array("en-us" => "Register",
 									"zh-cn" => "注册")
@@ -99,6 +102,9 @@ class PublicAction extends Action
 		$tb_users = M("users");
 		$tb_users_company = M("usersCompany");
 		$tb_users_profile = M("usersProfile");
+		$user_email = $_POST['user_email'];
+		$user_name = $_POST['user_name'];
+		$activate_link = "http://".$site_domain."/index.php/Public/register_activate/code/";
 		
 		if($_POST){
 			//var_dump($_POST);
@@ -106,23 +112,119 @@ class PublicAction extends Action
 				$tb_users->user_password = md5($_POST["user_password"]);
 				$tb_users->user_regtime = date("Y-m-d H:i:s",time());
 				$tb_users->user_updatetime = date("Y-m-d H:i:s",time());
+				$activate_code = md5(rand());
+				$activate_link .= $activate_code;
+				$tb_users->user_activate_code = $activate_code;
 				if($lastInsId = $tb_users->add()){
-					$this->assign("jumpUrl","index.php/Index/index");
+					//$redirect_url = $SITE_URL."/index.php/Public/register_done";
+					$this->register_mail($user_name, $user_email, $activate_link);
+					//$this->assign("jumpUrl",$redirect_url);
 					$this->success("User added");
 				} else {
-					$this->error("User Name already exist!");
+					$this->error("User Registration Failed.");
 				}
 			}else{
-				exit($tb_users->getError().' [ <a href="javascript:history.back()">返 回</a> ]');
+				exit($tb_users->getError().' [ <a href="javascript:history.back()">Return</a> ]');
 			}
 		}
 		
 		$this->display();
 	}
 	
+	public function register_mail($user_name, $user_email, $activate_link){
+		header('Content-type:text/html;charset=utf-8');
+     	vendor("PHPMailer.class#phpmailer"); //从PHPMailer目录导入class.phpmailer.php类文件
+     	$mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
+ 		
+		$mail->IsSMTP(); // telling the class to use SMTP
+		$site_domain = $_SERVER['SERVER_NAME'];
+		$fileToRead = "http://".$site_domain."/public/email/activate.html";
+		
+		try {
+  			$mail->CharSet = "UTF-8";            // 这里指定字符集！解决中文乱码问题
+  			$mail->Encoding = "base64";
+  			$mail->AddAddress($user_email, '');
+  			$mail->SetFrom('jason@pxcomputing.com', 'Come To World Global Trade Center');     //发送者邮箱
+  			$mail->AddReplyTo('jason@pxcomputing.com', 'Come To World Global Trade Center'); //回复到这个邮箱
+  			$mail->Subject = 'Come To World - User Account Activation';
+			$body = file_get_contents($fileToRead);
+			$body = str_replace("[user_name]", $user_name, $body);
+			$body = str_replace("[activate_link]", $activate_link, $body);
+ 			$mail->MsgHTML($body);
+  			$mail->Send();
+  		echo "Message Sent OK</p>\n";
+		} catch (phpmailerException $e) {
+  		echo $e->errorMessage(); //Pretty error messages from PHPMailer
+		} catch (Exception $e) {
+  		echo $e->getMessage(); //Boring error messages from anything else!
+		}
+	}
+	
+	public function register_done(){
+		$this->display();
+	}
+	
+	public function register_activate(){
+		$condition['user_activate_code'] = $_REQUEST['code'];
+		$users = M("Users");
+		$data['user_status'] = 1;
+		$result = $users->where($condition)->save($data);
+		$email_fetch = $users->field(array('user_email'))->where($condition)->find();
+		$user_email = $email_fetch['user_email'];
+		$activate_msg = "";
+		if($result){
+			$activate_msg = "Account under <b><font color='#990033'>".$user_email."</font></b> is successfully activated.";
+		}else{
+			$activate_msg = "Account under <b><font color='#990033'>".$user_email."</font></b> is not activated. Please contact our support department.";
+		}
+		$this->assign("activate_msg", $activate_msg);
+		$this->display();	
+	}
+	
+	public function register_check_user_name(){
+		$condition['user_name'] = $_POST['user_name'];
+		$users = M("Users");
+		$uid_fetch = $users->where($condition)->find();
+		if(isset($uid_fetch)){
+			echo "1";
+		}else{
+			echo "0";
+		}
+	}
+	
+	public function register_check_user_email(){
+		$user_email = $_POST['user_email'];
+		
+		if(preg_match("/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $user_email)){
+			$condition['user_email'] = $user_email;
+			$users = M("Users");
+			$uid_fetch = $users->where($condition)->find();
+			if(isset($uid_fetch)){
+				echo "1";	
+			}else{
+				echo "0";
+			}
+		}else{
+			echo "2";
+		}
+		
+	}
+	
+	public function login_check_user_name(){
+		$condition['user_name'] = $_POST['user_name'];
+		$users = M("Users");
+		$user_status_fetch = $users->field(array('user_status'))->where($condition)->find();
+		$user_status = $user_status_fetch['user_status'];
+		if($user_status == "0"){
+			echo "0";
+		}else if($user_status == "1"){
+			echo "1";	
+		}
+	}
+	
 	public function logout(){
 		$_SESSION["user"]=null;
-		$this->assign("jumpUrl","/index.php/Index/index");
+		$this->assign("jumpUrl",$SITE_URL);
 		$this->redirect("Index/index");
 		//$this->success('You logout successfully!');
 		//$this->redirect('Public/login', array(), 3, 'You logout successfully!');
