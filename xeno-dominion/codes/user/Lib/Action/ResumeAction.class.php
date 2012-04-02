@@ -12,7 +12,7 @@ class ResumeAction extends CommonAction
 	public function index(){
 		//var_dump($this->user["uid"]);
             
-                /*
+                
                 require(CMS_PATH."/user/Common/class.php");
 		
 		$Tree = new Tree('Root Category');
@@ -36,7 +36,7 @@ class ResumeAction extends CommonAction
 
 		$this->assign("categoty",$new_cat);
             
-                */
+                
             
             
             

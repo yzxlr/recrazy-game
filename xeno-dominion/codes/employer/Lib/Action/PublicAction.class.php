@@ -58,11 +58,11 @@ class PublicAction extends Action
 				$user = $tb_users -> where($condition_check) -> find();
 				if($user["role"]<=10){
 					$_SESSION["user"] = $user;
-					$this->assign("jumpUrl","/biz.php?s=Index/index");
+					$this->assign("jumpUrl","/employer.php?s=Index/index");
 					$this->success('You login successfully!');
 					//$this->redirect('Index/index', array(), 3, 'You login successfully!');
 				}else{
-					$this->error("You are not a admin user!");
+					$this->error("You are not a biz user!");
 				}
 			}else{
 				$this->error("User name or password incorrect!");
