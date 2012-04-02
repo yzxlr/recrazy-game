@@ -57,7 +57,9 @@ class PublicAction extends Action
 		//0.8 Error: error pool
 		$error_pool = array();
 		//0.9 massenger
-		$msg = array("title"=>"Login"); 
+                $msg = array("title"=>array("en-us" => "Login",
+									"zh-cn" => "登录")
+					);
 		//1. Table users
 		//1.1 Update
 		//1.2 Select
@@ -90,7 +92,10 @@ class PublicAction extends Action
     }
 	
 	public function register(){
-		$msg = array("title"=>"Register"); 
+		
+                $msg = array("title"=>array("en-us" => "Register",
+									"zh-cn" => "注册")
+					);
 		$tb_users = M("users");
 		$tb_users_company = M("usersCompany");
 		$tb_users_profile = M("usersProfile");
