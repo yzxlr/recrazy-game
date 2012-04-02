@@ -1,13 +1,7 @@
 <?php
 // 本文档自动生成，仅供测试运行
-class IndexAction extends Action
+class CategoryAction extends Action
 {
-    /**
-    +----------------------------------------------------------
-    * 默认操作
-    +----------------------------------------------------------
-    */
-	
 	public function _initialize(){
 		//0. Initialization
 		//0.1 Global variables
@@ -15,18 +9,25 @@ class IndexAction extends Action
 		$port = $_SERVER["SERVER_PORT"]==80?'':':'.$_SERVER["SERVER_PORT"];  
 		$url = $http.$_SERVER['SERVER_NAME'].$port;//.$_SERVER["REQUEST_URI"];
 		$this->assign("SITE_URL",$url);
-		//define("SITE_URL",$url);
-		
 		
 		//2 load location
 		$tb_region = M("region");
 		$regions = $tb_region -> where(array("region_lang_code"=>"en-us")) -> select();
 		$this->assign("all_regions",$regions);
 		
+		$tb_product_cat = M("productsCat");
 		//3  Assign Category
 		$cid = $_REQUEST["id"];
-		$temp_cat = $this->GetCategoriesL2($cid);
-		$this->assign("categories",$temp_cat);
+		if(isset($cid)){
+			//load category information
+			$temp_cat = $this->GetCategoriesL2($tb_product_cat, $cid);
+			$this->assign("categories",$temp_cat);
+        	//load company informaiton
+			$users_company = new Model('usersCompany'); // 实例化模型类
+			$condition['userId'] = $cid;
+			$user_company_info = $users_company->where($condition)->find(); // 查诟数据
+			$this->assign('user_company_info', $user_company_info);	
+		}
 		
 		//count click for company page
 		//get user information
@@ -42,9 +43,7 @@ class IndexAction extends Action
 	}
 	
 	//show category for each company... only category containing product can be shown below...
-	public function GetCategoriesL2($cid){  //get 2 levels of category (root and one sub level category
-		$tb_product_cat = M("productsCat");
-		
+	public function GetCategoriesL2($tb_product_cat, $cid){  //get 2 levels of category (root and one sub level category
 		$cats = $tb_product_cat
 				->table("ry_products_cat")
 				->join("ry_products_cat_lang on ry_products_cat_lang.cat_id = ry_products_cat.cat_id AND ry_products_cat_lang.lang_code ='".LANG_SET."'")
@@ -108,65 +107,29 @@ class IndexAction extends Action
 		return $new_cats;
 	}
 	
-	public function index()
-	{
-		//show all the companies
-		$buser = new Model('users');
-		$condition['role'] = "10";
-		$user_company = $buser->join("ry_users_company ON ry_users.uid = ry_users_company.userId")
-								->field("ry_users.*, ry_users_company.*")
-								->where($condition)->select();
-		//var_dump($user_company);
-		$bcount = count($user_company);
-		$this->assign("bcount", $bcount);
-		
-		//get category number
-		foreach($user_company as $key => $companyinfo){
-			$cat_count = $this->getCatNum($companyinfo['uid']);
-			$user_company[$key]['cat_count'] = $cat_count;
-			$prod_count = $this->getProdNum($companyinfo['uid']);
-			$user_company[$key]['prod_count'] = $prod_count;
-		}
-		
-		//$cat_count = $this->getCatNum($cid);
-		
-		$this->assign("user_company", $user_company);
-		$this->display();
-	}
-	
-    public function info()
-    {
+	public function index(){
 		$user = $_SESSION["user"];
 
 		$cid = $_REQUEST["id"];
-		//if(!isset($cid)){ $cid = "test"; }
-		if(isset($cid)){
-			$this->assign('cid',$cid);
-        	
-			$users_company = new Model('usersCompany'); // 实例化模型类
-			$condition['userId'] = $cid;
-			$user_company_info = $users_company->where($condition)->find(); // 查诟数据
-			$this->assign('user_company_info', $user_company_info);
-			//var_dump($user_company_info);
-			
-			//get latest industrial news
-			$users_company_news = new Model('usersCompanyNews');
-			$incondition['uid'] = $cid;
-			$incondition['n_type'] = "1";
-			$latest_industiral_news = $users_company_news->where($incondition)->order('added DESC')->find();
-			$this->assign('latest_industiral_news', $latest_industiral_news);
-			//var_dump($latest_industiral_news);
-			
-			$cncondition['uid'] = $cid;
-			$cncondition['n_type'] = "2";
-			$latest_company_news = $users_company_news->where($cncondition)->order('added DESC')->find();
-			$this->assign('latest_company_news', $latest_company_news);
-			//var_dump($latest_company_news);
-			
-			//get all product information and use paginator
-			$products = new Model('Products');
-			$pcondition['user_id'] = $cid;
-			
+		$this->assign('cid', $cid);
+		$cat_id = $_REQUEST["cat_id"];
+		$this->assign('cat_id', $cat_id);
+		
+		//check cat_id is parent id or child id
+		//if cat_id is parent id, then load child cat_id
+		//if cat_id is not parent id, then load products under this cat_id
+		$tb_product_cat = M("productsCat");
+		$products = M("Products");
+		$read_child_cat_id = $this->checkParentID($tb_product_cat, $products, $cat_id, $cid);
+		
+		$cat_name = $this->readCategoryName($tb_product_cat, $cat_id);
+		$this->assign('cat_name', $cat_name);
+		//var_dump($read_child_cat_id);
+		
+		$pcondition['user_id'] = $cid;
+		if($read_child_cat_id == false){
+			$this->assign("cat_show", "1");
+			$pcondition['cat_id'] = $cat_id;
 			//show company product
 			$pcount = $products->join("ry_products_lang ON ry_products.pid = ry_products_lang.pid AND ry_products_lang.lang_code='".LANG_SET."'")
 									-> field("ry_products.*, ry_products_lang.plid, ry_products_lang.lang_code, ry_products_lang.name AS lang_name, ry_products_lang.description AS lang_description")
@@ -197,57 +160,47 @@ class IndexAction extends Action
 			$this->assign("show",$show);
 			$this->assign("user_company_products",$user_company_products);
 		}else{
-			//load error message
+			$this->assign("cat_show", "2");
+			//$this->assign("read_child_cat_id", $read_child_cat_id);
+			$read_child_cat_name = array();
+			foreach( $read_child_cat_id as $each_cat_id){
+				$each_cat_name = $this->readCategoryName($tb_product_cat, $each_cat_id);
+				array_push($read_child_cat_name, array('cat_id' => $each_cat_id, 'cat_name' => $each_cat_name));
+			}
+			$this->assign("read_child_cat_name", $read_child_cat_name);
+			//var_dump($read_child_cat_name);
 		}
-		$this->display();
-    }
-	
-	public function about()
-	{
-		$cid = $_REQUEST["id"];
 		
-		if(isset($cid)){
-			$this->assign('cid',$cid);
-			//load selected company about information
-			$users_company = new Model('usersCompany'); // 实例化模型类
-			$condition['userId'] = $cid;
-			$user_company_info = $users_company->where($condition)->find(); // 查诟数据
-			$this->assign('user_company_info', $user_company_info);
-		}else{
-			//load error message
-		}
 		$this->display();
 	}
 	
-	
-
-    /**
-    +----------------------------------------------------------
-    * 探针模式
-    +----------------------------------------------------------
-    */
-    public function checkEnv()
-    {
-        load('pointer',THINK_PATH.'/Tpl/Autoindex');//载入探针函数
-        $env_table = check_env();//根据当前函数获取当前环境
-        echo $env_table;
-    }
-
-	//get category number by user_company_id
-	public function getCatNum($cid){
-		$products = M("Products");
-		$condition['user_id'] = $cid;
-		$cat_count = $products->distinct('cat_id')->field('cat_id')->where($condition)->select();
-		$cat_count = count($cat_count);
-		return $cat_count;
+	//check if given cat_id is parent id
+	//return false if cat_id is not parent id
+	//return array of child ids from cat_id
+	public function checkParentID($tb_product_cat, $products, $cat_id, $cid){
+		//$product_cat = M("productsCat");
+		$cat_condition['parent_id'] = $cat_id;
+		$child_id = $tb_product_cat->field('cat_id')->where($cat_condition)->select();
+		if(isset($child_id)){
+			$child_id_array = array();
+			foreach($child_id as $each_child){
+				$pscondition['user_id'] = $cid;
+				$pscondition['cat_id'] = $each_child["cat_id"];
+				$cat_sub_product_count = $products->where($pscondition)->count();
+				if($cat_sub_product_count > 0){
+					array_push($child_id_array, $each_child["cat_id"]);
+				}
+			}
+			return $child_id_array;
+		}else{
+			return false;	
+		}
 	}
 	
-	//get product number by user_company_id
-	public function getProdNum($cid){
-		$products = M("Products");
-		$condition['user_id'] = $cid;
-		$prod_count = $products->where($condition)->count();
-		return $prod_count;
+	//read category name
+	public function readCategoryName($tb_product_cat, $cat_id){
+		$cat_condition['cat_id'] = $cat_id;
+		$cat_name = $tb_product_cat->field('cat_name')->where($cat_condition)->find();
+		return $cat_name['cat_name'];
 	}
 }
-?>
