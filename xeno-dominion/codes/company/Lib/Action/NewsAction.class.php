@@ -28,6 +28,17 @@ class NewsAction extends Action
 		$temp_cat = $this->GetCategoriesL2($cid);
 		$this->assign("categories",$temp_cat);
 		
+		//count click for company page
+		//get user information
+		$user = $_SESSION["user"];
+		$uid = $user["uid"];//echo $uid;
+		
+		if(isset($cid)){
+			import("ORG.Net.Click");
+			$pid = NULL;
+			$Click = new Click($cid, $pid, $uid, "1");
+			$ip = $Click->getIP();//echo $ip;
+		}
 	}
 	
 	//show category for each company... only category containing product can be shown below...
