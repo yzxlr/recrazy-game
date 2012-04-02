@@ -113,21 +113,21 @@ class ProductsAction extends CommonAction
 		//get user information
 		$user = $_SESSION["user"];
 		$uid = $user["uid"];//echo $uid;
+		
+		$tb_products = M("products");
+		
 		if(isset($pid)){
 			import("ORG.Net.Click");
-			$cid = $this->getCidByPid($pid); //echo $cid;
+			$cid = $this->getCidByPid($tb_products, $pid); //echo $cid;
 			$Click = new Click($cid, $pid, $uid, "2");
 			$ip = $Click->getIP(); //echo $ip;
 		}
-		
 		
 		$msg = array("title"=>array("en-us" => "Product",
 									"zh-cn" => "产品")
 					);
 		
 		// 1 Table products
-		$tb_products = M("products");
-		
 		$condition = array("ry_products.pid"=>$_GET["id"]);
 		
 		$data["tb_products"] = $tb_products -> table("ry_products")
@@ -145,20 +145,36 @@ class ProductsAction extends CommonAction
 												//*/
 												-> where($condition) -> find();
 		
+		//get company name
+		$usersCompany = M("usersCompany");
+		$c_condition['userId'] = $cid;
+		$company_name_fetch = $usersCompany->where($c_condition)->find();
+		$company_name = $company_name_fetch['companyName']; //echo $company_name;
 		
-		/////var_dump($data);
+		//get category
+		$cat_id = $data["tb_products"]["cat_id"]; //echo $cat_id;
+		$productsCat = M("productsCat");
+		$cat_condition['cat_id'] = $cat_id;
+		$cat_name_fetch = $productsCat->where($cat_condition)->find();
+		$cat_name = $cat_name_fetch['cat_name'];//echo $cat_name;
+		
+		$this->assign("cat_id", $cat_id);
+		$this->assign("cat_name", $cat_name);
+		$this->assign("cid", $cid);
+		$this->assign("company_name", $company_name);
 		$this->assign("msg",$msg);
 		$this->assign("data",$data);
         $this->display();
 	}
 	
 	//function to get company id based on product id
-	public function getCidByPid($pid){
-		$products = M("Products");
+	public function getCidByPid($products, $pid){
+		//$products = M("Products");
 		$condition['pid'] = $pid;
 		$get_cid = $products->field('user_id')->where($condition)->find();
 		return $get_cid['user_id'];
 	}
-
+	
+	//funciton to get category 
 }
 ?>
