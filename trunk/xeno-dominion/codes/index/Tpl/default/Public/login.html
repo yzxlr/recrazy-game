@@ -34,25 +34,26 @@
        			<h3>Sign In</h3>
        
        
-            <form action="#" method="post">
+            <form action="#" name="loginform" method="post">
             			
                
                
                <ul> 
                	 	<li>
                  				<label>Please enter your user name: </label><br />
-                     	<input type="text" name="user_name" value="" />
+                     	<input type="text" id="user_name" name="user_name" value="" /><br /><span id="user_name_check" class="ajaxcheck"></span>
                  </li>   
                  	<li>
                  				<label>Please enter Password:</label><br />
-                     <input type="password" name="user_password" value="" />
+                     <input type="password" id="user_password" name="user_password" value="" /><br /><span id="user_password_check" class="ajaxcheck"></span>
                  </li> 
                  <li>
                  	<a href="">Forgot password?</a>
                  </li>
                  	<li>
-                 				<input type="submit" value="login" />
-                     <a class="contact_btn">Login</a> 
+                 				
+                     <a class="contact_btn" id="loginClick">Login</a> <br />
+                     <span id="login_check" class="ajaxcheck"></span>
                  </li>  
                  
                  
@@ -99,9 +100,54 @@
        
        </div> <!-- wrapper -->
 
-
-			
-
+	<script type="text/javascript">
+	 	var user_name_check = true;
+		var user_password_check = true;
+		
+		$("#user_name").blur(function(){
+			var user_name = $("#user_name").val();
+			if(user_name == ""){
+				user_name_check = false;
+				$("#user_name_check").html("<font class='ajaxcheckbad'>&nbsp;&nbsp;Empty</font>");
+			}else{
+				//user_name_check = true;
+				var dataString = "user_name="+user_name;
+				//alert(dataString);
+				$.ajax({
+					type: "POST",
+					url: "{$SITE_URL}/index.php/Public/login_check_user_name",
+					data: dataString,
+					success: function(returndata){
+						if(returndata == "1"){
+							$("#user_name_check").html("");
+							user_name_check = true;
+						}else if(returndata == "0"){
+							user_name_check = false;
+							$("#user_name_check").html("<font class='ajaxcheckbad'>&nbsp;&nbsp;This account is not activated.</font>");
+						}
+					}
+				});
+			}
+		});
+		
+		$("#user_password").keyup(function(){
+			var user_password = $("#user_password").val();
+			if(user_password == ""){
+				$("#user_password_check").html("<font class='ajaxcheckbad'>&nbsp;&nbsp;Empty</font>");
+				user_password_check = false;
+			}else{
+				$("#user_password_check").html("");
+				user_password_check = true;
+			}
+		});
+		$("#loginClick").click(function(){
+			if(user_name_check == true && user_password_check == true){
+				document.loginform.submit();
+			}else{
+				$("#login_check").html("<font class='ajaxcheckbad'>&nbsp;&nbsp;Please fill all necessary fields.</font>");
+			}
+		});
+	</script>
 
 </div>
 
