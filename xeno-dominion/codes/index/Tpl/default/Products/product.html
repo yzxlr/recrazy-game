@@ -4,21 +4,12 @@
 
    <div id="main_content">   
 
-								<div class="out_box" >
-        
-        
-        
-        sdfsdfsdf
-        
+		<div class="out_box" >
+		<i>Product Detail</i>
         </div>
 
     
-       <div id="product_box">
-    
-   			
-   
- 
-        
+       <div id="product_box"> 
         <div class="image_div">
         	<?php 
                 //$images = explode(",",$data["tb_products"]["image1"]);
@@ -53,16 +44,14 @@
                                  ?>
             
                  <notempty name="vo.image1">      
-                    	<img src="{$SITE_URL}/public/uploads/product/{$vo.image1}" />
+                    	<img src="{$SITE_URL}/public/uploads/product{$vo.image1}" />
                      
                            </notempty>
                            
                              <empty name="vo.image1">   
                              
-                            
                            <img src="{$SITE_URL}/public/uploads/images/no-image.jpg" />
                            </empty>
-   
             </div>
             </div>
             <ul class="image_showcase">
@@ -72,7 +61,7 @@
     				?>
                     <li>
                     	<a href="#" title="image{$key+1}" class="thumbnailclick">
-                        	<img src="{$SITE_URL}/public/uploads/product/{$value}" />
+                        	<img border="0" src="{$SITE_URL}/public/uploads/product{$value}" />
                         </a>
                     </li>
                     <?php
@@ -90,7 +79,7 @@
                </h3>
         
         
-        	<table>
+        	<table class="product_table">
             	<tbody>
              <!--
                 	<tr>
@@ -102,7 +91,7 @@
                     </tr>
                 -->    
                 	<tr>
-                    	<td>{$Think.lang.product_price}:</td>
+                    	<td>{$Think.lang.product_price}</td>
                         <td>${$data.tb_products.price}</td>
                     </tr>
                     <tr>
@@ -127,6 +116,17 @@
                             <?php } ?>
                         </td>
                     </tr>
+                    <tr>
+                    	<td>Company</td>
+                    	<td>View&nbsp;<a href="{$SITE_URL}/company.php/Index/info/id/{$cid}">{$company_name}</a></td>
+                    </tr>
+                    <tr>
+                    	<td>Category</td>
+                        <td>View&nbsp;<a href="{$SITE_URL}/company.php/Category/index/id/{$cid}/cat_id/{$cat_id}">{$cat_name}</a> under Company<br />
+                        View&nbsp;<a href="#">{$cat_name}</a> under over all category
+                        </td>
+                    </tr>
+                    
                 </tbody>
             </table>
             
@@ -142,10 +142,7 @@
         
         <div style="clear:both"></div>
         
-        <ul class="product_info_tag">
-        		<li class="desciption_tag"><a href="">description</a></li>
-        
-        </ul>
+        <div class="description_tag">description</div>
         <div class="description_div">
         	<notempty name="data.tb_products.lang_description">{$data.tb_products.lang_description}</notempty>
             <empty name="data.tb_products.lang_description">{$data.tb_products.description}</empty>
@@ -173,8 +170,10 @@ $(".thumbnailclick").click(function(){
 	if(thumbnail_title == titleimage_title){
 		//do nothing;	
 	}else{
-		$("#title_image").hide().fadeIn(1000).html("<img src='{$SITE_URL}/public/uploads/product"+images_array[image_id]+"' />");
+		//alert(images_array[image_id]);
+		
 	}
+	$("#title_image").hide().fadeIn(1000).html("<img src='{$SITE_URL}/public/uploads/product"+images_array[image_id]+"' />");
 });
 
 </script>
