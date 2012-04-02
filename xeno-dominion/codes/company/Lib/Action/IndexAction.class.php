@@ -132,12 +132,14 @@ class IndexAction extends Action
 		
 		$this->assign("user_company", $user_company);
 		$this->display();
+		
+		
 	}
 	
     public function info()
     {
 		$user = $_SESSION["user"];
-
+		
 		$cid = $_REQUEST["id"];
 		//if(!isset($cid)){ $cid = "test"; }
 		if(isset($cid)){
