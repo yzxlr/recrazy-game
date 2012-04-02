@@ -23,11 +23,11 @@ class CommonAction extends Action
 			if($this->user["role"]<=100){
 				$this->assign("user",$this->user);
 			}else{
-				$this->assign("jumpUrl","/resume.php?s=Public/login");
+				$this->assign("jumpUrl","/user.php?s=Public/login");
 				$this->error('You are not normal user!');
 			}
 		}else{
-			$this->assign("jumpUrl","/resume.php?s=Public/login");
+			$this->assign("jumpUrl","/user.php?s=Public/login");
 			$this->error('Please login first!');
 		}
 		
