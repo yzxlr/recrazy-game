@@ -116,9 +116,9 @@ class PublicAction extends Action
 				$activate_link .= $activate_code;
 				$tb_users->user_activate_code = $activate_code;
 				if($lastInsId = $tb_users->add()){
-					//$redirect_url = $SITE_URL."/index.php/Public/register_done";
+					$redirect_url = $SITE_URL."/index.php/Public/register_done";
 					$this->register_mail($user_name, $user_email, $activate_link);
-					//$this->assign("jumpUrl",$redirect_url);
+					$this->assign("jumpUrl",$redirect_url);
 					$this->success("User added");
 				} else {
 					$this->error("User Registration Failed.");
@@ -164,6 +164,7 @@ class PublicAction extends Action
 		$this->display();
 	}
 	
+	//a page to activate user with specified activation code.
 	public function register_activate(){
 		$condition['user_activate_code'] = $_REQUEST['code'];
 		$users = M("Users");
@@ -181,6 +182,7 @@ class PublicAction extends Action
 		$this->display();	
 	}
 	
+	//ajax call to check if user name exists or not during registration
 	public function register_check_user_name(){
 		$condition['user_name'] = $_POST['user_name'];
 		$users = M("Users");
@@ -192,9 +194,9 @@ class PublicAction extends Action
 		}
 	}
 	
+	//ajax call to check if user email is in valid format and if it exists or not during registration
 	public function register_check_user_email(){
 		$user_email = $_POST['user_email'];
-		
 		if(preg_match("/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/", $user_email)){
 			$condition['user_email'] = $user_email;
 			$users = M("Users");
@@ -207,9 +209,9 @@ class PublicAction extends Action
 		}else{
 			echo "2";
 		}
-		
 	}
 	
+	//ajax call to check if the user is activated or not during logging in.
 	public function login_check_user_name(){
 		$condition['user_name'] = $_POST['user_name'];
 		$users = M("Users");
@@ -230,6 +232,70 @@ class PublicAction extends Action
 		//$this->redirect('Public/login', array(), 3, 'You logout successfully!');
 	}
 	
+	public function register_biz(){
+		$user = $_SESSION["user"];
+		$uid = $user["uid"];
+		$this->assign("uid", $uid);
+		$tb_user_company = M("usersCompany");
+		if($_POST){
+			//var_dump($_POST["companyBuy"]);
+			//echo json_encode($_POST["companyBuy"]);
+			$data = array();
+			if($tb_user_company->create()){
+				//$_POST["userId"] = $uid;
+				$data["userId"] = $_POST["userId"];
+				$data["companyLegalOwner"] = $_POST["companyLegalOwner"];
+				$data["companyName"] = $_POST["companyName"];
+				$data["companyAddress"] = $_POST["companyAddress"];
+				$data["companyCity"] = $_POST["companyCity"];
+				$data["companyProvince"] = $_POST["companyProvince"];
+				$data["companyCountry"] = $_POST["companyCountry"];
+				$data["companyZip"] = $_POST["companyZip"];
+				$data["companyYear"] = $_POST["companyYear"];
+				$data["companyEmployee"] = $_POST["companyEmployee"];
+				$data["companyPhone"] = $_POST["companyPhone"];
+				$data["companyFax"] = $_POST["companyFax"];
+				$data["companyEmail"] = $_POST["companyEmail"];
+				$data["added"] = date("Y-m-d H:i:s");
 
+				if(!empty($_POST["cType"])){
+					$_POST["companyType"] = json_encode($_POST["cType"]);
+					//$_POST["companyType"] = implode("@",$_POST["cType"]);
+					$data["companyType"] = $_POST["companyType"];
+				}
+				if(!empty($_POST["companySell"])){
+					$_POST["companySell"] = json_encode($_POST["companySell"]);
+					//echo $_POST["companySell"];
+					$data["companySell"] = $_POST["companySell"];
+				}
+				if(!empty($_POST["companyBuy"])){
+					$_POST["companyBuy"] = json_encode($_POST["companyBuy"]);
+					//echo $_POST["companyBuy"];
+					$data["companyBuy"] = $_POST["companyBuy"];
+				}
+				
+				if($tb_user_company->add($data)){
+					$redirect_url = $SITE_URL."/index.php/Public/register_company_done";
+					$this->assign("jumpUrl",$redirect_url);
+					$this->success("Success: created new profile");
+				}
+				else{
+					$this->error("Error");
+				}
+			}else{
+				$this->error("Error on create!");
+			}
+		}
+		//1.4
+		//$data["tb_user_company"] = $tb_user_company -> where(array("userId"=>$this->user["uid"])) -> find();
+		
+		//var_dump($data);
+		//$this->assign("data",$data);
+		$this->display();
+	}
+	
+	public function register_company_done(){
+		$this->display();
+	}
 }
 ?>
