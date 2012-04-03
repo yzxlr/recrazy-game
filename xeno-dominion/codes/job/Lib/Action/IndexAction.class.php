@@ -71,7 +71,7 @@ class IndexAction extends Action
 		//10. Display
                 $tb_jobs = M("jobs");
                 $data["tb_jobs"] = $tb_jobs -> table("ry_jobs")-> join( "ry_users_company ON ry_jobs.employer_id=ry_users_company.userId")
-                                    -> field("ry_jobs.*, ry_users_company.*") ->order('ry_jobs.time_add desc')->limit(10)->select();
+                                    -> field("ry_jobs.*, ry_users_company.*") ->order('ry_jobs.time_add desc')->limit(4)->select();
                 $this->assign("msg",$msg);
 		$this->assign("data",$data);
                 $this->display();
