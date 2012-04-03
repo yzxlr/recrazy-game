@@ -169,6 +169,7 @@ class PublicAction extends Action
 		$condition['user_activate_code'] = $_REQUEST['code'];
 		$users = M("Users");
 		$data['user_status'] = 1;
+		$data['user_activate_code'] = ""; //once the user is activated, then get rid of the activation code
 		$result = $users->where($condition)->save($data);
 		$email_fetch = $users->field(array('user_email'))->where($condition)->find();
 		$user_email = $email_fetch['user_email'];

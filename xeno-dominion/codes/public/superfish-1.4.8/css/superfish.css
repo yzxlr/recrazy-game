@@ -163,4 +163,4 @@ ul.sf-menu li li, ul.sf-menu li li a{ display:block; }
 ul.sf-menu li li a  { display:block; width:150px;}
 */
 
-ul.sf-menu li a:hover { background:#eee;}
+ul.sf-menu li a:hover { background:#09C;color:#fff; }
