@@ -1,6 +1,6 @@
 <?php
 // 本文档自动生成，仅供测试运行
-class ProductAction extends CommonAction
+class EmployeeAction extends CommonAction
 {
     /**
     +----------------------------------------------------------
@@ -13,23 +13,23 @@ class ProductAction extends CommonAction
 		//0.1 Global variables
 		$user = $_SESSION["user"];
 		//0.2 Define Tables
-		$tb_products = M("products");
+		$tb_employees = M("employees");
 		//0.3 Page
 		import("ORG.Util.Page");
 		//0.4 conditon
 		$condition = array();
 		//0.9 massenger
-		$msg = array("title"=>"List Products"); 
+		$msg = array("title"=>"List Employees"); 
 		
 
 		//1. Table product
 		$condition["user_id"]=$user["uid"];
 		if(!empty($_GET["type"]))$condition["type"]=$_GET["type"];
-		$count = $tb_products ->where($condition) ->count();
+		$count = $tb_employees ->where($condition) ->count();
 		$Page = new Page($count,25);
 		$show = $Page->show();
 		$msg["page"]=$show;
-		$data["tb_products"] = $tb_products ->where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
+		$data["tb_employees"] = $tb_employees ->where($condition) ->limit($Page->firstRow.','.$Page->listRows) -> select();
 		
 		//10. Display
 		/////var_dump($data);
@@ -40,8 +40,8 @@ class ProductAction extends CommonAction
 	
 	public function delete(){
 		$user = $_SESSION["user"];
-		$tb_products = M("products");
-		if($tb_products->where(array("pid"=>$_GET["pid"],"user_id"=>$user["uid"]))->delete()){
+		$tb_employees = M("employees");
+		if($tb_employees->where(array("pid"=>$_GET["pid"],"user_id"=>$user["uid"]))->delete()){
 			$this->assign("waitSecond", "0"); 
 			$this->assign("jumpUrl", SITE_URL."/biz.php?s=Product/index"); 
 			$this->success("Deleted!");
@@ -58,7 +58,7 @@ class ProductAction extends CommonAction
 		
 		$Tree = new Tree('Root Category');
 		
-		$category = M('productsCat');
+		$category = M('employeesCat');
 		$condition['is_show'] = '1';
 		      // 把查询条件传入查询方法
 		$cat_value = $category->where($condition)->order('parent_id asc')->select();
@@ -101,35 +101,35 @@ class ProductAction extends CommonAction
 			}
 		}
 		
-		//Table products
-		//3 table products
-		$tb_products = M("products");
+		//Table employees
+		//3 table employees
+		$tb_employees = M("employees");
 		if($_POST){ 
-		/////var_dump($_POST); /////var_dump($tb_products);
-			if($tb_products->create()){
+		/////var_dump($_POST); /////var_dump($tb_employees);
+			if($tb_employees->create()){
 				if(!empty($info[0]["savename"])){
 					/////var_dump($info);
-					$tb_products->image = "";
+					$tb_employees->image = "";
 					foreach($info as $key => $value){
-						$tb_products->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
+						$tb_employees->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
 					}
-					$tb_products->image = rtrim($tb_products->image,",");
+					$tb_employees->image = rtrim($tb_employees->image,",");
 					
 				}else{
-					$tb_products->image = "";
+					$tb_employees->image = "";
 				}
-				$tb_products->time_add = time();
+				$tb_employees->time_add = time();
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
-				$tb_products->time_expire = $_POST["time_expire"];
-				//if(empty($_POST["user_id"])) $tb_products->user_id = $this->user["uid"];
-				$tb_products->user_id = $this->user["uid"];
-				if($tb_products->add()){
+				$tb_employees->time_expire = $_POST["time_expire"];
+				//if(empty($_POST["user_id"])) $tb_employees->user_id = $this->user["uid"];
+				$tb_employees->user_id = $this->user["uid"];
+				if($tb_employees->add()){
 					$this->success("Insert Successfully!");
 				}else{
-					$this->error("Error on insert!".$tb_products->getError());
+					$this->error("Error on insert!".$tb_employees->getError());
 				}
 			}else{
-				$this->error("Error on create!".$tb_products->getError());
+				$this->error("Error on create!".$tb_employees->getError());
 			}
 		}
 		$this->display();
@@ -143,7 +143,7 @@ class ProductAction extends CommonAction
 		
 		$Tree = new Tree('Root Category');
 		
-		$category = M('productsCat');
+		$category = M('employeesCat');
 		$condition['is_show'] = '1';
 		      // 把查询条件传入查询方法
 		$cat_value = $category->where($condition)->order('parent_id asc')->select();
@@ -186,61 +186,61 @@ class ProductAction extends CommonAction
 			}
 		}
 		
-		//Table products
-		//3 table products
-		$tb_products = M("products");
+		//Table employees
+		//3 table employees
+		$tb_employees = M("employees");
 		
 		//debug start here
-		$current_product = $tb_products->where(array("pid"=>$_GET["pid"]))->find(); 
+		$current_product = $tb_employees->where(array("pid"=>$_GET["pid"]))->find(); 
 		$data["images"] = explode(",",$current_product["image"]); 
 		//var_dump($data["images"]);
 		//exit;
 		if($_POST){ 
-		/////var_dump($_POST); /////var_dump($tb_products);
-			if($tb_products->create()){
+		/////var_dump($_POST); /////var_dump($tb_employees);
+			if($tb_employees->create()){
 				if(!empty($info[0]["savename"])){
 					if(empty($current_product["image"]))
-						$tb_products->image = "";
+						$tb_employees->image = "";
 					else 
-						$tb_products->image = $current_product["image"].",";
+						$tb_employees->image = $current_product["image"].",";
 					foreach($info as $key => $value){
-						$tb_products->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
+						$tb_employees->image .= /*$info[0]["savepath"].*/$info[$key]["savename"].",";
 					}
-					$tb_products->image = rtrim($tb_products->image,",");
+					$tb_employees->image = rtrim($tb_employees->image,",");
 				}else{
-					$tb_products->image = "";
+					$tb_employees->image = "";
 				}
-				$tb_products->pid = $_GET["pid"];
-				$tb_products->time_modify = time();
+				$tb_employees->pid = $_GET["pid"];
+				$tb_employees->time_modify = time();
 				if(trim($_POST["time_expire"])!="")$_POST["time_expire"]=strtotime($_POST["time_expire"]);
-				$tb_products->time_expire = $_POST["time_expire"];
-				//if(empty($_POST["user_id"])) unset($tb_products->user_id);
-				$tb_products->user_id = $user["uid"];
-				if($tb_products->save()){
+				$tb_employees->time_expire = $_POST["time_expire"];
+				//if(empty($_POST["user_id"])) unset($tb_employees->user_id);
+				$tb_employees->user_id = $user["uid"];
+				if($tb_employees->save()){
 					$this->success("Insert Successfully!");
 				}else{
-					$this->error("Error on insert!".$tb_products->getError());
+					$this->error("Error on insert!".$tb_employees->getError());
 				}
 			}else{
-				$this->error("Error on create!".$tb_products->getError());
+				$this->error("Error on create!".$tb_employees->getError());
 			}
 		}
 		
-		$data["tb_products"] = $tb_products->where(array("pid"=>$_GET["pid"]))->find();
+		$data["tb_employees"] = $tb_employees->where(array("pid"=>$_GET["pid"]))->find();
 		/////var_dump($new_cat);
 		$this->assign("data",$data);
 		$this->display();
 	}
 	
 	public function del_img(){
-		$tb_products = M("products");
+		$tb_employees = M("employees");
 		$image_path = CMS_PATH.'/public/uploads/images/';
 
 		 
 		$rv = array();
 		if(!empty($_GET["pid"])){
 			$_GET["img_name"] = trim(urldecode($_GET["img_name"]));
-			$current_product = $tb_products->where(array("pid"=>$_GET["pid"]))->find();
+			$current_product = $tb_employees->where(array("pid"=>$_GET["pid"]))->find();
 			$images = explode(",",$current_product["image"]);
 			foreach($images as $key => $value){
 				if($value == $_GET["img_name"]){
@@ -263,7 +263,7 @@ class ProductAction extends CommonAction
 			//save new file data back to db
 			$data1["pid"] = $_GET["pid"];
 			$data1["image"] = implode($images,",");
-			if($tb_products->save($data1)){
+			if($tb_employees->save($data1)){
 				$rv["status"] = 1;
 			}else{
 				$rv["status"] = 0;
@@ -278,21 +278,21 @@ class ProductAction extends CommonAction
 		//0.1 Global variables
 		$user = $_SESSION["user"];
 		//0.2 Define Tables
-		$tb_products_lang = M("productsLang");
+		$tb_employees_lang = M("employeesLang");
 		//0.3 Page
 		import("ORG.Util.Page");
 		//0.4 conditon
 		$condition = array();
 		//0.9 massenger
-		$msg = array("title"=>"List Products Lanugage"); 
+		$msg = array("title"=>"List Employees Lanugage"); 
 		
-		//1 Table products_lang
+		//1 Table employees_lang
 		$condition = array("pid"=>$_GET["product_id"]);
-		$count = $tb_products_lang ->where($condition) ->count();
+		$count = $tb_employees_lang ->where($condition) ->count();
 		$Page = new Page($count,25);
 		$show = $Page->show();
 		$msg["page"]=$show;
-		$data["tb_products_lang"] = $tb_products_lang -> where($condition) ->select();
+		$data["tb_employees_lang"] = $tb_employees_lang -> where($condition) ->select();
 		
 		/////var_dump($data);
 		$this->assign("data",$data);
@@ -300,10 +300,10 @@ class ProductAction extends CommonAction
 	}
 	
 	public function lang_del(){
-		$tb_products_lang = M("productsLang");
+		$tb_employees_lang = M("employeesLang");
 		
-		//1 Table products_lang
-		if($tb_products_lang ->where(array("plid"=>$_GET["plid"]))-> delete()){
+		//1 Table employees_lang
+		if($tb_employees_lang ->where(array("plid"=>$_GET["plid"]))-> delete()){
 			$this->success("Deleted.");
 		}else{
 			$this->error("Error!");
@@ -317,19 +317,19 @@ class ProductAction extends CommonAction
 		$user = $_SESSION["user"];
 		//0.2 Define Tables
 		$tb_langs = M("langs");
-		$tb_products_lang = M("productsLang");
+		$tb_employees_lang = M("employeesLang");
 		//0.9 massenger
-		$msg = array("title"=>"Add New Products Lanugage"); 
+		$msg = array("title"=>"Add New Employees Lanugage"); 
 		
 		//1 Table langs
 		//1.4 select
 		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
 		
-		//2 Table products_lang
+		//2 Table employees_lang
 		//2.1
 		if($_POST){
-			if($tb_products_lang->create()){
-				if($tb_products_lang->add()){
+			if($tb_employees_lang->create()){
+				if($tb_employees_lang->add()){
 					$this->success("New record added!");
 				}else{
 					$this->error("Error on add new record!");
@@ -352,19 +352,19 @@ class ProductAction extends CommonAction
 		$user = $_SESSION["user"];
 		//0.2 Define Tables
 		$tb_langs = M("langs");
-		$tb_products_lang = M("productsLang");
+		$tb_employees_lang = M("employeesLang");
 		//0.9 massenger
-		$msg = array("title"=>"Update Products Lanugage"); 
+		$msg = array("title"=>"Update Employees Lanugage"); 
 		
 		//1 Table langs
 		//1.4 select
 		$data["tb_langs"]=$tb_langs->where("lang_status <> 0")->select();
 		
-		//2 Table products_lang
+		//2 Table employees_lang
 		//2.1
 		if($_POST){
-			if($tb_products_lang->create()){
-				if($tb_products_lang->save()){
+			if($tb_employees_lang->create()){
+				if($tb_employees_lang->save()){
 					$this->success("Record updated!");
 				}else{
 					$this->error("Error on update record!");
@@ -374,7 +374,7 @@ class ProductAction extends CommonAction
 			}
 		}
 		//2.4 
-		$data["tb_products_lang"] = $tb_products_lang ->where(array("plid"=>$_GET["plid"])) -> find(); 
+		$data["tb_employees_lang"] = $tb_employees_lang ->where(array("plid"=>$_GET["plid"])) -> find(); 
 		
 		
 		/////var_dump($data);
