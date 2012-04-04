@@ -37,32 +37,32 @@
         </div>
         <div id="header_right_menu">
             <ul class="sf-menu">
-            				<li>
+            				<li <?php  if(MODULE_NAME=="Index" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>>
                   <a href="{$SITE_URL}/employer.php">HR Center</a>
                  </li>
-                 <li> 
+                 <li <?php  if(MODULE_NAME=="Employee" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>> 
                      <a href="{$SITE_URL}/employer.php?s=Employee">Employees</a>
                   </li>
-                <li>
+                <li <?php  if(MODULE_NAME=="Job" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>>
                     <a href="{$SITE_URL}/employer.php?s=Job">Jobs</a>                    
                 </li>
                 
-                  <li>   
+                  <li <?php  if(MODULE_NAME=="Event" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>>   
                      <a href="{$SITE_URL}/employer.php?s=Event">Event</a>
                    </li>
-                   <?php /* ?>
-                   <li> 
+                   
+                   <li <?php  if(MODULE_NAME=="Document" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>> 
                      <a href="{$SITE_URL}/employer.php?s=Document">Document</a>
                    </li> 
-                   <?php //*/ ?>
-                   <li>
+                  
+                   <li <?php  if(MODULE_NAME=="Attendance" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>>
                      <a href="{$SITE_URL}/employer.php?s=Attendance">Attendance</a>
                    </li>
                   
-                   <li> 
+                   <li <?php  if(MODULE_NAME=="Report" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>> 
                      <a href="{$SITE_URL}/employer.php?s=Report">Report</a>
                 	 </li>
-                  <li>
+                  <li <?php  if(MODULE_NAME=="Reminders" && ACTION_NAME=="index"){ echo 'class="selected"'; } ?>>
                     <a href="{$SITE_URL}/employer.php?s=Reminder">Reminders</a>
                 </li>
                    <li>

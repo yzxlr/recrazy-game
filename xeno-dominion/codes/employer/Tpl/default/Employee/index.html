@@ -1,0 +1,64 @@
+<include file="Public:header" />
+
+<script>
+function del(id){
+	if(id)
+	{
+	  if(confirm("Delete?")){ 
+	    location="__URL__/delete/eid/"+id;
+      }
+	}
+}
+</script>
+
+ <include file="Public:left_menu" />  
+ 
+<div id="content">
+<h2>
+	Employees
+</h2>
+
+	<!--  内容列表   -->
+        <form name="form2" style="margin-bottom:0px;">
+        
+        
+        
+        
+        <table class="list_table" width="98%" border="0" cellpadding="2" cellspacing="1"  align="left" >
+           
+            <tr align="center"  height="28">
+                <th width="13%">Employee #</th>
+                <th width="13%">Employee Name</th>
+                <th width="13%">Email</th>
+                <th width="13%">Job Title</th>
+                <th width="10%">Hire Date</th>
+                <th width="10%">Option</th>
+            </tr>
+            
+            <foreach name="data.tb_employees" item="vo" >
+            <tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+                <td>{$vo.employee_num}</td>
+                <td>{$vo.first_name} {$vo.last_name}</td>
+                <td>{$vo.email}</td>
+                <td>{$vo.job_title}</td>
+                <td>{$vo.hire_date}</td>                
+                <td>
+                    <a href="__URL__/edit/pid/{$vo.employee_id}">View</a> | 
+                    <a href="__URL__/edit/pid/{$vo.employee_id}">Update</a> | 
+                    <a href="javascript:del({$vo.employee_id})">Delete</a>
+                </td>
+               
+            </tr>
+            </foreach>
+            <tr>
+            <td height="28" colspan="10">
+                {$msg.page}
+            </td>
+            </tr>
+        </table>
+    </form>
+    
+    <a href="__URL__/add<?php if(!empty($_GET['type'])) echo '/type/'.$_GET['type']; ?>" class="btn1 r3"><span class="r3">Add Employee</span></a>
+    
+</div>
+<include file="Public:footer" />
