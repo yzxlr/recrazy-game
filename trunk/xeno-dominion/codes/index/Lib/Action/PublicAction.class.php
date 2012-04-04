@@ -92,6 +92,8 @@ class PublicAction extends Action
     }
 	
 	public function register(){
+		//var_dump($_SESSION['ref']);
+		//get domain
 		$site_domain = $_SERVER['SERVER_NAME'];
 		
 		$msg = array("title"=>"Register"); 
@@ -107,8 +109,20 @@ class PublicAction extends Action
 		$activate_link = "http://".$site_domain."/index.php/Public/register_activate/code/";
 		
 		if($_POST){
-			//var_dump($_POST);
 			if($tb_users->create()){
+				//initialize parent id
+				$parent_id = "";
+				
+				if(isset($_SESSION['ref'])){
+					// --- get parent uid from sales table --- updated by Jason
+					$sales_referral_code = $_SESSION['ref'];
+					import("ORG.Model.Sales");
+					$SalesClass = new Sales("");//construct Sales class with empty uid
+					$parent_id = $SalesClass->fetchSalesByRefCode($sales_referral_code);
+					$tb_users->user_parent_id = $parent_id;
+					// --- updated by Jason ---//
+				}
+				
 				$tb_users->user_password = md5($_POST["user_password"]);
 				$tb_users->user_regtime = date("Y-m-d H:i:s",time());
 				$tb_users->user_updatetime = date("Y-m-d H:i:s",time());
@@ -116,6 +130,13 @@ class PublicAction extends Action
 				$activate_link .= $activate_code;
 				$tb_users->user_activate_code = $activate_code;
 				if($lastInsId = $tb_users->add()){
+					//insert ry_sales --- updated by Jason
+					if(isset($_SESSION['ref'])){
+						$SalesClass = new Sales("");
+						$SalesClass->insertNewSalesRecord($lastInsId, $parent_id);
+					}
+					// --- updated by Jason ---//
+					
 					$redirect_url = $SITE_URL."/index.php/Public/register_done";
 					$this->register_mail($user_name, $user_email, $activate_link);
 					$this->assign("jumpUrl",$redirect_url);
@@ -258,6 +279,7 @@ class PublicAction extends Action
 				$data["companyFax"] = $_POST["companyFax"];
 				$data["companyEmail"] = $_POST["companyEmail"];
 				$data["added"] = date("Y-m-d H:i:s");
+				$data["companyPackage"] = $_POST["companyPackage"];
 
 				if(!empty($_POST["cType"])){
 					$_POST["companyType"] = json_encode($_POST["cType"]);
@@ -296,6 +318,86 @@ class PublicAction extends Action
 	}
 	
 	public function register_company_done(){
+		$this->display();
+	}
+	
+	/** a hidden restricted page to activate company (to be updated by https with online payment)
+	  * This action activate company user and update sales record table if applicable
+	  */
+	public function register_company_activate(){
+		//for testing purpose, get uid, companyPackage and parent_id from url
+		$uid = $_REQUEST['uid'];echo $uid;
+		$companyPackage = $_REQUEST['p'];
+		$parent_id = $_REQUEST['parent_id'];
+		//the above fields will be controlled by session and clean up the session once finished.
+		
+		//activate user company by updating the status
+		$db_users = M("users");
+		$users_condition['userId'] = $uid;
+		$users_data['companyStatus'] = 1;
+		$db_users->where($users_condition)->save($users_data);
+		
+		//hardcode package payment here (to be implemented with db value in near future)
+		$package_payment_array = array(50, 100, 150);
+		if(isset($parent_id) && !empty($parent_id)){
+			//get Sales Class
+			import("ORG.Model.Sales");
+			$SalesClass = new Sales($uid);//construct Sales class with empty uid
+			//update sales_record
+			$sales_condition['uid'] = $uid;
+			$sales_condition['parent_id'] = $parent_id;echo "parent id: ".$parent_id."<br />";
+			$paid = intval($package_payment_array[intval($companyPackage)]);echo "paid: ".$paid."<br />";
+			$sales_data['paid'] = $paid;
+			$now_date = date("Y-m-d");
+			$sales_data['paid_date'] = $now_date;
+			$SalesClass->updateSalesRecord($sales_condition, $sales_data);
+			//update sales_total_earning
+			//get sales_earning_rate and referral_earning_rate
+			$sales_rate_array = array('sales_earning_rate', 'referral_earning_rate');
+			$sales_rate_condition['uid'] = $parent_id;
+			$sales_rate_fetch = $SalesClass->fetchSales($sales_rate_array, $sales_rate_condition);var_dump($sales_rate_fetch);
+			$sales_earning_rate = intval($sales_rate_fetch['sales_earning_rate']);echo "sales_earning_rate: $sales_earning_rate<br />";
+			$referral_earning_rate = intval($sales_rate_fetch['referral_earning_rate']);
+			//var_dump($SalesClass->getSalesEarningRate($parent_id));
+			//update sales_earning amount
+			$sales_earning_amount = round(($sales_earning_rate / 100) * $paid, 2); echo "sales_earning_amount: ".$sales_earning_amount."<br />";
+			$SalesClass->updateSalesEarning($parent_id, $sales_earning_amount, $now_date);
+		}
+	}
+	
+	//a page to activate sales registration
+	public function register_sales_activate(){
+		$condition['sales_activate_code'] = $_REQUEST['code'];
+		$sales = M("Sales");
+		$users = M("Users");
+		$data['sales_status'] = 1;
+		$data['sales_activate_code'] = ""; //once the user is activated, then get rid of the activation code
+		//fetch email and uid
+		$user_fetch = $sales->field(array('uid', 'sales_email'))->where($condition)->find();
+		$sales_email = $user_fetch['sales_email'];
+		$uid = $user_fetch['uid'];
+		//update sales status and clear uid
+		$result = $sales->where($condition)->save($data);
+		//update is_sales
+		$users_data['user_is_sales'] = 2;
+		$users_condition['uid'] = $uid;
+		$users->where($users_condition)->save($users_data);
+		//update session if logged in
+		$user = $_SESSION["user"];
+		
+		if(!empty($user)){
+			$_SESSION["user"]["user_is_sales"] = 2;
+		}
+		//var_dump($user);
+		
+		//write message
+		$activate_msg = "";
+		if($result){
+			$activate_msg = "Sales Member Account under <b><font color='#990033'>".$sales_email."</font></b> is successfully activated. <br /><br />Please log in again to use Sales Member Account.";
+		}else{
+			$activate_msg = "Sales Member Account under <b><font color='#990033'>".$sales_email."</font></b> is not activated. Please contact our support department.";
+		}
+		$this->assign("activate_msg", $activate_msg);
 		$this->display();
 	}
 }

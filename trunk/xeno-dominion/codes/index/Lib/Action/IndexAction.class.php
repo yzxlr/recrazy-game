@@ -56,6 +56,11 @@ class IndexAction extends Action
 	
     public function index()
     {
+		if(isset($_REQUEST['ref'])){
+			$_SESSION["ref"] = $_REQUEST['ref'];
+			//var_dump($_SESSION["ref"]);
+		}
+		
         //0. Initialization
 		//0.1 Global variables
 		$user = $_SESSION["user"];
